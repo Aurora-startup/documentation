@@ -1,72 +1,3 @@
-<p align="center">
-    <img src="/report/assets/images/upc_logo.png" width="250">
-</p>
-<h1 align="center">
-Universidad Peruana de Ciencias Aplicadas (UPC)
-<h3 align="center">
-SI0729 - Desarrollo de Aplicaciones Open Source<br><br>
-NRC 11913<br><br>
-Profesor<br>
-Juan Antonio Flores Moroco<br><br>
-Informe de Trabajo Final<br><br>
-
-Startup: Aurora<br><br>
-Producto: Urban Trust<br>
-</h3>
-
-<div align="center">
-<h2>
-Integrantes<br><br>
-
-|<p align="center">Codigo</p>|<p align="center">Alumno<p>|
-| --- | --- |
-|U202318609 | Wang Chen Juan Sung Jau  |
-|U202422890 | Cuadros Villanueva Marcelo Fabio |
-|U |A |
-|U |A |
-|U |A |
-
-Abril 2026
-</div>
-
-## Registro de Versiones del Informe
-
-| Versión | Fecha      | Autor                   | Descripción de modificación |
-| ------- | ---------- | ----------------------- | --------------------------- |
-| AV1     | 10/04/2026 | Wang Chen Juan Sung Jau |                             |
-
-
-## Project Report Collaboration Insights  
-
-
-## Tabla de Contenidos
-
-## Student Outcome
-
-# Capítulo I: Introducción
-## 1.1. Startup Profile 
-### 1.1.1. Descripción de la Startup 
-### 1.1.2. Perfiles de integrantes del equipo 
-## 1.2. Solution Profile 
-### 1.2.1.  Antecedentes y problemática 
-### 1.2.2. Lean UX Process. 
-#### 1.2.2.1. Lean UX Problem Statements. 
-#### 1.2.2.2. Lean UX Assumptions. 
-#### 1.2.2.3. Lean UX Hypothesis Statements.
-#### 1.2.2.4. Lean UX Canvas. 
-## 1.3. Segmentos objetivo. 
-
-# Capítulo II: Requirements Elicitation & Analysis.
-
-# Capítulo III: Requirements Specification. 
-
-# Capítulo IV: Product Design.
-## Capítulo IV: Product Design
-
-### 4.1. Style Guidelines
-
-
-#### 4.1.1. General Style Guidelines
 # Capítulo V: Product Implementation, Validation & Deployment.
 
 ## 5.1. Software Configuration Management. 
@@ -82,7 +13,7 @@ Los repositorios utilizados para el desarrollo de código fuente son los siguien
 |:----------------:|:-------------------:|
 | Landing Page | https://github.com/Aurora-startup/urbantrust-landing-page | 
 | Web Services (Backend API) |https://github.com/Aurora-startup/urbantrust-backend  |
-| Frontend Web Application |https://github.com/Aurora-startup/urbantrust-frontend |
+| Frontend Web Application | https://github.com/Aurora-startup/urbantrust-frontend|
 
 </div>
 
