@@ -1,8 +1,21 @@
 # Capítulo V: Product Implementation, Validation & Deployment.
 
 ## 5.1. Software Configuration Management. 
-
+Para tener consistencia y seguimiento de el desarrollo de la plataforma, se ha definido una serie de herramientas y estrategias de desarrollo. El metodo cubre la configuracion del entorno de desarrollo, la gestion del codigo y el despliegue, alineado a las buenas prácticas de ingenieria de software y metodologias ágiles.
 ### 5.1.1. Software Development Environment Configuration. 
+Para facilitar la colaboración del equipo en todas las actividades del ciclo de vida de desarrollo de Urban Safe, se ha definido un entorno de desarrollo común. Este entorno está compuesto por herramientas especializadas para la gestión del proyecto, diseño UX/UI, modelado, desarrollo, pruebas, documentación y despliegue. La selección de estas herramientas se basa en criterios de eficiencia, compatibilidad con tecnologías open-source (Java + web), y alineación con prácticas recomendadas de la industria.
+|        Categoría        |      Herramienta      |                                               Propósito                                               |                                      Tipo de acceso/enlace                                      |
+| :---------------------: | :-------------------: | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+|    Project Management   |         Trello        |           Gestión del backlog, tareas y sprints del equipo usando metodología ágil (Scrum).           |                             [https://trello.com](https://trello.com)                            |
+| Requirements Management |       UXPressia       |                  Creación de User Personas, Journey Maps y artefactos de needfinding.                 |                          [https://uxpressia.com](https://uxpressia.com)                         |
+|   Product UX/UI Design  |         Figma         |                Diseño de wireframes, mockups y prototipos de la aplicación web y móvil.               |                              [https://figma.com](https://figma.com)                             |
+|   Modelado de Software  |    Visual Paradigm    |                 Modelado de arquitectura (UML, C4, Event Storming, Bounded Contexts).                 |                    [https://visual-paradigm.com](https://visual-paradigm.com)                   |
+|   Frontend Development  |   Visual Studio Code  |                 Desarrollo del Landing Page y Web Application (HTML, CSS, JavaScript).                |                  [https://code.visualstudio.com](https://code.visualstudio.com)                 |
+|   Backend Development   |     IntelliJ IDEA     |     Desarrollo del RESTful API en Java (Spring Boot) siguiendo arquitectura orientada a servicios.    |                [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)               |
+|       API Testing       |        Postman        |                           Pruebas y validación de endpoints del API RESTful.                          |                        [https://www.postman.com](https://www.postman.com)                       |
+|     Version Control     |         GitHub        | Control de versiones del código fuente y documentación colaborativa (GitFlow + Conventional Commits). |                             [https://github.com](https://github.com)                            |
+|  Software Documentation |        Markdown       |                     Redacción del informe del proyecto bajo enfoque Docs-as-Code.                     |                            Compatible con GitHub / editores de texto                            |
+
 
 ### 5.1.2. Source Code Management. 
 Los repositorios utilizados para el desarrollo de código fuente son los siguientes:

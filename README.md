@@ -61,7 +61,6 @@ Abril 2026
 # Capítulo III: Requirements Specification. 
 
 # Capítulo IV: Product Design.
-## Capítulo IV: Product Design
 
 ### 4.1. Style Guidelines
 
