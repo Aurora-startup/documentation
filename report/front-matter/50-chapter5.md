@@ -24,9 +24,9 @@ Los repositorios utilizados para el desarrollo de código fuente son los siguien
 
 | Producto Digital | URL del Repositorio | 
 |:----------------:|:-------------------:|
-| Landing Page | https://github.com/Aurora-startup/urbantrust-landing-page | 
-| Web Services (Backend API) |https://github.com/Aurora-startup/urbantrust-backend  |
-| Frontend Web Application | https://github.com/Aurora-startup/urbantrust-frontend|
+| Landing Page | https://github.com/Aurora-startup/SupplyWok-landing-page | 
+| Web Services (Backend API) |https://github.com/Aurora-startup/SupplyWok-backend  |
+| Frontend Web Application | https://github.com/Aurora-startup/SupplyWok-frontend|
 
 </div>
 
