@@ -253,7 +253,8 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
 - Se documentarán los pasos de despliegue en el repositorio principal del proyecto.  
 - Se mantendrá una separación clara entre entornos (desarrollo, testing y producción).  
 - Se realizarán pruebas posteriores al despliegue para validar la disponibilidad y funcionamiento del sistema.  
-- Se contempla la integración de herramientas de automatización como **GitHub Actions** para implementar flujos de integración y despliegue continuo (CI/CD).  
+- Se contempla la integración de herramientas de automatización como **GitHub Actions** para implementar flujos de integración y despliegue continuo (CI/CD).
+  
 ## 5.2. Landing Page, Services & Applications Implementation.
 ### 5.2.1. Sprint 1 
 #### 5.2.1.1. Sprint Planning 1
