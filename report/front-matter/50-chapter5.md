@@ -83,17 +83,177 @@ Ejemplo:
   fix(api): handle null user tokens
 ```
 ### 5.1.3. Source Code Style Guide & Conventions. 
+
+Esta sección define los lineamientos y estándares que se seguirán durante el desarrollo del software, con el fin de garantizar un código uniforme, comprensible y fácil de mantener, alineado con buenas prácticas de la industria.
+
+Se adoptarán convenciones ampliamente aceptadas para los lenguajes utilizados en el proyecto: HTML, CSS, JavaScript, TypeScript y Java. Asimismo, todos los nombres de variables, funciones, clases y demás identificadores estarán escritos en inglés.
+
+---
+
+#### Referencias utilizadas
+
+Las siguientes guías servirán como base para la implementación de estándares de código:
+
+- [Angular Style Guide (oficial)](https://angular.io/guide/styleguide)
+- [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
+- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- [HTML Style Guide and Coding Conventions - W3Schools](https://www.w3schools.com/html/html5_syntax.asp)
+- [Spring Boot Features](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
+
+---
+
+#### Estructura del código
+
+El proyecto se organizará en módulos según sus responsabilidades, separando claramente componentes como servicios, modelos, vistas, rutas y configuraciones.  
+Este enfoque permite mejorar la escalabilidad del sistema y fomenta la reutilización de código, aplicando el principio de *Separation of Concerns*.
+
+---
+
+#### Convenciones de nomenclatura
+
+| Elemento                    | Convención                         | Ejemplo                    |
+|---------------------------|------------------------------------|----------------------------|
+| Componentes Angular       | PascalCase + `Component`           | `UserProfileComponent`     |
+| Servicios Angular         | PascalCase + `Service`             | `AuthService`              |
+| Interfaces TypeScript     | PascalCase                         | `User`, `CourseDetails`    |
+| Archivos                  | kebab-case                         | `user-profile.component.ts`|
+| Variables / funciones     | camelCase                          | `getUserData()`            |
+| Constantes                | UPPER_SNAKE_CASE                   | `MAX_LOGIN_ATTEMPTS`       |
+| Clases Java              | PascalCase                         | `UserController`           |
+| Métodos Java             | camelCase                          | `getUserById()`            |
+| Paquetes Java            | minúsculas con puntos              | `com.example.module`       |
+
+---
+
+#### Lineamientos por lenguaje
+
+##### TypeScript
+- Uso de tipado fuerte y explícito.
+- Se emplean `let` y `const`, evitando `var`.
+- La lógica compleja se delega a servicios, no a componentes.
+- Orden de imports: Angular → librerías externas → módulos internos.
+- No se utiliza el prefijo `I` en interfaces.
+
+##### JavaScript
+- Configuración basada en ESLint y Prettier.
+- Preferencia por funciones puras y código modular.
+- Uso de camelCase en nombres.
+- Prioridad a `const` y `let`.
+
+##### HTML
+- Etiquetas y atributos en minúsculas.
+- Indentación de 2 espacios.
+- Uso de comillas dobles en atributos.
+- Se prioriza semántica y accesibilidad según HTML5.
+
+##### CSS / SCSS
+- Uso de metodología BEM (Block Element Modifier) para definir las clases:
+
+```css
+.button {}
+.button--primary {}
+.button__icon {}
+```
+- Estructura modular de estilos, agrupados por componente.
+
+- Uso de variables SCSS para colores, fuentes y tamaños.
+
+- Están prohibidos los estilos en línea y el uso indiscriminado de !important.
+
+###### JAVA
+- Organización por capas: controller, service, repository, model, etc.
+
+- Uso de anotaciones estándar como `@RestController`, `@Service`, `@Repository`.
+
+- Documentación con Javadoc en clases y métodos públicos.
+
+- Acceso a atributos mediante métodos getter y setter.
+
+- Se sigue el https://google.github.io/styleguide/javaguide.html
+
+##### Internacionalización
+
+Se utiliza el paquete `@ngx-translate/core` para la internacionalización de la interfaz.
+
+Toda cadena visible al usuario se encuentra externalizada en archivos JSON, organizados por idioma.
+
+Las claves de traducción están en mayúsculas y separadas por puntos para reflejar su estructura jerárquica.
+
+```css
+<h1>{{ 'LOGIN.TITLE' | translate }}</h1>
+```
+
 ### 5.1.4. Software Deployment Configuration.  
+La configuración de despliegue define los procesos y herramientas necesarias para publicar los distintos componentes del sistema: **Landing Page**, **API REST (Backend)** y **Web Application (Frontend)**.  
+Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenimiento durante el ciclo de vida del producto.
+
+---
+
+#### Despliegue del Landing Page
+
+- **Tecnologías utilizadas:**  
+  HTML5, CSS3, JavaScript, enfoque responsive.
+
+- **Repositorio:**  
+  [https://github.com/Aurora-startup/SupplyWok-landing-page](https://github.com/Aurora-startup/SupplyWok-landing-page)
+
+- **Plataforma de hosting:**  
+  GitHub Pages
+
+- **Proceso de despliegue:**  
+  - La rama `main` contiene la versión pública del sitio.  
+  - El contenido estático se ubica en el directorio raíz del proyecto.  
+  - Los cambios se integran desde la rama `develop` mediante pull requests validados.  
+  - GitHub Pages realiza la publicación automáticamente al detectar actualizaciones en la rama principal.
+
+---
+
+#### Despliegue del Backend (RESTful API)
+
+- **Tecnologías utilizadas:**  
+  Java + Spring Boot
+
+- **Repositorio:**  
+  [https://github.com/Aurora-startup/SupplyWok-backend](https://github.com/Aurora-startup/SupplyWok-backend)
+
+- **Plataforma de despliegue:**  
+  Servicios Cloud (ej. Render, Railway, AWS o Azure)
+
+- **Proceso de despliegue:**  
+  - La aplicación se empaqueta utilizando Maven/Gradle (`.jar` ejecutable).  
+  - Se configura el despliegue automático conectado al repositorio GitHub.  
+  - Las variables sensibles (credenciales, conexión a base de datos, tokens) se gestionan mediante variables de entorno.  
+  - El servicio se expone a través de endpoints REST accesibles mediante HTTP/HTTPS.  
+  - Se asegura la correcta comunicación con servicios externos requeridos por el sistema.
+
+---
+
+#### Despliegue del Frontend Web Application
+
+- **Tecnologías utilizadas:**  
+  Framework SPA (Angular / Vue / React), HTML, CSS, TypeScript/JavaScript.
+
+- **Repositorio:**  
+  [https://github.com/Aurora-startup/SupplyWok-frontend](https://github.com/Aurora-startup/SupplyWok-frontend)
+
+- **Plataforma de despliegue:**  
+  Vercel / Netlify / GitHub Pages
+
+- **Proceso de despliegue:**  
+  - La aplicación se compila en modo producción (`npm run build`).  
+  - La rama `main` se utiliza como fuente de despliegue.  
+  - La plataforma seleccionada detecta cambios automáticamente y publica nuevas versiones.  
+  - Se configura la URL del backend mediante variables de entorno para garantizar la integración con la API REST.
+
+---
+
+#### Consideraciones adicionales
+
+- Se documentarán los pasos de despliegue en el repositorio principal del proyecto.  
+- Se mantendrá una separación clara entre entornos (desarrollo, testing y producción).  
+- Se realizarán pruebas posteriores al despliegue para validar la disponibilidad y funcionamiento del sistema.  
+- Se contempla la integración de herramientas de automatización como **GitHub Actions** para implementar flujos de integración y despliegue continuo (CI/CD).  
 ## 5.2. Landing Page, Services & Applications Implementation.
-| Categoría | Herramienta | Propósito | Tipo de acceso/enlace |
-|:----:|:----:|:----:|:----:|
-| Project Management | Trello | Gestión del backlog y tareas del equipo mediante tableros Scrum. | https://trello.com |
-| Requirements Management | UXPressia | Creación y documentación de User Personas y customer journeys. | https://uxpressia.com |
-| Product UX/UI Design | Figma | Creación de wireframes y mockups de la interfaz de usuario. | https://figma.com |
-| Modelado de Software | Visual Paradigm | Modelado de arquitectura de software: diagramas de contexto, Bounded Contexts, etc. | https://visual-paradigm.com |
-| Frontend Development | Webstorm | Editor de código para el desarrollo del Landing Page y Frontend (Vue). | https://www.jetbrains.com/webstorm/|
-| Backend Development | Rider| Entorno de desarrollo para el backend en C# y .NET Framework | https://www.jetbrains.com/rider/ |
-| Version Control | GitHub | Repositorio de control de versiones para todos los productos digitales. | https://github.com |
-| Software Documentation | Markdown | Redacción de documentación técnica del proyecto. | Compatible con GitHub / editores de texto |
 ### 5.2.1. Sprint 1 
 #### 5.2.1.1. Sprint Planning 1
