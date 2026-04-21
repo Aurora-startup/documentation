@@ -81,3 +81,40 @@
 </p>
 
 <sub>*Ilustración. Impact Map - SupplyWok*</sub><br></br>
+
+### 3.3. Product Backlog
+
+El Product Backlog constituye una lista dinámica y jerarquizada de todas las User Stories definidas para el desarrollo de SupplyWok. La prioridad de cada elemento se establece en función de su valor estratégico para el negocio, el impacto directo en la Business Goal y la viabilidad técnica. Para cuantificar el esfuerzo, se emplean Story Points bajo una escala relativa; en este modelo, los valores más altos no representan tiempo, sino una mayor complejidad técnica, volumen de trabajo e incertidumbre en la implementación.
+
+| User Story ID | Descripción | Epic | Story Points |
+| :--- | :--- | :---: | :---: |
+| **US01** | Como dueño de un restaurante chifa, quiero registrar todos mis insumos actuales con cantidades y unidades, para tener una base de datos centralizada que reemplace el control manual. | EP01 | 5 |
+| **US02** | Como encargado de almacén, quiero registrar el consumo diario de insumos, para mantener el inventario actualizado sin depender de conteos manuales al cierre del día. | EP01 | 3 |
+| **US03** | Como administrador de un restaurante chifa, quiero definir un nivel mínimo de stock por insumo, para recibir una alerta cuando el inventario esté próximo a agotarse. | EP01 | 3 |
+| **US04** | Como dueño de un restaurante chifa, quiero ver un panel visual con el estado de todos mis insumos, para identificar rápidamente cuáles están en nivel crítico, normal o con exceso. | EP01 | 5 |
+| **US05** | Como encargado de almacén, quiero registrar la llegada de insumos vinculándola a una orden de compra, para actualizar el inventario y confirmar que lo recibido coincide con lo pedido. | EP01 | 5 |
+| **US06** | Como dueño de un restaurante chifa, quiero registrar insumos dados de baja por vencimiento o daño y generar reportes de pérdidas, para tomar decisiones que reduzcan el desperdicio. | EP01 | 5 |
+| **US07** | Como dueño de un restaurante chifa, quiero que el sistema me sugiera automáticamente qué insumos pedir y en qué cantidad, para basar mis compras en datos reales y no en estimaciones. | EP02 | 8 |
+| **US08** | Como administrador de un restaurante chifa, quiero generar una orden de compra desde la plataforma y enviarla directamente al proveedor, para centralizar el abastecimiento sin usar canales informales. | EP02 | 5 |
+| **US09** | Como dueño de un restaurante chifa, quiero acceder al historial completo de mis órdenes de compra anteriores, para analizar patrones de abastecimiento y detectar ineficiencias. | EP02 | 3 |
+| **US10** | Como administrador de un restaurante chifa, quiero visualizar una proyección de consumo de insumos para los próximos 7 días, para anticipar compras antes de que se agoten los productos. | EP02 | 8 |
+| **US11** | Como dueño de un restaurante chifa, quiero registrar y gestionar la lista de proveedores con los que trabajo, para tener un directorio centralizado y asociar cada insumo a su proveedor. | EP02 | 3 |
+| **US12** | Como administrador de un restaurante chifa, quiero hacer seguimiento en tiempo real del estado de mis órdenes de compra activas, para saber si un pedido está pendiente, en preparación o ya fue despachado. | EP02 | 5 |
+| **US13** | Como dueño de un restaurante chifa, quiero visualizar la temperatura actual de mi almacén mediante sensores IoT, para detectar condiciones que puedan afectar la calidad de los insumos. | EP03 | 8 |
+| **US14** | Como administrador de un restaurante chifa, quiero recibir alertas cuando se detecten condiciones de riesgo en cocina (temperatura, humedad u otros parámetros), para actuar de forma preventiva y proteger al personal. | EP03 | 5 |
+| **US15** | Como administrador de un restaurante chifa, quiero configurar los rangos aceptables de temperatura y humedad para cocina y almacén, para que las alertas se activen según los parámetros de mi operación. | EP03 | 3 |
+| **US16** | Como administrador de un restaurante chifa, quiero visualizar el estado de ocupación de las mesas en tiempo real, para coordinar el flujo del servicio y anticipar la demanda de insumos en horas pico. | EP03 | 5 |
+| **US17** | Como dueño de un restaurante chifa, quiero consultar el historial de todas las alertas e incidencias operativas registradas, para identificar patrones de riesgo y tomar medidas correctivas. | EP03 | 3 |
+| **US18** | Como administrador de un restaurante chifa, quiero exportar los datos de monitoreo de temperatura y alertas en formato PDF o CSV, para compartirlos con el equipo o usarlos en auditorías internas. | EP03 | 3 |
+| **US19** | Como proveedor de insumos, quiero crear un perfil en la plataforma con mis datos, catálogo y condiciones de entrega, para que los restaurantes puedan encontrarme y enviarme pedidos directamente. | EP04 | 5 |
+| **US20** | Como proveedor, quiero recibir las órdenes de compra de los restaurantes directamente en mi panel, para gestionar cada pedido sin depender de canales informales. | EP04 | 5 |
+| **US21** | Como proveedor, quiero visualizar la demanda estimada de mis clientes restaurantes para los próximos días, para planificar mi producción y distribución con anticipación. | EP04 | 8 |
+| **US22** | Como proveedor, quiero administrar mi catálogo con precios, unidades y disponibilidad, para que los restaurantes siempre vean información actualizada al generar sus pedidos. | EP04 | 5 |
+| **US23** | Como proveedor, quiero registrar la confirmación de entrega de cada pedido con fecha, hora y observaciones, para tener trazabilidad de mis despachos y resolver disputas con evidencia. | EP04 | 5 |
+| **US24** | Como proveedor, quiero ver un resumen del comportamiento de pedidos de cada restaurante cliente, para identificar clientes frecuentes y priorizar mi atención comercial. | EP04 | 5 |
+| **US25** | Como usuario de la plataforma (restaurante o proveedor), quiero registrarme y acceder con credenciales seguras, para proteger la información de mi negocio. | EP05 | 3 |
+| **US26** | Como dueño de un restaurante chifa, quiero crear cuentas para mi personal con roles diferenciados (administrador, encargado de almacén, cocinero), para controlar qué información puede ver o modificar cada miembro. | EP05 | 5 |
+| **US27** | Como usuario de la plataforma, quiero visualizar los planes disponibles (Premium, Enterprise) y suscribirme al que se ajuste a mis necesidades, para acceder a las funcionalidades según mi presupuesto. | EP05 | 5 |
+| **US28** | Como usuario de la plataforma, quiero recibir notificaciones en tiempo real sobre eventos importantes (alertas de stock, cambios de estado de pedidos, alertas de temperatura), para reaccionar sin revisar el sistema manualmente. | EP05 | 5 |
+| **US29** | Como usuario de la plataforma, quiero acceder a las funciones principales desde mi smartphone, para consultar inventario, pedidos y alertas sin necesidad de estar frente a una computadora. | EP05 | 8 |
+| **US30** | Como usuario de la plataforma, quiero acceder a una sección de ayuda con guías y un canal de soporte, para resolver dudas sin necesidad de contactar directamente al equipo de SupplyWok. | EP05 | 3 |
