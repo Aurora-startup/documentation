@@ -11,7 +11,7 @@ Juan Antonio Flores Moroco<br><br>
 Informe de Trabajo Final<br><br>
 
 Startup: Aurora<br><br>
-Producto: Urban Trust<br>
+Producto: SupplyWok<br>
 </h3>
 
 <div align="center">
