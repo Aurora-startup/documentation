@@ -73,3 +73,11 @@
 | US28 | Notificaciones en tiempo real | Como usuario de la plataforma, quiero recibir notificaciones en tiempo real sobre eventos importantes (alertas de stock, cambios de estado de pedidos, alertas de temperatura), para reaccionar sin revisar el sistema manualmente. | Dado que ocurre un evento relevante (alerta de stock, cambio de orden, alerta IoT). Cuando el sistema lo detecta. Entonces se muestra una notificación en el panel del usuario afectado en tiempo real. Dado que el usuario desea gestionar sus preferencias. Cuando accede a la configuración de notificaciones. Entonces puede activar o desactivar cada tipo de notificación de forma independiente. | EP05 |
 | US29 | Visualización en dispositivos móviles | Como usuario de la plataforma, quiero acceder a las funciones principales desde mi smartphone, para consultar inventario, pedidos y alertas sin necesidad de estar frente a una computadora. | Dado que el usuario accede a la plataforma desde un dispositivo móvil. Cuando se carga cualquier módulo. Entonces la interfaz se adapta correctamente a la pantalla sin pérdida de funcionalidad crítica. Dado que el usuario recibe una alerta en mobile. Cuando toca la notificación. Entonces es redirigido directamente al módulo correspondiente dentro de la plataforma. | EP05 |
 | US30 | Soporte y centro de ayuda | Como usuario de la plataforma, quiero acceder a una sección de ayuda con guías y un canal de soporte, para resolver dudas sin necesidad de contactar directamente al equipo de Aurora. | Dado que el usuario accede al centro de ayuda. Cuando se carga la sección. Entonces se muestran artículos organizados por tema disponibles tanto para restaurantes como para proveedores. Dado que el usuario no encuentra solución en los artículos. Cuando usa el formulario de contacto. Entonces su consulta queda registrada y recibe una confirmación de que será atendida. | EP05 |
+
+## 3.2 Impact Mapping
+
+<p align="center">
+    <img src="/report/assets/images/Impact Mapping-SupplyWok.png" width="850" alt="Impact Map">
+</p>
+
+<sub>*Ilustración. Impact Map - SupplyWok*</sub><br></br>
