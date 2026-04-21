@@ -1,13 +1,13 @@
 # Capítulo III: Requirements Specification. 
 ## 3.1. User Stories
 
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|---|---|---|---|---|
-| **EP01** | **Gestión de Inventario** | Los dueños y encargados de restaurantes chifa necesitan controlar sus insumos de forma centralizada, registrando entradas, salidas y niveles de stock para evitar quiebres o excesos. | — | — |
-| **EP02** | **Abastecimiento y Órdenes de Compra** | Los restaurantes y proveedores necesitan coordinar pedidos de insumos de forma digital, reemplazando llamadas y mensajes informales por un flujo estructurado dentro de la plataforma. | — | — |
-| **EP03** | **Monitoreo Operativo y Alertas IoT** | Los administradores de restaurantes necesitan supervisar condiciones críticas de cocina y almacén (temperatura, humedad) mediante sensores para prevenir riesgos y pérdidas. | — | — |
-| **EP04** | **Panel del Proveedor** | Los proveedores necesitan visibilidad sobre la demanda de sus clientes, gestionar su catálogo y hacer seguimiento de pedidos para planificar mejor su distribución. | — | — |
-| **EP05** | **Plataforma y Acceso** | Todos los usuarios necesitan acceder de forma segura a la plataforma, gestionar sus cuentas, planes de suscripción y recibir soporte, garantizando una experiencia fluida desde cualquier dispositivo. | — | — |
+| Epic / Story ID | Título | Descripción |
+|---|---|---|
+| **EP01** | **Gestión de Inventario** | Los dueños y encargados de restaurantes chifa necesitan controlar sus insumos de forma centralizada, registrando entradas, salidas y niveles de stock para evitar quiebres o excesos. |
+| **EP02** | **Abastecimiento y Órdenes de Compra** | Los restaurantes y proveedores necesitan coordinar pedidos de insumos de forma digital, reemplazando llamadas y mensajes informales por un flujo estructurado dentro de la plataforma. |
+| **EP03** | **Monitoreo Operativo y Alertas IoT** | Los administradores de restaurantes necesitan supervisar condiciones críticas de cocina y almacén (temperatura, humedad) mediante sensores para prevenir riesgos y pérdidas. |
+| **EP04** | **Panel del Proveedor** | Los proveedores necesitan visibilidad sobre la demanda de sus clientes, gestionar su catálogo y hacer seguimiento de pedidos para planificar mejor su distribución. |
+| **EP05** | **Plataforma y Acceso** | Todos los usuarios necesitan acceder de forma segura a la plataforma, gestionar sus cuentas, planes de suscripción y recibir soporte, garantizando una experiencia fluida desde cualquier dispositivo. | 
 
 
 
