@@ -542,7 +542,7 @@ El entrevistado Weiquan Wang, un cocinero y dueño de un chifa en La Perla (Call
 </div>
 
 <sub>*Tabla 6. Entrevista 2*</sub>
-- **Entrevista #2**
+- **Entrevista #3**
 <p align="center">
   <img src="../assets/images/interviews/owner-interview3.png" width="500" alt="entrevista-owners-3">
 </p>
@@ -595,6 +595,36 @@ El entrevistado, Alberto Copa Villa (37 años, La Perla – Callao), es un prove
 <sub>*Tabla 8. Entrevista 4*</sub>
 
 ### 2.2.3 Análisis de entrevistas.
+
+El análisis de las entrevistas realizadas permite identificar patrones y necesidades específicas en los dos segmentos objetivo de SupplyWok. Con la inclusión de nuevos testimonios en el sector de restaurantes, se observa una evolución en la disposición tecnológica de los dueños de negocios tradicionales hacia la automatización.
+
+##### **Segmento 1:** Dueños de restaurantes chifa y administradores
+
+Este perfil agrupa a propietarios con amplia experiencia que operan bajo un modelo de gestión empírica, pero con distintos niveles de apertura al cambio tecnológico.
+
+**Gestión del Inventario:** Predomina el control visual y mental. La falta de un registro formal genera problemas recurrentes, como notar la falta de insumos justo cuando ya se terminaron. La mayoría compra el mismo dia basándose en el flujo de clientes y los precios del mercado local.
+
+**Evolución Tecnológica:** Aunque existe una resistencia inicial por miedo a complicar la operación, los perfiles más operativos reconocen que el proceso manual es molesto y genera errores. Estos últimos muestran un interés real en recibir alertas automáticas de bajo stock y contar con proyecciones de demanda para evitar viajes de última hora al mercado.
+
+**Canales de Abastecimiento:** El uso del teléfono y las llamadas directas sigue siendo el estándar. Sin embargo, existe una disposición a usar una plataforma diariamente si esta garantiza rapidez en las entregas y simplifica el cálculo de cuánto comprar.
+
+##### **Segmento 2:** Proveedores de insumos para restaurantes
+
+El proveedor funciona como el soporte logístico crítico, cuya eficiencia se ve afectada directamente por la informalidad y falta de previsión de sus clientes.
+
+**Caos en la Comunicación:** El uso de WhatsApp como herramienta principal genera desorden y pérdida de información. El flujo constante de mensajes informales dificulta el seguimiento de las cantidades y los pedidos específicos.
+
+**El Problema de la Inmediatez:** El mayor punto de dolor es la falta de anticipación de los restaurantes. Los pedidos del momento o tardíos impiden una planificación óptima de las rutas de entrega, lo que pone en riesgo la disponibilidad de los productos para el resto del día.
+
+**Expectativa Digital:** El proveedor no busca analítica compleja, sino orden operativo. Valora una solución que centralice los pedidos pendientes y emita recordatorios, permitiéndole cumplir con las entregas sin olvidos y organizar mejor sus rutas.
+
+##### Conclusiones para el diseño de arquetipos:
+
+**Automatización Sencilla:** La plataforma debe automatizar el cálculo de stock y pedidos, ya que los dueños de chifas admiten que gestionar esto mentalmente les genera faltantes de insumos críticos de forma constante.
+
+**Diferenciación de Valor:** Para el restaurante, el valor está en asegurar el abastecimiento y proyectar su demanda. Para el proveedor, el valor principal está en recibir pedidos con anticipación y de forma organizada para mejorar su logística.
+
+**Reducción de Fricción:** El sistema debe reemplazar la llamada telefónica y el chat desordenado por un flujo de trabajo que sea igual de rápido, pero mucho más estructurado, asegurando que la información sea precisa para ambas partes.
 
 ## 2.3. Needfinding.
 
