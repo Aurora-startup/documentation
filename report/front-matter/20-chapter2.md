@@ -596,35 +596,83 @@ El entrevistado, Alberto Copa Villa (37 años, La Perla – Callao), es un prove
 
 ### 2.2.3 Análisis de entrevistas.
 
-El análisis de las entrevistas realizadas permite identificar patrones y necesidades específicas en los dos segmentos objetivo de SupplyWok. Con la inclusión de nuevos testimonios en el sector de restaurantes, se observa una evolución en la disposición tecnológica de los dueños de negocios tradicionales hacia la automatización.
+El análisis de las entrevistas realizadas permite identificar patrones claros en los dos segmentos objetivo de SupplyWok: dueños de restaurantes chifa y proveedores. A partir de las entrevistas, se evidencian tanto comportamientos comunes como diferencias en la adopción tecnológica, sustentados en la frecuencia de respuestas observadas.
 
-##### **Segmento 1:** Dueños de restaurantes chifa y administradores
+---
 
-Este perfil agrupa a propietarios con amplia experiencia que operan bajo un modelo de gestión empírica, pero con distintos niveles de apertura al cambio tecnológico.
+## Segmento 1: Dueños de restaurantes chifa y administradores
 
-**Gestión del Inventario:** Predomina el control visual y mental. La falta de un registro formal genera problemas recurrentes, como notar la falta de insumos justo cuando ya se terminaron. La mayoría compra el mismo dia basándose en el flujo de clientes y los precios del mercado local.
+<p align="center">
+    <img src="../assets/images/analytics-owners.png" width="800">
+</p>
 
-**Evolución Tecnológica:** Aunque existe una resistencia inicial por miedo a complicar la operación, los perfiles más operativos reconocen que el proceso manual es molesto y genera errores. Estos últimos muestran un interés real en recibir alertas automáticas de bajo stock y contar con proyecciones de demanda para evitar viajes de última hora al mercado.
+Este segmento agrupa a propietarios con amplia experiencia (entre 10 y 22 años en los casos entrevistados), quienes gestionan sus negocios de manera empírica.
 
-**Canales de Abastecimiento:** El uso del teléfono y las llamadas directas sigue siendo el estándar. Sin embargo, existe una disposición a usar una plataforma diariamente si esta garantiza rapidez en las entregas y simplifica el cálculo de cuánto comprar.
+### Gestión del Inventario
+El 100% de los entrevistados indicó que no utiliza sistemas formales de inventario, dependiendo de la memoria o revisión visual. Esto genera situaciones donde los insumos se acaban sin planificación previa, obligando a compras reactivas.
 
-##### **Segmento 2:** Proveedores de insumos para restaurantes
+### Abastecimiento y compras
+El 100% realiza compras diarias o frecuentes, basándose en la demanda inmediata o en variaciones de precios (especialmente en productos como el pollo). No existe planificación a mediano plazo.
 
-El proveedor funciona como el soporte logístico crítico, cuya eficiencia se ve afectada directamente por la informalidad y falta de previsión de sus clientes.
+### Canales de comunicación
+El 100% coordina pedidos mediante llamadas telefónicas, manteniendo procesos tradicionales.
 
-**Caos en la Comunicación:** El uso de WhatsApp como herramienta principal genera desorden y pérdida de información. El flujo constante de mensajes informales dificulta el seguimiento de las cantidades y los pedidos específicos.
+### Percepción de problemas
+Aproximadamente el 66% reconoce problemas operativos, como falta de insumos o retrasos en abastecimiento, aunque algunos los consideran parte normal del negocio. El 34% restante percibe su operación como estable, pese a no tener control estructurado.
 
-**El Problema de la Inmediatez:** El mayor punto de dolor es la falta de anticipación de los restaurantes. Los pedidos del momento o tardíos impiden una planificación óptima de las rutas de entrega, lo que pone en riesgo la disponibilidad de los productos para el resto del día.
+### Adopción tecnológica
+Se identifican dos subgrupos:
 
-**Expectativa Digital:** El proveedor no busca analítica compleja, sino orden operativo. Valora una solución que centralice los pedidos pendientes y emita recordatorios, permitiéndole cumplir con las entregas sin olvidos y organizar mejor sus rutas.
+- **Resistentes (≈33%)**: consideran innecesarias las herramientas digitales y prefieren métodos tradicionales.
+- **Abiertos (≈67%)**: muestran interés en soluciones si estas simplifican su trabajo.
 
-##### Conclusiones para el diseño de arquetipos:
+### Funcionalidades de interés
+- El 67% valora alertas de stock bajo y herramientas que automaticen el cálculo de compras.  
+- Un 66% considera útil la predicción de demanda, especialmente para evitar faltantes.
 
-**Automatización Sencilla:** La plataforma debe automatizar el cálculo de stock y pedidos, ya que los dueños de chifas admiten que gestionar esto mentalmente les genera faltantes de insumos críticos de forma constante.
+---
 
-**Diferenciación de Valor:** Para el restaurante, el valor está en asegurar el abastecimiento y proyectar su demanda. Para el proveedor, el valor principal está en recibir pedidos con anticipación y de forma organizada para mejorar su logística.
+## Segmento 2: Proveedores de insumos
 
-**Reducción de Fricción:** El sistema debe reemplazar la llamada telefónica y el chat desordenado por un flujo de trabajo que sea igual de rápido, pero mucho más estructurado, asegurando que la información sea precisa para ambas partes.
+<p align="center">
+    <img src="../assets/images/analytics-suppliers.png" width="800">
+</p>
+
+Este segmento incluye proveedores con experiencia (ej. 7 años), que operan en entornos de alta inmediatez.
+
+### Gestión de pedidos
+El 100% recibe pedidos mediante WhatsApp, lo que genera desorden y dependencia de mensajes informales.
+
+### Problemas principales
+El 100% identifica como principal dificultad los pedidos tardíos, lo que afecta la planificación y disponibilidad de productos.
+
+### Planificación de demanda
+El 100% indica que no puede anticipar la demanda, debido a que los restaurantes compran para el momento.
+
+### Necesidades tecnológicas
+El 100% muestra interés en herramientas simples, especialmente:
+
+- Visualización de pedidos pendientes  
+- Recordatorios o alertas  
+
+Sin embargo, el 0% muestra interés en analítica avanzada o predicciones complejas.
+
+---
+
+## Conclusiones para el diseño de arquetipos
+
+### Automatización simple y práctica
+Dado que el 100% de restaurantes no usa sistemas formales, la plataforma debe automatizar procesos sin requerir esfuerzo adicional del usuario.
+
+### Diferenciación de valor por segmento
+- **Restaurantes**: valoran evitar faltantes y facilitar decisiones de compra.  
+- **Proveedores**: necesitan orden en los pedidos y anticipación.
+
+### Reducción de fricción
+El sistema debe reemplazar llamadas y WhatsApp (usados por el 100%) con una solución igual de rápida, pero estructurada.
+
+### Oportunidad clave
+Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solución sea simple, directa y no complique su operación.
 
 ## 2.3. Needfinding.
 
