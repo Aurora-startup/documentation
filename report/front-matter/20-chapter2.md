@@ -16,7 +16,7 @@ Las siguientes plataformas son de las más relevantes en el mercado de gestión 
 
 **3. WISK.ai**
 
-- App móvil que se destaca por su precisión técnica, ofreciendo una de las soluciones de inventario más rápidas y precisas del mercada gracias al uso internsivo de inteligencia artificial. Su app móvil puede identificar botellas y productos mediante la cámara, agilizando el conteo de existencias, ofrece herramientas muy detalladas para bares y hoteles, permitiendo un seguimiento exacto de mermas en licores y bebidas mezcladas y su IA puede predecir la demanda basándose no solo en ventas pasadas, sino también en factores externos como el clima o eventos locales (WISK.ai, s.f.)[^3].
+- App móvil que se destaca por su precisión técnica, ofreciendo una de las soluciones de inventario más rápidas y precisas del mercado gracias al uso intensivo de inteligencia artificial. Su app móvil puede identificar botellas y productos mediante la cámara, agilizando el conteo de existencias, ofrece herramientas muy detalladas para bares y hoteles, permitiendo un seguimiento exacto de mermas en licores y bebidas mezcladas y su IA puede predecir la demanda basándose no solo en ventas pasadas, sino también en factores externos como el clima o eventos locales (WISK.ai, s.f.)[^3].
 
 **4. Restaurant365**
 
@@ -491,7 +491,7 @@ Para comprender mejor a nuestros usuarios y construir arquetipos representativos
 ### 2.2.2. Registro de entrevistas.
 
 
-#### Segmento #1: DDueños de restaurantes chifa y administradores
+#### Segmento #1: Dueños de restaurantes chifa y administradores
 - **Entrevista #1**
 
 <p align="center">
@@ -518,6 +518,54 @@ Ana Chen, dueña de un chifa en La Perla (Callao) con 22 años de experiencia, g
 
 <sub>*Tabla 5. Entrevista 1*</sub>
 
+- **Entrevista #2**
+<p align="center">
+  <img src="../assets/images/interviews/owner-interview2.png" width="500" alt="entrevista-owners-2">
+</p>
+
+**Resumen de entrevista:**
+
+El entrevistado Weiquan Wang, un cocinero y dueño de un chifa en La Perla (Callao) con aproximadamente 20 años de experiencia, gestiona su restaurante de forma muy tradicional, basándose principalmente en la compra directa y la comunicación por teléfono con proveedores. No lleva un control formal de inventario y suele darse cuenta de la falta de insumos cada pocos días, lo que genera problemas recurrentes de abastecimiento. Muestra interés en herramientas digitales, reconoce que sería útil contar con alertas de stock y sistemas que indiquen cuánto comprar, especialmente para evitar faltantes. También considera importante mejorar la rapidez en la entrega de pedidos y estaría dispuesto a usar una plataforma diariamente si esta le ayudara a resolver estos problemas de manera automática y sencilla.
+
+<br>
+<div align="center">
+
+| Detalle          | Información                                |
+|------------------|--------------------------------------------|
+| **Entrevistador** | Juan Sung Jau Wang Chen            |
+| **Entrevistado**  | Weiquan Wang               |
+| **Edad**          | 55 años                                    |
+| **Ubicacion**     | La Perla, Callao                             |
+| **Duración / Empieza en**      | 8:46 minutos / 0:20                 |
+| **Enlace**        | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQDEAnd2qgv5RrhlW47RT0uwAeMEyqi6KVvTeeECfeDlJLw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ftyrCl) |
+
+</div>
+
+<sub>*Tabla 6. Entrevista 2*</sub>
+- **Entrevista #2**
+<p align="center">
+  <img src="../assets/images/interviews/owner-interview3.png" width="500" alt="entrevista-owners-3">
+</p>
+
+**Resumen de entrevista:**
+
+La entrevistada, Lili (54 años), dueña y encargada de cocina de un chifa con 10 años de experiencia, gestiona su restaurante de manera empírica, sin un control formal de inventario, revisando manualmente y comprando cuando nota que faltan insumos como carne, pollo, verduras y bebidas. Coordina los pedidos principalmente por llamadas y, en ocasiones, debe ir personalmente a adquirir los productos. No percibe grandes dificultades en su operación diaria, aunque reconoce que todo el proceso puede resultar molesto. A diferencia de otros casos, muestra apertura hacia una solución digital: considera importante recibir alertas de stock bajo y ve útil contar con proyecciones de demanda para planificar compras. Estaría dispuesta a usar una plataforma que automatice estas funciones y acepte diversas herramientas (inventario, pedidos, predicción), utilizándola de forma frecuente si le facilita la gestión del negocio.
+
+<br>
+<div align="center">
+
+| Detalle          | Información                                |
+|------------------|--------------------------------------------|
+| **Entrevistador** | Juan Sung Jau Wang Chen            |
+| **Entrevistado**  | Lily 蔡                |
+| **Edad**          | 54 años                |
+| **Ubicacion**     | La Perla, Callao       |
+| **Duración / Empieza en**      | 12:49 minutos / 0:36  |
+| **Enlace**        | [Ver entrevista](https://upcedupe-my.sharepoint.com/personal/u202318609_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202318609%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevista3%2Downers%201%2Emov&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec4f1f5f8%2Db63d%2D4413%2D84a5%2Dd4920163ad74) |
+
+</div>
+
+<sub>*Tabla 7. Entrevista 3*</sub>
 <!-- Segmento objetivo: Proveedores-->
 ---
 #### Segmento #2: Proveedores de insumos para restaurantes
@@ -641,6 +689,40 @@ El entrevistado, Alberto Copa Villa (37 años, La Perla – Callao), es un prove
 <sub>*Ilustración. Empathy Map - Segmento 2*</sub><br></br>
 
 ## 2.4. Big Picture EventStorming.
+
+En esta sección se introduce y resume el proceso colaborativo realizado por el equipo Aurora para el descubrimiento del dominio del negocio. El objetivo primordial de esta actividad fue lograr una comprensión integral del ecosistema de gestión y abastecimiento de los restaurantes tipo chifa, plasmando los eventos significativos y sus interacciones de manera visual.
+
+A través de esta aproximación de alto nivel, el equipo exploró el panorama del negocio, lo cual permitió identificar procesos clave, al mismo tiempo que se expusieron potenciales problemas u oportunidades de mejora operativa. El proceso se desarrolló siguiendo una línea de tiempo narrativa, facilitando la identificación de puntos críticos y la delimitación de las fronteras lógicas de la solución propuesta.
+
+
+#### Step 1: Unstructured Exploration
+
+En esta fase inicial, todos los miembros del equipo escriben tantos eventos de dominio como puedan en post-its naranjas. El objetivo es generar una lluvia de ideas masiva sobre lo que ocurre en el negocio de Aurora, sin preocuparse por el orden. Para este paso se tienen en cuenta las épicas y los criterios de aceptación.
+
+<img src="../assets/images/epicevent1.png" width="500">
+
+<img src="../assets/images/epicevent2.png" width="500">
+
+<img src="../assets/images/epicevent3.png" width="500">
+
+<img src="../assets/images/epicevent4.png" width="500">
+
+<img src="../assets/images/epicvent5.png" width="500">
+
+#### Step 2: Structured Organization
+
+Después de listar los eventos desestructurados, el equipo los organiza en una línea de tiempo narrativa, identificando las relaciones de causalidad entre ellos. Se agrupan eventos relacionados y se identifican patrones o flujos comunes. En esta fase se busca entender cómo los eventos interactúan entre sí y cómo se relacionan con los procesos del negocio.
+
+<img src="../assets/images/step2e01.png" width="500">
+
+<img src="../assets/images/step2e02.png" width="500">
+
+<img src="../assets/images/step2e03.png" width="500">
+
+<img src="../assets/images/step2e04.png" width="500">
+
+<img src="../assets/images/step2e05.png" width="500">
+
 ## 2.5. Ubiquitous Language.
 
 
