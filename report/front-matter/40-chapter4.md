@@ -42,6 +42,7 @@ La tipografia que se ha decidido usar en nuestra plataforma son dos, Poppins y M
   <img src="../assets/images/monserrat_example.png" alt="SupplyWok Monserrat">
 </div>
 
+
 ### 4.1.2. Web Style Guidelines.
 ### 4.2. Information Architecture.
 La arquitectura de información de SupplyWok ha sido diseñada para atender de manera clara y diferenciada a sus dos segmentos principales: los dueños y administradores de restaurantes tipo chifa, y los proveedores de insumos. La plataforma organiza su contenido en dos espacios de trabajo distintos según el rol del usuario, garantizando que cada persona acceda únicamente a las funcionalidades relevantes para su operación. A continuación, se describen las secciones que conforman cada vista.
@@ -176,13 +177,15 @@ Para evitar que los usuarios pierdan tiempo buscando información dentro de la p
 | Filtro por fecha | Disponible en el historial de pedidos y en reportes, para analizar periodos específicos de operación. |
 | Alertas activas | Vista filtrada que muestra únicamente los insumos que actualmente están por debajo del stock mínimo o tienen vencimiento próximo. |
 | Búsqueda de clientes (Proveedor) | Permite al proveedor localizar a un restaurante cliente por nombre para revisar su historial o demanda proyectada. |
- 
+
 ---
+
 ### 4.2.5. Navigation Systems.
+
 El sistema de navegación de SupplyWok está diseñado para ser predecible, consistente en ambos roles y accesible desde cualquier punto de la aplicación.
- 
+
 | Elemento de navegación | Descripción |
-|---|---|
+|----|----|
 | Barra lateral (Sidebar) | Menú principal fijo en el lado izquierdo de la pantalla, visible en todo momento. Contiene los accesos directos a todas las secciones del rol activo. En dispositivos móviles se colapsa en un menú tipo hamburguesa. |
 | Header | Barra superior con el nombre del usuario, su rol, notificaciones activas y acceso rápido a Configuración y Cerrar sesión. |
 | Dashboard como punto de entrada | Cada sesión iniciada redirige automáticamente al Dashboard del rol correspondiente, que funciona como centro de comando con accesos directos a las tareas más frecuentes. |
@@ -190,6 +193,8 @@ El sistema de navegación de SupplyWok está diseñado para ser predecible, cons
 | Botones de acción contextual | Cada sección incluye botones primarios para la acción más común (Crear pedido, Agregar insumo, Ver detalle), reduciendo el número de pasos necesarios. |
 | Notificaciones | Ícono en el header que agrupa alertas activas. Al hacer clic despliega un panel con el listado de alertas recientes ordenadas cronológicamente. |
 | Navegación entre roles | Si un usuario administra tanto un restaurante como actúa como proveedor, puede cambiar de vista desde el header sin necesidad de cerrar sesión. |
+
+---
 ## 4.3. Landing Page UI Design.
 ### 4.3.1. Landing Page Wireframe.
 ### 4.3.2. Landing Page Mock-up.
@@ -200,6 +205,43 @@ El sistema de navegación de SupplyWok está diseñado para ser predecible, cons
 ### 4.4.3. Web Applications User Flow Diagrams.
 ## 4.5. Web Applications Prototyping.
 ## 4.6. Domain-Driven Software Architecture.
+### 4.6.1. Design-Level EventStorming.
+
+En esta sección se detalla el proceso de Design-Level EventStorming realizado por el equipo para perfeccionar el modelo del dominio de Aurora. Partiendo del Big Picture, profundizamos en el comportamiento interno del sistema para alcanzar el mayor nivel de detalle arquitectónico posible.
+
+Primero, refinamos la línea de tiempo original, eliminando eventos redundantes o procesos manuales que quedaban fuera del alcance tecnológico de la plataforma. Sobre este flujo depurado, incorporamos los elementos tácticos del Domain-Driven Design: Actores y Comandos para representar las intenciones, Políticas para las reglas automáticas, y Agregados (Aggregates) como responsables de procesar las operaciones y emitir los eventos de dominio. Este nivel de granularidad nos permitió consolidar y justificar las fronteras definitivas de nuestros Bounded Contexts.
+
+Este contexto delimitado constituye el núcleo operativo para los restaurantes tipo chifa dentro de la plataforma Aurora. Su propósito principal es centralizar y automatizar el control de los insumos, transformando la gestión manual tradicional en un proceso preciso y basado en datos.
+
+<div align="center">
+  <img src="../assets/images/boundedcontext1.png" alt="SupplyWok System Context Diagram">
+</div>
+
+Este contexto delimitado actúa como el puente transaccional entre los restaurantes tipo chifa y sus proveedores dentro del ecosistema Aurora. Su objetivo fundamental es digitalizar y estructurar la coordinación de pedidos de insumos, reemplazando las vías de comunicación informales por un flujo de trabajo centralizado y rastreable en la plataforma.
+
+<div align="center">
+  <img src="../assets/images/boundedcontext2.png" alt="SupplyWok System Context Diagram">
+</div>
+
+Este contexto delimitado tiene como propósito supervisar las condiciones físicas críticas en las instalaciones del restaurante, específicamente en áreas vulnerables como la cocina y el almacén. Mediante la integración simulada de sensores IoT, el sistema monitorea variables ambientales clave de forma continua, tales como la temperatura y la humedad.
+
+<div align="center">
+  <img src="../assets/images/boundedcontext3.png" alt="SupplyWok System Context Diagram">
+</div>
+
+Este contexto delimitado está diseñado para centralizar la gestión de los proveedores, brindándoles las herramientas necesarias para optimizar su logística y planificación comercial. A través de este módulo, los proveedores obtienen visibilidad sobre la demanda futura de sus clientes, lo que les permite gestionar sus catálogos de insumos y realizar un seguimiento detallado del estado de los pedidos recibidos.
+
+<div align="center">
+  <img src="../assets/images/boundedcontext4.png" alt="SupplyWok System Context Diagram">
+</div>
+
+Este contexto delimitado representa la capa transversal de seguridad y administración comercial de la plataforma Aurora. Su propósito principal es proporcionar un entorno centralizado y seguro donde todos los usuarios puedan autenticarse, gestionar sus cuentas y recibir soporte técnico de manera eficiente.
+
+<div align="center">
+  <img src="../assets/images/boundedcontext5.png" alt="SupplyWok System Context Diagram">
+</div>
+
+
 ### 4.6.2. Software Architecture Context Diagram.
 
 <div align="center">
@@ -220,5 +262,71 @@ El sistema de navegación de SupplyWok está diseñado para ser predecible, cons
 
 ## 4.7. Software Object-Oriented Design.
 ### 4.7.1. Class Diagrams.
+
+Para nuestro primer bounded context tenemos el siguiente diagrama de clases.
+
+<div align="center">
+  <img src="../assets/images/1esboundedclass.png" alt="SupplyWok Components Diagram">
+</div>
+
+Para este contexto, la entidad principal es la Orden de Compra (Purchase Order), la cual reemplaza los mensajes informales y centraliza la comunicación entre el restaurante y el proveedor.
+
+<div align="center">
+  <img src="../assets/images/2boundedclass.png" alt="SupplyWok Components Diagram">
+</div>
+
+Este contexto se encarga de supervisar las condiciones físicas críticas (temperatura y humedad) en la cocina y el almacén, procesando las lecturas de los sensores y disparando alertas cuando se rompen los umbrales de seguridad.
+
+<div align="center">
+  <img src="../assets/images/3boundedclass.png" alt="SupplyWok Components Diagram">
+</div>
+
+Este cuarto contexto resuelve tres necesidades clave para Marco Valdivia y los demás proveedores: gestionar su catálogo, tener visibilidad de la demanda (proyección) y hacer seguimiento de la distribución de pedidos.
+
+<div align="center">
+  <img src="../assets/images/4boundedclass.png" alt="SupplyWok Components Diagram">
+</div>
+
+El quinto y último módulo es transversal: se encarga de la seguridad, la gestión de cuentas, los planes de suscripción y el soporte técnico, garantizando que tanto dueños de chifas como proveedores tengan una experiencia fluida.
+
+<div align="center">
+  <img src="../assets/images/4boundedclass.png" alt="SupplyWok Components Diagram">
+</div>
+
+
 ## 4.8. Database Design.
+
+El siguiente Diagrama Entidad-Relación detalla la estructura de datos fundamental que soporta la lógica de la plataforma. A este modelo, compuesto por 25 entidades, se le aplicaron las tres fases de normalización para garantizar un diseño robusto y eficiente. Esto asegura la escalabilidad, la separación de responsabilidades y el mantenimiento de la aplicación, organizada en los siguientes seis módulos:
+
+- #### Gestión de Inventario
+
+Controla las entradas, salidas y niveles de stock para evitar desabastecimientos o excesos.
+
+- #### Abastecimiento y Órdenes de Compra
+
+Gestiona los pedidos de insumos entre el restaurante y el proveedor, reduciendo los tiempos de respuesta entre ambos.
+
+- #### Panel del Proveedor
+
+Centraliza la funcionalidad del proveedor, permitiendo una mejor gestión de catálogos y pedidos.
+
+- #### Plataforma y Acceso
+
+Administra el acceso seguro de los usuarios, sus cuentas y planes de suscripción.
+
+- #### Monitoreo Operativo y Alertas IoT
+
+Representa el núcleo operativo del sistema; controla sensores y notificaciones para garantizar la seguridad en el entorno de trabajo.
+
+- #### Comandas y Órdenes para Cocina
+
+Facilita la comunicación eficiente entre la cocina y las mesas para garantizar un servicio rápido y sin errores.
+
+
 ### 4.8.1. Database Diagrams.
+
+<div align="center">
+  <img src="../assets/images/database-diagram.png" alt="SupplyWok Database Diagram">
+</div>
+
+[^1]: Clec. (s.f.). El color rojo en China: orígenes y tradiciones. Recuperado el 23 de abril de 2026, de https://fundacionclec.org/el-color-rojo-en-china-origenes-y-tradiciones/
