@@ -678,17 +678,21 @@ Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solu
 
 ### 2.3.1. User Personas.
 
-<p align="center">
-  <img src="../assets/images/MarcoValdiviaUserPersona.png" width="500">
-</p><br>
-
-<sub>*Ilustración. User Persona proveedores de insumos para restaurantes*</sub>
+- **Segmento objetivo 1: Dueños de restaurantes chifa y administradores**
 
 <p align="center">
   <img src="../assets/images/HuanZhang.png" width="500">
 </p>
 
 <sub>*Ilustración. User Persona dueños de restaurantes chifa y administradores*</sub>
+
+- **Segmento objetivo 2: Proveedores de insumos para restaurantes**
+
+<p align="center">
+  <img src="../assets/images/MarcoValdiviaUserPersona.png" width="500">
+</p><br>
+
+<sub>*Ilustración. User Persona proveedores de insumos para restaurantes*</sub>
 
 ### 2.2.2. User Task Matrix.
 
@@ -775,17 +779,11 @@ A través de esta aproximación de alto nivel, el equipo exploró el panorama de
 
 #### Step 1: Unstructured Exploration
 
-En esta fase inicial, todos los miembros del equipo escriben tantos eventos de dominio como puedan en post-its naranjas. El objetivo es generar una lluvia de ideas masiva sobre lo que ocurre en el negocio de Aurora, sin preocuparse por el orden. Para este paso se tienen en cuenta las épicas y los criterios de aceptación.
+En esta fase inicial, todos los miembros del equipo escriben tantos eventos de dominio como puedan en post-its naranjas. El objetivo es generar una lluvia de ideas masiva sobre lo que ocurre en el negocio de Aurora, sin preocuparse por el orden. 
 
-<img src="../assets/images/epicevent1.png" width="500">
-
-<img src="../assets/images/epicevent2.png" width="500">
-
-<img src="../assets/images/epicevent3.png" width="500">
-
-<img src="../assets/images/epicevent4.png" width="500">
-
-<img src="../assets/images/epicvent5.png" width="500">
+<p align="center">
+  <img src="../assets/images/Step1BigEvent.png" width="500">
+</p>
 
 #### Step 2: Structured Organization
 
