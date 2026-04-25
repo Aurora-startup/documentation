@@ -9,7 +9,7 @@ En esta sección se detallan los lineamientos de estilo que hemos decidido segui
 El logo de nuestra plataforma está compuesto por los caracteres 'S' y 'W' provenientes del nombre SuppylWok, puestos de forma creativa para mantener una relacion con nuestro público objetivo. La 'S' encontrandose en forma de humo que sale de un recipiente que tiene la forma de 'W'. Transmitiendo una conexion con el entorno de un restaurante chifa generando familiaridad con nuestros usuarios.
 
 <div align="center">
-  <img src="../assets/images/SupplyWok_logo.png" width="300" height="300" alt="SupplyWok Logo">
+  <img src="../assets/images/supplywok-logo.png" width="300" height="300" alt="SupplyWok Logo">
 </div>
 
 #### 4.1.1.2. Paleta de Colores.
@@ -432,19 +432,19 @@ Este contexto delimitado representa la capa transversal de seguridad y administr
 ### 4.6.2. Software Architecture Context Diagram.
 
 <div align="center">
-  <img src="../assets/images/SupplyWokSystemContext.png" alt="SupplyWok System Context Diagram">
+  <img src="../assets/images/suppluwok-system-context.png" alt="SupplyWok System Context Diagram">
 </div>
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
 <div align="center">
-  <img src="../assets/images/SupplyWokContainers.png" alt="SupplyWok Containers Diagram">
+  <img src="../assets/images/supplywok-containers.png" alt="SupplyWok Containers Diagram">
 </div>
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
 <div align="center">
-  <img src="../assets/images/SupplyWokComponents.png" alt="SupplyWok Components Diagram">
+  <img src="../assets/images/supplywok-components.png" alt="SupplyWok Components Diagram">
 </div>
 
 ## 4.7. Software Object-Oriented Design.
