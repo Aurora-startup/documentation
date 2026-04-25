@@ -23,8 +23,8 @@ Integrantes<br><br>
 |U202318609 | Wang Chen Juan Sung Jau  |
 |U202422890 | Cuadros Villanueva Marcelo Fabio |
 |U202318620 | Payano Puchuri Joan Fabricio |
-|U |A |
-|U |A |
+|U202410837 | Ayasta Martel Zayd Jaffar |
+|U20241b451 | Meza Sosa Alexandra Yamile |
 
 Abril 2026
 </div>
