@@ -386,6 +386,7 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
   <img src="../assets/images/figma/landingpage-mobile-mockup.png" width="600px">
 </p>
 
+
 ## 4.4. Web Applications UX/UI Design.
 
 ### 4.4.1. Web Applications Wireframes.
@@ -394,7 +395,16 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
   <img src="../assets/images/figma/wireframes-web.jpg" width="600px">
 </p>
 
+![web-application-mobile-wireframe1](../assets/images/figma/web-app-mobile-wireframe1.png)
+![web-application-mobile-wireframe2](../assets/images/figma/web-app-mobile-wireframe2.png)
+![web-application-mobile-wireframe3](../assets/images/figma/web-app-mobile-wireframe3.png)
+
 ### 4.4.2. Web Applications Wireflow Diagrams.
+![web-application-mobile-wireflow1](../assets/images/figma/web-app-mobile-wireflow1.jpeg)
+![web-application-mobile-wireflow2](../assets/images/figma/web-app-mobile-wireflow2.jpeg)
+![web-application-mobile-wireflow3](../assets/images/figma/web-app-mobile-wireflow3.jpeg)
+![web-application-mobile-wireflow4](../assets/images/figma/web-app-mobile-wireflow4.jpeg)
+
 ### 4.4.2. Web Applications Mock-ups.
 
 <p align="center">
@@ -438,11 +448,25 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
 </p>
 
 
+![web-application-mobile-mockup1](../assets/images/figma/web-app-mobile-mockup1.png)
+![web-application-mobile-mockup2](../assets/images/figma/web-app-mobile-mockup2.png)
+![web-application-mobile-mockup3](../assets/images/figma/web-app-mobile-mockup3.png)
 ### 4.4.3. Web Applications User Flow Diagrams.
 
 
+![web-application-mobile-userflow1](../assets/images/figma/web-app-mobile-userflow1.jpeg)
+![web-application-mobile-userflow2](../assets/images/figma/web-app-mobile-userflow2.jpeg)
+![web-application-mobile-userflow3](../assets/images/figma/web-app-mobile-userflow3.jpeg)
+![web-application-mobile-userflow4](../assets/images/figma/web-app-mobile-userflow4.jpeg)
 ## 4.5. Web Applications Prototyping.
 
+#### Escritorio
+![desktop-prototype](../assets/images/figma/desktop-prototype.png)
+[prototipo de escritorio](https://www.figma.com/proto/JUBnvZfJvlrpxIpW8ICRvS/SupplyWok?node-id=428-4042&p=f&t=kGhZbpCdqH2BntGS-0&scaling=scale-down&content-scaling=fixed&page-id=428%3A2335)
+
+#### Mobile
+![mobile-protoype](../assets/images/figma/mobile-prototype.png)
+[prototipo mobile](https://www.figma.com/proto/JUBnvZfJvlrpxIpW8ICRvS/SupplyWok?node-id=428-2336&p=f&t=kGhZbpCdqH2BntGS-0&scaling=scale-down&content-scaling=fixed&page-id=428%3A2336)
 ## 4.6. Domain-Driven Software Architecture.
 
 
@@ -455,33 +479,38 @@ Primero, refinamos la línea de tiempo original, eliminando eventos redundantes 
 Este contexto delimitado constituye el núcleo operativo para los restaurantes tipo chifa dentro de la plataforma Aurora. Su propósito principal es centralizar y automatizar el control de los insumos, transformando la gestión manual tradicional en un proceso preciso y basado en datos.
 
 <div align="center">
-  <img src="../assets/images/boundedcontext1.png" alt="SupplyWok System Context Diagram">
+  <img src="../assets/images/event-storming-e01.png" alt="SupplyWok System Context Diagram">
 </div>
 
 Este contexto delimitado actúa como el puente transaccional entre los restaurantes tipo chifa y sus proveedores dentro del ecosistema Aurora. Su objetivo fundamental es digitalizar y estructurar la coordinación de pedidos de insumos, reemplazando las vías de comunicación informales por un flujo de trabajo centralizado y rastreable en la plataforma.
 
 <div align="center">
-  <img src="../assets/images/boundedcontext2.png" alt="SupplyWok System Context Diagram">
+  <img src="../assets/images/event-storming-e02.png" alt="SupplyWok System Context Diagram">
 </div>
 
 Este contexto delimitado tiene como propósito supervisar las condiciones físicas críticas en las instalaciones del restaurante, específicamente en áreas vulnerables como la cocina y el almacén. Mediante la integración simulada de sensores IoT, el sistema monitorea variables ambientales clave de forma continua, tales como la temperatura y la humedad.
 
 <div align="center">
-  <img src="../assets/images/boundedcontext3.png" alt="SupplyWok System Context Diagram">
+  <img src="../assets/images/event-storming-e03.png" alt="SupplyWok System Context Diagram">
 </div>
 
 Este contexto delimitado está diseñado para centralizar la gestión de los proveedores, brindándoles las herramientas necesarias para optimizar su logística y planificación comercial. A través de este módulo, los proveedores obtienen visibilidad sobre la demanda futura de sus clientes, lo que les permite gestionar sus catálogos de insumos y realizar un seguimiento detallado del estado de los pedidos recibidos.
 
 <div align="center">
-  <img src="../assets/images/boundedcontext4.png" alt="SupplyWok System Context Diagram">
+  <img src="../assets/images/event-storming-e04.png" alt="SupplyWok System Context Diagram">
 </div>
 
 Este contexto delimitado representa la capa transversal de seguridad y administración comercial de la plataforma Aurora. Su propósito principal es proporcionar un entorno centralizado y seguro donde todos los usuarios puedan autenticarse, gestionar sus cuentas y recibir soporte técnico de manera eficiente.
 
 <div align="center">
-  <img src="../assets/images/boundedcontext5.png" alt="SupplyWok System Context Diagram">
+  <img src="../assets/images/event-storming-e05.png" alt="SupplyWok System Context Diagram">
 </div>
 
+Este contexto delimitado representa el núcleo operativo del restaurante chifa dentro de la plataforma Aurora. Su propósito principal es orquestar la comunicación crítica entre el salón y la cocina, asegurando que los pedidos se procesen con precisión, se monitoreen en tiempo real y se mantenga la integridad operativa.
+
+<div align="center">
+  <img src="../assets/images/event-storming-e06.png" alt="SupplyWok System Context Diagram">
+</div>
 
 ### 4.6.2. Software Architecture Context Diagram.
 
