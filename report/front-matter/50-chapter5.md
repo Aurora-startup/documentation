@@ -325,12 +325,37 @@ En el sprint 1 como equipo nos centramos en la creación de la Landing Page de S
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
+Se presentaran las capturas que muestran el despliegue de la Landing Page en GitHub Pages.
+
+![first](../assets/images/deploy-steps/prove-1.png)
+
+![second](../assets/images/deploy-steps/prove-2.png)
+
 #### 5.2.1.5. Execution Evidence for Sprint Review.
+
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
 Como la Landing Page es una página estática, no fue necesario durante el Sprint el uso de servicios externos ni conexiones a APIs, por lo cual no hay generación ni evidencia de documentación técnica relacionada.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+
+La evidencia del despliegue de la Landing Page durante el Sprint se mostrara a continuación, el despliegue se realizara en GitHub Pages.
+
+![first-step](../assets/images/deploy-steps/step-1.png)
+
+Revisamos que el repositorio este en publico:
+
+![second-step](../assets/images/deploy-steps/step-2.png)
+
+Nos dirigimos a la seccion de deploy, y selecionamos la rama main:
+
+![third-step](../assets/images/deploy-steps/step-3.png)
+
+Luego de unos minutos, el deploy se realizara correctamente:
+
+![fourth-step](../assets/images/deploy-steps/step-4.png)
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
+![Team Collaboration](../assets/images/deploy-steps/participation.png)
