@@ -385,13 +385,67 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
 <p align="center">
   <img src="../assets/images/figma/landingpage-mobile-mockup.png" width="600px">
 </p>
+
 ## 4.4. Web Applications UX/UI Design.
+
 ### 4.4.1. Web Applications Wireframes.
+
+<p align="center">
+  <img src="../assets/images/figma/wireframes-web.jpg" width="600px">
+</p>
+
 ### 4.4.2. Web Applications Wireflow Diagrams.
 ### 4.4.2. Web Applications Mock-ups.
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web1.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web2.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web3.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web4.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web5.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web6.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web7.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web8.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web9.png" width="600px">
+</p>
+
+<p align="center">
+  <img src="../assets/images/figma/mockup-web10.png" width="600px">
+</p>
+
+
 ### 4.4.3. Web Applications User Flow Diagrams.
+
+
 ## 4.5. Web Applications Prototyping.
+
 ## 4.6. Domain-Driven Software Architecture.
+
+
 ### 4.6.1. Design-Level EventStorming.
 
 En esta sección se detalla el proceso de Design-Level EventStorming realizado por el equipo para perfeccionar el modelo del dominio de Aurora. Partiendo del Big Picture, profundizamos en el comportamiento interno del sistema para alcanzar el mayor nivel de detalle arquitectónico posible.
