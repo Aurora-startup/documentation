@@ -385,12 +385,36 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
 <p align="center">
   <img src="../assets/images/figma/landingpage-mobile-mockup.png" width="600px">
 </p>
+
 ## 4.4. Web Applications UX/UI Design.
 ### 4.4.1. Web Applications Wireframes.
+![web-application-mobile-wireframe1](../assets/images/figma/web-app-mobile-wireframe1.png)
+![web-application-mobile-wireframe2](../assets/images/figma/web-app-mobile-wireframe2.png)
+![web-application-mobile-wireframe3](../assets/images/figma/web-app-mobile-wireframe3.png)
+
 ### 4.4.2. Web Applications Wireflow Diagrams.
+![web-application-mobile-wireflow1](../assets/images/figma/web-app-mobile-wireflow1.jpeg)
+![web-application-mobile-wireflow2](../assets/images/figma/web-app-mobile-wireflow2.jpeg)
+![web-application-mobile-wireflow3](../assets/images/figma/web-app-mobile-wireflow3.jpeg)
+![web-application-mobile-wireflow4](../assets/images/figma/web-app-mobile-wireflow4.jpeg)
+
 ### 4.4.2. Web Applications Mock-ups.
+![web-application-mobile-mockup1](../assets/images/figma/web-app-mobile-mockup1.png)
+![web-application-mobile-mockup2](../assets/images/figma/web-app-mobile-mockup2.png)
+![web-application-mobile-mockup3](../assets/images/figma/web-app-mobile-mockup3.png)
 ### 4.4.3. Web Applications User Flow Diagrams.
+![web-application-mobile-userflow1](../assets/images/figma/web-app-mobile-userflow1.jpeg)
+![web-application-mobile-userflow2](../assets/images/figma/web-app-mobile-userflow2.jpeg)
+![web-application-mobile-userflow3](../assets/images/figma/web-app-mobile-userflow3.jpeg)
+![web-application-mobile-userflow4](../assets/images/figma/web-app-mobile-userflow4.jpeg)
 ## 4.5. Web Applications Prototyping.
+#### Escritorio
+![desktop-prototype](../assets/images/figma/desktop-prototype.png)
+[prototipo de escritorio](https://www.figma.com/proto/JUBnvZfJvlrpxIpW8ICRvS/SupplyWok?node-id=428-4042&p=f&t=kGhZbpCdqH2BntGS-0&scaling=scale-down&content-scaling=fixed&page-id=428%3A2335)
+
+#### Mobile
+![mobile-protoype](../assets/images/figma/mobile-prototype.png)
+[prototipo mobile](https://www.figma.com/proto/JUBnvZfJvlrpxIpW8ICRvS/SupplyWok?node-id=428-2336&p=f&t=kGhZbpCdqH2BntGS-0&scaling=scale-down&content-scaling=fixed&page-id=428%3A2336)
 ## 4.6. Domain-Driven Software Architecture.
 ### 4.6.1. Design-Level EventStorming.
 
