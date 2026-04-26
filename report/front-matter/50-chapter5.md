@@ -325,8 +325,13 @@ En el sprint 1 como equipo nos centramos en la creación de la Landing Page de S
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
-#### 5.2.1.5. Execution Evidence for Sprint Review.
+Se presentaran las capturas que muestran el despliegue de la Landing Page en GitHub Pages.
 
+![first](../assets/images/deploy-steps/prove-1.png)
+
+![second](../assets/images/deploy-steps/prove-2.png)
+
+#### 5.2.1.5. Execution Evidence for Sprint Review.
 
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
@@ -353,3 +358,4 @@ Luego de unos minutos, el deploy se realizara correctamente:
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
+![Team Collaboration](../assets/images/deploy-steps/participation.png)
