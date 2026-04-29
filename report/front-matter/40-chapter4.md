@@ -437,6 +437,16 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
   <img src="../assets/images/figma/mockup-web10.png" width="600px">
 </p>
 
+##### Login and Register Web
+
+![mockupweblogin](../assets/images/figma/mockup-web-login.png)
+
+**1)** La seleccion de idioma del sistema, pudiendo escojer entre ingles, español y chino. <br>
+**2)** Es la seccion donde el usuario podra rellenar su información, en el caso del login pedira su correo y contraseña, mientras que para registarse pedira correo, contraseña, rol y plan de suscripción. <br>
+**3)** Son los campos para rellenar la información solicitada, en el caso del login son solo dos campos, mientras que para registarse son cuatro. Ambos campos en login con un ejemplo de correo y contraseña. <br>
+**4)** Son los textos interacctivos, estos redirigen al usuario a otras secciones del sistema segun indique el texto. <br>
+**5)** El botón principal, en el caso del login permite iniciar sesión, mientras que en el registro redirigire al pago para crear la cuenta.
+
 
 ### 4.4.3. Web Applications User Flow Diagrams.
 
