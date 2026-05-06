@@ -397,55 +397,87 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
 ### 4.4.2. Web Applications Wireflow Diagrams.
 ### 4.4.2. Web Applications Mock-ups.
 
-<p align="center">
-  <img src="../assets/images/figma/mockup-web1.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web2.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web3.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web4.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web5.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web6.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web7.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web8.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web9.png" width="600px">
-</p>
-
-<p align="center">
-  <img src="../assets/images/figma/mockup-web10.png" width="600px">
-</p>
+![mockupweb1](../assets/images/figma/mockup-web1.png)
+![mockupweb2](../assets/images/figma/mockup-web2.png)
+![mockupweb3](../assets/images/figma/mockup-web3.png)
+![mockupweb4](../assets/images/figma/mockup-web4.png)
+![mockupweb5](../assets/images/figma/mockup-web5.png)
+![mockupweb7](../assets/images/figma/mockup-web7.png)
+![mockupweb8](../assets/images/figma/mockup-web8.png)
+![mockupweb9](../assets/images/figma/mockup-web9.png)
+![mockupweb10](../assets/images/figma/mockup-web10.png)
+![mockupweb11](../assets/images/figma/mockup-web11.png)
+![mockupweb12](../assets/images/figma/mockup-web12.png)
 
 ##### Login and Register Web
 
-![mockupweblogin](../assets/images/figma/mockup-web-login.png)
+![mockupweblogin](../assets/images/figma/guides/login-guide.png)
 
 **1)** La seleccion de idioma del sistema, pudiendo escojer entre ingles, español y chino. <br>
 **2)** Es la seccion donde el usuario podra rellenar su información, en el caso del login pedira su correo y contraseña, mientras que para registarse pedira correo, contraseña, rol y plan de suscripción. <br>
 **3)** Son los campos para rellenar la información solicitada, en el caso del login son solo dos campos, mientras que para registarse son cuatro. Ambos campos en login con un ejemplo de correo y contraseña. <br>
 **4)** Son los textos interacctivos, estos redirigen al usuario a otras secciones del sistema segun indique el texto. <br>
 **5)** El botón principal, en el caso del login permite iniciar sesión, mientras que en el registro redirigire al pago para crear la cuenta.
+
+##### Dashboard Main Page
+
+![dashboardmain](../assets/images/figma/guides/main-dashboard-guide.png)
+
+**1)** 
+
+##### Inventory Page
+
+![inventorypage](../assets/images/figma/guides/inventory-dashboard-guide.png)
+
+**1)**
+
+##### Orders Page
+
+![orderspage](../assets/images/figma/guides/orders-dashboard-guide.png)
+
+**1)**
+
+##### Kitchen Tickets Page
+
+![kitchentickets](../assets/images/figma/guides/kitchen-tickets-guide.png)
+
+**1)**
+
+##### Suppliers Page
+
+![supplierspage](../assets/images/figma/guides/supliers-guide.png)
+
+**1)**
+
+##### Tables Page
+
+![tablespage](../assets/images/figma/guides/tables-guide.png)
+
+**1)**
+
+##### Alerts Page
+
+![alertspage](../assets/images/figma/guides/alerts-guide.png)
+
+**1)**
+
+##### Reports Page
+
+![reportspage](../assets/images/figma/guides/reports-guide.png)
+
+**1)**
+
+##### Settings Page
+
+![settingspage](../assets/images/figma/guides/settings-guide.png)
+
+**1)**
+
+##### Subscription Plans Page
+
+![subscriptionplanspage](../assets/images/figma/guides/subscripcions-guide.png)
+
+**1)**
 
 
 ### 4.4.3. Web Applications User Flow Diagrams.
