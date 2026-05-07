@@ -386,6 +386,7 @@ Durnate la elaboración de la landing page se utilizaropn los principios de dise
   <img src="../assets/images/figma/landingpage-mobile-mockup.png" width="600px">
 </p>
 
+
 ## 4.4. Web Applications UX/UI Design.
 
 La propuesta UX/UI de las Web Applications de SupplyWok está diseñada para responder a dos necesidades principales: permitir que los restaurantes gestionen su operación diaria con rapidez y dar a los proveedores visibilidad clara sobre pedidos, clientes y demanda proyectada. A partir de ello, la interfaz prioriza acceso directo a módulos críticos, visualización rápida del estado operativo y reducción de pasos en las tareas más frecuentes.
