@@ -337,14 +337,53 @@ Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo del La
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
-Se presentaran las capturas que muestran el despliegue de la Landing Page en GitHub Pages.
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| Aurora-startup/SupplyWok-landing-page | develop | 4bbf50e | Delete CNAME | Removed custom domain configuration file from the repository. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | d48c723 | Create CNAME | Added CNAME configuration for deployment setup. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 55052d1 | docs: add comprehensive README.md with project overview, architecture, and setup instructions | Added detailed project documentation and setup instructions. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | release | 011d887 | Merge pull request #2 from Aurora-startup/release | Merged release branch changes into the main development workflow. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 8929534 | chore: remove LICENSE file | Removed unnecessary LICENSE file from the project. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | fc1421a | chore: remove unused project files and assets | Cleaned repository by deleting unused files and resources. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 2b5cb6f | Merge pull request #1 from Aurora-startup/develop | Integrated latest develop branch updates. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 34fc12e | feat: i18n | Added internationalization support to the project. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | e25ce47 | feat: i18n for the landing page | Implemented multilingual support specifically for the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 21bbf3b | feat: update stylesheets and add uses.js | Updated stylesheets and added utility JavaScript functionality. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | afb9892 | Add Footer stylesheet | Added styles for the footer section of the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 94a3093 | feat: add our plans section | Added pricing and plans section to the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 886dd87 | Merge branch 'develop' into develop | Synchronized latest changes from develop branch. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 771084d | feat: add the header on landing page | Implemented the header section for the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | b2c70e7 | Merge branch 'develop' into develop | Merged updates and synchronized project branches. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 4bd0fb8 | style: reformat HTML markup for improved readability and line length consistency | Reformatted HTML files for cleaner structure and readability. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 96e260f | Merge branch 'develop' into develop | Updated branch with latest synchronized changes. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | e8e71c7 | feat: add our plans section | Added detailed pricing plans section to the website. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 35175f9 | feat: implement features section and add project documentation with MIT licensing | Implemented features section and added licensing documentation. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 44d8dff | feat: implement FAQ and pricing sections with associated styles and UI assets | Added FAQ and pricing sections with corresponding UI resources. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 9def920 | feat: implement hero, features, pricing, and faq sections with supporting styles and assets | Implemented main landing sections with related styling assets. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | ec6cca0 | Add Features stylesheet | Added stylesheet for the features section. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | c57f6b1 | feat: add landing page structure and features section with icons | Added initial landing structure and features section with icons. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | c1fabf4 | feat: add styling for the landing page hero section | Added styles for the hero section of the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 5c6193a | Merge branch 'develop' into develop | Integrated synchronized changes into develop branch. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | cbab8be | feat: implement cta | Implemented call-to-action section on the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | c54537f | Add Hero and Base stylesheet | Added base and hero section stylesheets. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 7264b53 | feat(index): hero section implements | Implemented initial hero section functionality. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | main | 500b47c | chore: initial landing page for SupplyWok with HTML, CSS, and JavaScript | Created the initial landing page structure using HTML, CSS, and JavaScript. | 24/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | main | a7ebd9e | Create public | Added public directory and initial public assets. | 12/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | main | d1cef23 | Initial commit | Created the repository with the initial project structure. | 12/04/2026 |
+
+#### 5.2.1.5. Execution Evidence for Sprint Review.
+
+A continuación se muestran las imagenes de las diversas secciones del Landing Page realizado en el Sprint 1.
 
 ![first](../assets/images/deploy-steps/prove-1.png)
 
 ![second](../assets/images/deploy-steps/prove-2.png)
 
-#### 5.2.1.5. Execution Evidence for Sprint Review.
+![third](../assets/images/deploy-steps/prove-3.png)
 
+![fourth](../assets/images/deploy-steps/prove-4.png)
+
+![fifth](../assets/images/deploy-steps/prove-5.png)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
@@ -370,7 +409,13 @@ Luego de unos minutos, el deploy se realizara correctamente:
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
+En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del fronted  .
+
 ![Team Collaboration](../assets/images/deploy-steps/participation.png)
+
+![Team Contribution 1](../assets/images/deploy-steps/contributions_1.png)
+
+![Team Contribution 2](../assets/images/deploy-steps/contributions_2.png)
 
 ### 5.2.2. Sprint 2 
 #### 5.2.2.1. Sprint Planning 2
@@ -452,14 +497,20 @@ Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del fr
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
-Se presentaran las capturas que muestran el despliegue de la Landing Page en GitHub Pages.
+
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+A continuación se muestran las imagenes de las diversas secciones del Landing Page realizado en el Sprint 1.
 
 ![first](../assets/images/deploy-steps/prove-1.png)
 
 ![second](../assets/images/deploy-steps/prove-2.png)
 
-#### 5.2.2.5. Execution Evidence for Sprint Review.
+![third](../assets/images/deploy-steps/prove-3.png)
 
+![fourth](../assets/images/deploy-steps/prove-4.png)
+
+![fifth](../assets/images/deploy-steps/prove-5.png)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
@@ -485,4 +536,10 @@ Luego de unos minutos, el deploy se realizara correctamente:
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
+En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del fronted  .
+
 ![Team Collaboration](../assets/images/deploy-steps/participation.png)
+
+![Team Contribution 1](../assets/images/deploy-steps/contributions_1.png)
+
+![Team Contribution 2](../assets/images/deploy-steps/contributions_2.png)
