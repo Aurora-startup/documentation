@@ -123,6 +123,7 @@ La experiencia móvil de SupplyWok está diseñada para que restaurantes y prove
 - Los formularios se dividen en bloques cortos para evitar fatiga visual.
 - Las acciones críticas se colocan al alcance natural del pulgar.
 - Los cambios de estado deben mostrarse inmediatamente mediante mensajes visibles o indicadores contextuales.
+
 ## 4.2. Information Architecture
 
 La arquitectura de información de SupplyWok está diseñada para dos contextos distintos: la **Landing Page**, orientada a captar y convertir visitantes en usuarios registrados, y la **Web Application**, donde los usuarios operan la plataforma según su rol. Ambos contextos tienen estructuras de navegación y organización de contenido diferenciadas, pero comparten un lenguaje visual y terminológico consistente.
@@ -470,7 +471,7 @@ En escritorio, los wireframes muestran una estructura con sidebar, header superi
 ![wireframes web](../assets/images/figma/wireframes-web.jpg)
 ![wireframe mobile1](../assets/images/figma/web-app-mobile-wireframe1.png)
 ![wireframe mobile2](../assets/images/figma/web-app-mobile-wireframe2.png)
-[wireframe mobile3](../assets/images/figma/web-app-mobile-wireframe3.png)
+![wireframe mobile3](../assets/images/figma/web-app-mobile-wireframe3.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 

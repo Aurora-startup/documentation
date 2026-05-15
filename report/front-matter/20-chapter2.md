@@ -176,7 +176,8 @@ El entrevistado Weiquan Wang, un cocinero y dueño de un chifa en La Perla (Call
 </div>
 
 <sub>*Tabla 6. Entrevista 2*</sub>
-- **Entrevista #2**
+
+- **Entrevista #3**
 ![](../assets/images/interviews/owner-interview3.png)
 
 **Resumen de entrevista:**
