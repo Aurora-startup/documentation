@@ -63,3 +63,7 @@
 
 - Añadió los mockups web en el capítulo 4.
 - Revisó la sección de la startup Aurora y la solución en el capítulo 1.
+- Cambió los wireflows del capítulo 4 para alinearlos con el flujo actualizado del producto.
+- Añadió y ajustó imágenes de soporte para la documentación visual del producto.
+- Actualizó secciones relacionadas con la experiencia de usuario y navegación de la aplicación.
+- Realizó correcciones menores de redacción y formato en la documentación del proyecto.
