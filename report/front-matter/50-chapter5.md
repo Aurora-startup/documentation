@@ -3,8 +3,9 @@
 ## 5.1. Software Configuration Management. 
 Para tener consistencia y seguimiento del desarrollo de la plataforma, se ha definido una serie de herramientas y estrategias de desarrollo. El metodo cubre la configuracion del entorno de desarrollo, la gestion del codigo y el despliegue, alineado a las buenas practicas de ingenieria de software y metodologias agiles.
 
-### 5.1.1. Software Development Environment Configuration. 
+### 5.1.1. Software Development Environment Configuration.
 Para facilitar la colaboración del equipo en todas las actividades del ciclo de vida de desarrollo de SupplyWok, se ha definido un entorno de desarrollo común. Este entorno está compuesto por herramientas especializadas para la gestión del proyecto, diseño UX/UI, modelado, desarrollo, pruebas, documentación y despliegue. La selección de estas herramientas se basa en criterios de eficiencia, compatibilidad con tecnologías open-source (Java + web), y alineación con prácticas recomendadas de la industria.
+
 |  Categoría   | Herramienta   | Propósito | Tipo de acceso/enlace |
 |:---:|:---:|:---:|:---:|
 |    Project Management   |         Trello        |Gestión del backlog, tareas y sprints del equipo usando metodología ágil (Scrum).|   [https://trello.com](https://trello.com) |
@@ -31,7 +32,6 @@ Los repositorios utilizados para el desarrollo de código fuente son los siguien
 
 </div>
 
----
 
 **Modelos de Ramificación**
 
@@ -89,7 +89,6 @@ Esta sección define los lineamientos y estándares que se seguirán durante el 
 
 Se adoptarán convenciones ampliamente aceptadas para los lenguajes utilizados en el proyecto: HTML, CSS, JavaScript, TypeScript y Java. Asimismo, todos los nombres de variables, funciones, clases y demás identificadores estarán escritos en inglés.
 
----
 
 #### Referencias utilizadas
 
@@ -102,14 +101,12 @@ Las siguientes guías servirán como base para la implementación de estándares
 - [HTML Style Guide and Coding Conventions - W3Schools](https://www.w3schools.com/html/html5_syntax.asp)
 - [Spring Boot Features](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 
----
 
 #### Estructura del código
 
 El proyecto se organizará en módulos según sus responsabilidades, separando claramente componentes como servicios, modelos, vistas, rutas y configuraciones.  
 Este enfoque permite mejorar la escalabilidad del sistema y fomenta la reutilización de código, aplicando el principio de *Separation of Concerns*.
 
----
 
 #### Convenciones de nomenclatura
 
@@ -125,7 +122,6 @@ Este enfoque permite mejorar la escalabilidad del sistema y fomenta la reutiliza
 | Métodos Java             | camelCase                          | `getUserById()`            |
 | Paquetes Java            | minúsculas con puntos              | `com.example.module`       |
 
----
 
 #### Lineamientos por lenguaje
 
@@ -189,7 +185,6 @@ Las claves de traducción están en mayúsculas y separadas por puntos para refl
 La configuración de despliegue define los procesos y herramientas necesarias para publicar los distintos componentes del sistema: **Landing Page**, **API REST (Backend)** y **Web Application (Frontend)**.  
 Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenimiento durante el ciclo de vida del producto.
 
----
 
 #### Despliegue del Landing Page
 
@@ -208,7 +203,6 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   - Los cambios se integran desde la rama `develop` mediante pull requests validados.  
   - GitHub Pages realiza la publicación automáticamente al detectar actualizaciones en la rama principal.
 
----
 
 #### Despliegue del Backend (RESTful API)
 
@@ -228,7 +222,6 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   - El servicio se expone a través de endpoints REST accesibles mediante HTTP/HTTPS.  
   - Se asegura la correcta comunicación con servicios externos requeridos por el sistema.
 
----
 
 #### Despliegue del Frontend Web Application
 
@@ -247,7 +240,6 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   - La plataforma seleccionada detecta cambios automáticamente y publica nuevas versiones.  
   - Se configura la URL del backend mediante variables de entorno para garantizar la integración con la API REST.
 
----
 
 #### Consideraciones adicionales
 

@@ -95,7 +95,6 @@ El Impact Mapping de SupplyWok refleja la relación entre los objetivos de negoc
 
 <sub> Ilustración. Impact Mapping proveedores de insumos para restaurantes</sub>
 
----
 
 ### 3.3. Product Backlog
 

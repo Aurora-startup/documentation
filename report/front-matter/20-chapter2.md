@@ -57,7 +57,6 @@ El objetivo de este análisis es identificar las fortalezas, debilidades, oportu
 
 <sub>*Tabla 4. Estrategias y tácticas frente a competidores*</sub>
 
----
 
 ## 2.2. Entrevistas
 
@@ -125,7 +124,6 @@ Para comprender mejor a nuestros usuarios y construir arquetipos representativos
 - ¿Qué tipo de reportes o indicadores le ayudarían más en su trabajo diario?
 - ¿Qué tan útil le parecería una solución que combine gestión de inventario, pedidos, alertas y monitoreo operativo?
 - ¿Qué preocupaciones tendría al usar una nueva plataforma digital para su negocio?
----
 ### 2.2.2. Registro de entrevistas.
 
 
@@ -200,7 +198,6 @@ La entrevistada, Lili (54 años), dueña y encargada de cocina de un chifa con 1
 
 <sub>*Tabla 7. Entrevista 3*</sub>
 <!-- Segmento objetivo: Proveedores-->
----
 #### Segmento #2: Proveedores de insumos para restaurantes
 - **Entrevista #1**
 
@@ -434,7 +431,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Notificación** | Alerta enviada al usuario sobre un evento importante del sistema (cambio de estado de pedido, alerta de stock bajo, cambio de temperatura, etc.). | Comunicación en tiempo real |
 | **Dashboard** | Interfaz personalizada que muestra el resumen e información clave según el tipo de usuario y sus permisos. | Visualización general |
 
----
 
 ### Términos del Epic 01: Gestión de Inventario
 
@@ -452,7 +448,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Clasificación de Inventario** | Categorización del estado de un insumo según su stock actual: Normal (stock superior al mínimo), Crítico (stock en o bajo mínimo), Exceso (stock muy por encima del promedio de consumo). | Visualización y alertas |
 | **Reporte de Inventario** | Documento exportable (PDF/CSV) que muestra el estado actual del inventario, útil para auditorías, análisis o uso externo. | Exportación y documentación |
 
----
 
 ### Términos del Epic 02: Abastecimiento y Órdenes de Compra
 
@@ -466,7 +461,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Confirmación de Entrega** | Acto formal donde el proveedor marca una orden como "Entregada", registrando fecha, hora, observaciones y evidencia de que los insumos llegaron al restaurante. | Cierre de transacción |
 | **Reabastecimiento** | Proceso de solicitar nuevamente un insumo cuya disponibilidad en el restaurante se ha agotado o está por agotarse. | Acción operativa |
 
----
 
 ### Términos del Epic 03: Monitoreo Operativo y Alertas IoT
 
@@ -482,7 +476,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Estado de Revisión** | Indicador si una alerta fue revisada por un administrador (y con qué nota de seguimiento) o aún está pendiente de atención. | Control de acciones |
 | **Área / Zona Monitorizada** | Espacio físico del restaurante equipado con sensores (ej: almacén, cocina, cámara frigorífica). Cada área puede tener múltiples sensores y configuraciones independientes. | Ubicación y contexto |
 
----
 
 ### Términos del Epic 04: Panel del Proveedor
 
@@ -496,7 +489,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Confirmación de Orden** | Acto donde el proveedor acepta formalmente una orden de compra, comprometiéndose a entregarla en las condiciones pactadas. | Validación de compromiso |
 | **Resumen de Actividad por Cliente** | Análisis agregado del comportamiento de un cliente (número de órdenes, productos más solicitados, monto estimado, frecuencia de pedidos) que ayuda al proveedor a priorizar su atención comercial. | Business Intelligence |
 
----
 
 ### Términos del Epic 05: Plataforma y Acceso
 
@@ -512,7 +504,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Estado del Servicio** | Información sobre la disponibilidad actual de la plataforma, notificaciones de mantenimiento programado o incidencias no planificadas. | Transparencia operativa |
 | **Disponibilidad Continua** | Compromiso de que la plataforma esté operativa 24/7, minimizando interrupciones salvo mantenimiento programado con notificación previa. | SLA de servicio |
 
----
 
 ### Términos del Epic 06: Comandas y Órdenes para Cocina
 
@@ -526,7 +517,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Estado de Comanda** | Situación actual de una comanda: Activa (pendiente de preparar), En Preparación (cocinero trabajando), Lista (platos listos para servir), Entregada (cliente ya recibió). | Ciclo de vida |
 | **Preparación de Platos** | Proceso en cocina de elaborar los platos especificados en una comanda. El cocinero marca el estado cuando termina. | Ejecución operativa |
 
----
 
 ### Términos Técnicos (Para desarrolladores)
 
@@ -539,7 +529,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Transacción Atómica** | Operación que se ejecuta completamente o no se ejecuta en absoluto. Si hay error, se deshacen todos los cambios (no se persisten datos inconsistentes). | Consistencia de BD |
 | **Base de Datos / Persistence Layer** | Sistema de almacenamiento permanente de datos de la plataforma, donde se guardan todas las entidades (usuarios, órdenes, inventario, sensores, etc.). | Infraestructura |
 
----
 
 ### Glosario Rápido de Referencia
 
@@ -553,7 +542,6 @@ ALERTA → Notificación generada cuando una Lectura está Fuera de Rango
 COMANDA → Pedido de un Cliente vinculado a una Mesa, enviado a Cocina
 ```
 
----
 
 ### Notas de Alineación del Lenguaje
 
