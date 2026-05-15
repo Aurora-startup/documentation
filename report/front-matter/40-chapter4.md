@@ -675,7 +675,7 @@ Unhappy path: el pedido está retrasado, faltan productos o el proveedor no pued
 
 ## 4.5. Web Applications Prototyping.
 
-La fase de prototipado de SupplyWok permite simular la navegación y la interacción principal de las aplicaciones antes de su implementación final. Los prototipos fueron diseñados para validar la continuidad entre arquitectura de información, componentes de interfaz y flujos funcionales, tanto en escritorio como en mobile. Además del prototipo navegable en Figma, esta sección debe incorporar evidencia audiovisual del recorrido de uso, tal como solicita la rúbrica.
+La fase de prototipado de SupplyWok permite simular la navegación y la interacción principal de las aplicaciones antes de su implementación final. Los prototipos fueron diseñados para validar la continuidad entre arquitectura de información, componentes de interfaz y flujos funcionales, tanto en escritorio como en mobile. Esta sección incorpora evidencia audiovisual del recorrido de uso para demostrar la experiencia de usuario completa.
 
 #### Escritorio
 ![desktop-prototype](../assets/images/figma/desktop-prototype.png)

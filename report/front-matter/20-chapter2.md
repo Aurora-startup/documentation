@@ -29,7 +29,7 @@ Las siguientes plataformas son de las más relevantes en el mercado de gestión 
 *¿Porqué llevar a cabo este análisis?*
 El objetivo de este análisis es identificar las fortalezas, debilidades, oportunidades y amenazas del entorno competitivo en el sector de gestión de resturantes y proveedores, con el fin de definir la ventaja competitiva de SupplyWok frente a las alternativas existentes y orientar las estrategias de diferenciación e innovación.
 
-| Categoría | Subcategoría | SupplyWok <br><img src="" width="70" /> | Apicbase <br><img src="../assets/images/apicbase.png" width="70" /> | MarketMan <br><img src="../assets/images/market-man.png" width="70" /> | WISK.ai <br><img src="../assets/images/wisk.png" width="70" /> | Restaurant365 <br><img src="../assets/images/restaurant365.png" width="70" /> |
+| Categoría | Subcategoría | SupplyWok <br><img src="../assets/images/supplywok-logo.png" width="70" /> | Apicbase <br><img src="../assets/images/apicbase.png" width="70" /> | MarketMan <br><img src="../assets/images/market-man.png" width="70" /> | WISK.ai <br><img src="../assets/images/wisk.png" width="70" /> | Restaurant365 <br><img src="../assets/images/restaurant365.png" width="70" /> |
 |---|---|---|---|---|---|---|
 | **Perfil** | Overview | Plataforma web que optimiza y agiliza la gestión operativa y de abastecimiento en restaurantes tipo chifa mediante soluciones tecnológicas inteligentes. | Plataformaa basada en la nube diseñada para centralizar la gestión de alimentos y bebidas en cadenas de restaurantes y hoteles. | Plataforma basada en la nube especializada en automatizar el inventario y las compras para restaurantes, conectando el almacén directamente con los proveedores. | Plataforma basada en IA que se especializa en la gestión ultraprecisa de inventarios, usando reconocimiento de imágen para agilizar el conteo de existencias mediante el móvil. | Plataforma de gestión empresarial que unifica en un solo sistema la contabilidad, el control de inventarios, las compras y la gestión del personal. |
 | **Perfil** | Ventaja competitiva ¿Qué valor ofrece a los clientes? | Plataforma centralizada y escalable que optimiza la cadena de suministro mediante analítica predictiva, garantizando eficiencia operativa, prevención de accidentes y una colaboración inteligente entre restaurantes y proveedores para una gestión sostenible. | Gestión centralizada de recetas y menús para múltiples locales, con enfoque en trazabilidad alimentaria, control de alérgenos y estandarización de la producción a gran escala. | Automatización integral del inventario y compras que utiliza análisis predictivos para sugerir pedidos, detectar variaciones de precios y maximizar la rentabilidad operativa. | Control de inventario ultrapeciso mediante inteligencia artificial y reconocimiento visual, especializado en la reducción de mermas y optimización de costos en bebidas y licores. | Sistema ERP unificado que integra contabilidad financiera, inventarios y gestión de personal, conectando el flujo de caja con la operación diaria en una sola plataforma. |
@@ -229,54 +229,50 @@ El entrevistado, Alberto Copa Villa (37 años, La Perla – Callao), es un prove
 
 El análisis de las entrevistas realizadas permite identificar patrones claros en los dos segmentos objetivo de SupplyWok: dueños de restaurantes chifa y proveedores. A partir de las entrevistas, se evidencian tanto comportamientos comunes como diferencias en la adopción tecnológica, sustentados en la frecuencia de respuestas observadas.
 
----
-
-## Segmento 1: Dueños de restaurantes chifa y administradores
+#### Segmento 1: Dueños de restaurantes chifa y administradores
 
 ![](../assets/images/analytics-owners.png)
 
 Este segmento agrupa a propietarios con amplia experiencia (entre 10 y 22 años en los casos entrevistados), quienes gestionan sus negocios de manera empírica.
 
-### Gestión del Inventario
+##### Gestión del Inventario
 El 100% de los entrevistados indicó que no utiliza sistemas formales de inventario, dependiendo de la memoria o revisión visual. Esto genera situaciones donde los insumos se acaban sin planificación previa, obligando a compras reactivas.
 
-### Abastecimiento y compras
+##### Abastecimiento y compras
 El 100% realiza compras diarias o frecuentes, basándose en la demanda inmediata o en variaciones de precios (especialmente en productos como el pollo). No existe planificación a mediano plazo.
 
-### Canales de comunicación
+##### Canales de comunicación
 El 100% coordina pedidos mediante llamadas telefónicas, manteniendo procesos tradicionales.
 
-### Percepción de problemas
+##### Percepción de problemas
 Aproximadamente el 66% reconoce problemas operativos, como falta de insumos o retrasos en abastecimiento, aunque algunos los consideran parte normal del negocio. El 34% restante percibe su operación como estable, pese a no tener control estructurado.
 
-### Adopción tecnológica
+##### Adopción tecnológica
 Se identifican dos subgrupos:
 
 - **Resistentes (≈33%)**: consideran innecesarias las herramientas digitales y prefieren métodos tradicionales.
 - **Abiertos (≈67%)**: muestran interés en soluciones si estas simplifican su trabajo.
 
-### Funcionalidades de interés
+##### Funcionalidades de interés
 - El 67% valora alertas de stock bajo y herramientas que automaticen el cálculo de compras.  
 - Un 66% considera útil la predicción de demanda, especialmente para evitar faltantes.
 
----
-
-## Segmento 2: Proveedores de insumos
+#### Segmento 2: Proveedores de insumos
 
 ![](../assets/images/analytics-suppliers.png)
 
 Este segmento incluye proveedores con experiencia (ej. 7 años), que operan en entornos de alta inmediatez.
 
-### Gestión de pedidos
+##### Gestión de pedidos
 El 100% recibe pedidos mediante WhatsApp, lo que genera desorden y dependencia de mensajes informales.
 
-### Problemas principales
+##### Problemas principales
 El 100% identifica como principal dificultad los pedidos tardíos, lo que afecta la planificación y disponibilidad de productos.
 
-### Planificación de demanda
+##### Planificación de demanda
 El 100% indica que no puede anticipar la demanda, debido a que los restaurantes compran para el momento.
 
-### Necesidades tecnológicas
+##### Necesidades tecnológicas
 El 100% muestra interés en herramientas simples, especialmente:
 
 - Visualización de pedidos pendientes  
@@ -284,21 +280,19 @@ El 100% muestra interés en herramientas simples, especialmente:
 
 Sin embargo, el 0% muestra interés en analítica avanzada o predicciones complejas.
 
----
+#### Conclusiones para el diseño de arquetipos
 
-## Conclusiones para el diseño de arquetipos
-
-### Automatización simple y práctica
+##### Automatización simple y práctica
 Dado que el 100% de restaurantes no usa sistemas formales, la plataforma debe automatizar procesos sin requerir esfuerzo adicional del usuario.
 
-### Diferenciación de valor por segmento
+##### Diferenciación de valor por segmento
 - **Restaurantes**: valoran evitar faltantes y facilitar decisiones de compra.  
 - **Proveedores**: necesitan orden en los pedidos y anticipación.
 
-### Reducción de fricción
+##### Reducción de fricción
 El sistema debe reemplazar llamadas y WhatsApp (usados por el 100%) con una solución igual de rápida, pero estructurada.
 
-### Oportunidad clave
+##### Oportunidad clave
 Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solución sea simple, directa y no complique su operación.
 
 ## 2.3. Needfinding.
@@ -317,7 +311,7 @@ Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solu
 
 <sub>*Ilustración. User Persona proveedores de insumos para restaurantes*</sub>
 
-### 2.2.2. User Task Matrix.
+### 2.3.2. User Task Matrix.
 
 - **Segmento objetivo 1: Dueños de restaurantes chifa y administradores**
 
@@ -394,23 +388,36 @@ A través de esta aproximación de alto nivel, el equipo exploró el panorama de
 
 #### Step 1: Unstructured Exploration
 
-En esta fase inicial, todos los miembros del equipo escriben tantos eventos de dominio como puedan en post-its naranjas. El objetivo es generar una lluvia de ideas masiva sobre lo que ocurre en el negocio de Aurora, sin preocuparse por el orden. 
+En esta fase inicial, todos los miembros del equipo generan eventos de dominio de forma libre, sin preocuparse por el orden ni la coherencia. Cada evento representa una acción relevante en el negocio, escrita en tiempo pasado (ej. "Pedido registrado", "Stock actualizado"). El objetivo es capturar el mayor volumen posible de eventos para construir una visión completa del dominio antes de estructurarlo.
 
-![](../assets/images/Step1BigEvent.png)
+![](../assets/images/step1-bpev.png)
+
+<sub>*Ilustración. Big Picture Event Storming — Step 1: Exploración no estructurada*</sub>
 
 #### Step 2: Structured Organization
 
-Después de listar los eventos desestructurados, el equipo los organiza en una línea de tiempo narrativa, identificando las relaciones de causalidad entre ellos. Se agrupan eventos relacionados y se identifican patrones o flujos comunes. En esta fase se busca entender cómo los eventos interactúan entre sí y cómo se relacionan con los procesos del negocio.
+Con el conjunto de eventos identificados, el equipo los organiza cronológicamente en una línea de tiempo narrativa. Se eliminan duplicados, se agrupan eventos relacionados y se identifican las relaciones causales entre ellos. Esta vista lineal permite detectar flujos principales del negocio y los primeros límites lógicos entre procesos.
 
-![](../assets/images/step2e01.png)
+![](../assets/images/step2-bpev.png)
 
-![](../assets/images/step2e02.png)
+<sub>*Ilustración. Big Picture Event Storming — Step 2: Organización estructurada*</sub>
 
-![](../assets/images/step2e03.png)
+#### Step 3: Pivotal points
 
-![](../assets/images/step2e04.png)
+Se identifican los eventos pivote: aquellos que marcan transiciones críticas en el negocio (ej. "Pedido confirmado por proveedor", "Alerta de stock crítico emitida"). Alrededor de estos eventos se trazan las fronteras de los Bounded Contexts, delimitando las responsabilidades de cada subdominio y sirviendo como base para la arquitectura del sistema.
 
-![](../assets/images/step2e05.png)
+![](../assets/images/step3-bpev.png)
+
+<sub>*Ilustración. Big Picture Event Storming — Step 3: Pivotal points*</sub>
+
+#### Step 4: Pain Points and Opportunities
+
+El equipo marca sobre la línea de tiempo los puntos de fricción, cuellos de botella y oportunidades de mejora detectados. Estos "pain points" suelen concentrarse en transiciones entre actores o en procesos manuales que podrían automatizarse. Esta fase orienta las decisiones de diseño hacia las áreas de mayor impacto operativo.
+
+![](../assets/images/step4-bpev.png)
+
+<sub>*Ilustración. Big Picture Event Storming — Step 4: Pain Points and Opportunities*</sub>
+
 
 ## 2.5. Ubiquitous Language.
 

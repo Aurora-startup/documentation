@@ -1,4 +1,4 @@
-﻿# Capítulo V: Product Implementation, Validation & Deployment.
+# Capítulo V: Product Implementation, Validation & Deployment.
 
 ## 5.1. Software Configuration Management. 
 Para tener consistencia y seguimiento del desarrollo de la plataforma, se ha definido una serie de herramientas y estrategias de desarrollo. El metodo cubre la configuracion del entorno de desarrollo, la gestion del codigo y el despliegue, alineado a las buenas practicas de ingenieria de software y metodologias agiles.
@@ -270,7 +270,7 @@ En el sprint 1 como equipo nos centramos en la creación de la Landing Page de S
 | **Time** | 15:00 |
 | **Location** | Virtual, Discord |
 | **Prepared by** | Zayd Ayasta, Juan Wang |
-| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano |
+| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano, Zayd Ayasta, Juan Wang |
 | **Sprint 0 Review Summary** | *Siendo el primer sprint, este campo no es aplicable.* |
 | **Sprint 0 Retrospective Summary** | *Siendo el primer sprint, este campo no es aplicable.* |
 | **Sprint 1 Goal** | Nuestro enfoque en este sprint es la Landing Page que informará de nuestra plataforma, por lo que la desarrollaremos e implementaremos para que sea accesible y responsiva. Con la información que brindamos sobre nuestro producto esperamos ganarnos la confianza de los que visiten la página y que empiecen a usar nuestro sistema. Se confirmará cuando esté en producción y se pueda usar el enlace de la página. |
