@@ -58,47 +58,69 @@ Los restaurantes tipo chifa enfrentan dificultades en la gestión eficiente de s
 ### 1.2.2 Lean UX Process   
 
 #### 1.2.2.1 Lean UX Problem Statements
-En el contexto de restaurantes tipo chifa y sus proveedores, los dueños y administradores encuentran dificultades para controlar inventarios, prever la demanda y coordinar abastecimiento debido a la falta de herramientas digitales integradas. Esta situación genera desabastecimientos, sobrestock, desperdicio de insumos y una comunicación operativa poco eficiente.
+- Estado actual del dominio: El estado actual de la gestión operativa y de abastecimiento en restaurantes tipo chifa se ha enfocado principalmente en controles manuales y procesos fragmentados realizados por dueños y encargados, con escasa digitalización. Esto provoca dificultades para mantener inventarios actualizados, falta de visibilidad sobre la demanda y una coordinación ineficiente con proveedores.
 
-Es por eso que identificamos que la gestión manual, la baja visibilidad de los niveles de stock y la limitada coordinación con proveedores son provocadas por la ausencia de una plataforma centralizada que permita monitorear el estado operativo del restaurante y proyectar necesidades futuras.
+- Lo que los productos/servicios existentes no resuelven: Los productos y servicios disponibles no abordan de forma integrada la combinación de inventario en tiempo real, proyección de demanda sencilla, generación automática de pedidos y monitoreo operativo (por ejemplo, temperatura), necesarios para que restaurantes y proveedores se sincronicen y tomen decisiones preventivas basadas en datos.
 
-¿Cómo podríamos proporcionar a restaurantes y proveedores una plataforma accesible y práctica que permita controlar inventario, proyectar demanda, monitorear condiciones operativas y coordinar pedidos de abastecimiento de manera más eficiente?
+- Cómo nuestra solución cerrará la brecha: Nuestra plataforma, SupplyWok, abordará esta brecha mediante una aplicación web con roles diferenciados para restaurantes y proveedores que centraliza inventario y alertas, ofrece proyecciones de demanda basadas en historial y ocupación, sugiere y genera pedidos automatizados, y reporta eventos operativos críticos (p. ej. temperatura fuera de rango) para facilitar decisiones oportunas y coordinación eficiente.
+
+- En qué nos enfocaremos inicialmente: Nuestro enfoque inicial será en dueños y administradores de restaurantes chifa, validando con ellos las funcionalidades esenciales de inventario, alertas y generación de pedidos; en paralelo incorporaremos proveedores clave para validar la vista de demanda y la coordinación de entregas.
+
+- Cómo sabremos que tuvimos éxito (comportamientos medibles):
+    - ≥ 60% de restaurantes activos configuran su inventario inicial y al menos una alerta durante el primer mes.
+    - ≥ 50% de los pedidos se originan a partir de sugerencias o alertas del sistema.
+    - ≥ 70% de los usuarios encuestados manifiestan que la plataforma mejora la coordinación operativa.
+    - ≥ 50% de proveedores activos consultan su panel de demanda al menos una vez por semana.
+    - ≥ 80% de los eventos de temperatura fuera de rango generan alertas visibles y accionables en el dashboard.
+
 
 #### 1.2.2.2 Lean UX Assumptions
 
-**Usuarios objetivo**
-- Se asume que los dueños y administradores de restaurantes buscan una forma simple de controlar inventario, evitar pérdidas y tomar decisiones más rápidas sobre abastecimiento.
-- Se asume que los proveedores necesitan mayor visibilidad sobre la demanda de sus clientes para planificar entregas y rutas de manera más eficiente.
-- Se asume que ambos segmentos estarán dispuestos a usar una plataforma compartida si esta les ofrece beneficios claros, reduce trabajo manual y mejora la coordinación.
+**User Assumptions**
+- Los usuarios son personal operativo de restaurante, dueños y administradores que trabajan con tareas urgentes y contextos de alta rotación.
+- Los usuarios necesitan ejecutar acciones con pocos clics y con baja carga cognitiva, porque alternan entre trabajo físico y pantalla.
+- Usan el sistema en distintos momentos del día y valoran acceso rápido a: comandas, stock, alertas, pedidos de compra y tablas/mesas.
+- Tienen necesidades distintas por rol (lo que “importa” en el dashboard y en los accesos varía según permisos/responsabilidades).
+- Algunos usuarios requieren la interfaz en más de un idioma, y esperan consistencia en textos y etiquetas.
 
-**Objetivos de los usuarios**
-- Se asume que los restaurantes quieren reducir quiebres de stock, evitar desperdicio de insumos y mejorar el control de su operación diaria.
-- Se asume que los proveedores quieren anticipar pedidos, organizar mejor su distribución y mantener relaciones más estables con sus clientes.
-- Se asume que ambos grupos valoran tener información centralizada, actualizada y fácil de interpretar.
+**User Outcomes**
+- El usuario identificará rápidamente qué requiere atención (alertas/pendientes) desde un dashboard principal sin navegar por múltiples pantallas.
+- El usuario podrá reducir quiebres de stock detectando productos “por debajo del mínimo” y permitir tomar acciones preventivas.
+- El usuario podrá crear y editar comandas u órdenes de cocina con seguridad (evitar errores de mesa/tipo de servicio/items/observaciones) y poder volver atrás sin fricción.
+- El usuario podrá generar pedidos de compra más rápido, con datos prellenados y validaciones (fechas, proveedor, prioridad, líneas de pedido).
+- El usuario sentirá control y trazabilidad: saber “qué pasó y qué sigue”, incluso cuando cambian estados (pendiente/en proceso/etc.).
+  
+**Business Assumptions**
+- La operación del restaurante mejora si se centraliza en una sola app la vista de inventario, comandas, compras y alertas (en vez de herramientas separadas).
+- La segmentación por roles reduce errores (cada perfil ve lo necesario) y aumenta seguridad/orden operativo.
+- La estandarización de flujos (crear pedido, crear comanda, configurar proveedores/zonas/notificaciones) reduce dependencia de “cómo lo hace cada turno”.
+- Exponer métricas simples (“salud de inventario”, “productos que requieren reposición”) impulsa decisiones y hábitos operativos.
 
 **Business Outcomes**
-- Se asume que la eficiencia operativa aumentará si los restaurantes pueden visualizar inventario, alertas y demanda proyectada en un solo lugar.
-- Se asume que la coordinación con proveedores mejorará si estos pueden consultar pedidos, proyecciones y estados de abastecimiento.
-- Se asume que la reducción de desperdicio y desabastecimiento generará ahorro económico para los restaurantes.
-- Se asume que un modelo de suscripción con planes diferenciados Premium y Enterprise permitirá sostener el producto en el tiempo.
+- Menos pérdidas por quiebre de stock y mejor rotación de inventario (comprar lo necesario a tiempo).
+- Mayor velocidad de operación (comandas y pedidos se registran/actualizan más rápido) y menos errores por registro manual.
+- Mejor coordinación entre roles (cocina, inventario, administración) con estados y pendientes visibles.
+- Visibilidad operacional para managers: KPIs básicos y backlog de pendientes/alertas para priorizar.
 
-**Métricas de éxito**
-- Se considera exitoso el proyecto si al menos el 60% de los restaurantes activos configuran inventario inicial y alertas de stock mínimo durante el primer mes.
-- Se considera cumplido el objetivo si al menos el 50% de los pedidos se generan a partir de alertas o sugerencias del sistema.
-- Se considera alcanzado el outcome si al menos el 70% de los usuarios encuestados manifiesta que la plataforma mejora la coordinación operativa.
-- Se considera válido el supuesto si los proveedores consultan regularmente la vista de demanda proyectada y estado de pedidos.
+**Features Assumptions**
+- Los usuarios podrán ver en una sola pantalla lo más importante del día (pendientes, alertas, estado general) y entrar rápido a acciones frecuentes.
+- Los usuarios podrán identificar productos en riesgo (bajo mínimo) y tomar acción para reponer antes de quedarse sin stock.
+- El personal podrá crear órdenes con productos, cantidades y notas, y actualizarlas a medida que avanza el servicio.
+- Los usuarios podrán ver qué órdenes están pendientes, en progreso o finalizadas, para coordinar mejor entre áreas.
+- Los usuarios podrán armar pedidos de compra de forma guiada (qué comprar y en qué cantidad) para reabastecer con menos fricción.
+
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
-- Creemos que al permitir a los restaurantes registrar su inventario y configurar alertas de stock mínimo, lograremos reducir desabastecimientos y compras de emergencia.
-- Sabremos que hemos tenido éxito cuando al menos el 60% de los usuarios de restaurante creen su inventario inicial y configure al menos una alerta en el primer mes.
-- Creemos que al mostrar una proyección básica de demanda basada en el historial de consumo y la ocupación registrada, lograremos que los dueños planifiquen mejor sus compras.
-- Sabremos que hemos tenido éxito cuando al menos el 50% de los pedidos se originen a partir de una sugerencia o alerta del sistema.
-- Creemos que al brindar a los proveedores una vista de demanda estimada y estado de pedidos, lograremos mejorar la coordinación de entregas y reducir retrasos.
-- Sabremos que hemos tenido éxito cuando al menos el 50% de los proveedores activos consulte su panel de demanda al menos una vez por semana.
-- Creemos que al integrar monitoreo de temperatura en cocina o almacenamiento, lograremos detectar condiciones de riesgo antes de que afecten la calidad de los insumos.
-- Sabremos que hemos tenido éxito cuando al menos el 80% de los eventos de temperatura fuera de rango generen una alerta visible en el dashboard.
-- Creemos que al ofrecer una plataforma con planes diferenciados para restaurantes y proveedores, lograremos que el producto sea percibido como útil y sostenible.
-- Sabremos que hemos tenido éxito cuando al menos el 70% de los usuarios encuestados considere que el sistema aporta valor real a su operación.
+- Creemos que una vista principal que priorice lo urgente ayudará a que el equipo actúe más rápido y con menos estrés, porque reduce la navegación y facilita decidir qué hacer primero.
+- Sabremos que funciona cuando baje el tiempo desde que ingresan hasta que completan la primera acción y aumente la atención de pendientes críticos.
+- Creemos que hacer visibles los faltantes y riesgos de inventario ayudará a prevenir quiebres de stock, porque convierte el control en una tarea simple y frecuente.
+- Sabremos que funciona cuando disminuyan los quiebres de stock y aumente la reposición anticipada.
+- Creemos que un flujo rápido y claro para registrar y actualizar órdenes ayudará a reducir errores y acelerar la operación, porque estandariza la información y evita omisiones.
+- Sabremos que funciona cuando bajen las correcciones por errores y disminuya el tiempo promedio para registrar una orden completa.
+- Creemos que dar visibilidad del estado de las órdenes ayudará a mejorar la coordinación y reducir retrabajo, porque todos saben qué está pasando sin tener que preguntar.
+- Sabremos que funciona cuando disminuyan interrupciones/consultas internas y se reduzca el tiempo de ciclo de las órdenes.
+- Creemos que guiar el armado de pedidos de compra ayudará a reponer inventario más rápido y con menos errores, porque reduce el trabajo manual y estandariza el proceso.
+- Sabremos que funciona cuando disminuya el tiempo para generar un pedido y bajen los pedidos incompletos o corregidos.
 
 #### 1.2.2.4 Lean UX Canvas
 
@@ -106,11 +128,11 @@ Es por eso que identificamos que la gestión manual, la baja visibilidad de los 
 
 | 1. Business Problem | 5. Solution Ideas | 2. Business Outcomes |
 |--------------------|------------------|---------------------|
-| - Los restaurantes tipo chifa gestionan inventarios y abastecimiento con procesos poco integrados.<br>- Los proveedores no tienen suficiente visibilidad sobre la demanda futura de sus clientes.<br>- La operación manual incrementa el riesgo de desperdicio, desabastecimiento y retrasos en entregas.<br>- Existe una oportunidad de digitalizar la gestión operativa con una solución escalable y basada en suscripción. | - Aplicación web con roles diferenciados para restaurantes y proveedores.<br>- Dashboard de inventario y alertas.<br>- Módulo de proyección de demanda.<br>- Módulo de pedidos y seguimiento de abastecimiento.<br>- Monitoreo IoT simulado o integrado para temperatura y ocupación.<br>- Landing page con planes Premium y Enterprise. | - Reducir pérdidas por sobrestock y desabastecimiento.<br>- Mejorar la coordinación entre restaurantes y proveedores.<br>- Incrementar la eficiencia operativa en cocina, almacén y abastecimiento.<br>- Facilitar decisiones basadas en datos y alertas.<br>- Sostener el producto mediante planes de suscripción Premium y Enterprise. |
+| - Estado actual del dominio: El estado actual de la gestión operativa y de abastecimiento en restaurantes tipo chifa se ha enfocado principalmente en controles manuales y procesos fragmentados realizados por dueños y encargados, con escasa digitalización. Esto provoca dificultades para mantener inventarios actualizados, falta de visibilidad sobre la demanda y una coordinación ineficiente con proveedores.<br><br>Lo que los productos/servicios existentes no resuelven: Los productos y servicios disponibles no abordan de forma integrada la combinación de inventario en tiempo real, proyección de demanda sencilla, generación automática de pedidos y monitoreo operativo (por ejemplo, temperatura), necesarios para que restaurantes y proveedores se sincronicen y tomen decisiones preventivas basadas en datos.<br><br>Cómo nuestra solución cerrará la brecha: Nuestra plataforma, SupplyWok, abordará esta brecha mediante una aplicación web con roles diferenciados para restaurantes y proveedores que centraliza inventario y alertas, ofrece proyecciones de demanda basadas en historial y ocupación, sugiere y genera pedidos automatizados, y reporta eventos operativos críticos (p. ej. temperatura fuera de rango) para facilitar decisiones oportunas y coordinación eficiente.<br><br>En qué nos enfocaremos inicialmente: Nuestro enfoque inicial será en dueños y administradores de restaurantes chifa, validando con ellos las funcionalidades esenciales de inventario, alertas y generación de pedidos; en paralelo incorporaremos proveedores clave para validar la vista de demanda y la coordinación de entregas.<br><br>Cómo sabremos que tuvimos éxito (comportamientos medibles):<br>≥ 60% de restaurantes activos configuran su inventario inicial y al menos una alerta durante el primer mes.<br>≥ 50% de los pedidos se originan a partir de sugerencias o alertas del sistema.<br>≥ 70% de los usuarios encuestados manifiestan que la plataforma mejora la coordinación operativa.<br>≥ 50% de proveedores activos consultan su panel de demanda al menos una vez por semana.<br>≥ 80% de los eventos de temperatura fuera de rango generan alertas visibles y accionables en el dashboard.| Los usuarios podrán ver en una sola pantalla lo más importante del día (pendientes, alertas, estado general) y entrar rápido a acciones frecuentes.<br>Los usuarios podrán identificar productos en riesgo (bajo mínimo) y tomar acción para reponer antes de quedarse sin stock.<br>El personal podrá crear órdenes con productos, cantidades y notas, y actualizarlas a medida que avanza el servicio.<br>Los usuarios podrán ver qué órdenes están pendientes, en progreso o finalizadas, para coordinar mejor entre áreas.<br>Los usuarios podrán armar pedidos de compra de forma guiada (qué comprar y en qué cantidad) para reabastecer con menos fricción. | Menos pérdidas por quiebre de stock y mejor rotación de inventario (comprar lo necesario a tiempo).<br>Mayor velocidad de operación (comandas y pedidos se registran/actualizan más rápido) y menos errores por registro manual.<br>Mejor coordinación entre roles (cocina, inventario, administración) con estados y pendientes visibles.<br>Visibilidad operacional para managers: KPIs básicos y backlog de pendientes/alertas para priorizar.<br>Escalabilidad: procesos repetibles para múltiples locales/equipos, con configuración (proveedores, zonas de servicio, notificaciones) mantenible. |
 | **3. Users** | **7. Most Important Learning** | **4. User Outcomes & Benefits** |
-| - Dueños de restaurantes chifa.<br>- Administradores o encargados de operación.<br>- Proveedores de insumos para restaurantes. | - Validar si restaurantes y proveedores realmente estarían dispuestos a usar una plataforma compartida para inventario, demanda y pedidos.<br>- Identificar qué funcionalidades entregan más valor al inicio para cada segmento.<br>- Confirmar si la proyección de demanda y las alertas operativas son entendidas como útiles y confiables. | - Controlar inventario de manera centralizada.<br>- Recibir alertas de stock bajo y temperatura fuera de rango.<br>- Visualizar una proyección básica de demanda.<br>- Crear y seguir pedidos de abastecimiento.<br>- Consultar información útil para coordinar entregas y planificación. |
+| - Los usuarios son personal operativo de restaurante y back-office (p. ej. Chef, Inventory, Manager) que trabajan con tareas urgentes y contextos de alta rotación.<br>Necesitan ejecutar acciones con pocos clics y con baja carga cognitiva, porque alternan entre trabajo físico y pantalla.<br>Usan el sistema en distintos momentos del día y valoran acceso rápido a: comandas, stock, alertas, pedidos de compra y tablas/mesas.<br>Tienen necesidades distintas por rol (lo que “importa” en el dashboard y en los accesos varía según permisos/responsabilidades).<br>En algunos entornos habrá conectividad irregular, por lo que esperan que la app sea robusta ante errores (mensajes claros, reintentos, no perder datos del formulario).<br>Algunos usuarios requieren la interfaz en más de un idioma (hay selector de idioma), y esperan consistencia en textos y etiquetas. | - ¿Los usuarios realmente usarán el sistema como su herramienta principal para operar y decidir (“reaccionar”), o seguirán usando métodos alternativos fuera de la app?<br><br>Si esta suposición es falsa (si los usuarios no adoptan la app como su base de operación diaria), todo el valor prometido por nuestras features se pierde, sin importar cuán bien estén diseñadas o implementadas. | - Identificar rápidamente qué requiere atención (alertas/pendientes) desde un dashboard principal sin navegar por múltiples pantallas.<br>Reducir quiebres de stock detectando productos “por debajo del mínimo” y actuando (reposición/compra) antes de impactar la operación.<br>Crear/editar comandas u órdenes de cocina con seguridad (evitar errores de mesa/tipo de servicio/items/observaciones) y poder volver atrás sin fricción.<br>Generar pedidos de compra más rápido, con datos prellenados y validaciones (fechas, proveedor, prioridad, líneas de pedido).<br>Sentir control y trazabilidad: saber “qué pasó y qué sigue”, incluso cuando cambian estados (pendiente/en proceso/etc.).<br>Evitar duplicidad y errores manuales: que el sistema centralice inventario, órdenes y compras con información consistente. |
 | **6. Hypotheses** |  | **8. Least Effort to Learn** |
-| - Creemos que si centralizamos inventario y pedidos en una sola plataforma, los restaurantes mejorarán su control operativo.<br>- Creemos que si los proveedores pueden visualizar la demanda estimada, coordinarán mejor sus entregas.<br>- Creemos que si el sistema genera alertas de bajo stock y temperatura, se reducirá el riesgo operativo.<br>- Creemos que un modelo de suscripción con beneficios por segmento hará más viable el producto.<br>- Creemos que una interfaz clara y separada por rol facilitará la adopción por parte de restaurantes y proveedores. |  | - Construir un prototipo navegable de baja fidelidad con login, dashboard de inventario, alertas, pedidos y vista de demanda.<br>- Probarlo con entrevistas a dueños de chifas y proveedores para validar interés, utilidad y claridad de uso. |
+| Creemos que una vista principal que priorice lo urgente ayudará a que el equipo actúe más rápido y con menos estrés, porque reduce la navegación y facilita decidir qué hacer primero.<br>Sabremos que funciona cuando baje el tiempo desde que ingresan hasta que completan la primera acción y aumente la atención de pendientes críticos.<br>Creemos que hacer visibles los faltantes y riesgos de inventario ayudará a prevenir quiebres de stock, porque convierte el control en una tarea simple y frecuente.<br>Sabremos que funciona cuando disminuyan los quiebres de stock y aumente la reposición anticipada.<br>Creemos que un flujo rápido y claro para registrar y actualizar órdenes ayudará a reducir errores y acelerar la operación, porque estandariza la información y evita omisiones.<br>Sabremos que funciona cuando bajen las correcciones por errores y disminuya el tiempo promedio para registrar una orden completa.<br>Creemos que dar visibilidad del estado de las órdenes ayudará a mejorar la coordinación y reducir retrabajo, porque todos saben qué está pasando sin tener que preguntar.<br>Sabremos que funciona cuando disminuyan interrupciones/consultas internas y se reduzca el tiempo de ciclo de las órdenes.<br>Creemos que guiar el armado de pedidos de compra ayudará a reponer inventario más rápido y con menos errores, porque reduce el trabajo manual y estandariza el proceso.<br>Sabremos que funciona cuando disminuya el tiempo para generar un pedido y bajen los pedidos incompletos o corregidos. |  | - El menor trabajo para validar la suposición más crítica es crear un prototipo navegable (o MVP básico) que simule la centralización de la operación. Hacer que usuarios reales lo usen para casos frecuentes y observar si lo adoptan o todavía prefieren métodos alternativos. Así podremos aprender rápidamente si nuestra solución cubre las necesidades y si realmente será usada como centro operativo.|
 
 <sub>*Tabla 2. Lean UX Canvas*</sub>
 
@@ -148,15 +170,14 @@ Con la investigación y el enfoque del producto, se identificaron 2 segmentos ob
 - Las soluciones basadas en datos permiten mejorar la planificación de la oferta y reducir errores de abastecimiento.
 
 
+[^1]: Instituto Nacional de Calidad (INACAL). (2023). *Turismo: Inacal promueve la calidad en servicios de restaurantes*. https://www.gob.pe/institucion/inacal/noticias/809133-turismo-inacal-promueve-la-calidad-en-servicios-de-restaurantes
 
-[^1]: Annosi, M. C., Brunetta, F., Bimbo, F., & Kostoula, M. (2021). Digitalization within food supply chains to prevent food waste: Drivers, barriers and collaboration practices. *Industrial Marketing Management, 93*, 208–220. https://doi.org/10.1016/j.indmarman.2021.01.005
+[^2]: Annosi, M. C., Brunetta, F., Bimbo, F., & Kostoula, M. (2021). Digitalization within food supply chains to prevent food waste: Drivers, barriers and collaboration practices. *Industrial Marketing Management, 93*, 208–220. https://doi.org/10.1016/j.indmarman.2021.01.005
 
-[^2]: Bouzembrak, Y., Klüche, M., Gavai, A., & Marvin, H. J. P. (2019). Internet of things in food safety: Literature review and a bibliometric analysis. *Trends in Food Science & Technology, 94*, 54–64. https://doi.org/10.1016/j.tifs.2019.11.002
-
-[^3]: Instituto Nacional de Calidad (INACAL). (2023). *Turismo: Inacal promueve la calidad en servicios de restaurantes*. https://www.gob.pe/institucion/inacal/noticias/809133-turismo-inacal-promueve-la-calidad-en-servicios-de-restaurantes
+[^3]: Wassif, G. O., Abdelsalam, A., Eldin, W. S., Abdel-Hamid, M. A., & Damaty, S. I. (2024). Work-related injuries and illnesses among kitchen workers at two major students’ hostels. *Journal of the Egyptian Public Health Association, 99*, Article 16. https://doi.org/10.1186/s42506-024-00163-x
 
 [^4]: Instituto Nacional de Estadística e Informática (INEI). (2024). *Actividad de restaurantes aumentó en 2,57% en febrero de 2024*. https://m.inei.gob.pe/prensa/noticias/actividad-de-restaurantes-aumento-en-257-en-febrero-de-2024-15121/
 
 [^5]: Tanizaki, T., Hoshino, T., Shimmura, T., & Takenaka, T. (2020). Restaurant store management based on demand forecasting. *Procedia CIRP, 88*, 580–583. https://doi.org/10.1016/j.procir.2020.05.101
 
-[^6]: Wassif, G. O., Abdelsalam, A., Eldin, W. S., Abdel-Hamid, M. A., & Damaty, S. I. (2024). Work-related injuries and illnesses among kitchen workers at two major students’ hostels. *Journal of the Egyptian Public Health Association, 99*, Article 16. https://doi.org/10.1186/s42506-024-00163-x
+[^6]: Bouzembrak, Y., Klüche, M., Gavai, A., & Marvin, H. J. P. (2019). Internet of things in food safety: Literature review and a bibliometric analysis. *Trends in Food Science & Technology, 94*, 54–64. https://doi.org/10.1016/j.tifs.2019.11.002

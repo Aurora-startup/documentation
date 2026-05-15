@@ -8,9 +8,7 @@ En esta sección se detallan los lineamientos de estilo que hemos decidido segui
 
 El logo de nuestra plataforma está compuesto por los caracteres 'S' y 'W' provenientes del nombre SuppylWok, puestos de forma creativa para mantener una relacion con nuestro público objetivo. La 'S' encontrandose en forma de humo que sale de un recipiente que tiene la forma de 'W'. Transmitiendo una conexion con el entorno de un restaurante chifa generando familiaridad con nuestros usuarios.
 
-<div align="center">
-  <img src="../assets/images/supplywok-logo.png" width="300" height="300" alt="SupplyWok Logo">
-</div>
+![](../assets/images/supplywok-logo.png)
 
 #### 4.1.1.2. Paleta de Colores.
 
@@ -22,9 +20,7 @@ La identidad visual de SupplyWok busca mantener una relacion con el entorno de u
 - **Blanco (#FFFFFF):** Color neutro para mantener un balance en la paleta de colores.
 - **Negro (#000000):** Color neutro para mantener un balance en la paleta de colores.
 
-<div align="center">
-  <img src="../assets/images/paleta_colores.png" width="1000" height="200" alt="SupplyWok Colors">
-</div>
+![](../assets/images/paleta_colores.png)
 
 #### 4.1.1.3. Tipografía.
 
@@ -32,18 +28,102 @@ La tipografia que se ha decidido usar en nuestra plataforma son dos, Poppins y M
 
 - **Títulos:** Para los titulos se usaran Poppins en pesos de Bold o semibold dependiendo del titulo, esto para dar una fuerza y relevancia necesarias en titulos.
 
-<div align="center">
-  <img src="../assets/images/poppins_example.png" alt="SupplyWok Poppins">
-</div>
+![](../assets/images/poppins_example.png)
 
 - **Párrafos o cuerpo del texto:** Se usara Monserrat en pesos variados como bold, regular o light dependiendo de la intencion del parrafo. Pensado en la legibilidad necesaria para los usuarios al momento de leer.
 
-<div align="center">
-  <img src="../assets/images/monserrat_example.png" alt="SupplyWok Monserrat">
-</div>
+![](../assets/images/monserrat_example.png)
 
 
 ### 4.1.2. Web Style Guidelines.
+
+as Web Style Guidelines de SupplyWok establecen los criterios visuales y de interacción que guían el diseño de la landing page y la web application. Estas pautas aseguran consistencia entre dispositivos, favorecen la legibilidad y permiten que tanto restaurantes como proveedores naveguen de forma intuitiva por la plataforma.
+
+#### Estructura general
+
+SupplyWok adopta un enfoque **responsive web design**, de modo que la interfaz se adapte correctamente a desktop, laptop, tablet y mobile web sin perder claridad ni coherencia visual.
+
+- **Desktop:** La navegación principal se presenta mediante sidebar lateral y header superior. Los módulos con mayor densidad informativa, como inventario y reportes, aprovechan mejor el ancho disponible mediante tablas, tarjetas comparativas y filtros visibles.
+- **Tablet:** La estructura se reorganiza a 6 u 8 columnas, reduciendo el número de elementos visibles por fila. Los paneles laterales pueden colapsarse y ciertas tablas pasan a formatos más compactos para facilitar la interacción táctil.
+- **Mobile Web:** La estructura se simplifica a una sola columna. Los elementos se apilan verticalmente, se priorizan botones de acción principal y la navegación se compacta mediante menú hamburguesa o navegación inferior, según el flujo.
+
+#### Breakpoints
+
+Se proponen los siguientes breakpoints para asegurar una adaptación consistente:
+
+- **Mobile:** hasta 767 px.
+- **Tablet:** desde 768 px hasta 1023 px.
+- **Desktop:** 1024 px en adelante.
+
+#### Componentes básicos de UI
+
+- **Botones primarios:** fondo rojo `#C21204` o marrón `#2D241E`, texto blanco, bordes redondeados de 10 px a 12 px. Se utilizan para acciones clave como `Crear pedido`, `Export PDF`, `Confirmar` o `Iniciar sesión`.
+- **Botones secundarios:** fondo blanco o amarillo claro, borde en rojo o mostaza, con texto oscuro. Se emplean para acciones complementarias como `Cancelar`, `Ver detalle` o `Volver`.
+- **Inputs y formularios:** bordes suaves, fondo claro y suficiente padding interno para facilitar lectura e interacción. El estado enfocado resalta mediante borde rojo o mostaza. El estado de error utiliza borde rojo más oscuro y un mensaje de validación visible.
+- **Cards:** contenedores rectangulares con esquinas redondeadas, padding interno de 16 px a 24 px y jerarquía clara entre título, contenido y acciones. Se usan en dashboard, alertas, métricas y secciones de resumen.
+- **Tablas:** encabezados destacados, filas con separación visual suficiente y acciones agrupadas al extremo derecho. En resoluciones pequeñas, las tablas pueden transformarse en listas o tarjetas para mejorar la lectura.
+- **Sidebar:** navegación vertical persistente en desktop, con acceso a Dashboard, Inventario, Pedidos, Proveedores, Alertas, Reportes y Configuración. En tablet y mobile se colapsa.
+- **Header:** barra superior con nombre del usuario, rol, notificaciones y acceso rápido a configuración y cierre de sesión.
+
+#### Tipografía en web
+
+La propuesta tipográfica de SupplyWok mantiene como base las fuentes **Poppins** y **Montserrat**, según la identidad visual previamente definida.
+
+- **Títulos principales (H1):** Poppins Bold, 24 px a 28 px.
+- **Subtítulos (H2):** Poppins SemiBold, 20 px a 22 px.
+- **Encabezados de sección (H3):** Poppins Medium, 18 px.
+- **Texto de párrafo y descripciones:** Montserrat Regular, 14 px a 16 px.
+- **Texto en botones:** Poppins SemiBold, 14 px a 16 px.
+- **Etiquetas de formularios y tablas:** Montserrat Medium, 13 px a 14 px.
+
+#### Interacción
+
+- **Hover:** Los botones incrementan ligeramente el contraste o brillo del color base. Los links se subrayan o cambian a una variante más intensa del color principal.
+- **Focus:** Todo componente interactivo debe mostrar un estado visible de foco, especialmente inputs, botones y enlaces, para favorecer accesibilidad y navegación por teclado.
+- **Active / Click:** Los botones aplican una ligera reducción de escala o sombra interna para confirmar la interacción.
+- **Feedback visual:** Estados como éxito, error, advertencia o información se distinguen mediante color, iconografía y texto breve.
+- **Scroll y navegación persistente:** En desktop, el header y ciertos filtros pueden permanecer visibles para facilitar navegación rápida en vistas largas.
+- **Responsive behavior:** El contenido prioritario siempre debe conservar visibilidad antes que elementos decorativos o secundarios.
+
+### 4.1.3. Mobile Style Guidelines
+
+Las Mobile Style Guidelines de SupplyWok tienen como objetivo adaptar la experiencia de uso a pantallas reducidas sin perder funcionalidad, claridad visual ni consistencia con la propuesta general del producto. Estas pautas priorizan rapidez de interacción, facilidad de lectura y acceso inmediato a acciones frecuentes.
+
+#### Estructura general
+
+La experiencia móvil de SupplyWok está diseñada para que restaurantes y proveedores puedan consultar información crítica y ejecutar acciones esenciales desde cualquier lugar.
+
+- **Pantallas en una sola columna**, con contenido apilado verticalmente.
+- **Header compacto**, con logo, nombre de la vista y acceso a notificaciones o menú.
+- **Navegación simplificada**, priorizando las secciones más importantes según el rol del usuario.
+- **Botones de acción visibles**, especialmente en flujos como crear pedido, registrar stock o confirmar entregas.
+- **Tarjetas resumidas**, en lugar de tablas complejas, para mostrar inventario, pedidos y alertas de forma clara.
+
+#### Componentes básicos en mobile
+
+- **Botones primarios:** rojo `#C21204` o marrón `#2D241E`, texto blanco, esquinas redondeadas de 12 px y tamaño suficiente para interacción táctil.
+- **Botones secundarios:** fondo blanco o amarillo claro con borde visible y alto contraste.
+- **Inputs:** ancho completo, padding amplio y separación mínima de 16 px entre campos.
+- **Cards de resumen:** usadas para pedidos, insumos, alertas y métricas, con distribución vertical y jerarquía clara.
+- **Listas:** los registros se organizan en bloques táctiles con título, estado, fecha y acción principal.
+- **Indicadores de estado:** cada pedido o alerta utiliza color y texto para distinguir rápidamente condiciones como pendiente, entregado, stock bajo o fuera de rango.
+
+#### Tipografía en mobile
+
+- **Título principal (H1):** Poppins Bold, 20 px a 22 px.
+- **Subtítulos (H2):** Poppins SemiBold, 16 px a 18 px.
+- **Texto general:** Montserrat Regular, 14 px.
+- **Botones:** Poppins SemiBold, 14 px.
+- **Etiquetas pequeñas o estados:** Montserrat Medium, 12 px a 13 px.
+
+#### Interacción en mobile
+
+- Se prioriza el uso de **acciones rápidas** y **flujos cortos**.
+- Los botones deben tener un tamaño mínimo adecuado para interacción táctil.
+- Los formularios se dividen en bloques cortos para evitar fatiga visual.
+- Las acciones críticas se colocan al alcance natural del pulgar.
+- Los cambios de estado deben mostrarse inmediatamente mediante mensajes visibles o indicadores contextuales.
+
 ## 4.2. Information Architecture
 
 La arquitectura de información de SupplyWok está diseñada para dos contextos distintos: la **Landing Page**, orientada a captar y convertir visitantes en usuarios registrados, y la **Web Application**, donde los usuarios operan la plataforma según su rol. Ambos contextos tienen estructuras de navegación y organización de contenido diferenciadas, pero comparten un lenguaje visual y terminológico consistente.
@@ -366,25 +446,17 @@ SupplyWok tiene dos contextos de navegación diferenciados: la **Landing Page**,
 Durnate la elaboración de la landing page se utilizaropn los principios de diseño, utlizando diferentes secciones que muestran la información.
 ### 4.3.1. Landing Page Wireframe.
 #### Desktop
-<p align="center">
-  <img src="../assets/images/figma/landingpage-desktop-wireframe.png" width="600px">
-</p>
+![](../assets/images/figma/landingpage-desktop-wireframe.png)
 
 #### Mobile
-<p align="center">
-  <img src="../assets/images/figma/landingpage-mobile-wireframe.png" width="600px">
-</p>
+![](../assets/images/figma/landingpage-mobile-wireframe.png)
 
 ### 4.3.2. Landing Page Mock-up.
 #### Desktop
-<p align="center">
-  <img src="../assets/images/figma/landingpage-desktop-mockup.png" >
-</p>
+![](../assets/images/figma/landingpage-desktop-mockup.png)
 
 #### Mobile
-<p align="center">
-  <img src="../assets/images/figma/landingpage-mobile-mockup.png" width="600px">
-</p>
+![](../assets/images/figma/landingpage-mobile-mockup.png)
 
 
 ## 4.4. Web Applications UX/UI Design.
@@ -399,25 +471,25 @@ En escritorio, los wireframes muestran una estructura con sidebar, header superi
 ![wireframes web](../assets/images/figma/wireframes-web.jpg)
 ![wireframe mobile1](../assets/images/figma/web-app-mobile-wireframe1.png)
 ![wireframe mobile2](../assets/images/figma/web-app-mobile-wireframe2.png)
-[wireframe mobile3](../assets/images/figma/web-app-mobile-wireframe3.png)
+![wireframe mobile3](../assets/images/figma/web-app-mobile-wireframe3.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 
 Los wireflows de SupplyWok muestran cómo cambian las pantallas wireframe a medida que el usuario avanza en un flujo concreto. Cada wireflow se construye a partir de un user goal y representa la secuencia de pasos necesarios para alcanzarlo, incluyendo decisiones intermedias y estados relevantes de la interfaz.
 
 **User Goal 1: Registrar y controlar insumos del restaurante.**  
-El usuario accede a la aplicación y, al no estar logueado, puede optar por crear una nueva cuenta o iniciar sesión. Si selecciona “Crear cuenta”, se abre un formulario donde debe ingresar su nombre, apellidos, correo electrónico y contraseña. En caso de que falte algún campo, la aplicación mostrará un mensaje de advertencia hasta que se completen los datos correctamente. Una vez registrado, se muestra una confirmación y el usuario es redirigido al mapa principal. Si ya posee una cuenta, selecciona “Iniciar sesión” e ingresa sus credenciales. Si estas son incorrectas, el sistema mostrará un mensaje de error. Tras un inicio exitoso, el usuario accede a la pantalla principal con el mapa interactivo y las funciones disponibles.
+Este wireflow representa el recorrido del usuario restaurante desde el acceso al Dashboard hasta el módulo de Inventario, donde puede registrar un nuevo insumo, definir unidad de medida, stock mínimo y proveedor asociado. El flujo permite validar que la pantalla principal, la tabla de inventario y el formulario de creación estén conectados de manera lógica y con mínima fricción.
 
 ![wireflow1](../assets/images/figma/web-app-mobile-wireflow1.jpeg) 
 
 
 **User Goal 2: Crear y dar seguimiento a un pedido de abastecimiento.**  
-Este wireflow muestra cómo el restaurante inicia un pedido desde la sección de Pedidos, selecciona proveedor, agrega productos y revisa el estado del pedido una vez registrado. Si el usuario no rellena los campos adecuadamente, se muestra un mensaje de error. La secuencia evidencia una organización paso a paso que reduce errores y favorece la trazabilidad de la orden.
+Este wireflow muestra cómo el restaurante inicia un pedido desde la sección de Pedidos, selecciona proveedor, agrega productos y revisa el estado del pedido una vez registrado. La secuencia evidencia una organización paso a paso que reduce errores y favorece la trazabilidad de la orden.
 
 ![wireflow](../assets/images/figma/web-app-mobile-wireflow2.jpeg)
 
 **User Goal 3: Gestionar comandas y operación interna del restaurante.**  
-Este wireflow representa el flujo mediante el cual el personal del restaurante registra una comanda, la asocia a una mesa y hace seguimiento a su avance dentro de la operación interna. Empieza desde el dashboard a la pagina de comandas, luego a generar nuevo ticket y dependiendo el tipo de ticket se genera un formulario para crear la solicitud de la comanda, se rellena la solicitud y luego se envia y actualiza.
+Este wireflow representa el flujo mediante el cual el personal del restaurante registra una comanda, la asocia a una mesa y hace seguimiento a su avance dentro de la operación interna. La estructura permite visualizar con claridad los cambios de estado entre cola, preparación y listo.
 
 ![wireflow3](../assets/images/figma/web-app-mobile-wireflow3.jpeg)
 **User Goal 4: Gestionar pedidos recibidos y catálogo del proveedor.**  
@@ -425,11 +497,8 @@ Este wireflow muestra el recorrido del proveedor desde su dashboard hacia pedido
 
 ![wireflow4](../assets/images/figma/web-app-mobile-wireflow4.jpeg)
 
-### 4.4.2. Web Applications Mock-ups.
+### 4.4.3. Web Applications Mock-ups.
 
-Los mock-ups de SupplyWok muestran la versión visual final de las aplicaciones web, incorporando el sistema de colores, tipografía, espaciado y componentes definidos en las Style Guidelines. En estas vistas se evidencia cómo la jerarquía visual, el diseño inclusivo y la arquitectura de información se traducen en pantallas operativas, legibles y consistentes para ambos roles.
-
-En escritorio, los mock-ups reflejan una interfaz de trabajo con navegación lateral persistente, paneles informativos, tablas y tarjetas orientadas a la toma de decisiones. En mobile, la experiencia se reorganiza en bloques táctiles de una sola columna, priorizando la consulta rápida y la ejecución de acciones esenciales.
 ![mockupweb1](../assets/images/figma/mockup-web1.png)
 ![mockupweb2](../assets/images/figma/mockup-web2.png)
 ![mockupweb3](../assets/images/figma/mockup-web3.png)
@@ -569,28 +638,59 @@ En escritorio, los mock-ups reflejan una interfaz de trabajo con navegación lat
 
 **4)** Segundo plan de suscripción, muestra sus beneficios, precio y un botón para adquirirlo, en caso ya lo tenga se desactiva y cambia el texto a "Plan Actual".
 
+
+### 4.4.4. Web Applications User Flow Diagrams.
+
+Los User Flow Diagrams de SupplyWok representan los recorridos funcionales principales de los usuarios dentro del sistema, considerando tanto la ruta esperada como posibles variantes o interrupciones. A diferencia del wireflow, aquí el foco está en la lógica de navegación, las decisiones del usuario y las condiciones que afectan la continuidad del flujo.
+
+**User Goal 1: Mantener actualizado el inventario del restaurante.**  
+Happy path: el usuario ingresa al Dashboard, accede a Inventario, selecciona la opción para agregar o editar un insumo, guarda la información y visualiza la actualización reflejada en la tabla principal.  
+Unhappy path: el usuario omite campos obligatorios o ingresa valores inválidos; el sistema bloquea el guardado y muestra mensajes de validación.
+
+![userflow1](../assets/images/figma/web-app-mobile-userflow1.jpeg)
+
 #### mobile
 ![mockupmobile1](../assets/images/figma/web-app-mobile-mockup1.png)
 
 ![mockupmobile2](../assets/images/figma/web-app-mobile-mockup2.png)
 ![mockupmobil3](../assets/images/figma/web-app-mobile-mockup3.png)
 
-### 4.4.3. Web Applications User Flow Diagrams.
+**User Goal 2: Generar un pedido de abastecimiento correctamente.**  
+Happy path: el restaurante accede al módulo de Pedidos, selecciona proveedor, agrega productos, confirma cantidades y registra la orden, quedando visible con estado pendiente.  
+Unhappy path: no existe stock de referencia, no se selecciona proveedor o faltan productos; el sistema notifica el error y evita el registro incompleto.
 
-![web-application-mobile-userflow1](../assets/images/figma/web-app-mobile-userflow1.jpeg)
-![web-application-mobile-userflow2](../assets/images/figma/web-app-mobile-userflow2.jpeg)
-![web-application-mobile-userflow3](../assets/images/figma/web-app-mobile-userflow3.jpeg)
-![web-application-mobile-userflow4](../assets/images/figma/web-app-mobile-userflow4.jpeg)
+![userflow2](../assets/images/figma/web-app-mobile-userflow2.jpeg)
+
+**User Goal 3: Gestionar una comanda hasta su finalización.**  
+Happy path: el personal registra una comanda, la asocia a una mesa, la cocina la procesa y el sistema actualiza su estado hasta marcarla como lista o entregada.  
+Unhappy path: la mesa no está disponible, la comanda queda incompleta o el estado no puede avanzar por una inconsistencia operativa; el sistema informa la condición al usuario.
+
+![userflow3](../assets/images/figma/web-app-mobile-userflow3.jpeg)
+
+**User Goal 4: Dar seguimiento a pedidos desde la vista proveedor.**  
+Happy path: el proveedor accede a pedidos recibidos, revisa el detalle, actualiza el estado del despacho y confirma la entrega.  
+Unhappy path: el pedido está retrasado, faltan productos o el proveedor no puede confirmar entrega; el sistema permite registrar la incidencia y mantener trazabilidad del estado.
+
+![userflow4](../assets/images/figma/web-app-mobile-userflow4.jpeg)
 
 ## 4.5. Web Applications Prototyping.
 
+La fase de prototipado de SupplyWok permite simular la navegación y la interacción principal de las aplicaciones antes de su implementación final. Los prototipos fueron diseñados para validar la continuidad entre arquitectura de información, componentes de interfaz y flujos funcionales, tanto en escritorio como en mobile. Esta sección incorpora evidencia audiovisual del recorrido de uso para demostrar la experiencia de usuario completa.
+
 #### Escritorio
 ![desktop-prototype](../assets/images/figma/desktop-prototype.png)
-[prototipo de escritorio](https://www.figma.com/proto/JUBnvZfJvlrpxIpW8ICRvS/SupplyWok?node-id=428-4042&p=f&t=kGhZbpCdqH2BntGS-0&scaling=scale-down&content-scaling=fixed&page-id=428%3A2335)
+
+[Prototipo Desktop](https://www.figma.com/proto/JUBnvZfJvlrpxIpW8ICRvS/SupplyWok?node-id=428-4042&p=f&t=kGhZbpCdqH2BntGS-0&scaling=scale-down&content-scaling=fixed&page-id=428%3A2335)
 
 #### Mobile
 ![mobile-protoype](../assets/images/figma/mobile-prototype.png)
+
 [prototipo mobile](https://www.figma.com/proto/JUBnvZfJvlrpxIpW8ICRvS/SupplyWok?node-id=428-2336&p=f&t=kGhZbpCdqH2BntGS-0&scaling=scale-down&content-scaling=fixed&page-id=428%3A2336)
+
+#### Video prototype
+[video de prototype desktop y mobile](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQDkq2Qv2M5aR40vWnyGaTpSAfxzErIKTIrpk9ecgyM3YHI?e=dJMWyy&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
 ## 4.6. Domain-Driven Software Architecture.
 
 
@@ -602,82 +702,58 @@ Primero, refinamos la línea de tiempo original, eliminando eventos redundantes 
 
 Este contexto delimitado constituye el núcleo operativo para los restaurantes tipo chifa dentro de la plataforma Aurora. Su propósito principal es centralizar y automatizar el control de los insumos, transformando la gestión manual tradicional en un proceso preciso y basado en datos.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e01.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e01.png)
 
 Este contexto delimitado actúa como el puente transaccional entre los restaurantes tipo chifa y sus proveedores dentro del ecosistema Aurora. Su objetivo fundamental es digitalizar y estructurar la coordinación de pedidos de insumos, reemplazando las vías de comunicación informales por un flujo de trabajo centralizado y rastreable en la plataforma.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e02.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e02.png)
 
 Este contexto delimitado tiene como propósito supervisar las condiciones físicas críticas en las instalaciones del restaurante, específicamente en áreas vulnerables como la cocina y el almacén. Mediante la integración simulada de sensores IoT, el sistema monitorea variables ambientales clave de forma continua, tales como la temperatura y la humedad.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e03.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e03.png)
 
 Este contexto delimitado está diseñado para centralizar la gestión de los proveedores, brindándoles las herramientas necesarias para optimizar su logística y planificación comercial. A través de este módulo, los proveedores obtienen visibilidad sobre la demanda futura de sus clientes, lo que les permite gestionar sus catálogos de insumos y realizar un seguimiento detallado del estado de los pedidos recibidos.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e04.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e04.png)
 
 Este contexto delimitado representa la capa transversal de seguridad y administración comercial de la plataforma Aurora. Su propósito principal es proporcionar un entorno centralizado y seguro donde todos los usuarios puedan autenticarse, gestionar sus cuentas y recibir soporte técnico de manera eficiente.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e05.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e05.png)
 
 Este contexto delimitado representa el núcleo operativo del restaurante chifa dentro de la plataforma Aurora. Su propósito principal es orquestar la comunicación crítica entre el salón y la cocina, asegurando que los pedidos se procesen con precisión, se monitoreen en tiempo real y se mantenga la integridad operativa.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e06.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e06.png)
 
 ### 4.6.2. Software Architecture Context Diagram.
 
-<div align="center">
-  <img src="../assets/images/suppluwok-system-context.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/suppluwok-system-context.png)
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-<div align="center">
-  <img src="../assets/images/supplywok-containers.png" alt="SupplyWok Containers Diagram">
-</div>
+![](../assets/images/supplywok-containers.png)
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
-<div align="center">
-  <img src="../assets/images/supplywok-components.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/supplywok-components.png)
 
 ## 4.7. Software Object-Oriented Design.
 ### 4.7.1. Class Diagrams.
 
 En esta seccion se presentara y se explicara el diagrama de clases por cada Boundes Context
 
-<div align="center">
-  <img src="../assets/images/IMBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/IMBC.png)
 
 El **Inventory Management Bounded Context** es el encargado de gestionar los recursos de inventario de cada restaurante, incluyendo el control de stock, niveles mínimos y movimientos de entrada y salida.
 
 El **InventoryService** actúa como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el **InventoryRepository** para la persistencia de datos y el **InventoryItem** como entidad principal del dominio, encargada de representar cada insumo almacenado en el Inventario del restaurante.El **StockMovement** representa las modificaciones realizadas al stock de cada ítem, permitiendo llevar un registro detallado de entradas, salidas y ajustes.
 
-<div align="center">
-  <img src="../assets/images/S&PBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/S&PBC.png)
 
 El **Supply and Purchasing Bounded Context** es el encargado de gestionar las órdenes de compra realizadas por cada restaurante, incluyendo el registro, cancelación y seguimiento de los pedidos.
 
 El **PurchaseOrderService** actúa como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el **PurchaseOrderRepository** para la persistencia de datos y el **PurchaseOrder** como entidad principal del dominio, encargada de representar toda la información de una orden de compra de insumos del restaurante. Además, el **OrderItem** encapsula las especificaciones de cada producto dentro de la orden, como la cantidad solicitada y el precio unitario, permitiendo un control detallado de cada pedido.
 
-<div align="center">
-  <img src="../assets/images/O&IBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/O&IBC.png)
 
 El **Operational Monitoring and IoT Alerts Bounded Context** es el encargado de gestionar la información recopilada por los sensores del restaurante, así como la configuración y generación de alertas ante condiciones fuera de los rangos establecidos.
 
@@ -685,9 +761,7 @@ El **SensorService** actúa como capa de aplicación, coordinando las operacione
 
 Además, emplea la entidad **Sensor**, junto con **SensorReading**, para representar la información capturada por los sensores. Por otro lado, la entidad **Alert** modela las alertas generadas cuando una medición supera los límites configurados.
 
-<div align="center">
-  <img src="../assets/images/RMBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/RMBC.png)
 
 El **Restaurant Management Bounded Context** es el encargado de gestionar todo lo relacionado con la operación del establecimiento, incluyendo la administración de mesas y la gestión de comandas en cada restaurante.
 
@@ -695,9 +769,7 @@ Los servicios **ComandaService**, **RestaurantService** y **TableService** actú
 
 Además, se emplean las entidades **Table**, que representa una mesa dentro del restaurante; **Comanda** y **ComandaItem**, que modelan las órdenes de consumo; y **Restaurant**, que encapsula la información principal de cada restaurante.
 
-<div align="center">
-  <img src="../assets/images/S&OBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/S&OBC.png)
 
 El **Supplier Management & Operations Bounded Context** es el encargado de gestionar la información de los proveedores, sus catálogos de productos y las operaciones relacionadas con el cumplimiento de pedidos.
 
@@ -709,9 +781,7 @@ Además, el **DemandForecastService** se encarga de generar proyecciones de dema
 
 Finalmente, el **OrderFulfillmentService** gestiona el proceso de entrega de pedidos mediante la entidad **OrderFulfillment**, permitiendo hacer seguimiento al estado de los envíos desde su despacho hasta su entrega final.
 
-<div align="center">
-  <img src="../assets/images/I&ABC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/I&ABC.png)
 
 El **Identity & Access Bounded Context** es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas de usuario en el sistema.
 
@@ -719,9 +789,7 @@ Los servicios **AuthService** y **TokenService** actúan como capa de aplicació
 
 La entidad **User** encapsula toda la información relevante de un usuario en la plataforma, como su correo electrónico, contraseña (almacenada de forma segura) y su **Role**, el cual define sus permisos dentro del sistema.
 
-<div align="center">
-  <img src="../assets/images/SBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/SBC.png)
 
 El **Shared Bounded Context** contiene Value Objects comunes que son reutilizados por múltiples bounded contexts del sistema, evitando duplicación y promoviendo consistencia en el modelo.
 
@@ -758,8 +826,6 @@ Facilita la comunicación eficiente entre la cocina y las mesas para garantizar 
 
 ### 4.8.1. Database Diagrams.
 
-<div align="center">
-  <img src="../assets/images/database-diagram.png" alt="SupplyWok Database Diagram">
-</div>
+![](../assets/images/database-diagram.png)
 
 [^1]: Clec. (s.f.). El color rojo en China: orígenes y tradiciones. Recuperado el 23 de abril de 2026, de https://fundacionclec.org/el-color-rojo-en-china-origenes-y-tradiciones/
