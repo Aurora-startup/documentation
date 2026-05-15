@@ -380,19 +380,35 @@ En el Sprint 2, como equipo nos centramos en el desarrollo del frontend de Suppl
 | **Sprint 2 Velocity** | Límite de **35 SP** |
 | **Sum of Story Points** | **30 SP** |
 
-#### 5.2.1.2. Aspect Leaders and Collaborators.
+#### 5.2.2.2. Aspect Leaders and Collaborators.
 
-| Team Member {Last Name, First Name} | GitHub username | Estructure HTML | Design UI & responsive | Scripts and UX | SEO and Accessibility | Content and Assets |
+Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del frontend de SupplyWok, priorizando las interfaz y funcionalidades principales de la plataforma. Los principales aspectos considerados en este sprint incluyen el desarrollo de los todos los bounded context.
+
+- **Inventory Management Bounded Context**: Es el encargado de gestionar la informacion de los recursos de inventario de cada restaurante.
+
+- **Supply and Purchasing Bounded Context**: Es el encargado de gestionar las órdenes de suplementos realizadas por cada restaurante.
+
+- **Restaurant Management Bounded Context**: Es el encargado de gestionar todo lo relacionado con la operación del establecimiento.
+
+- **Operational Monitoring and IoT Alerts Bounded Context**: Es el encargado de gestionar la información recopilada por los sensores del restaurante.
+
+- **Supplier Management & Operations Bounded Context**: Es el encargado de gestionar la información de los proveedores y sus pedidos.
+
+- **Identity & Access Bounded Context**: Es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas.
+
+- **Shared Bounded Context**: Contiene Value Objects y componenetes visuales comunes que son reutilizados por múltiples bounded contexts del sistema.
+
+| Team Member | GitHub username | Inventory Management Bounded BC | Supply and Purchasing BC / Shared BC | Restaurant Management BC | Supplier Management & Operations BC | Operational Monitoring and IoT Alerts BC / Identity & Access BC  |
 |---|---|---|---|---|---|---|
-| Cuadros, Marcelo | Marcelo-alt-lab | C | C | L | C | C |
-| Payano, Joan | Nounz27 | C | C | C | - | - |
-| Meza, Alexandra | AlexandraYMS | - | L | - | C | C |
-| Ayasta, Zayd | Zayd Ayasta | L | C | C | C | - |
-| Wang, Juan | jwd3t | C | - | C | L | C |
+| Cuadros, Marcelo | Marcelo-alt-lab | C | C | C | - | L |
+| Payano, Joan | Nounz27             | - | C | L | C | C |
+| Meza, Alexandra | AlexandraYMS     | L | C | - | C | C |
+| Ayasta, Zayd | Zayd Ayasta         | C | L | C | C | - |
+| Wang, Juan | jwd3t                 | C | - | C | L | C |
 
-#### 5.2.1.3. Sprint Backlog 1.
+#### 5.2.2.3. Sprint Backlog 2.
 
-**Sprint 1 Backlog**
+**Sprint 2 Backlog**
 
 | US Id | US Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|---|
