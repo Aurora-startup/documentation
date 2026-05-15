@@ -233,7 +233,7 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
 #### Despliegue del Frontend Web Application
 
 - **Tecnologías utilizadas:**  
-  Framework SPA (Angular / Vue / React), HTML, CSS, TypeScript/JavaScript.
+  Framework SPA (Angular 21+), HTML, CSS, TypeScript.
 
 - **Repositorio:**  
   [https://github.com/Aurora-startup/SupplyWok-frontend](https://github.com/Aurora-startup/SupplyWok-frontend)

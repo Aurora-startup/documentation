@@ -36,6 +36,93 @@ La tipografia que se ha decidido usar en nuestra plataforma son dos, Poppins y M
 
 
 ### 4.1.2. Web Style Guidelines.
+
+as Web Style Guidelines de SupplyWok establecen los criterios visuales y de interacción que guían el diseño de la landing page y la web application. Estas pautas aseguran consistencia entre dispositivos, favorecen la legibilidad y permiten que tanto restaurantes como proveedores naveguen de forma intuitiva por la plataforma.
+
+#### Estructura general
+
+SupplyWok adopta un enfoque **responsive web design**, de modo que la interfaz se adapte correctamente a desktop, laptop, tablet y mobile web sin perder claridad ni coherencia visual.
+
+- **Desktop:** La navegación principal se presenta mediante sidebar lateral y header superior. Los módulos con mayor densidad informativa, como inventario y reportes, aprovechan mejor el ancho disponible mediante tablas, tarjetas comparativas y filtros visibles.
+- **Tablet:** La estructura se reorganiza a 6 u 8 columnas, reduciendo el número de elementos visibles por fila. Los paneles laterales pueden colapsarse y ciertas tablas pasan a formatos más compactos para facilitar la interacción táctil.
+- **Mobile Web:** La estructura se simplifica a una sola columna. Los elementos se apilan verticalmente, se priorizan botones de acción principal y la navegación se compacta mediante menú hamburguesa o navegación inferior, según el flujo.
+
+#### Breakpoints
+
+Se proponen los siguientes breakpoints para asegurar una adaptación consistente:
+
+- **Mobile:** hasta 767 px.
+- **Tablet:** desde 768 px hasta 1023 px.
+- **Desktop:** 1024 px en adelante.
+
+#### Componentes básicos de UI
+
+- **Botones primarios:** fondo rojo `#C21204` o marrón `#2D241E`, texto blanco, bordes redondeados de 10 px a 12 px. Se utilizan para acciones clave como `Crear pedido`, `Export PDF`, `Confirmar` o `Iniciar sesión`.
+- **Botones secundarios:** fondo blanco o amarillo claro, borde en rojo o mostaza, con texto oscuro. Se emplean para acciones complementarias como `Cancelar`, `Ver detalle` o `Volver`.
+- **Inputs y formularios:** bordes suaves, fondo claro y suficiente padding interno para facilitar lectura e interacción. El estado enfocado resalta mediante borde rojo o mostaza. El estado de error utiliza borde rojo más oscuro y un mensaje de validación visible.
+- **Cards:** contenedores rectangulares con esquinas redondeadas, padding interno de 16 px a 24 px y jerarquía clara entre título, contenido y acciones. Se usan en dashboard, alertas, métricas y secciones de resumen.
+- **Tablas:** encabezados destacados, filas con separación visual suficiente y acciones agrupadas al extremo derecho. En resoluciones pequeñas, las tablas pueden transformarse en listas o tarjetas para mejorar la lectura.
+- **Sidebar:** navegación vertical persistente en desktop, con acceso a Dashboard, Inventario, Pedidos, Proveedores, Alertas, Reportes y Configuración. En tablet y mobile se colapsa.
+- **Header:** barra superior con nombre del usuario, rol, notificaciones y acceso rápido a configuración y cierre de sesión.
+
+#### Tipografía en web
+
+La propuesta tipográfica de SupplyWok mantiene como base las fuentes **Poppins** y **Montserrat**, según la identidad visual previamente definida.
+
+- **Títulos principales (H1):** Poppins Bold, 24 px a 28 px.
+- **Subtítulos (H2):** Poppins SemiBold, 20 px a 22 px.
+- **Encabezados de sección (H3):** Poppins Medium, 18 px.
+- **Texto de párrafo y descripciones:** Montserrat Regular, 14 px a 16 px.
+- **Texto en botones:** Poppins SemiBold, 14 px a 16 px.
+- **Etiquetas de formularios y tablas:** Montserrat Medium, 13 px a 14 px.
+
+#### Interacción
+
+- **Hover:** Los botones incrementan ligeramente el contraste o brillo del color base. Los links se subrayan o cambian a una variante más intensa del color principal.
+- **Focus:** Todo componente interactivo debe mostrar un estado visible de foco, especialmente inputs, botones y enlaces, para favorecer accesibilidad y navegación por teclado.
+- **Active / Click:** Los botones aplican una ligera reducción de escala o sombra interna para confirmar la interacción.
+- **Feedback visual:** Estados como éxito, error, advertencia o información se distinguen mediante color, iconografía y texto breve.
+- **Scroll y navegación persistente:** En desktop, el header y ciertos filtros pueden permanecer visibles para facilitar navegación rápida en vistas largas.
+- **Responsive behavior:** El contenido prioritario siempre debe conservar visibilidad antes que elementos decorativos o secundarios.
+
+### 4.1.3. Mobile Style Guidelines
+
+Las Mobile Style Guidelines de SupplyWok tienen como objetivo adaptar la experiencia de uso a pantallas reducidas sin perder funcionalidad, claridad visual ni consistencia con la propuesta general del producto. Estas pautas priorizan rapidez de interacción, facilidad de lectura y acceso inmediato a acciones frecuentes.
+
+#### Estructura general
+
+La experiencia móvil de SupplyWok está diseñada para que restaurantes y proveedores puedan consultar información crítica y ejecutar acciones esenciales desde cualquier lugar.
+
+- **Pantallas en una sola columna**, con contenido apilado verticalmente.
+- **Header compacto**, con logo, nombre de la vista y acceso a notificaciones o menú.
+- **Navegación simplificada**, priorizando las secciones más importantes según el rol del usuario.
+- **Botones de acción visibles**, especialmente en flujos como crear pedido, registrar stock o confirmar entregas.
+- **Tarjetas resumidas**, en lugar de tablas complejas, para mostrar inventario, pedidos y alertas de forma clara.
+
+#### Componentes básicos en mobile
+
+- **Botones primarios:** rojo `#C21204` o marrón `#2D241E`, texto blanco, esquinas redondeadas de 12 px y tamaño suficiente para interacción táctil.
+- **Botones secundarios:** fondo blanco o amarillo claro con borde visible y alto contraste.
+- **Inputs:** ancho completo, padding amplio y separación mínima de 16 px entre campos.
+- **Cards de resumen:** usadas para pedidos, insumos, alertas y métricas, con distribución vertical y jerarquía clara.
+- **Listas:** los registros se organizan en bloques táctiles con título, estado, fecha y acción principal.
+- **Indicadores de estado:** cada pedido o alerta utiliza color y texto para distinguir rápidamente condiciones como pendiente, entregado, stock bajo o fuera de rango.
+
+#### Tipografía en mobile
+
+- **Título principal (H1):** Poppins Bold, 20 px a 22 px.
+- **Subtítulos (H2):** Poppins SemiBold, 16 px a 18 px.
+- **Texto general:** Montserrat Regular, 14 px.
+- **Botones:** Poppins SemiBold, 14 px.
+- **Etiquetas pequeñas o estados:** Montserrat Medium, 12 px a 13 px.
+
+#### Interacción en mobile
+
+- Se prioriza el uso de **acciones rápidas** y **flujos cortos**.
+- Los botones deben tener un tamaño mínimo adecuado para interacción táctil.
+- Los formularios se dividen en bloques cortos para evitar fatiga visual.
+- Las acciones críticas se colocan al alcance natural del pulgar.
+- Los cambios de estado deben mostrarse inmediatamente mediante mensajes visibles o indicadores contextuales.
 ## 4.2. Information Architecture
 
 La arquitectura de información de SupplyWok está diseñada para dos contextos distintos: la **Landing Page**, orientada a captar y convertir visitantes en usuarios registrados, y la **Web Application**, donde los usuarios operan la plataforma según su rol. Ambos contextos tienen estructuras de navegación y organización de contenido diferenciadas, pero comparten un lenguaje visual y terminológico consistente.
@@ -409,7 +496,7 @@ Este wireflow muestra el recorrido del proveedor desde su dashboard hacia pedido
 
 ![wireflow4](../assets/images/figma/web-app-mobile-wireflow4.jpeg)
 
-### 4.4.2. Web Applications Mock-ups.
+### 4.4.3. Web Applications Mock-ups.
 
 ![mockupweb1](../assets/images/figma/mockup-web1.png)
 ![mockupweb2](../assets/images/figma/mockup-web2.png)
@@ -551,7 +638,7 @@ Este wireflow muestra el recorrido del proveedor desde su dashboard hacia pedido
 **4)** Segundo plan de suscripción, muestra sus beneficios, precio y un botón para adquirirlo, en caso ya lo tenga se desactiva y cambia el texto a "Plan Actual".
 
 
-### 4.4.3. Web Applications User Flow Diagrams.
+### 4.4.4. Web Applications User Flow Diagrams.
 
 Los User Flow Diagrams de SupplyWok representan los recorridos funcionales principales de los usuarios dentro del sistema, considerando tanto la ruta esperada como posibles variantes o interrupciones. A diferencia del wireflow, aquí el foco está en la lógica de navegación, las decisiones del usuario y las condiciones que afectan la continuidad del flujo.
 
