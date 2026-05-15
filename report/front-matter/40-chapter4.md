@@ -8,9 +8,7 @@ En esta sección se detallan los lineamientos de estilo que hemos decidido segui
 
 El logo de nuestra plataforma está compuesto por los caracteres 'S' y 'W' provenientes del nombre SuppylWok, puestos de forma creativa para mantener una relacion con nuestro público objetivo. La 'S' encontrandose en forma de humo que sale de un recipiente que tiene la forma de 'W'. Transmitiendo una conexion con el entorno de un restaurante chifa generando familiaridad con nuestros usuarios.
 
-<div align="center">
-  <img src="../assets/images/supplywok-logo.png" width="300" height="300" alt="SupplyWok Logo">
-</div>
+![](../assets/images/supplywok-logo.png)
 
 #### 4.1.1.2. Paleta de Colores.
 
@@ -22,9 +20,7 @@ La identidad visual de SupplyWok busca mantener una relacion con el entorno de u
 - **Blanco (#FFFFFF):** Color neutro para mantener un balance en la paleta de colores.
 - **Negro (#000000):** Color neutro para mantener un balance en la paleta de colores.
 
-<div align="center">
-  <img src="../assets/images/paleta_colores.png" width="1000" height="200" alt="SupplyWok Colors">
-</div>
+![](../assets/images/paleta_colores.png)
 
 #### 4.1.1.3. Tipografía.
 
@@ -32,15 +28,11 @@ La tipografia que se ha decidido usar en nuestra plataforma son dos, Poppins y M
 
 - **Títulos:** Para los titulos se usaran Poppins en pesos de Bold o semibold dependiendo del titulo, esto para dar una fuerza y relevancia necesarias en titulos.
 
-<div align="center">
-  <img src="../assets/images/poppins_example.png" alt="SupplyWok Poppins">
-</div>
+![](../assets/images/poppins_example.png)
 
 - **Párrafos o cuerpo del texto:** Se usara Monserrat en pesos variados como bold, regular o light dependiendo de la intencion del parrafo. Pensado en la legibilidad necesaria para los usuarios al momento de leer.
 
-<div align="center">
-  <img src="../assets/images/monserrat_example.png" alt="SupplyWok Monserrat">
-</div>
+![](../assets/images/monserrat_example.png)
 
 
 ### 4.1.2. Web Style Guidelines.
@@ -366,25 +358,17 @@ SupplyWok tiene dos contextos de navegación diferenciados: la **Landing Page**,
 Durnate la elaboración de la landing page se utilizaropn los principios de diseño, utlizando diferentes secciones que muestran la información.
 ### 4.3.1. Landing Page Wireframe.
 #### Desktop
-<p align="center">
-  <img src="../assets/images/figma/landingpage-desktop-wireframe.png" width="600px">
-</p>
+![](../assets/images/figma/landingpage-desktop-wireframe.png)
 
 #### Mobile
-<p align="center">
-  <img src="../assets/images/figma/landingpage-mobile-wireframe.png" width="600px">
-</p>
+![](../assets/images/figma/landingpage-mobile-wireframe.png)
 
 ### 4.3.2. Landing Page Mock-up.
 #### Desktop
-<p align="center">
-  <img src="../assets/images/figma/landingpage-desktop-mockup.png" >
-</p>
+![](../assets/images/figma/landingpage-desktop-mockup.png)
 
 #### Mobile
-<p align="center">
-  <img src="../assets/images/figma/landingpage-mobile-mockup.png" width="600px">
-</p>
+![](../assets/images/figma/landingpage-mobile-mockup.png)
 
 
 ## 4.4. Web Applications UX/UI Design.
@@ -630,82 +614,58 @@ Primero, refinamos la línea de tiempo original, eliminando eventos redundantes 
 
 Este contexto delimitado constituye el núcleo operativo para los restaurantes tipo chifa dentro de la plataforma Aurora. Su propósito principal es centralizar y automatizar el control de los insumos, transformando la gestión manual tradicional en un proceso preciso y basado en datos.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e01.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e01.png)
 
 Este contexto delimitado actúa como el puente transaccional entre los restaurantes tipo chifa y sus proveedores dentro del ecosistema Aurora. Su objetivo fundamental es digitalizar y estructurar la coordinación de pedidos de insumos, reemplazando las vías de comunicación informales por un flujo de trabajo centralizado y rastreable en la plataforma.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e02.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e02.png)
 
 Este contexto delimitado tiene como propósito supervisar las condiciones físicas críticas en las instalaciones del restaurante, específicamente en áreas vulnerables como la cocina y el almacén. Mediante la integración simulada de sensores IoT, el sistema monitorea variables ambientales clave de forma continua, tales como la temperatura y la humedad.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e03.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e03.png)
 
 Este contexto delimitado está diseñado para centralizar la gestión de los proveedores, brindándoles las herramientas necesarias para optimizar su logística y planificación comercial. A través de este módulo, los proveedores obtienen visibilidad sobre la demanda futura de sus clientes, lo que les permite gestionar sus catálogos de insumos y realizar un seguimiento detallado del estado de los pedidos recibidos.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e04.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e04.png)
 
 Este contexto delimitado representa la capa transversal de seguridad y administración comercial de la plataforma Aurora. Su propósito principal es proporcionar un entorno centralizado y seguro donde todos los usuarios puedan autenticarse, gestionar sus cuentas y recibir soporte técnico de manera eficiente.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e05.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e05.png)
 
 Este contexto delimitado representa el núcleo operativo del restaurante chifa dentro de la plataforma Aurora. Su propósito principal es orquestar la comunicación crítica entre el salón y la cocina, asegurando que los pedidos se procesen con precisión, se monitoreen en tiempo real y se mantenga la integridad operativa.
 
-<div align="center">
-  <img src="../assets/images/event-storming-e06.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/event-storming-e06.png)
 
 ### 4.6.2. Software Architecture Context Diagram.
 
-<div align="center">
-  <img src="../assets/images/suppluwok-system-context.png" alt="SupplyWok System Context Diagram">
-</div>
+![](../assets/images/suppluwok-system-context.png)
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-<div align="center">
-  <img src="../assets/images/supplywok-containers.png" alt="SupplyWok Containers Diagram">
-</div>
+![](../assets/images/supplywok-containers.png)
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
-<div align="center">
-  <img src="../assets/images/supplywok-components.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/supplywok-components.png)
 
 ## 4.7. Software Object-Oriented Design.
 ### 4.7.1. Class Diagrams.
 
 En esta seccion se presentara y se explicara el diagrama de clases por cada Boundes Context
 
-<div align="center">
-  <img src="../assets/images/IMBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/IMBC.png)
 
 El **Inventory Management Bounded Context** es el encargado de gestionar los recursos de inventario de cada restaurante, incluyendo el control de stock, niveles mínimos y movimientos de entrada y salida.
 
 El **InventoryService** actúa como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el **InventoryRepository** para la persistencia de datos y el **InventoryItem** como entidad principal del dominio, encargada de representar cada insumo almacenado en el Inventario del restaurante.El **StockMovement** representa las modificaciones realizadas al stock de cada ítem, permitiendo llevar un registro detallado de entradas, salidas y ajustes.
 
-<div align="center">
-  <img src="../assets/images/S&PBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/S&PBC.png)
 
 El **Supply and Purchasing Bounded Context** es el encargado de gestionar las órdenes de compra realizadas por cada restaurante, incluyendo el registro, cancelación y seguimiento de los pedidos.
 
 El **PurchaseOrderService** actúa como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el **PurchaseOrderRepository** para la persistencia de datos y el **PurchaseOrder** como entidad principal del dominio, encargada de representar toda la información de una orden de compra de insumos del restaurante. Además, el **OrderItem** encapsula las especificaciones de cada producto dentro de la orden, como la cantidad solicitada y el precio unitario, permitiendo un control detallado de cada pedido.
 
-<div align="center">
-  <img src="../assets/images/O&IBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/O&IBC.png)
 
 El **Operational Monitoring and IoT Alerts Bounded Context** es el encargado de gestionar la información recopilada por los sensores del restaurante, así como la configuración y generación de alertas ante condiciones fuera de los rangos establecidos.
 
@@ -713,9 +673,7 @@ El **SensorService** actúa como capa de aplicación, coordinando las operacione
 
 Además, emplea la entidad **Sensor**, junto con **SensorReading**, para representar la información capturada por los sensores. Por otro lado, la entidad **Alert** modela las alertas generadas cuando una medición supera los límites configurados.
 
-<div align="center">
-  <img src="../assets/images/RMBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/RMBC.png)
 
 El **Restaurant Management Bounded Context** es el encargado de gestionar todo lo relacionado con la operación del establecimiento, incluyendo la administración de mesas y la gestión de comandas en cada restaurante.
 
@@ -723,9 +681,7 @@ Los servicios **ComandaService**, **RestaurantService** y **TableService** actú
 
 Además, se emplean las entidades **Table**, que representa una mesa dentro del restaurante; **Comanda** y **ComandaItem**, que modelan las órdenes de consumo; y **Restaurant**, que encapsula la información principal de cada restaurante.
 
-<div align="center">
-  <img src="../assets/images/S&OBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/S&OBC.png)
 
 El **Supplier Management & Operations Bounded Context** es el encargado de gestionar la información de los proveedores, sus catálogos de productos y las operaciones relacionadas con el cumplimiento de pedidos.
 
@@ -737,9 +693,7 @@ Además, el **DemandForecastService** se encarga de generar proyecciones de dema
 
 Finalmente, el **OrderFulfillmentService** gestiona el proceso de entrega de pedidos mediante la entidad **OrderFulfillment**, permitiendo hacer seguimiento al estado de los envíos desde su despacho hasta su entrega final.
 
-<div align="center">
-  <img src="../assets/images/I&ABC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/I&ABC.png)
 
 El **Identity & Access Bounded Context** es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas de usuario en el sistema.
 
@@ -747,9 +701,7 @@ Los servicios **AuthService** y **TokenService** actúan como capa de aplicació
 
 La entidad **User** encapsula toda la información relevante de un usuario en la plataforma, como su correo electrónico, contraseña (almacenada de forma segura) y su **Role**, el cual define sus permisos dentro del sistema.
 
-<div align="center">
-  <img src="../assets/images/SBC.png" alt="SupplyWok Components Diagram">
-</div>
+![](../assets/images/SBC.png)
 
 El **Shared Bounded Context** contiene Value Objects comunes que son reutilizados por múltiples bounded contexts del sistema, evitando duplicación y promoviendo consistencia en el modelo.
 
@@ -786,8 +738,6 @@ Facilita la comunicación eficiente entre la cocina y las mesas para garantizar 
 
 ### 4.8.1. Database Diagrams.
 
-<div align="center">
-  <img src="../assets/images/database-diagram.png" alt="SupplyWok Database Diagram">
-</div>
+![](../assets/images/database-diagram.png)
 
 [^1]: Clec. (s.f.). El color rojo en China: orígenes y tradiciones. Recuperado el 23 de abril de 2026, de https://fundacionclec.org/el-color-rojo-en-china-origenes-y-tradiciones/
