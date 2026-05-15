@@ -409,7 +409,7 @@ Luego de unos minutos, el deploy se realizara correctamente:
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
-En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del fronted  .
+En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del Landing Page.
 
 ![Team Collaboration](../assets/images/deploy-steps/participation.png)
 
@@ -538,19 +538,21 @@ Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del fr
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
-En este sprint se logro desarrollar todas las secciones del Landing Page establecidas en el sprint backlog. Se
+En este Sprint se logró desarrollar gran parte del frontend de la plataforma SupplyWok. Se integraron funcionalidades como el inicio de sesión, el dashboard general, los módulos de inventario, pedidos, comandas, sensores y alertas, junto con sus funcionalidades básicas principales.
 
+![first](../assets/images/deploy-steps/prove-1.png)
 
+![second](../assets/images/deploy-steps/prove-2.png)
+
+![third](../assets/images/deploy-steps/prove-3.png)
+
+![fourth](../assets/images/deploy-steps/prove-4.png)
+
+![fifth](../assets/images/deploy-steps/prove-5.png)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
-Para esta sección se diran los servicios que se utilizaron para simular los json que devolveria nuestro backend, los cuales se implementaron en dos servicios, en mockapi y en my json server.
-
-![](../assets/images/mockapi-evidence.png)
-
-![](../assets/images/myjsonserver-evidence.png)
-
-Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros componentes que permiten utilizar nuestro sistema sin necesidad de tener un backend por el momento.
+Como la Landing Page es una página estática, no fue necesario durante el Sprint el uso de servicios externos ni conexiones a APIs, por lo cual no hay generación ni evidencia de documentación técnica relacionada.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
@@ -560,8 +562,8 @@ Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros c
 
 En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del fronted.
 
-![Team Collaboration](../assets/images/deploy-steps/participation.png)
+![Team Collaboration](../assets/images/deploy-steps/participation_2.png)
 
-![Team Contribution 1](../assets/images/deploy-steps/contributions_1.png)
+![Team Contribution 1](../assets/images/deploy-steps/contributions_1_2.png)
 
-![Team Contribution 2](../assets/images/deploy-steps/contributions_2.png)
+![Team Contribution 2](../assets/images/deploy-steps/contributions_2_2.png)
