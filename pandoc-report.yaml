@@ -1,6 +1,6 @@
 from: markdown-yaml_metadata_block+raw_html+pipe_tables+grid_tables+table_captions+implicit_figures
 to: pdf
-output-file: upc-pre-202610-1asi0729-11913-aurora-report-tb1
+output-file: upc-pre-202610-1asi0729-11913-aurora-report-tb1.pdf
 
 input-files:
   - report/front-matter/01-caratula.md
@@ -31,6 +31,8 @@ wrap: preserve
 
 metadata:
   lang: es-PE
+  header-includes:
+    - \setkeys{Gin}{width=\linewidth,height=0.85\textheight,keepaspectratio}
 
 variables:
   documentclass: article
