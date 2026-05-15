@@ -172,7 +172,6 @@ En la sección **Suscripción**, el usuario revisa su plan activo, consulta las 
 
 El equipo de Aurora confía en que esta arquitectura permitirá a ambos tipos de usuario operar de manera más eficiente, reduciendo el tiempo dedicado a tareas manuales y mejorando la coordinación entre restaurantes y proveedores.
 
----
 
 ### 4.2.1. Organization Systems
 
@@ -227,7 +226,6 @@ El contenido de SupplyWok se organiza aplicando distintos esquemas según la nat
 | Mis clientes | Matricial — comparativa de frecuencia, monto y demanda por cliente |
 | Catálogo | Matricial — productos con precio, unidad y disponibilidad en columnas |
 
----
 
 ### 4.2.2. Labeling Systems
 
@@ -338,7 +336,6 @@ El sistema de etiquetado de SupplyWok usa términos directos en español (con ex
 | Ready / Listo | Verde | Estado de comanda en cocina |
 | Queue / En cola | Gris | Estado de comanda en cocina |
 
----
 
 ### 4.2.3. SEO Tags and Meta Tags
 
@@ -393,7 +390,6 @@ Se definen las etiquetas SEO y Meta Tags para las páginas principales de Supply
 - **Meta Keywords:** órdenes de compra restaurante, pedidos proveedores, seguimiento abastecimiento
 - **Meta Author:** Aurora
 
----
 
 ### 4.2.4. Searching Systems
 
@@ -410,7 +406,6 @@ SupplyWok implementa sistemas de búsqueda y filtrado en las secciones donde el 
 | Mis clientes (Proveedor) | Búsqueda por nombre de restaurante cliente | Se muestra la tarjeta del restaurante encontrado con su historial de pedidos recientes, frecuencia de compra y demanda proyectada. |
  
 
----
 
 ### 4.2.5. Navigation Systems
 
@@ -441,7 +436,6 @@ SupplyWok tiene dos contextos de navegación diferenciados: la **Landing Page**,
 | Panel de notificaciones | Al hacer clic en el ícono de campana del header, se despliega un panel lateral con las alertas recientes ordenadas cronológicamente. Cada alerta tiene un acceso directo a la sección donde ocurrió el evento. |
 | Modo restringido | El dueño puede activar un modo de acceso limitado desde Configuración. En este modo solo son visibles Kitchen Tickets y Tables and Occupancy, ocultando las secciones administrativas. Útil para personal de cocina y servicio. |
 | Cambio de rol | Si un usuario tiene ambos roles (restaurante y proveedor), puede cambiar de vista desde un selector en el header sin cerrar sesión. |
----
 ## 4.3. Landing Page UI Design.
 Durnate la elaboración de la landing page se utilizaropn los principios de diseño, utlizando diferentes secciones que muestran la información.
 ### 4.3.1. Landing Page Wireframe.
