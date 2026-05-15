@@ -494,13 +494,20 @@ Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del fr
 | US27 | Selección y gestión del plan de suscripción | T52 | Gestión de suscripción | Implementar selección y activación de planes. | 2 | Juan Wang | Done |
 | US28 | Notificaciones en tiempo real | T53 | Sistema de notificaciones | Implementar notificaciones dinámicas en la plataforma. | 4 | Joan Payano | Done |
 | US28 | Notificaciones en tiempo real | T54 | Alertas en tiempo real | Mostrar alertas instantáneas relacionadas al sistema. | 3 | Zayd Ayasta | Done |
+| US29 | Inicio de sesión y registro de cuenta | T55 | Formulario de login | Implementar formulario de inicio de sesión con validación. | 3 | Marcelo Cuadros | Done |
+| US29 | Inicio de sesión y registro de cuenta | T56 | Formulario de registro | Implementar formulario de registro de nueva cuenta con validación. | 3 | Joan Payano | Done |
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|
-| Aurora-startup/SupplyWok-frontend | develop | 901eb6d | feat: implement inventory-management bounded context | Implementación del bounded context de inventory-management | 14/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 2d0e9b6 | feat: connect purchasing suppliers to mock api | Conexión de proveedores de compras a la API mock | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 5b15dfa | feat: connect purchasing suppliers to mock api | Conexión inicial de purchasing suppliers a la API mock | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 933f622 | fix: environments | Corrección de configuración de entornos | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | e890844 | feat: implement identity-and-access bounded context and fix existing bounded context integration issues | Implementación del bounded context de identity-and-access y corrección de integraciones existentes | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 90e16bd | feat: implement inventory-management bounded context | Implementación del bounded context de inventory-management | 14/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | 510e880 | feat: add operational-monitoring-and-iot-alerts bounded context | Agregado del bounded context para operational monitoring and IoT alerts | 14/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | d42b822 | feat: add login and registration components with form handling and validation | Implementación de componentes de login y registro con manejo y validación de formularios | 13/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | 3492676 | Merge pull request #5 from Aurora-startup/feature/operational-monitoring-and-iot-alerts | Merge del feature operational-monitoring-and-iot-alerts hacia develop | 13/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | acbd3df | fix: restaurant-management infrastructure | Correcciones en la infraestructura de restaurant-management | 13/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | 77add27 | fix: restaurant-management infrastructure | Ajustes adicionales en la infraestructura de restaurant-management | 13/05/2026 |
@@ -510,23 +517,22 @@ Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del fr
 | Aurora-startup/SupplyWok-frontend | develop | 0823704 | Update Inventory Management Bouded Context interface | Actualización de interfaces del bounded context de inventory management | 12/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | a3e6f1e | feat: implement restaurant-management bounded context | Implementación del bounded context de restaurant-management | 12/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | ea5b27f | feat(restaurant-management): apply clean architecture structure | Aplicación de estructura Clean Architecture en restaurant-management | 12/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | b2007f3 | feat: implement supply and purchasing bounded context | Implementación del bounded context de supply and purchasing | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 92261ed | feat(supply-and-purchasing): implement bounded context pages and routes | Implementación de páginas y rutas para supply-and-purchasing | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 442cb84 | feat(table): add purchase orders table component | Creación del componente tabla para órdenes de compra | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 6dd333d | feat(forms): create purchase order form panel | Creación del panel de formulario para órdenes de compra | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 340672c | feat(orders): implement purchase orders page | Implementación de la página de órdenes de compra | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 408c86e | feat(i18n): add localization resources | Agregados recursos de localización e internacionalización | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | fb3d9d6 | feat(layout): configure shared navigation and application routes | Configuración de navegación compartida y rutas de la aplicación | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 6be1695 | feat(store): add purchase order state management | Implementación de manejo de estado para órdenes de compra | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 221c88a | feat(api): integrate purchase order endpoints | Integración de endpoints para órdenes de compra | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | de37f54 | feat(domain): implement purchase order domain models | Implementación de modelos de dominio para purchase orders | 11/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 8633a54 | feat(core): add shared infrastructure and environment configuration | Configuración compartida de infraestructura y entorno | 11/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | b2007f3 | feat: implement supply and purchasing bounded context | Implementación del bounded context de supply and purchasing | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 92261ed | feat(supply-and-purchasing): implement bounded context pages and routes | Implementación de páginas y rutas para supply-and-purchasing | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 442cb84 | feat(table): add purchase orders table component | Creación del componente tabla para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 6dd333d | feat(forms): create purchase order form panel | Creación del panel de formulario para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 340672c | feat(orders): implement purchase orders page | Implementación de la página de órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 408c86e | feat(i18n): add localization resources | Agregados recursos de localización e internacionalización | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | fb3d9d6 | feat(layout): configure shared navigation and application routes | Configuración de navegación compartida y rutas de la aplicación | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 6be1695 | feat(store): add purchase order state management | Implementación de manejo de estado para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 221c88a | feat(api): integrate purchase order endpoints | Integración de endpoints para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 8633a54 | feat(core): add shared infrastructure and environment configuration | Configuración compartida de infraestructura y entorno | 12/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | 753c7e6 | feat(restaurant-management): implement restaurant management bounded context with tables occupancy and kitchen tickets | Implementación de bounded context para restaurant management con ocupación de mesas y kitchen tickets | 11/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | e687f11 | initial commit | Commit inicial del proyecto | 11/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | 71a55e2 | feat: implement IoT monitoring dashboard components and API integration | Implementación de dashboard IoT e integración con API | 10/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | ed68b1e | Merge pull request #1 from Aurora-startup/develop | Merge inicial de develop | 10/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | 95e0807 | chore: remove untracked IDE and cache folders | Eliminación de carpetas IDE y caché no rastreadas | 10/05/2026 |
-| Aurora-startup/SupplyWok-frontend | develop | 81b2891 | feat: add initial application structure with routing, layout, and language switcher | Creación de estructura inicial de aplicación con routing y layout | 10/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 81b2891 | feat: add initial application structure with routing, layout, and language switcher | Creación de estructura inicial de aplicación con routing, layout y selector de idioma | 10/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | a0c8b6f | chore: initialize project workspace and cache build artifacts | Inicialización del workspace y artefactos de build | 10/05/2026 |
 | Aurora-startup/SupplyWok-frontend | develop | 7272f71 | chore: initial commit | Commit inicial del repositorio | 08/05/2026 |
 
@@ -534,37 +540,21 @@ Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del fr
 
 En este sprint se logro desarrollar todas las secciones del Landing Page establecidas en el sprint backlog. Se
 
-![first](../assets/images/deploy-steps/prove-1.png)
 
-![second](../assets/images/deploy-steps/prove-2.png)
-
-![third](../assets/images/deploy-steps/prove-3.png)
-
-![fourth](../assets/images/deploy-steps/prove-4.png)
-
-![fifth](../assets/images/deploy-steps/prove-5.png)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
-Como la Landing Page es una página estática, no fue necesario durante el Sprint el uso de servicios externos ni conexiones a APIs, por lo cual no hay generación ni evidencia de documentación técnica relacionada.
+Para esta sección se diran los servicios que se utilizaron para simular los json que devolveria nuestro backend, los cuales se implementaron en dos servicios, en mockapi y en my json server.
+
+![](../assets/images/mockapi-evidence.png)
+
+![](../assets/images/myjsonserver-evidence.png)
+
+Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros componentes que permiten utilizar nuestro sistema sin necesidad de tener un backend por el momento.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
-La evidencia del despliegue de la Landing Page durante el Sprint se mostrara a continuación, el despliegue se realizara en GitHub Pages.
 
-![first-step](../assets/images/deploy-steps/step-1.png)
-
-Revisamos que el repositorio este en publico:
-
-![second-step](../assets/images/deploy-steps/step-2.png)
-
-Nos dirigimos a la seccion de deploy, y selecionamos la rama main:
-
-![third-step](../assets/images/deploy-steps/step-3.png)
-
-Luego de unos minutos, el deploy se realizara correctamente:
-
-![fourth-step](../assets/images/deploy-steps/step-4.png)
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
