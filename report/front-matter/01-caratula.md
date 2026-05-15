@@ -1,4 +1,4 @@
-<img src="../assets/images/upc-logo.png" width="150">
+![upc-logo](../assets/images/upc-logo.png)
 
 Carrera: Ingeniería de Software
 
