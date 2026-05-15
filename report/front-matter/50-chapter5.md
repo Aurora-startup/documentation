@@ -499,6 +499,12 @@ Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del fr
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
+A continuación se detalla los commits realizados por todos los integrantes.
+
+![Tabla en Trello 1](../assets/images/deploy-steps/trello_1.png)
+
+![Tabla en Trello 2](../assets/images/deploy-steps/trello_2.png)
+
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|
 | Aurora-startup/SupplyWok-frontend | develop | 2d0e9b6 | feat: connect purchasing suppliers to mock api | Conexión de proveedores de compras a la API mock | 15/05/2026 |
@@ -552,11 +558,23 @@ En este Sprint se logró desarrollar gran parte del frontend de la plataforma Su
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
-Como la Landing Page es una página estática, no fue necesario durante el Sprint el uso de servicios externos ni conexiones a APIs, por lo cual no hay generación ni evidencia de documentación técnica relacionada.
+Para esta sección se diran los servicios que se utilizaron para simular los json que devolveria nuestro backend, los cuales se implementaron en dos servicios, en mockapi y en my json server.
+
+![](../assets/images/mockapi-evidence.png)
+
+![](../assets/images/myjsonserver-evidence.png)
+
+Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros componentes que permiten utilizar nuestro sistema sin necesidad de tener un backend por el momento.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
+Para esta sección se diran los servicios que se utilizaron para simular los json que devolveria nuestro backend, los cuales se implementaron en dos servicios, en mockapi y en my json server.
 
+![](../assets/images/mockapi-evidence.png)
+
+![](../assets/images/myjsonserver-evidence.png)
+
+Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros componentes que permiten utilizar nuestro sistema sin necesidad de tener un backend por el momento.
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
