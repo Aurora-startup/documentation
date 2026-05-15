@@ -641,37 +641,26 @@ Este wireflow muestra el recorrido del proveedor desde su dashboard hacia pedido
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
-Los User Flow Diagrams de SupplyWok representan los recorridos funcionales principales de los usuarios dentro del sistema, considerando tanto la ruta esperada como posibles variantes o interrupciones. A diferencia del wireflow, aquí el foco está en la lógica de navegación, las decisiones del usuario y las condiciones que afectan la continuidad del flujo.
+Los wireflows de SupplyWok muestran cómo cambian las pantallas wireframe a medida que el usuario avanza en un flujo concreto. Cada wireflow se construye a partir de un user goal y representa la secuencia de pasos necesarios para alcanzarlo, incluyendo decisiones intermedias y estados relevantes de la interfaz.
 
-**User Goal 1: Mantener actualizado el inventario del restaurante.**  
-Happy path: el usuario ingresa al Dashboard, accede a Inventario, selecciona la opción para agregar o editar un insumo, guarda la información y visualiza la actualización reflejada en la tabla principal.  
-Unhappy path: el usuario omite campos obligatorios o ingresa valores inválidos; el sistema bloquea el guardado y muestra mensajes de validación.
+**User Goal 1: Registrar y controlar insumos del restaurante.**  
+El usuario accede a la aplicación y, al no estar logueado, puede optar por crear una nueva cuenta o iniciar sesión. Si selecciona “Crear cuenta”, se abre un formulario donde debe ingresar su nombre, apellidos, correo electrónico y contraseña. En caso de que falte algún campo, la aplicación mostrará un mensaje de advertencia hasta que se completen los datos correctamente. Una vez registrado, se muestra una confirmación y el usuario es redirigido al mapa principal. Si ya posee una cuenta, selecciona “Iniciar sesión” e ingresa sus credenciales. Si estas son incorrectas, el sistema mostrará un mensaje de error. Tras un inicio exitoso, el usuario accede a la pantalla principal con el mapa interactivo y las funciones disponibles.
 
-![userflow1](../assets/images/figma/web-app-mobile-userflow1.jpeg)
+![wireflow1](../assets/images/figma/web-app-mobile-wireflow1.jpeg) 
 
-#### mobile
-![mockupmobile1](../assets/images/figma/web-app-mobile-mockup1.png)
+**User Goal 2: Crear y dar seguimiento a un pedido de abastecimiento.**  
+Este wireflow muestra cómo el restaurante inicia un pedido desde la sección de Pedidos, selecciona proveedor, agrega productos y revisa el estado del pedido una vez registrado. Si el usuario no rellena los campos adecuadamente, se muestra un mensaje de error. La secuencia evidencia una organización paso a paso que reduce errores y favorece la trazabilidad de la orden.
 
-![mockupmobile2](../assets/images/figma/web-app-mobile-mockup2.png)
-![mockupmobil3](../assets/images/figma/web-app-mobile-mockup3.png)
+![wireflow](../assets/images/figma/web-app-mobile-wireflow2.jpeg)
 
-**User Goal 2: Generar un pedido de abastecimiento correctamente.**  
-Happy path: el restaurante accede al módulo de Pedidos, selecciona proveedor, agrega productos, confirma cantidades y registra la orden, quedando visible con estado pendiente.  
-Unhappy path: no existe stock de referencia, no se selecciona proveedor o faltan productos; el sistema notifica el error y evita el registro incompleto.
+**User Goal 3: Gestionar comandas y operación interna del restaurante.**  
+Este wireflow representa el flujo mediante el cual el personal del restaurante registra una comanda, la asocia a una mesa y hace seguimiento a su avance dentro de la operación interna. Empieza desde el dashboard a la pagina de comandas, luego a generar nuevo ticket y dependiendo el tipo de ticket se genera un formulario para crear la solicitud de la comanda, se rellena la solicitud y luego se envia y actualiza.
 
-![userflow2](../assets/images/figma/web-app-mobile-userflow2.jpeg)
+![wireflow3](../assets/images/figma/web-app-mobile-wireflow3.jpeg)
+**User Goal 4: Gestionar pedidos recibidos y catálogo del proveedor.**  
+Este wireflow muestra el recorrido del proveedor desde su dashboard hacia pedidos recibidos, clientes o catálogo de productos, permitiéndole revisar demanda, actualizar disponibilidad y dar seguimiento a entregas. Esto valida la coherencia de la experiencia del segundo rol principal del sistema.
 
-**User Goal 3: Gestionar una comanda hasta su finalización.**  
-Happy path: el personal registra una comanda, la asocia a una mesa, la cocina la procesa y el sistema actualiza su estado hasta marcarla como lista o entregada.  
-Unhappy path: la mesa no está disponible, la comanda queda incompleta o el estado no puede avanzar por una inconsistencia operativa; el sistema informa la condición al usuario.
-
-![userflow3](../assets/images/figma/web-app-mobile-userflow3.jpeg)
-
-**User Goal 4: Dar seguimiento a pedidos desde la vista proveedor.**  
-Happy path: el proveedor accede a pedidos recibidos, revisa el detalle, actualiza el estado del despacho y confirma la entrega.  
-Unhappy path: el pedido está retrasado, faltan productos o el proveedor no puede confirmar entrega; el sistema permite registrar la incidencia y mantener trazabilidad del estado.
-
-![userflow4](../assets/images/figma/web-app-mobile-userflow4.jpeg)
+![wireflow4](../assets/images/figma/web-app-mobile-wireflow4.jpeg)
 
 ## 4.5. Web Applications Prototyping.
 
