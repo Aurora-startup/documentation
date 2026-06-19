@@ -673,8 +673,21 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3. Los 
 
 **Sprint 3 Backlog**
 
-| US Id | US Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|---|---|---|
+| US Id | US Title                                                   | Task Id | Task Title                                | Description                                                                                                      | Estimation (Hours) | Assigned To     | Status |
+| ----- | ---------------------------------------------------------- | ------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------ | --------------- | ------ |
+| US34  | Obtener los datos del inventario vía API                   | T-01    | Implement Inventory GET Endpoint          | Desarrollar endpoint GET para consultar inventario de un restaurante y exponer la información mediante API REST. | 8                  | Alexandra Meza  | Done   |
+| US01  | Registro de inventario inicial                             | T-02    | Implement Inventory Registration Services | Implementar entidades, repositorios y servicios para registrar insumos en inventario.                            | 6                  | Alexandra Meza  | Done   |
+| US09  | Creación de orden de compra                                | T-03    | Implement Purchase Order Endpoint         | Desarrollar endpoint POST para registrar órdenes de compra.                                                      | 6                  | Zayd Ayasta     | Done   |
+| US37  | Crear una orden de insumos vía API                         | T-04    | Implement Purchasing API Services         | Implementar servicios de aplicación, validaciones y persistencia para órdenes de compra.                         | 6                  | Zayd Ayasta     | Done   |
+| US38  | Obtener datos relevantes de proveedores vía API            | T-05    | Implement Supplier Query Endpoints        | Desarrollar endpoints para consulta de proveedores y catálogos asociados.                                        | 6                  | Juan Wang       | Done   |
+| US12  | Gestión de proveedores vinculados                          | T-06    | Implement Supplier Management Services    | Implementar entidades y lógica de negocio para gestión de proveedores.                                           | 5                  | Juan Wang       | Done   |
+| US42  | Endpoint para recibir información de componentes IoT       | T-07    | Implement IoT Data Reception Endpoint     | Implementar endpoint para recepción de información proveniente de sensores IoT.                                  | 8                  | Marcelo Cuadros | Done   |
+| US18  | Historial de alertas e incidencias operativas              | T-08    | Implement Alerts Management Services      | Implementar servicios y endpoints para consulta de alertas operativas registradas.                               | 6                  | Marcelo Cuadros | Done   |
+| US26  | Registro e inicio de sesión para usuarios de la plataforma | T-09    | Implement Identity and Access Services    | Implementar servicios base de autenticación y gestión de usuarios.                                               | 5                  | Marcelo Cuadros | Done   |
+| US17  | Control de ocupación de mesas                              | T-10    | Implement Restaurant Management Endpoints | Implementar endpoints relacionados con la gestión operativa del restaurante.                                     | 5                  | Joan Payano     | Done   |
+| US36  | Manejo estándar de errores                                 | T-11    | Configure Global Exception Handling       | Implementar manejo centralizado de excepciones y respuestas HTTP estandarizadas.                                 | 4                  | Zayd Ayasta     | Done   |
+| US39  | Evitar almacenamientos en errores                          | T-12    | Configure Transaction Management          | Configurar validaciones y transacciones para evitar persistencia de datos inválidos.                             | 3                  | Zayd Ayasta     | Done   |
+
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
@@ -702,11 +715,19 @@ En esta sección se presentan los avances realizados durante el Sprint 3 en la i
 
 Durante el Sprint 3 se completó la implementación y validación de los principales servicios backend de SupplyWok correspondientes a los bounded contexts priorizados del núcleo del negocio. Como parte de la revisión del sprint, se verificó el correcto funcionamiento de los endpoints REST desarrollados mediante pruebas realizadas en Swagger/OpenAPI, comprobando la ejecución satisfactoria de las operaciones expuestas por la API. Ademas, se validó la persistencia de la información en la base de datos PostgreSQL mediante pgAdmin.
 
-![Trello Sprint 3 Board]()
-![Trello Sprint 3 Board]()
-![Trello Sprint 3 Board]()
-![Trello Sprint 3 Board]()
-![Trello Sprint 3 Board]()
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/swagger-principal-page.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-1.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-2.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-3.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-4.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/swagger-principal-page.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/tables-pgAdmin.png)
 
 **Link del video de explicación del Sprint** https://restaurant-management-bc.web.app
 
@@ -716,7 +737,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 **Repository URL:** https://github.com/Aurora-startup/SupplyWok-backend
 
-**OpenAPI Documentation URL:** http://localhost:8080/swagger-ui/index.html
+**OpenAPI Documentation URL:** http://localhost:8095/swagger-ui/index.html#/
 
 ![Pagina principal de Swagger]()  
 
