@@ -1,4 +1,5 @@
 # Capítulo III: Requirements Specification. 
+
 ## 3.1. User Stories
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
@@ -88,7 +89,7 @@ El Impact Mapping de SupplyWok refleja la relación entre los objetivos de negoc
 
 <sub>Ilustración. Impact Mapping dueños de restaurantes chifa y administradores</sub>
 
-----
+
 **Segundo Segmento Objetivo (Proveedores de insumos para restaurantes):**
 
 ![](../assets/images/SupplyWokImpactMapSegmento2.png)

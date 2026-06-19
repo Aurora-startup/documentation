@@ -1,9 +1,11 @@
 # Capítulo V: Product Implementation, Validation & Deployment.
 
 ## 5.1. Software Configuration Management. 
+
 Para tener consistencia y seguimiento del desarrollo de la plataforma, se ha definido una serie de herramientas y estrategias de desarrollo. El metodo cubre la configuracion del entorno de desarrollo, la gestion del codigo y el despliegue, alineado a las buenas practicas de ingenieria de software y metodologias agiles.
 
 ### 5.1.1. Software Development Environment Configuration.
+
 Para facilitar la colaboración del equipo en todas las actividades del ciclo de vida de desarrollo de SupplyWok, se ha definido un entorno de desarrollo común. Este entorno está compuesto por herramientas especializadas para la gestión del proyecto, diseño UX/UI, modelado, desarrollo, pruebas, documentación y despliegue. La selección de estas herramientas se basa en criterios de eficiencia, compatibilidad con tecnologías open-source (Java + web), y alineación con prácticas recomendadas de la industria.
 
 |  Categoría   | Herramienta   | Propósito | Tipo de acceso/enlace |
@@ -20,6 +22,7 @@ Para facilitar la colaboración del equipo en todas las actividades del ciclo de
 
 
 ### 5.1.2. Source Code Management. 
+
 Los repositorios utilizados para el desarrollo de código fuente son los siguientes:
 
 <div align="center">
@@ -546,7 +549,7 @@ Link de la plataforma de SupplyWok: https://supplywok-frontend.web.app/
 
 ![first](../assets/images/frontend/inventory_screen.png)
 
-![first](../assets/images/frontend/create_inventoy_item_screen.png)
+![first](../assets/images/frontend/create_inventory_item_screen.png)
 
 ![first](../assets/images/frontend/comandas_screen.png)
 
@@ -594,9 +597,9 @@ En esta sección mostramos como se realiso el deploy del plataforma junto con el
 
 2. Usamos el cmd de Jetbrains para deployar nuestro proyecto y acceder al enlace publico.
 
-![](../assets/images/deploy-steps/deploy_firebase_1.png)
+![](../assets/images/deploy-steps/deploy_firebase_1-converted.png)
 
-![](../assets/images/deploy-steps/deploy_firebase_2.png)
+![](../assets/images/deploy-steps/deploy_firebase_2-converted.png)
 Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros componentes que permiten utilizar nuestro sistema sin necesidad de tener un backend por el momento.
 [Frontend Deployment](https://restaurant-management-bc.web.app)
 
@@ -637,7 +640,6 @@ Durante la reunión de Sprint Planning del Sprint 3, se estableció como objetiv
 
 En esta sección se presenta la matriz de liderazgo y colaboración correspondiente al Sprint 3. Dado que el objetivo principal de esta iteración es avanzar en el desarrollo backend de SupplyWok, los aspectos considerados corresponden a los bounded contexts de negocio. Para cada aspecto se asigna un líder responsable de coordinar el desarrollo y uno o más colaboradores encargados de apoyar en la implementación, validación y pruebas de los servicios y endpoints asociados.
 
-![Trello Sprint 3 Board]()
 **Link el Sprint 3 Board:** https://restaurant-management-bc.web.app
 
 **Consider Aspects** 
@@ -668,7 +670,6 @@ En esta sección se presenta la matriz de liderazgo y colaboración correspondie
 
 En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3. Los elementos incluidos fueron seleccionados en función del Sprint Goal establecido para esta iteración, el cual busca habilitar los procesos principales de gestión de inventarios, proveedores, compras y monitoreo operativo de SupplyWok mediante servicios backend funcionales. Para ello, se definieron las historias de usuario y tareas necesarias para implementar, validar y documentar los endpoints REST de los bounded contexts priorizados, asegurando su correcto funcionamiento antes de la integración con los componentes frontend de la plataforma.
 
-![Trello Sprint 3 Board]()
 **Link el Sprint 3 Board:** https://restaurant-management-bc.web.app
 
 **Sprint 3 Backlog**
@@ -738,8 +739,6 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 **Repository URL:** https://github.com/Aurora-startup/SupplyWok-backend
 
 **OpenAPI Documentation URL:** http://localhost:8095/swagger-ui/index.html#/
-
-![Pagina principal de Swagger]()  
 
 | Endpoint | Action | HTTP Verb | Parameters | Response Example | Documentation URL |
 |-----------|-----------|-----------|-----------|-----------|-----------|
@@ -816,7 +815,7 @@ Validar la percepción de los usuarios respecto a la propuesta de valor de Suppl
 **Inicio de entrevista:** [hh:mm:ss]
 **Duración:** [mm:ss]
 
-![Entrevista 1](ruta-imagen)
+![Entrevista 1](../assets/images/interviews/owner-interview1.png)
 
 **Resumen**
 
@@ -834,7 +833,7 @@ El entrevistado indicó que la propuesta de valor resulta clara y relevante para
 **Inicio de entrevista:** [hh:mm:ss]
 **Duración:** [mm:ss]
 
-![Entrevista 2](ruta-imagen)
+![Entrevista 2](../assets/images/interviews/owner-interview2.png)
 
 **Resumen**
 
@@ -852,7 +851,7 @@ El entrevistado indicó que la propuesta de valor resulta clara y relevante para
 **Inicio de entrevista:** [hh:mm:ss]
 **Duración:** [mm:ss]
 
-![Entrevista 3](ruta-imagen)
+![Entrevista 3](../assets/images/interviews/owner-interview3.png)
 
 **Resumen**
 

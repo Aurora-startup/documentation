@@ -1,5 +1,7 @@
 # Capítulo IV: Product Design.
+
 ## 4.1. Style Guidelines
+
 ### 4.1.1. General Style Guidelines.
 
 En esta sección se detallan los lineamientos de estilo que hemos decidido seguir para mantener la coherencia visual de la plataforma, la cual incluye la landing page, web y versiones mobile. Se detallaran el branding, paleta de colores y tipografias a utilizar en el proyecto.
@@ -720,6 +722,7 @@ Este contexto delimitado representa el núcleo operativo del restaurante chifa d
 ![](../assets/images/supplywok-components.png)
 
 ## 4.7. Software Object-Oriented Design.
+
 ### 4.7.1. Class Diagrams.
 
 En esta seccion se presentara y se explicara el diagrama de clases por cada Boundes Context

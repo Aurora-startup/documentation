@@ -31,8 +31,6 @@ wrap: preserve
 
 metadata:
   lang: es-PE
-  header-includes:
-    - \setkeys{Gin}{width=\linewidth,height=0.85\textheight,keepaspectratio}
 
 variables:
   documentclass: article
