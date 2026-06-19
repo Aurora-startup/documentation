@@ -609,3 +609,321 @@ En este apartado se visualiza todos los graficos que representan la participacio
 ![Team Contribution 1](../assets/images/deploy-steps/contributions_1_2.png)
 
 ![Team Contribution 2](../assets/images/deploy-steps/contributions_2_2.png)
+
+### 5.2.3. Sprint 3
+
+En esta sección se registra y explica el avance realizado durante el Sprint 3 en términos de producto y trabajo colaborativo. El enfoque principal de este Sprint es el desarrollo e implementación de los servicios backend mediante Java y Spring Boot para los bounded contexts priorizados, así como la validación y correcto funcionamiento de sus endpoints REST.
+
+#### 5.2.3.1. Sprint Planning 3
+
+Durante la reunión de Sprint Planning del Sprint 3, se estableció como objetivo principal avanzar significativamente en el desarrollo backend de la plataforma **SupplyWok**, planteando alcanzar aproximadamente el 60% de implementación de los servicios backend del sistema. Para ello, se priorizó el desarrollo de los bounded contexts correspondientes al núcleo del negocio, incluyendo **Inventory Management**, **Supply and Purchasing**, **Operational Monitoring and IoT Alerts**, **Restaurant Management** y **Supplier Management & Operations**. Asimismo, el equipo revisó los resultados obtenidos durante el sprint anterior e identificó oportunidades de mejora con el fin de corregir errores, optimizar el proceso de desarrollo y garantizar una base sólida para las siguientes etapas del proyecto.
+
+**Sprint Planning 3**
+
+| **Sprint #** | 3 |
+|---|---|
+| **Date** | 05-06-2026 |
+| **Time** | 15:00 |
+| **Location** | Virtual, Discord |
+| **Prepared by** | Zayd Ayasta, Juan Wang |
+| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano, Zayd Ayasta, Juan Wang |
+| **Sprint 2 Review Summary** | Durante el Sprint 2 se completó el desarrollo de la aplicación frontend utilizando una Fake API para simular la comunicación con los servicios backend. Se implementaron las principales interfaces y flujos de usuario previstos para la plataforma, obteniendo resultados satisfactorios en términos de funcionalidad, organización del código y experiencia de usuario. Como parte del feedback recibido, se destacó la calidad de la implementación realizada; sin embargo, se recomendó fortalecer la documentación técnica del proyecto para facilitar su comprensión, mantenimiento y futura integración con los servicios backend reales.|
+| **Sprint 2 Retrospective Summary** | El equipo consideró que la distribución de tareas y la colaboración durante el Sprint 2 fueron adecuadas, permitiendo cumplir los objetivos establecidos dentro del plazo previsto. Asimismo, se identificó como principal oportunidad de mejora la elaboración de una documentación más completa y detallada, tanto del proceso de desarrollo como de los componentes implementados, con el fin de mejorar la comunicación interna y facilitar el trabajo en las siguientes iteraciones.|
+| **Sprint 3 Goal** | Nuestro enfoque en este sprint es habilitar la gestión de inventarios, proveedores, compras y monitoreo operativo mediante los servicios principales de negocio de SupplyWok. Creemos que esto proporcionará un mayor control de las operaciones y una gestión más eficiente de la cadena de suministro para restaurantes y administradores. Esto se confirmará cuando los módulos de Inventory Management, Supply and Purchasing, Operational Monitoring and IoT Alerts, Restaurant Management y Supplier Management & Operations puedan ejecutar sus procesos mediante APIs funcionales y validadas. |
+| **Sprint 3 Velocity** | Límite de **35 SP** |
+| **Sum of Story Points** | **35 SP** | 
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+
+En esta sección se presenta la matriz de liderazgo y colaboración correspondiente al Sprint 3. Dado que el objetivo principal de esta iteración es avanzar en el desarrollo backend de SupplyWok, los aspectos considerados corresponden a los bounded contexts de negocio. Para cada aspecto se asigna un líder responsable de coordinar el desarrollo y uno o más colaboradores encargados de apoyar en la implementación, validación y pruebas de los servicios y endpoints asociados.
+
+![Trello Sprint 3 Board]()
+**Link el Sprint 3 Board:** https://restaurant-management-bc.web.app
+
+**Consider Aspects** 
+
+- **Inventory Management Bounded Context**: Es el encargado de gestionar la informacion de los recursos de inventario de cada restaurante.
+
+- **Supply and Purchasing Bounded Context**: Es el encargado de gestionar las órdenes de suplementos realizadas por cada restaurante.
+
+- **Restaurant Management Bounded Context**: Es el encargado de gestionar todo lo relacionado con la operación del establecimiento.
+
+- **Operational Monitoring and IoT Alerts Bounded Context**: Es el encargado de gestionar la información recopilada por los sensores del restaurante.
+
+- **Supplier Management & Operations Bounded Context**: Es el encargado de gestionar la información de los proveedores y sus pedidos.
+
+- **Identity & Access Bounded Context**: Es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas.
+
+- **Shared Bounded Context**: Contiene Value Objects y componenetes visuales comunes que son reutilizados por múltiples bounded contexts del sistema.
+
+| Team Member | GitHub username | Inventory Management Bounded BC | Supply and Purchasing BC / Shared BC | Restaurant Management BC | Supplier Management & Operations BC | Operational Monitoring and IoT Alerts BC / Identity & Access BC  |
+|---|---|---|---|---|---|---|
+| Cuadros, Marcelo | Marcelo-alt-lab | C | C | C | - | L |
+| Payano, Joan | Nounz27             | - | C | L | C | C |
+| Meza, Alexandra | AlexandraYMS     | L | C | - | C | C |
+| Ayasta, Zayd | Zayd Ayasta         | C | L | C | C | - |
+| Wang, Juan | jwd3t                 | C | - | C | L | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3. Los elementos incluidos fueron seleccionados en función del Sprint Goal establecido para esta iteración, el cual busca habilitar los procesos principales de gestión de inventarios, proveedores, compras y monitoreo operativo de SupplyWok mediante servicios backend funcionales. Para ello, se definieron las historias de usuario y tareas necesarias para implementar, validar y documentar los endpoints REST de los bounded contexts priorizados, asegurando su correcto funcionamiento antes de la integración con los componentes frontend de la plataforma.
+
+![Trello Sprint 3 Board]()
+**Link el Sprint 3 Board:** https://restaurant-management-bc.web.app
+
+**Sprint 3 Backlog**
+
+| US Id | US Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+En esta sección se presentan los avances realizados durante el Sprint 3 en la implementación de los componentes backend de SupplyWok. El trabajo desarrollado se centró en la construcción de los bounded contexts priorizados del núcleo del negocio, incluyendo la implementación de entidades de dominio, repositorios, servicios de aplicación y endpoints REST mediante Java y Spring Boot.
+
+| Repository                       | Branch                        | Commit Id | Commit Message                                                                          | Commit Message Body                                                                             | Commited on (Date) |
+| -------------------------------- | ----------------------------- | --------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------ |
+| Aurora-startup/SupplyWok-backend | feature/shared                | 9e50ab7   | feat(shared): implement shared layer                                                    | Implementación de la capa compartida utilizada por los diferentes bounded contexts del sistema. | 2026-06-10         |
+| Aurora-startup/SupplyWok-backend | develop                       | 32c9e97   | chore: configure application properties and add dependencies for PostgreSQL and OpenAPI | Configuración inicial del proyecto, dependencias de PostgreSQL y documentación OpenAPI.         | 2026-06-10         |
+| Aurora-startup/SupplyWok-backend | feature/iot                   | d9c9842   | feat(iot): implement iot layer with sensor aggregate                                    | Implementación del bounded context de monitoreo IoT y agregado Sensor.                          | 2026-06-10         |
+| Aurora-startup/SupplyWok-backend | feature/restaurant-management | 8b85738   | feat(restaurant-management): implement restaurant management bounded context            | Desarrollo del bounded context Restaurant Management.                                           | 2026-06-11         |
+| Aurora-startup/SupplyWok-backend | feature/inventory-management  | 27c933e   | Add value objects for inventory management bounded context                              | Implementación de value objects para Inventory Management.                                      | 2026-06-12         |
+| Aurora-startup/SupplyWok-backend | feature/inventory-management  | dcfa1ef   | Add aggregates and entities                                                             | Incorporación de agregados y entidades del dominio para Inventory Management.                   | 2026-06-12         |
+| Aurora-startup/SupplyWok-backend | feature/inventory-management  | 4f8aef7   | Finish domain package of inventory management bounded context                           | Finalización de la estructura del dominio para Inventory Management.                            | 2026-06-13         |
+| Aurora-startup/SupplyWok-backend | feature/suppliers             | 48967ca   | feat(suppliers): add clients endpoint                                                   | Implementación del endpoint para consulta de clientes asociados a proveedores.                  | 2026-06-17         |
+| Aurora-startup/SupplyWok-backend | feature/suppliers             | 30598b0   | feat(suppliers): add catalog endpoint by supplier id                                    | Implementación del endpoint para consulta de catálogo por proveedor.                            | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/purchasing            | e25f995   | feat: add purchase order management endpoints and domain                                | Desarrollo del dominio y endpoints para la gestión de órdenes de compra.                        | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/purchasing            | 00bef77   | feat: align inventory persistence and activity endpoints                                | Ajuste de persistencia y endpoints relacionados con actividades de inventario.                  | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/purchasing            | 4a31215   | feat: add supplier identity acl contract                                                | Implementación del contrato ACL para integración con el contexto de proveedores.                | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/alerts                | 427701d   | feat(alerts): add alerts aggregate and controllers                                      | Implementación de agregados y controladores para el módulo de alertas operativas.               | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/alerts                | 7e87e5    | refactor(alerts): replace external services with IoT and inventory context facades      | Refactorización para integrar el módulo de alertas con los contextos IoT e Inventory.           | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/restaurant-management | c4ba83c   | fix: add CrossOrigin and clean imports in restaurant management controllers             | Corrección de configuración CORS y limpieza de imports en los controladores.                    | 2026-06-18         |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3 se completó la implementación y validación de los principales servicios backend de SupplyWok correspondientes a los bounded contexts priorizados del núcleo del negocio. Como parte de la revisión del sprint, se verificó el correcto funcionamiento de los endpoints REST desarrollados mediante pruebas realizadas en Swagger/OpenAPI, comprobando la ejecución satisfactoria de las operaciones expuestas por la API. Ademas, se validó la persistencia de la información en la base de datos PostgreSQL mediante pgAdmin.
+
+![Trello Sprint 3 Board]()
+![Trello Sprint 3 Board]()
+![Trello Sprint 3 Board]()
+![Trello Sprint 3 Board]()
+![Trello Sprint 3 Board]()
+
+**Link del video de explicación del Sprint** https://restaurant-management-bc.web.app
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se documentaron los servicios web desarrollados para los bounded contexts priorizados de SupplyWok utilizando OpenAPI/Swagger. La documentación generada permite visualizar y comprender la estructura de los endpoints implementados, incluyendo los métodos HTTP soportados, parámetros de entrada, cuerpos de solicitud, respuestas esperadas y códigos de estado asociados. A continuación, se presenta el detalle de los endpoints documentados, los enlaces correspondientes a la documentación generada y evidencias de interacción utilizando datos de prueba.
+
+**Repository URL:** https://github.com/Aurora-startup/SupplyWok-backend
+
+**OpenAPI Documentation URL:** http://localhost:8080/swagger-ui/index.html
+
+![Pagina principal de Swagger]()  
+
+| Endpoint | Action | HTTP Verb | Parameters | Response Example | Documentation URL |
+|-----------|-----------|-----------|-----------|-----------|-----------|
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+En esta sección se hace el deploy en no se donde xd
+
+[Backend Deployment](https://restaurant-management-bc.web.app)
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, el equipo trabajó de manera colaborativa en el desarrollo de los servicios backend de SupplyWok utilizando una estrategia basada en ramas de Git y GitHub. Las tareas fueron distribuidas entre los integrantes de acuerdo con los bounded contexts priorizados, permitiendo que cada miembro asumiera la responsabilidad principal de un área específica del negocio. En este sprint, todos los integrantes contribuyeron activamente mediante commits, revisiones e integración de cambios en el repositorio del proyecto. A continuación, se presentan evidencias de colaboración obtenidas a partir de los analíticos de GitHub, incluyendo contribuciones, historial de commits y actividad realizada durante el sprint.
+
+![Sprint 3 Insight Graphic 1](../assets/images/Sprint-3-Insights/Insight-1.png)
+
+Como se observa en la sección Contributors del repositorio backend, durante el Sprint 3 se realizaron un total de 31 commits, reflejando una participación activa por parte de los miembros del equipo en el desarrollo de los servicios y endpoints de la plataforma.
+
+![Sprint 3 Insight Graphic 2](../assets/images/Sprint-3-Insights/Insight-2.png)
+
+Como se observa en el detalle de la sección Contributors, todos los integrantes realizaron contribuciones al repositorio. En promedio, cada miembro efectuó aproximadamente 5 commits y contribuyó con alrededor de 2300 líneas de código agregadas, evidenciando una distribución equilibrada del trabajo durante el sprint.
+
+![Sprint 3 Insight Graphic 3](../assets/images/Sprint-3-Insights/Insight-3.png)
+
+Como se observa en la sección Pulse del repositorio backend, durante la última semana se integraron 4 Pull Requests y se registraron 25 commits excluyendo merges. Asimismo, la rama principal del proyecto acumuló 6922 líneas agregadas y 163 líneas eliminadas, reflejando el avance significativo realizado en la implementación de los bounded contexts y servicios backend planificados para este sprint.
+
+## 5.3 Validation Interviews
+
+En esta sección se presentan las actividades de validación realizadas con usuarios pertenecientes a los segmentos objetivo de SupplyWok. El objetivo de estas entrevistas fue recopilar retroalimentación sobre la propuesta de valor, la experiencia de navegación en la Landing Page y el uso de las funcionalidades implementadas en la plataforma. Los resultados obtenidos permitieron identificar fortalezas, oportunidades de mejora y validar los principales supuestos planteados durante el desarrollo del proyecto.
+
+### 5.3.1 Diseño de Entrevistas
+
+### Segmento Objetivo: [Nombre del Segmento]
+
+**Objetivo de la validación**
+
+Validar la percepción de los usuarios respecto a la propuesta de valor de SupplyWok, la usabilidad de la solución y la utilidad de las funcionalidades implementadas.
+
+**Elementos evaluados**
+
+* Landing Page
+* Navegación general
+* Funcionalidad 1
+* Funcionalidad 2
+* Funcionalidad 3
+
+**User Flows evaluados**
+
+1. Ingreso a la Landing Page.
+2. Revisión de información del producto.
+3. Navegación hacia las funcionalidades principales.
+4. Ejecución de una tarea representativa del segmento.
+5. Retroalimentación general sobre la experiencia.
+
+**Preguntas de validación**
+
+1. ¿La propuesta de valor presentada es clara?
+2. ¿Qué funcionalidad considera más útil?
+3. ¿Encontró dificultades durante la navegación?
+4. ¿Utilizaría una solución como SupplyWok en su trabajo diario?
+5. ¿Qué mejoras sugeriría?
+
+---
+
+### 5.3.2 Registro de Entrevistas
+
+### Entrevista 1
+
+**Nombre y Apellidos:** [Nombre Completo]
+**Edad:** [Edad]
+**Distrito:** [Distrito]
+**Fecha:** [Fecha]
+**Video (Microsoft Stream):** [URL]
+**Inicio de entrevista:** [hh:mm:ss]
+**Duración:** [mm:ss]
+
+![Entrevista 1](ruta-imagen)
+
+**Resumen**
+
+El entrevistado indicó que la propuesta de valor resulta clara y relevante para las necesidades de su negocio. Destacó especialmente la utilidad de [funcionalidad], mencionando que podría ayudar a optimizar [proceso]. Asimismo, sugirió mejorar [aspecto] para facilitar aún más la experiencia de uso.
+
+---
+
+### Entrevista 2
+
+**Nombre y Apellidos:** [Nombre Completo]
+**Edad:** [Edad]
+**Distrito:** [Distrito]
+**Fecha:** [Fecha]
+**Video (Microsoft Stream):** [URL]
+**Inicio de entrevista:** [hh:mm:ss]
+**Duración:** [mm:ss]
+
+![Entrevista 2](ruta-imagen)
+
+**Resumen**
+
+[Resumen descriptivo de las principales observaciones del entrevistado.]
+
+---
+
+### Entrevista 3
+
+**Nombre y Apellidos:** [Nombre Completo]
+**Edad:** [Edad]
+**Distrito:** [Distrito]
+**Fecha:** [Fecha]
+**Video (Microsoft Stream):** [URL]
+**Inicio de entrevista:** [hh:mm:ss]
+**Duración:** [mm:ss]
+
+![Entrevista 3](ruta-imagen)
+
+**Resumen**
+
+[Resumen descriptivo de las principales observaciones del entrevistado.]
+
+---
+
+## Resumen General de Resultados
+
+| Aspecto Evaluado                     | Resultado   |
+| ------------------------------------ | ----------- |
+| Comprensión de la propuesta de valor | [Resultado] |
+| Facilidad de navegación              | [Resultado] |
+| Utilidad de las funcionalidades      | [Resultado] |
+| Intención de uso                     | [Resultado] |
+| Principales mejoras sugeridas        | [Resultado] |
+
+## Conclusiones de la Validación
+
+* [Conclusión 1]
+* [Conclusión 2]
+* [Conclusión 3]
+
+## Recomendaciones
+
+* [Recomendación 1]
+* [Recomendación 2]
+* [Recomendación 3]
+
+## 5.4 Video About-The-Product
+
+El video **About-The-Product** presenta una visión general de la propuesta de valor de **SupplyWok**, así como las principales funcionalidades desarrolladas durante el proyecto. A través de una demostración de la solución, se muestra cómo la plataforma permite optimizar la gestión de inventarios, proveedores, compras y monitoreo operativo dentro del sector gastronómico. Asimismo, el video explica la problemática identificada, la solución propuesta y los beneficios que SupplyWok ofrece a sus usuarios objetivo, complementando la presentación con evidencias de las funcionalidades implementadas y los resultados alcanzados durante el desarrollo del producto.
+
+### Imagen Representativa
+
+[Insertar captura representativa del video]
+
+### Enlaces del Video
+
+* Microsoft Stream: [URL del video]
+* YouTube: [URL del video]
+
+
+## Conclusiones y Recomendaciones
+
+### Conclusiones
+
+* Durante el Sprint 3 se logró avanzar significativamente en el desarrollo backend de SupplyWok mediante la implementación de los bounded contexts prioritarios del núcleo del negocio: Inventory Management, Supply and Purchasing, Restaurant Management, Supplier Management & Operations y Operational Monitoring and IoT Alerts.
+
+* Se desarrollaron y validaron múltiples endpoints REST utilizando Java y Spring Boot, permitiendo la gestión de los principales procesos de negocio de la plataforma y estableciendo una base sólida para las futuras integraciones con el frontend.
+
+* La documentación generada mediante OpenAPI/Swagger facilitó la validación de los servicios implementados y proporcionó una referencia clara para los futuros consumidores de la API.
+
+* El uso de GitHub, ramas de desarrollo y Pull Requests permitió mantener una adecuada organización del trabajo colaborativo, evidenciando la participación activa de todos los integrantes del equipo.
+
+* Las pruebas realizadas sobre los endpoints y la persistencia de datos en PostgreSQL permitieron verificar el correcto funcionamiento de los servicios desarrollados durante el sprint.
+
+### Recomendaciones
+
+* Continuar con la integración de los servicios backend desarrollados con las aplicaciones frontend implementadas en iteraciones anteriores.
+
+* Incrementar la cobertura de pruebas de integración y validación para asegurar la estabilidad de los servicios conforme aumente la complejidad del sistema.
+
+* Mantener actualizada la documentación de la API conforme se incorporen nuevas funcionalidades y bounded contexts.
+
+* Implementar mecanismos adicionales de seguridad, validación y manejo de excepciones para fortalecer la robustez de la plataforma.
+
+* Continuar siguiendo una estrategia de desarrollo colaborativo basada en revisiones de código y Pull Requests para garantizar la calidad del software.
+
+## Video About-The-Team
+
+El video About-The-Team presenta un resumen del trabajo realizado durante el desarrollo de SupplyWok, mostrando las principales actividades ejecutadas por el equipo, evidencias de reuniones de coordinación, desarrollo de software y validación de funcionalidades. Asimismo, cada integrante comparte su experiencia, responsabilidades asumidas y los aprendizajes obtenidos durante el proyecto.
+
+### Estructura del Video
+
+| Tiempo   | Sección                                        |
+| -------- | ---------------------------------------------- |
+| 00:00:00 | Presentación del proyecto y del equipo         |
+| 00:00:30 | Problemática identificada y propuesta de valor |
+| 00:01:00 | Desarrollo de la Landing Page                  |
+| 00:01:30 | Desarrollo del Frontend                        |
+| 00:02:00 | Desarrollo Backend y Web Services              |
+| 00:02:45 | Evidencias de trabajo colaborativo             |
+| 00:03:30 | Reflexiones y aprendizajes de los integrantes  |
+| 00:04:30 | Conclusiones y cierre                          |
+
+### Enlaces del Video
+
+* Microsoft Stream: [URL del video]
+* YouTube: [URL del video]
+
+### Imagen Representativa
+
+[Insertar captura representativa del video]
+
