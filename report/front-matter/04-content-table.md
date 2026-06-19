@@ -96,9 +96,29 @@
             - [5.2.2.6. Services Documentation Evidence for Sprint Review](50-chapter5.md#5226-services-documentation-evidence-for-sprint-review)
             - [5.2.2.7. Software Deployment Evidence for Sprint Review](50-chapter5.md#5227-software-deployment-evidence-for-sprint-review)
             - [5.2.2.8. Team Collaboration Insights during Sprint](50-chapter5.md#5228-team-collaboration-insights-during-sprint)
+        - [5.2.3. Sprint 3](50-chapter5.md#523-sprint-3)
+            - [5.2.3.1. Sprint Planning 3](50-chapter5.md#5231-sprint-planning-3)
+            - [5.2.3.2. Aspect Leaders and Collaborators](50-chapter5.md#5232-aspect-leaders-and-collaborators)
+            - [5.2.3.3. Sprint Backlog 3](50-chapter5.md#5233-sprint-backlog-3)
+            - [5.2.3.4. Development Evidence for Sprint Review](50-chapter5.md#5234-development-evidence-for-sprint-review)
+            - [5.2.3.5. Execution Evidence for Sprint Review](50-chapter5.md#5235-execution-evidence-for-sprint-review)
+            - [5.2.3.6. Services Documentation Evidence for Sprint Review](50-chapter5.md#5236-services-documentation-evidence-for-sprint-review)
+            - [5.2.3.7. Software Deployment Evidence for Sprint Review](50-chapter5.md#5237-software-deployment-evidence-for-sprint-review)
+            - [5.2.3.8. Team Collaboration Insights during Sprint](50-chapter5.md#5238-team-collaboration-insights-during-sprint)
+    - [5.3 Validation Interviews](50-chapter5.md#53-validation-interviews)
+        - [5.3.1 Diseño de Entrevistas](50-chapter5.md#531-diseño-de-entrevistas)
+        - [5.3.2 Registro de Entrevistas](50-chapter5.md#532-registro-de-entrevistas)
+        - [5.3.3 Evaluaciones según heurísticas](50-chapter5.md#533-evaluaciones-según-heurísticas)
+    - [5.4 Video About-The-Product](50-chapter5.md#54-video-about-the-product)
+- [Conclusiones y Recomendaciones](50-chapter5.md#conclusiones-y-recomendaciones)
+    - [Conclusiones](50-chapter5.md#conclusiones)
+    - [Recomendaciones](50-chapter5.md#recomendaciones)
+- [Video About-The-Team](50-chapter5.md#video-about-the-team)
+    - [Estructura del Video](50-chapter5.md#estructura-del-video)
+    - [Enlaces del Video](50-chapter5.md#enlaces-del-video)
+    - [Imagen Representativa](50-chapter5.md#imagen-representativa)
 
 - [Bibliografía](99-bibliography.md)
+- [Anexos](../annexes/anexos.md)
 
-
-
-        
+---
