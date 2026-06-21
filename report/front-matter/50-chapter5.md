@@ -640,7 +640,9 @@ Durante la reunión de Sprint Planning del Sprint 3, se estableció como objetiv
 
 En esta sección se presenta la matriz de liderazgo y colaboración correspondiente al Sprint 3. Dado que el objetivo principal de esta iteración es avanzar en el desarrollo backend de SupplyWok, los aspectos considerados corresponden a los bounded contexts de negocio. Para cada aspecto se asigna un líder responsable de coordinar el desarrollo y uno o más colaboradores encargados de apoyar en la implementación, validación y pruebas de los servicios y endpoints asociados.
 
-**Link el Sprint 3 Board:** https://restaurant-management-bc.web.app
+**Link el Sprint 3 Board:** https://trello.com/invite/b/6a32b75e1ae8d9ce0c6a80c5/ATTI1c7df3100c5d6f7a9b96e772b7dfaf15012EAD3F/mi-tablero-de-trello
+
+![alt text](image-1.png)
 
 **Consider Aspects** 
 
@@ -670,7 +672,9 @@ En esta sección se presenta la matriz de liderazgo y colaboración correspondie
 
 En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3. Los elementos incluidos fueron seleccionados en función del Sprint Goal establecido para esta iteración, el cual busca habilitar los procesos principales de gestión de inventarios, proveedores, compras y monitoreo operativo de SupplyWok mediante servicios backend funcionales. Para ello, se definieron las historias de usuario y tareas necesarias para implementar, validar y documentar los endpoints REST de los bounded contexts priorizados, asegurando su correcto funcionamiento antes de la integración con los componentes frontend de la plataforma.
 
-**Link el Sprint 3 Board:** https://restaurant-management-bc.web.app
+**Link el Sprint 3 Board:** https://trello.com/invite/b/6a32b75e1ae8d9ce0c6a80c5/ATTI1c7df3100c5d6f7a9b96e772b7dfaf15012EAD3F/mi-tablero-de-trello
+
+![alt text](image-1.png)
 
 **Sprint 3 Backlog**
 
@@ -688,7 +692,6 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3. Los 
 | US17  | Control de ocupación de mesas                              | T-10    | Implement Restaurant Management Endpoints | Implementar endpoints relacionados con la gestión operativa del restaurante.                                     | 5                  | Joan Payano     | Done   |
 | US36  | Manejo estándar de errores                                 | T-11    | Configure Global Exception Handling       | Implementar manejo centralizado de excepciones y respuestas HTTP estandarizadas.                                 | 4                  | Zayd Ayasta     | Done   |
 | US39  | Evitar almacenamientos en errores                          | T-12    | Configure Transaction Management          | Configurar validaciones y transacciones para evitar persistencia de datos inválidos.                             | 3                  | Zayd Ayasta     | Done   |
-
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
@@ -716,6 +719,8 @@ En esta sección se presentan los avances realizados durante el Sprint 3 en la i
 
 Durante el Sprint 3 se completó la implementación y validación de los principales servicios backend de SupplyWok correspondientes a los bounded contexts priorizados del núcleo del negocio. Como parte de la revisión del sprint, se verificó el correcto funcionamiento de los endpoints REST desarrollados mediante pruebas realizadas en Swagger/OpenAPI, comprobando la ejecución satisfactoria de las operaciones expuestas por la API. Ademas, se validó la persistencia de la información en la base de datos PostgreSQL mediante pgAdmin.
 
+En las siguientes evidencias se muestran los endpoints implementados donde se puede observar la exposición de las operaciones CRUD y servicios específicos desarrollados durante el sprint.
+
 ![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/swagger-principal-page.png)
 
 ![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-1.png)
@@ -726,11 +731,11 @@ Durante el Sprint 3 se completó la implementación y validación de los princip
 
 ![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-4.png)
 
-![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/swagger-principal-page.png)
+Adicionalmente, se realizó la validación de persistencia utilizando pgAdmin, comprobando que las operaciones ejecutadas desde la API generaban correctamente los registros correspondientes dentro de la base de datos PostgreSQL de SupplyWok. Esta verificación permitió asegurar la correcta comunicación entre la capa de aplicación y la capa de almacenamiento.
 
 ![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/tables-pgAdmin.png)
 
-**Link del video de explicación del Sprint** https://restaurant-management-bc.web.app
+**Link del video de explicación del Sprint:** https://www.youtube.com/watch?v=GsYC-nSofsI
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -738,16 +743,144 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 **Repository URL:** https://github.com/Aurora-startup/SupplyWok-backend
 
-**OpenAPI Documentation URL:** http://localhost:8095/swagger-ui/index.html#/
+**OpenAPI Documentation URL:** https://supplywok-backend.onrender.com/swagger-ui/index.html
 
-| Endpoint | Action | HTTP Verb | Parameters | Response Example | Documentation URL |
-|-----------|-----------|-----------|-----------|-----------|-----------|
+### Supplies
+
+![alt text](image.png)
+
+| Endpoint                       | Método HTTP | Acción implementada                | Sintaxis de llamada            | Parámetros                               | Ejemplo Request | Ejemplo Response | Explicación Response                                 |
+| ------------------------------ | ----------- | ---------------------------------- | ------------------------------ | ---------------------------------------- | --------------- | ---------------- | ---------------------------------------------------- |
+| `/api/v1/supplies/{supplyId}`  | GET         | Obtener suministro por ID          | `/api/v1/supplies/{supplyId}`  | `supplyId`: Identificador del suministro |                 |                  | Retorna la información del suministro solicitado.    |
+| `/api/v1/supplies/{supplyId}`  | PUT         | Actualizar suministro              | `/api/v1/supplies/{supplyId}`  | `supplyId`: Identificador del suministro |                 |                  | Retorna el suministro actualizado.                   |
+| `/api/v1/supplies/{supplyId}`  | DELETE      | Eliminar suministro                | `/api/v1/supplies/{supplyId}`  | `supplyId`: Identificador del suministro |                 |                  | Confirma la eliminación del suministro.              |
+| `/api/v1/supplies`             | GET         | Obtener todos los suministros      | `/api/v1/supplies`             |                                          |                 |                  | Retorna la lista de suministros registrados.         |
+| `/api/v1/supplies`             | POST        | Crear suministro                   | `/api/v1/supplies`             |                                          |                 |                  | Retorna el suministro creado.                        |
+| `/api/v1/supplies/total-stock` | GET         | Obtener stock total de suministros | `/api/v1/supplies/total-stock` |                                          |                 |                  | Retorna la cantidad total disponible de suministros. |
+
+### Tables
+
+![alt text](image-2.png)
+
+| Endpoint                          | Método HTTP | Acción implementada       | Sintaxis de llamada               | Parámetros                          | Ejemplo Request | Ejemplo Response | Explicación Response                       |
+| --------------------------------- | ----------- | ------------------------- | --------------------------------- | ----------------------------------- | --------------- | ---------------- | ------------------------------------------ |
+| `/api/v1/tables/{tableId}/status` | PUT         | Actualizar estado de mesa | `/api/v1/tables/{tableId}/status` | `tableId`: Identificador de la mesa |                 |                  | Retorna la mesa con el estado actualizado. |
+| `/api/v1/tables`                  | GET         | Obtener todas las mesas   | `/api/v1/tables`                  |                                     |                 |                  | Retorna la lista de mesas registradas.     |
+| `/api/v1/tables`                  | POST        | Crear nueva mesa          | `/api/v1/tables`                  |                                     |                 |                  | Retorna la información de la mesa creada.  |
+| `/api/v1/tables/{tableId}`        | GET         | Obtener mesa por ID       | `/api/v1/tables/{tableId}`        | `tableId`: Identificador de la mesa |                 |                  | Retorna los datos de una mesa específica.  |
+| `/api/v1/tables/{tableId}`        | DELETE      | Eliminar mesa             | `/api/v1/tables/{tableId}`        | `tableId`: Identificador de la mesa |                 |                  | Confirma la eliminación de la mesa.        |
+
+### Comandas
+
+![alt text](image-3.png)
+
+| Endpoint                              | Método HTTP | Acción implementada          | Sintaxis de llamada                   | Parámetros                               | Ejemplo Request | Ejemplo Response | Explicación Response                                  |
+| ------------------------------------- | ----------- | ---------------------------- | ------------------------------------- | ---------------------------------------- | --------------- | ---------------- | ----------------------------------------------------- |
+| `/api/v1/comandas/{comandaId}/status` | PUT         | Actualizar estado de comanda | `/api/v1/comandas/{comandaId}/status` | `comandaId`: Identificador de la comanda |                 |                  | Retorna la comanda con el nuevo estado actualizado.   |
+| `/api/v1/comandas`                    | GET         | Obtener todas las comandas   | `/api/v1/comandas`                    |                                          |                 |                  | Retorna la lista de comandas registradas.             |
+| `/api/v1/comandas`                    | POST        | Crear nueva comanda          | `/api/v1/comandas`                    |                                          |                 |                  | Retorna la información de la comanda creada.          |
+| `/api/v1/comandas/{comandaId}/items`  | POST        | Agregar item a comanda       | `/api/v1/comandas/{comandaId}/items`  | `comandaId`: Identificador de la comanda |                 |                  | Retorna la comanda con el nuevo item agregado.        |
+| `/api/v1/comandas/{comandaId}`        | GET         | Obtener comanda por ID       | `/api/v1/comandas/{comandaId}`        | `comandaId`: Identificador de la comanda |                 |                  | Retorna la información detallada de una comanda.      |
+| `/api/v1/comandas/{comandaId}`        | DELETE      | Eliminar comanda             | `/api/v1/comandas/{comandaId}`        | `comandaId`: Identificador de la comanda |                 |                  | Confirma la eliminación de la comanda.                |
+| `/api/v1/comandas/table/{tableId}`    | GET         | Obtener comandas por mesa    | `/api/v1/comandas/table/{tableId}`    | `tableId`: Identificador de la mesa      |                 |                  | Retorna las comandas asociadas a una mesa específica. |
+
+### Sensors
+
+![alt text](image-4.png)
+
+| Endpoint                     | Método HTTP | Acción implementada        | Sintaxis de llamada          | Parámetros                           | Ejemplo Request | Ejemplo Response | Explicación Response                          |
+| ---------------------------- | ----------- | -------------------------- | ---------------------------- | ------------------------------------ | --------------- | ---------------- | --------------------------------------------- |
+| `/api/v1/sensors/{sensorId}` | GET         | Obtener sensor por ID      | `/api/v1/sensors/{sensorId}` | `sensorId`: Identificador del sensor |                 |                  | Retorna la información del sensor solicitado. |
+| `/api/v1/sensors/{sensorId}` | PUT         | Actualizar sensor          | `/api/v1/sensors/{sensorId}` | `sensorId`: Identificador del sensor |                 |                  | Retorna el sensor actualizado.                |
+| `/api/v1/sensors/{sensorId}` | DELETE      | Eliminar sensor            | `/api/v1/sensors/{sensorId}` | `sensorId`: Identificador del sensor |                 |                  | Confirma la eliminación del sensor.           |
+| `/api/v1/sensors`            | GET         | Obtener todos los sensores | `/api/v1/sensors`            |                                      |                 |                  | Retorna la lista de sensores registrados.     |
+| `/api/v1/sensors`            | POST        | Crear nuevo sensor         | `/api/v1/sensors`            |                                      |                 |                  | Retorna el sensor creado.                     |
+
+### Purchase Orders
+
+![alt text](image-5.png)
+
+| Endpoint                                           | Método HTTP | Acción implementada                              | Sintaxis de llamada                                    | Parámetros        | Ejemplo Request | Ejemplo Response | Explicación Response |
+| -------------------------------------------------- | ----------- | ------------------------------------------------ | ------------------------------------------------------ | ----------------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/purchase-orders/{purchaseOrderId}`        | GET         | Obtener una orden de compra por su identificador | `GET /api/v1/purchase-orders/{purchaseOrderId}`        | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders/{purchaseOrderId}`        | PUT         | Actualizar una orden de compra existente         | `PUT /api/v1/purchase-orders/{purchaseOrderId}`        | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders/{purchaseOrderId}`        | DELETE      | Eliminar una orden de compra                     | `DELETE /api/v1/purchase-orders/{purchaseOrderId}`     | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders/{purchaseOrderId}/status` | PUT         | Actualizar el estado de una orden de compra      | `PUT /api/v1/purchase-orders/{purchaseOrderId}/status` | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders`                          | GET         | Obtener todas las órdenes de compra registradas  | `GET /api/v1/purchase-orders`                          |                   |                 |                  |                      |
+| `/api/v1/purchase-orders`                          | POST        | Crear una nueva orden de compra                  | `POST /api/v1/purchase-orders`                         |                   |                 |                  |                      |
+
+### Restaurant Alerts
+
+![alt text](image.png)
+
+| Endpoint                                          | Método HTTP | Acción implementada                                        | Sintaxis de llamada                                    | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ------------------------------------------------- | ----------- | ---------------------------------------------------------- | ------------------------------------------------------ | ---------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/restaurant/alerts`                       | GET         | Obtener todas las alertas del restaurante                  | `GET /api/v1/restaurant/alerts`                        |            |                 |                  |                      |
+| `/api/v1/restaurant/alerts`                       | POST        | Crear una nueva alerta del restaurante                     | `POST /api/v1/restaurant/alerts`                       |            |                 |                  |                      |
+| `/api/v1/restaurant/alerts/{alertId}/acknowledge` | POST        | Confirmar o reconocer una alerta del restaurante           | `POST /api/v1/restaurant/alerts/{alertId}/acknowledge` | `alertId`  |                 |                  |                      |
+| `/api/v1/restaurant/alerts/inventory`             | POST        | Crear una alerta del restaurante generada desde inventario | `POST /api/v1/restaurant/alerts/inventory`             |            |                 |                  |                      |
+| `/api/v1/restaurant/alerts/{alertId}`             | GET         | Obtener una alerta del restaurante por ID                  | `GET /api/v1/restaurant/alerts/{alertId}`              | `alertId`  |                 |                  |                      |
+
+### Suppliers Alerts
+
+![alt text](image.png)
+
+| Endpoint                                        | Método HTTP | Acción implementada                           | Sintaxis de llamada                                  | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ----------------------------------------------- | ----------- | --------------------------------------------- | ---------------------------------------------------- | ---------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/supplier/alerts`                       | GET         | Obtener todas las alertas de proveedores      | `GET /api/v1/supplier/alerts`                        |            |                 |                  |                      |
+| `/api/v1/supplier/alerts`                       | POST        | Crear una nueva alerta de proveedor           | `POST /api/v1/supplier/alerts`                       |            |                 |                  |                      |
+| `/api/v1/supplier/alerts/{alertId}/acknowledge` | POST        | Confirmar o reconocer una alerta de proveedor | `POST /api/v1/supplier/alerts/{alertId}/acknowledge` | `alertId`  |                 |                  |                      |
+| `/api/v1/supplier/alerts/{alertId}`             | GET         | Obtener una alerta de proveedor por ID        | `GET /api/v1/supplier/alerts/{alertId}`              | `alertId`  |                 |                  |                      |
+
+
+### Suppliers
+
+![alt text](image.png)
+
+| Endpoint            | Método HTTP | Acción implementada                       | Sintaxis de llamada     | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ------------------- | ----------- | ----------------------------------------- | ----------------------- | ---------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/suppliers` | GET         | Obtener todos los proveedores registrados | `GET /api/v1/suppliers` |            |                 |                  |                      |
+
+### Suppliers Catalog Items
+
+![alt text](image.png)
+
+| Endpoint                                                       | Método HTTP | Acción implementada                            | Sintaxis de llamada                                                   | Parámetros                    | Ejemplo Request | Ejemplo Response | Explicación Response |
+| -------------------------------------------------------------- | ----------- | ---------------------------------------------- | --------------------------------------------------------------------- | ----------------------------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | GET         | Obtener un elemento del catálogo por ID        | `GET /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}`    | `supplierId`, `catalogItemId` |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | PUT         | Actualizar un elemento del catálogo            | `PUT /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}`    | `supplierId`, `catalogItemId` |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | DELETE      | Eliminar un elemento del catálogo              | `DELETE /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | `supplierId`, `catalogItemId` |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items`                 | GET         | Obtener elementos del catálogo de un proveedor | `GET /api/v1/suppliers/{supplierId}/catalog-items`                    | `supplierId`                  |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items`                 | POST        | Crear un elemento del catálogo del proveedor   | `POST /api/v1/suppliers/{supplierId}/catalog-items`                   | `supplierId`                  |                 |                  |                      |
+
+### Suppliers Clients
+
+![alt text](image.png)
+
+| Endpoint                                 | Método HTTP | Acción implementada                       | Sintaxis de llamada                          | Parámetros   | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ---------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------- | ------------ | --------------- | ---------------- | -------------------- |
+| `/api/v1/suppliers/{supplierId}/clients` | GET         | Obtener clientes asociados a un proveedor | `GET /api/v1/suppliers/{supplierId}/clients` | `supplierId` |                 |                  |                      |
+
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
-En esta sección se hace el deploy en no se donde xd
+En esta sección se presentan las evidencias correspondientes al despliegue del backend de SupplyWok en un entorno cloud utilizando la plataforma Render. El objetivo de este proceso fue poner a disposición los servicios web desarrollados para que puedan ser consumidos por el frontend de la aplicación en el siguiente Sprint, permitiendo la comunicación entre ambos componentes a través de Internet. Asimismo, el despliegue permitió validar el correcto funcionamiento de los endpoints implementados mediante el uso de Swagger, verificando que las operaciones de la API respondieran correctamente.
 
-[Backend Deployment](https://restaurant-management-bc.web.app)
+Primero, se realizó el despliegue del backend mediante la creación de un nuevo Web Service en Render, enlazado al repositorio de GitHub correspondiente al proyecto backend de SupplyWok (Aurora-Startup/SupplyWok-backend). Para la construcción y ejecución del servicio se utilizó Docker, permitiendo que Render implemente el Dockerfile previamente configurado dentro del proyecto.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-3.png)
+
+Posteriormente, se configuraron las variables de entorno necesarias para establecer la conexión con la base de datos PostgreSQL. Esta configuración permitió mantener separada la información sensible del código fuente y garantizar la correcta comunicación entre el backend y la base de datos desplegada.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-1.png)
+
+Luego, se realizó el despliegue de la base de datos PostgreSQL dentro del entorno cloud, permitiendo que los servicios backend puedan acceder y gestionar la información almacenada durante la ejecución de los endpoints.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-2.png)
+
+Finalmente, después de completar el despliegue del backend y la base de datos PostgreSQL, se realizó la validación del funcionamiento del servicio mediante el acceso a la documentación interactiva generada por Swagger. Esta validación permitió comprobar la disponibilidad de los endpoints de SupplyWok y verificar que las operaciones implementadas respondieran correctamente en el entorno desplegado.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-swagger.png)
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -883,67 +1016,61 @@ El entrevistado indicó que la propuesta de valor resulta clara y relevante para
 
 ## 5.4 Video About-The-Product
 
-El video **About-The-Product** presenta una visión general de la propuesta de valor de **SupplyWok**, así como las principales funcionalidades desarrolladas durante el proyecto. A través de una demostración de la solución, se muestra cómo la plataforma permite optimizar la gestión de inventarios, proveedores, compras y monitoreo operativo dentro del sector gastronómico. Asimismo, el video explica la problemática identificada, la solución propuesta y los beneficios que SupplyWok ofrece a sus usuarios objetivo, complementando la presentación con evidencias de las funcionalidades implementadas y los resultados alcanzados durante el desarrollo del producto.
-
-### Imagen Representativa
-
-[Insertar captura representativa del video]
+El video About-The-Product presenta una visión general de la propuesta de valor de SupplyWok, así como de las principales funcionalidades desarrolladas durante el proyecto. A través de una demostración de la solución, se muestra cómo la plataforma permite optimizar la gestión de inventarios, proveedores, compras y el monitoreo operativo dentro de un restaurante tipo Chifa. Asimismo, el video incluye una entrevista de validación con el segmento objetivo de dueños de restaurantes, quienes experimentan y evalúan las funcionalidades ofrecidas por la plataforma SupplyWok.
 
 ### Enlaces del Video
 
-* Microsoft Stream: [URL del video]
-* YouTube: [URL del video]
+* Microsoft Stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQAQFG5C3_5eQ78sex-VMP4KAcv3Iyv9JT4jLLZW0l7N0Ew?e=SFPtAO&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQAQFG5C3_5eQ78sex-VMP4KAcv3Iyv9JT4jLLZW0l7N0Ew?e=SFPtAO&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+* YouTube: [https://www.youtube.com/watch?v=AzOyy7Oak_w](https://www.youtube.com/watch?v=AzOyy7Oak_w)
 
+![About the Product](../assets/images/Sprint-3-video-caps/about-the-product.png)
 
 ## Conclusiones y Recomendaciones
 
 ### Conclusiones
 
-* Durante el Sprint 3 se logró avanzar significativamente en el desarrollo backend de SupplyWok mediante la implementación de los bounded contexts prioritarios del núcleo del negocio: Inventory Management, Supply and Purchasing, Restaurant Management, Supplier Management & Operations y Operational Monitoring and IoT Alerts.
+En conclusión, el desarrollo de SupplyWok permitió comprender de manera profunda las problemáticas relacionadas con la gestión de inventarios, compras, mesas, comandas y proveedores en restaurantes tipo Chifa. Mediante entrevistas y actividades de validación se identificaron necesidades reales tanto de los dueños de estos negocios como de sus proveedores, las cuales sirvieron como base para definir los requerimientos funcionales de la plataforma. Asimismo, la aplicación de técnicas de diseño centrado en el usuario, incluyendo la elaboración de historias de usuario, wireframes, mockups y prototipos interactivos, permitió visualizar tempranamente la propuesta de solución y alinear a todo el equipo hacia una misma visión y objetivo del proyecto.
 
-* Se desarrollaron y validaron múltiples endpoints REST utilizando Java y Spring Boot, permitiendo la gestión de los principales procesos de negocio de la plataforma y estableciendo una base sólida para las futuras integraciones con el frontend.
+El desarrollo de la Landing Page de SupplyWok permitió fortalecer y ampliar nuestros conocimientos en tecnologías de desarrollo web como HTML, CSS y JavaScript. Además, se implementó un sistema de internacionalización que permitió ofrecer el contenido en tres idiomas diferentes, incluyendo el chino, debido a que gran parte del segmento objetivo está conformado por propietarios de restaurantes Chifa. Esto contribuyó a mejorar la accesibilidad y el alcance de la propuesta de valor de la plataforma.
 
-* La documentación generada mediante OpenAPI/Swagger facilitó la validación de los servicios implementados y proporcionó una referencia clara para los futuros consumidores de la API.
+Por otro lado, el desarrollo del frontend utilizando Angular y TypeScript permitió enfocarnos en la implementación de las funcionalidades principales de la plataforma mediante el uso de una Fake API que simulaba el comportamiento del backend durante las primeras etapas del proyecto. Esta estrategia facilitó el desarrollo paralelo de la interfaz de usuario y la lógica de negocio, además de permitir la validación temprana de los flujos funcionales de la aplicación. Asimismo, el despliegue de la solución en GitHub permitió poner la plataforma a disposición de los usuarios para realizar pruebas y obtener retroalimentación.
 
-* El uso de GitHub, ramas de desarrollo y Pull Requests permitió mantener una adecuada organización del trabajo colaborativo, evidenciando la participación activa de todos los integrantes del equipo.
+El desarrollo del backend representó la etapa de consolidación de la arquitectura de SupplyWok, permitiendo implementar la lógica de negocio, la persistencia de datos y la comunicación mediante APIs REST. Durante esta fase se aplicaron conceptos de Domain-Driven Design (DDD) y la definición de Bounded Contexts para organizar el sistema de manera modular y escalable, facilitando la separación de responsabilidades entre los diferentes dominios de la plataforma. Asimismo, el despliegue del backend en Render permitió integrar los distintos componentes del sistema y sentó las bases para el funcionamiento completo de la solución en un entorno real.
 
-* Las pruebas realizadas sobre los endpoints y la persistencia de datos en PostgreSQL permitieron verificar el correcto funcionamiento de los servicios desarrollados durante el sprint.
+Finalmente, el desarrollo de SupplyWok fue una experiencia exitosa que permitió profundizar los conocimientos del equipo en todas las fases del ciclo de vida de una aplicación web, desde el análisis de requisitos y diseño de la experiencia de usuario hasta el desarrollo frontend, backend y despliegue en la nube. Si bien aún existen oportunidades de mejora relacionadas con la consistencia visual de algunas interfaces y la aplicación de ciertos estándares de programación, se logró construir una plataforma funcional, completa y de complejidad considerable, capaz de responder a las necesidades identificadas durante la etapa de investigación y validación con los usuarios.
+
 
 ### Recomendaciones
 
-* Continuar con la integración de los servicios backend desarrollados con las aplicaciones frontend implementadas en iteraciones anteriores.
+Como resultado de la experiencia obtenida durante el desarrollo de SupplyWok, se recomienda que en proyectos futuros cada integrante del equipo asuma la responsabilidad principal de un Bounded Context específico. Esta estrategia permite una mejor comprensión del dominio asignado, facilita la implementación correcta de las reglas de negocio y reduce la posibilidad de inconsistencias entre los diferentes módulos del sistema.
 
-* Incrementar la cobertura de pruebas de integración y validación para asegurar la estabilidad de los servicios conforme aumente la complejidad del sistema.
+También se recomienda mantener una documentación clara y actualizada durante todo el ciclo de vida del proyecto. Documentar adecuadamente los requisitos, decisiones de diseño, modelos de dominio, APIs y arquitectura del sistema permite que todos los integrantes compartan una misma visión de la solución, reduciendo malentendidos y facilitando tanto el desarrollo como el mantenimiento de la plataforma. Una documentación sólida resulta especialmente importante en proyectos que involucran múltiples componentes interconectados.
 
-* Mantener actualizada la documentación de la API conforme se incorporen nuevas funcionalidades y bounded contexts.
+Por otro lado, es recomendable establecer fechas límite internas previas a las fechas oficiales de entrega. Esto permite disponer de tiempo suficiente para realizar pruebas, correcciones, integración de componentes, resolución de conflictos y validación de funcionalidades antes de la entrega final. La existencia de estos plazos internos contribuye a disminuir riesgos, mejorar la calidad del producto entregado y reducir la presión sobre el equipo durante las últimas etapas del proyecto.
 
-* Implementar mecanismos adicionales de seguridad, validación y manejo de excepciones para fortalecer la robustez de la plataforma.
-
-* Continuar siguiendo una estrategia de desarrollo colaborativo basada en revisiones de código y Pull Requests para garantizar la calidad del software.
+Finalmente, se recomienda continuar fortaleciendo la aplicación mediante la incorporación de pruebas automatizadas, mejoras en la experiencia de usuario y nuevas funcionalidades basadas en la retroalimentación obtenida de los usuarios finales. De esta manera, la plataforma podrá evolucionar de forma continua y adaptarse mejor a las necesidades cambiantes de los restaurantes que constituyen su segmento objetivo.
 
 ## Video About-The-Team
 
-El video About-The-Team presenta un resumen del trabajo realizado durante el desarrollo de SupplyWok, mostrando las principales actividades ejecutadas por el equipo, evidencias de reuniones de coordinación, desarrollo de software y validación de funcionalidades. Asimismo, cada integrante comparte su experiencia, responsabilidades asumidas y los aprendizajes obtenidos durante el proyecto.
+El video About-The-Team presenta un resumen del trabajo realizado durante el desarrollo de SupplyWok, mostrando las principales actividades ejecutadas por el equipo. Cada integrante comparte su experiencia, responsabilidades asumidas y los aprendizajes obtenidos durante el proyecto.
 
 ### Estructura del Video
 
-| Tiempo   | Sección                                        |
-| -------- | ---------------------------------------------- |
-| 00:00:00 | Presentación del proyecto y del equipo         |
-| 00:00:30 | Problemática identificada y propuesta de valor |
-| 00:01:00 | Desarrollo de la Landing Page                  |
-| 00:01:30 | Desarrollo del Frontend                        |
-| 00:02:00 | Desarrollo Backend y Web Services              |
-| 00:02:45 | Evidencias de trabajo colaborativo             |
-| 00:03:30 | Reflexiones y aprendizajes de los integrantes  |
-| 00:04:30 | Conclusiones y cierre                          |
+| Tiempo | Sección                       |
+| ----- | ------------------------------ |
+| 00:00 | Caratula de Presentación       |
+| 00:02 | Testimonio de Alexandra Meza   |
+| 02:26 | Testimonio de Joan Payano      |
+| 04:16 | Testimonio de Juan Wang        |
+| 05:20 | Testimonio de Marcelo Cuadros  |
+| 06:52 | Testimonio de Zayd Ayasta      |
+
 
 ### Enlaces del Video
 
-* Microsoft Stream: [URL del video]
-* YouTube: [URL del video]
+* Microsoft Stream: [https://1drv.ms/v/c/0ca1e208970c48ab/IQB4PPLyCwhVSb1oNJZi9T-eATNYEMI0ZzkXVuDqS6ommVw?e=nEUjMA](https://1drv.ms/v/c/0ca1e208970c48ab/IQB4PPLyCwhVSb1oNJZi9T-eATNYEMI0ZzkXVuDqS6ommVw?e=nEUjMA)
+* YouTube: [https://www.youtube.com/watch?v=Ccdvj5WbxWQ](https://www.youtube.com/watch?v=Ccdvj5WbxWQ)
 
-### Imagen Representativa
+![About the Team](../assets/images/Sprint-3-video-caps/about-the-team.png)
 
-[Insertar captura representativa del video]
 
