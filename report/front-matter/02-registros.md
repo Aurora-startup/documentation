@@ -47,3 +47,5 @@
 | 0.2.1    | 15/05/2026 | Cuadros Villanueva Marcelo Fabio                            | Correcciones en registros, capitulo 4 y capitulo 5.                                        |
 | 0.2.2    | 15/05/2026 | Cuadros Villanueva Marcelo Fabio                            | Adición de nuevo contenido en el capitulo 1.                                        |
 | 0.2.3    | 15/05/2026 | Cuadros Villanueva Marcelo Fabio                                    | Correcciones de formato: logo en análisis competitivo, jerarquía de encabezados en cap. 2, numeración 2.3.2, Attendees del Sprint Planning y lenguaje informal en cap. 4. |
+
+| 0.3.1    | 15/05/2026 | Cuadros Villanueva Marcelo Fabio                                    | Correcciones de formato: logo en análisis competitivo, jerarquía de encabezados en cap. 2, numeración 2.3.2, Attendees del Sprint Planning y lenguaje informal en cap. 4. |
