@@ -1,5 +1,5 @@
 ![upc-logo](../assets/images/upc-logo.png)
-
+<div align="center">
 Carrera: Ingeniería de Software
 
 
@@ -23,7 +23,7 @@ Startup: Aurora
 
 Producto: SupplyWok
 
-<div align="center">
+
 <h2>
 Integrantes
 </h2>
