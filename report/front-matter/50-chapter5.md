@@ -811,7 +811,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 ### Restaurant Alerts
 
-![alt text](image.png)
+![alt text](image-6.png)
 
 | Endpoint                                          | Método HTTP | Acción implementada                                        | Sintaxis de llamada                                    | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
 | ------------------------------------------------- | ----------- | ---------------------------------------------------------- | ------------------------------------------------------ | ---------- | --------------- | ---------------- | -------------------- |
@@ -823,7 +823,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 ### Suppliers Alerts
 
-![alt text](image.png)
+![alt text](image-7.png)
 
 | Endpoint                                        | Método HTTP | Acción implementada                           | Sintaxis de llamada                                  | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
 | ----------------------------------------------- | ----------- | --------------------------------------------- | ---------------------------------------------------- | ---------- | --------------- | ---------------- | -------------------- |
@@ -835,7 +835,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 ### Suppliers
 
-![alt text](image.png)
+![alt text](image-8.png)
 
 | Endpoint            | Método HTTP | Acción implementada                       | Sintaxis de llamada     | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
 | ------------------- | ----------- | ----------------------------------------- | ----------------------- | ---------- | --------------- | ---------------- | -------------------- |
@@ -843,7 +843,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 ### Suppliers Catalog Items
 
-![alt text](image.png)
+![alt text](image-9.png)
 
 | Endpoint                                                       | Método HTTP | Acción implementada                            | Sintaxis de llamada                                                   | Parámetros                    | Ejemplo Request | Ejemplo Response | Explicación Response |
 | -------------------------------------------------------------- | ----------- | ---------------------------------------------- | --------------------------------------------------------------------- | ----------------------------- | --------------- | ---------------- | -------------------- |
@@ -855,7 +855,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 ### Suppliers Clients
 
-![alt text](image.png)
+![alt text](image-10.png)
 
 | Endpoint                                 | Método HTTP | Acción implementada                       | Sintaxis de llamada                          | Parámetros   | Ejemplo Request | Ejemplo Response | Explicación Response |
 | ---------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------- | ------------ | --------------- | ---------------- | -------------------- |
