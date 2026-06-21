@@ -1,24 +1,28 @@
-﻿# Capítulo V: Product Implementation, Validation & Deployment.
+# Capítulo V: Product Implementation, Validation & Deployment.
 
 ## 5.1. Software Configuration Management. 
+
 Para tener consistencia y seguimiento del desarrollo de la plataforma, se ha definido una serie de herramientas y estrategias de desarrollo. El metodo cubre la configuracion del entorno de desarrollo, la gestion del codigo y el despliegue, alineado a las buenas practicas de ingenieria de software y metodologias agiles.
 
-### 5.1.1. Software Development Environment Configuration. 
-Para facilitar la colaboración del equipo en todas las actividades del ciclo de vida de desarrollo de Urban Safe, se ha definido un entorno de desarrollo común. Este entorno está compuesto por herramientas especializadas para la gestión del proyecto, diseño UX/UI, modelado, desarrollo, pruebas, documentación y despliegue. La selección de estas herramientas se basa en criterios de eficiencia, compatibilidad con tecnologías open-source (Java + web), y alineación con prácticas recomendadas de la industria.
-|        Categoría        |      Herramienta      |                                               Propósito                                               |                                      Tipo de acceso/enlace                                      |
-| :---------------------: | :-------------------: | :---------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
-|    Project Management   |         Trello        |           Gestión del backlog, tareas y sprints del equipo usando metodología ágil (Scrum).           |                             [https://trello.com](https://trello.com)                            |
-| Requirements Management |       UXPressia       |                  Creación de User Personas, Journey Maps y artefactos de needfinding.                 |                          [https://uxpressia.com](https://uxpressia.com)                         |
-|   Product UX/UI Design  |         Figma         |                Diseño de wireframes, mockups y prototipos de la aplicación web y móvil.               |                              [https://figma.com](https://figma.com)                             |
-|   Modelado de Software  |    LucidChart / Miro / Structurizr     |                 Modelado de arquitectura (UML, C4, Event Storming, Bounded Contexts).                 |               [https://www.lucidchart.com/](https://www.lucidchart.com/)     / [https://miro.com/](https://miro.com/) / [https://structurizr.com/](https://structurizr.com/)               |
-|   Frontend Development  |   Visual Studio Code  |                 Desarrollo del Landing Page y Web Application (HTML, CSS, JavaScript).                |                  [https://code.visualstudio.com](https://code.visualstudio.com)                 |
-|   Backend Development   |     IntelliJ IDEA     |     Desarrollo del RESTful API en Java (Spring Boot) siguiendo arquitectura orientada a servicios.    |                [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)               |
-|       API Testing       |        Postman        |                               Pruebas y validación de endpoints del API RESTful.                              |                        [https://www.postman.com](https://www.postman.com)                       |
-|     Version Control     |         GitHub        | Control de versiones del código fuente y documentación colaborativa (GitFlow + Conventional Commits). |                             [https://github.com](https://github.com)                            |
-|  Software Documentation |        Markdown       |                     Redacción del informe del proyecto bajo enfoque Docs-as-Code.                     |                            Compatible con GitHub / editores de texto                            |
+### 5.1.1. Software Development Environment Configuration.
+
+Para facilitar la colaboración del equipo en todas las actividades del ciclo de vida de desarrollo de SupplyWok, se ha definido un entorno de desarrollo común. Este entorno está compuesto por herramientas especializadas para la gestión del proyecto, diseño UX/UI, modelado, desarrollo, pruebas, documentación y despliegue. La selección de estas herramientas se basa en criterios de eficiencia, compatibilidad con tecnologías open-source (Java + web), y alineación con prácticas recomendadas de la industria.
+
+|  Categoría   | Herramienta   | Propósito | Tipo de acceso/enlace |
+|:---:|:---:|:---:|:---:|
+|    Project Management   |         Trello        |Gestión del backlog, tareas y sprints del equipo usando metodología ágil (Scrum).|   [https://trello.com](https://trello.com) |
+| Requirements Management |       UXPressia       |Creación de User Personas, Journey Maps y artefactos de needfinding.|[https://uxpressia.com](https://uxpressia.com)|
+|   Product UX/UI Design  |         Figma         |Diseño de wireframes, mockups y prototipos de la aplicación web y móvil.|[https://figma.com](https://figma.com)|
+|   Modelado de Software  |    LucidChart / Miro / Structurizr|Modelado de arquitectura (UML, C4, Event Storming, Bounded Contexts).|[https://www.lucidchart.com/](https://www.lucidchart.com/)/[https://miro.com/](https://miro.com/) / [https://structurizr.com/](https://structurizr.com/)|
+|   Frontend Development  |   Visual Studio Code  |Desarrollo del Landing Page y Web Application (HTML, CSS, JavaScript).|[https://code.visualstudio.com](https://code.visualstudio.com)|
+|   Backend Development   |IntelliJ IDEA|     Desarrollo del RESTful API en Java (Spring Boot) siguiendo arquitectura orientada a servicios.    |[https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)               |
+|       API Testing       |Postman|Pruebas y validación de endpoints del API RESTful.|[https://www.postman.com](https://www.postman.com)|
+|     Version Control     |         GitHub        | Control de versiones del código fuente y documentación colaborativa (GitFlow + Conventional Commits). |[https://github.com](https://github.com)|
+|  Software Documentation |        Markdown       |Redacción del informe del proyecto bajo enfoque Docs-as-Code.                     |Compatible con GitHub / editores de texto|
 
 
 ### 5.1.2. Source Code Management. 
+
 Los repositorios utilizados para el desarrollo de código fuente son los siguientes:
 
 <div align="center">
@@ -31,7 +35,6 @@ Los repositorios utilizados para el desarrollo de código fuente son los siguien
 
 </div>
 
----
 
 **Modelos de Ramificación**
 
@@ -89,7 +92,6 @@ Esta sección define los lineamientos y estándares que se seguirán durante el 
 
 Se adoptarán convenciones ampliamente aceptadas para los lenguajes utilizados en el proyecto: HTML, CSS, JavaScript, TypeScript y Java. Asimismo, todos los nombres de variables, funciones, clases y demás identificadores estarán escritos en inglés.
 
----
 
 #### Referencias utilizadas
 
@@ -102,14 +104,12 @@ Las siguientes guías servirán como base para la implementación de estándares
 - [HTML Style Guide and Coding Conventions - W3Schools](https://www.w3schools.com/html/html5_syntax.asp)
 - [Spring Boot Features](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 
----
 
 #### Estructura del código
 
 El proyecto se organizará en módulos según sus responsabilidades, separando claramente componentes como servicios, modelos, vistas, rutas y configuraciones.  
 Este enfoque permite mejorar la escalabilidad del sistema y fomenta la reutilización de código, aplicando el principio de *Separation of Concerns*.
 
----
 
 #### Convenciones de nomenclatura
 
@@ -125,7 +125,6 @@ Este enfoque permite mejorar la escalabilidad del sistema y fomenta la reutiliza
 | Métodos Java             | camelCase                          | `getUserById()`            |
 | Paquetes Java            | minúsculas con puntos              | `com.example.module`       |
 
----
 
 #### Lineamientos por lenguaje
 
@@ -189,7 +188,6 @@ Las claves de traducción están en mayúsculas y separadas por puntos para refl
 La configuración de despliegue define los procesos y herramientas necesarias para publicar los distintos componentes del sistema: **Landing Page**, **API REST (Backend)** y **Web Application (Frontend)**.  
 Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenimiento durante el ciclo de vida del producto.
 
----
 
 #### Despliegue del Landing Page
 
@@ -208,7 +206,6 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   - Los cambios se integran desde la rama `develop` mediante pull requests validados.  
   - GitHub Pages realiza la publicación automáticamente al detectar actualizaciones en la rama principal.
 
----
 
 #### Despliegue del Backend (RESTful API)
 
@@ -228,12 +225,11 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   - El servicio se expone a través de endpoints REST accesibles mediante HTTP/HTTPS.  
   - Se asegura la correcta comunicación con servicios externos requeridos por el sistema.
 
----
 
 #### Despliegue del Frontend Web Application
 
 - **Tecnologías utilizadas:**  
-  Framework SPA (Angular / Vue / React), HTML, CSS, TypeScript/JavaScript.
+  Framework SPA (Angular 21+), HTML, CSS, TypeScript.
 
 - **Repositorio:**  
   [https://github.com/Aurora-startup/SupplyWok-frontend](https://github.com/Aurora-startup/SupplyWok-frontend)
@@ -247,7 +243,6 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   - La plataforma seleccionada detecta cambios automáticamente y publica nuevas versiones.  
   - Se configura la URL del backend mediante variables de entorno para garantizar la integración con la API REST.
 
----
 
 #### Consideraciones adicionales
 
@@ -264,22 +259,34 @@ En el sprint 1 como equipo nos centramos en la creación de la Landing Page de S
 
 **Sprint Planning 1**
 
-| Atributo | Valor |
-|---|---|
 | **Sprint #** | 1 |
+|---|---|
 | **Date** | 20-04-2026 |
 | **Time** | 15:00 |
 | **Location** | Virtual, Discord |
 | **Prepared by** | Zayd Ayasta, Juan Wang |
-| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano |
-| **Sprint n-1 Retrospective Summary** | *Siendo el primer sprint, este campo no es aplicable.* |
+| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano, Zayd Ayasta, Juan Wang |
+| **Sprint 0 Review Summary** | *Siendo el primer sprint, este campo no es aplicable.* |
+| **Sprint 0 Retrospective Summary** | *Siendo el primer sprint, este campo no es aplicable.* |
 | **Sprint 1 Goal** | Nuestro enfoque en este sprint es la Landing Page que informará de nuestra plataforma, por lo que la desarrollaremos e implementaremos para que sea accesible y responsiva. Con la información que brindamos sobre nuestro producto esperamos ganarnos la confianza de los que visiten la página y que empiecen a usar nuestro sistema. Se confirmará cuando esté en producción y se pueda usar el enlace de la página. |
-| **Sprint n Velocity** | Límite de **35 SP** |
+| **Sprint 1 Velocity** | Límite de **35 SP** |
 | **Sum of Story Points** | **30 SP** |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators.
 
-| Team Member {Last Name, First Name} | GitHub username | Estructure HTML | Design UI & responsive | Scripts and UX | SEO and Accessibility | Content and Assets |
+Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo del Landing Page de SupplyWok, implemenando un interfaz agradable e información relevante para atraer la atencion de nuestros usuarios. Los principales aspectos considerados en este sprint son los siguientes:
+
+- **Estructure HTML**
+
+- **Design UI & responsive**
+
+- **Scripts and UX**
+
+- **SEO and Accessibility**
+
+- **Content and Assets**
+
+| Team Member | GitHub username | Estructure HTML | Design UI & responsive | Scripts and UX | SEO and Accessibility | Content and Assets |
 |---|---|---|---|---|---|---|
 | Cuadros, Marcelo | Marcelo-alt-lab | C | C | L | C | C |
 | Payano, Joan | Nounz27 | C | C | C | - | - |
@@ -325,14 +332,53 @@ En el sprint 1 como equipo nos centramos en la creación de la Landing Page de S
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
-Se presentaran las capturas que muestran el despliegue de la Landing Page en GitHub Pages.
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| Aurora-startup/SupplyWok-landing-page | develop | 4bbf50e | Delete CNAME | Removed custom domain configuration file from the repository. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | d48c723 | Create CNAME | Added CNAME configuration for deployment setup. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 55052d1 | docs: add comprehensive README.md with project overview, architecture, and setup instructions | Added detailed project documentation and setup instructions. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | release | 011d887 | Merge pull request #2 from Aurora-startup/release | Merged release branch changes into the main development workflow. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 8929534 | chore: remove LICENSE file | Removed unnecessary LICENSE file from the project. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | fc1421a | chore: remove unused project files and assets | Cleaned repository by deleting unused files and resources. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 2b5cb6f | Merge pull request #1 from Aurora-startup/develop | Integrated latest develop branch updates. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 34fc12e | feat: i18n | Added internationalization support to the project. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | e25ce47 | feat: i18n for the landing page | Implemented multilingual support specifically for the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 21bbf3b | feat: update stylesheets and add uses.js | Updated stylesheets and added utility JavaScript functionality. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | afb9892 | Add Footer stylesheet | Added styles for the footer section of the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 94a3093 | feat: add our plans section | Added pricing and plans section to the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 886dd87 | Merge branch 'develop' into develop | Synchronized latest changes from develop branch. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 771084d | feat: add the header on landing page | Implemented the header section for the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | b2c70e7 | Merge branch 'develop' into develop | Merged updates and synchronized project branches. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 4bd0fb8 | style: reformat HTML markup for improved readability and line length consistency | Reformatted HTML files for cleaner structure and readability. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 96e260f | Merge branch 'develop' into develop | Updated branch with latest synchronized changes. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | e8e71c7 | feat: add our plans section | Added detailed pricing plans section to the website. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 35175f9 | feat: implement features section and add project documentation with MIT licensing | Implemented features section and added licensing documentation. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 44d8dff | feat: implement FAQ and pricing sections with associated styles and UI assets | Added FAQ and pricing sections with corresponding UI resources. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 9def920 | feat: implement hero, features, pricing, and faq sections with supporting styles and assets | Implemented main landing sections with related styling assets. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | ec6cca0 | Add Features stylesheet | Added stylesheet for the features section. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | c57f6b1 | feat: add landing page structure and features section with icons | Added initial landing structure and features section with icons. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | c1fabf4 | feat: add styling for the landing page hero section | Added styles for the hero section of the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 5c6193a | Merge branch 'develop' into develop | Integrated synchronized changes into develop branch. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | cbab8be | feat: implement cta | Implemented call-to-action section on the landing page. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | c54537f | Add Hero and Base stylesheet | Added base and hero section stylesheets. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | develop | 7264b53 | feat(index): hero section implements | Implemented initial hero section functionality. | 25/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | main | 500b47c | chore: initial landing page for SupplyWok with HTML, CSS, and JavaScript | Created the initial landing page structure using HTML, CSS, and JavaScript. | 24/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | main | a7ebd9e | Create public | Added public directory and initial public assets. | 12/04/2026 |
+| Aurora-startup/SupplyWok-landing-page | main | d1cef23 | Initial commit | Created the repository with the initial project structure. | 12/04/2026 |
+
+#### 5.2.1.5. Execution Evidence for Sprint Review.
+
+A continuación se muestran las imagenes de las diversas secciones del Landing Page realizado en el Sprint 1.
 
 ![first](../assets/images/deploy-steps/prove-1.png)
 
 ![second](../assets/images/deploy-steps/prove-2.png)
 
-#### 5.2.1.5. Execution Evidence for Sprint Review.
+![third](../assets/images/deploy-steps/prove-3.png)
 
+![fourth](../assets/images/deploy-steps/prove-4.png)
+
+![fifth](../assets/images/deploy-steps/prove-5.png)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
@@ -358,4 +404,765 @@ Luego de unos minutos, el deploy se realizara correctamente:
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
+En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del Landing Page.
+
 ![Team Collaboration](../assets/images/deploy-steps/participation.png)
+
+![Team Contribution 1](../assets/images/deploy-steps/contributions_1.png)
+
+![Team Contribution 2](../assets/images/deploy-steps/contributions_2.png)
+
+### 5.2.2. Sprint 2 
+#### 5.2.2.1. Sprint Planning 2
+
+En el Sprint 2, como equipo nos centramos en el desarrollo del frontend de SupplyWok, el cual será la interfaz principal de nuestra plataforma mediante la cual los usuarios podrán administrar sus servicios. Se implementaron diferentes dashboards para que tanto los dueños como los proveedores puedan gestionar las necesidades de sus respectivos negocios.
+
+**Sprint Planning 2**
+
+| **Sprint #** | 2 |
+|---|---|
+| **Date** | 08-05-2026 |
+| **Time** | 13:00 |
+| **Location** | Virtual, Discord |
+| **Prepared by** | Zayd Ayasta, Juan Wang |
+| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano |
+| **Sprint 1 Review Summary** | En el Sprint 1, el equipo se enfocó en el desarrollo del Landing Page de SupplyWok. Con ello, se logró configurar el entorno de trabajo, establecer los requerimientos principales del sistema, así como el diseño preliminar de la interfaz y la estructura de navegación de la plataforma. Por otro lado, el Product Owner brindó feedback positivo respecto al diseño inicial del sistema y sugirió corregir ciertos aspectos de la documentación del proyecto. |
+| **Sprint 1 Retrospective Summary** | Durante el Sprint 1, surgieron dificultades relacionadas con la comunicación, la distribución de tareas y el cumplimiento de algunos entregables de la plataforma, afectando principalmente la documentación del proyecto. Sin embargo, a pesar de estas dificultades, se logró entregar un sprint casi completo y con una calidad aceptable. |
+| **Sprint 2 Goal** | Nuestro enfoque en este sprint es desarrollar e implementar la interfaz principal de SupplyWok mediante dashboards funcionales para dueños y proveedores, permitiendo la visualización y gestión básica de la información del negocio. Además, se espera implementar la interfaz base de cada dashboard junto con las funcionalidades principales de cada bounded context. |
+| **Sprint 2 Velocity** | Límite de **35 SP** |
+| **Sum of Story Points** | **30 SP** |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators.
+
+Durante el Sprint 2, el equipo se enfocó principalmente en el desarrollo del frontend de SupplyWok, priorizando las interfaz y funcionalidades principales de la plataforma. Los principales aspectos considerados en este sprint incluyen el desarrollo de los todos los bounded context.
+
+- **Inventory Management Bounded Context**: Es el encargado de gestionar la informacion de los recursos de inventario de cada restaurante.
+
+- **Supply and Purchasing Bounded Context**: Es el encargado de gestionar las órdenes de suplementos realizadas por cada restaurante.
+
+- **Restaurant Management Bounded Context**: Es el encargado de gestionar todo lo relacionado con la operación del establecimiento.
+
+- **Operational Monitoring and IoT Alerts Bounded Context**: Es el encargado de gestionar la información recopilada por los sensores del restaurante.
+
+- **Supplier Management & Operations Bounded Context**: Es el encargado de gestionar la información de los proveedores y sus pedidos.
+
+- **Identity & Access Bounded Context**: Es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas.
+
+- **Shared Bounded Context**: Contiene Value Objects y componenetes visuales comunes que son reutilizados por múltiples bounded contexts del sistema.
+
+| Team Member | GitHub username | Inventory Management Bounded BC | Supply and Purchasing BC / Shared BC | Restaurant Management BC | Supplier Management & Operations BC | Operational Monitoring and IoT Alerts BC / Identity & Access BC  |
+|---|---|---|---|---|---|---|
+| Cuadros, Marcelo | Marcelo-alt-lab | C | C | C | - | L |
+| Payano, Joan | Nounz27             | - | C | L | C | C |
+| Meza, Alexandra | AlexandraYMS     | L | C | - | C | C |
+| Ayasta, Zayd | Zayd Ayasta         | C | L | C | C | - |
+| Wang, Juan | jwd3t                 | C | - | C | L | C |
+
+#### 5.2.2.3. Sprint Backlog 2.
+
+**Sprint 2 Backlog**
+
+| US Id | US Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US11 | Proyección de demanda basada en historial | T30 | Diseño de interfaz de proyección | Diseñar la interfaz para visualizar la proyección de consumo de insumos. | 3 | Alexandra Meza | Done |
+| US11 | Proyección de demanda basada en historial | T31 | Implementación de gráficos estadísticos | Implementar gráficos y métricas de proyección de demanda. | 4 | Marcelo Cuadros | Done |
+| US11 | Proyección de demanda basada en historial | T32 | Integración de datos históricos | Conectar la vista con los datos históricos de consumo. | 3 | Juan Wang | Done |
+| US14 | Monitoreo de temperatura en almacén | T33 | Diseño del dashboard IoT | Diseñar el panel de monitoreo de sensores IoT. | 2 | Joan Payano | Done |
+| US14 | Monitoreo de temperatura en almacén | T34 | Integración de datos de sensores | Implementar la recepción y visualización de temperatura en tiempo real. | 4 | Zayd Ayasta | Done |
+| US15 | Alertas de riesgo en cocina | T35 | Sistema de alertas automáticas | Implementar alertas visuales ante condiciones peligrosas. | 3 | Alexandra Meza | Done |
+| US15 | Alertas de riesgo en cocina | T36 | Configuración de umbrales | Configurar parámetros de temperatura y humedad para activar alertas. | 2 | Marcelo Cuadros | Done |
+| US17 | Control de ocupación de mesas | T37 | Diseño de estado de mesas | Crear componentes visuales para representar el estado de las mesas. | 2 | Juan Wang | Done |
+| US17 | Control de ocupación de mesas | T38 | Actualización en tiempo real | Implementar actualización dinámica de ocupación de mesas. | 3 | Joan Payano | Done |
+| US18 | Historial de alertas e incidencias operativas | T39 | Registro de incidencias | Implementar almacenamiento de eventos y alertas. | 3 | Zayd Ayasta | Done |
+| US18 | Historial de alertas e incidencias operativas | T40 | Vista histórica de alertas | Crear interfaz para consultar incidencias registradas. | 3 | Alexandra Meza | Done |
+| US19 | Exportar reporte de monitoreo y alertas | T41 | Generación de reportes PDF | Implementar exportación de reportes en PDF. | 3 | Marcelo Cuadros | Done |
+| US19 | Exportar reporte de monitoreo y alertas | T42 | Exportación CSV | Implementar exportación de datos en formato CSV. | 2 | Juan Wang | Done |
+| US20 | Registro y perfil del proveedor | T43 | Formulario de registro | Implementar formulario para registro de proveedores. | 3 | Joan Payano | Done |
+| US20 | Registro y perfil del proveedor | T44 | Vista de perfil del proveedor | Crear pantalla de perfil y edición de datos. | 3 | Zayd Ayasta | Done |
+| US21 | Recepción y gestión de órdenes de compra | T45 | Panel de órdenes recibidas | Implementar listado de órdenes de compra recibidas. | 4 | Alexandra Meza | Done |
+| US21 | Recepción y gestión de órdenes de compra | T46 | Gestión de estado de pedidos | Permitir actualizar estados de órdenes de compra. | 3 | Marcelo Cuadros | Done |
+| US24 | Confirmación y seguimiento de entregas | T47 | Registro de entregas | Implementar formulario para confirmar entregas realizadas. | 3 | Juan Wang | Done |
+| US24 | Confirmación y seguimiento de entregas | T48 | Seguimiento de despachos | Implementar visualización del estado de entregas. | 3 | Joan Payano | Done |
+| US25 | Panel de rendimiento por cliente | T49 | Dashboard de clientes frecuentes | Implementar métricas de pedidos por cliente. | 4 | Zayd Ayasta | Done |
+| US25 | Panel de rendimiento por cliente | T50 | Estadísticas comerciales | Mostrar estadísticas y tendencias de consumo. | 3 | Alexandra Meza | Done |
+| US27 | Selección y gestión del plan de suscripción | T51 | Vista de planes disponibles | Diseñar pantalla de planes y beneficios. | 2 | Marcelo Cuadros | Done |
+| US27 | Selección y gestión del plan de suscripción | T52 | Gestión de suscripción | Implementar selección y activación de planes. | 2 | Juan Wang | Done |
+| US28 | Notificaciones en tiempo real | T53 | Sistema de notificaciones | Implementar notificaciones dinámicas en la plataforma. | 4 | Joan Payano | Done |
+| US28 | Notificaciones en tiempo real | T54 | Alertas en tiempo real | Mostrar alertas instantáneas relacionadas al sistema. | 3 | Zayd Ayasta | Done |
+| US29 | Inicio de sesión y registro de cuenta | T55 | Formulario de login | Implementar formulario de inicio de sesión con validación. | 3 | Marcelo Cuadros | Done |
+| US29 | Inicio de sesión y registro de cuenta | T56 | Formulario de registro | Implementar formulario de registro de nueva cuenta con validación. | 3 | Joan Payano | Done |
+
+#### 5.2.2.4. Development Evidence for Sprint Review.
+
+A continuación se detalla los commits realizados por todos los integrantes.
+
+![Tabla en Trello 1](../assets/images/deploy-steps/trello_1.png)
+
+![Tabla en Trello 2](../assets/images/deploy-steps/trello_2.png)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| Aurora-startup/SupplyWok-frontend | develop | 2d0e9b6 | feat: connect purchasing suppliers to mock api | Conexión de proveedores de compras a la API mock | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 5b15dfa | feat: connect purchasing suppliers to mock api | Conexión inicial de purchasing suppliers a la API mock | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 933f622 | fix: environments | Corrección de configuración de entornos | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | e890844 | feat: implement identity-and-access bounded context and fix existing bounded context integration issues | Implementación del bounded context de identity-and-access y corrección de integraciones existentes | 15/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 90e16bd | feat: implement inventory-management bounded context | Implementación del bounded context de inventory-management | 14/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 510e880 | feat: add operational-monitoring-and-iot-alerts bounded context | Agregado del bounded context para operational monitoring and IoT alerts | 14/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | d42b822 | feat: add login and registration components with form handling and validation | Implementación de componentes de login y registro con manejo y validación de formularios | 13/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 3492676 | Merge pull request #5 from Aurora-startup/feature/operational-monitoring-and-iot-alerts | Merge del feature operational-monitoring-and-iot-alerts hacia develop | 13/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | acbd3df | fix: restaurant-management infrastructure | Correcciones en la infraestructura de restaurant-management | 13/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 77add27 | fix: restaurant-management infrastructure | Ajustes adicionales en la infraestructura de restaurant-management | 13/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 0ccdbe2 | merge develop into feature/inventory-management-bounded-context | Sincronización de develop con feature/inventory-management-bounded-context | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 70c31f4 | Update Inventory Management Bouded | Actualización del módulo Inventory Management Bounded | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 56267f2 | feat: complete inventory management bounded context | Implementación completa del bounded context de inventory management | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 0823704 | Update Inventory Management Bouded Context interface | Actualización de interfaces del bounded context de inventory management | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | a3e6f1e | feat: implement restaurant-management bounded context | Implementación del bounded context de restaurant-management | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | ea5b27f | feat(restaurant-management): apply clean architecture structure | Aplicación de estructura Clean Architecture en restaurant-management | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | b2007f3 | feat: implement supply and purchasing bounded context | Implementación del bounded context de supply and purchasing | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 92261ed | feat(supply-and-purchasing): implement bounded context pages and routes | Implementación de páginas y rutas para supply-and-purchasing | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 442cb84 | feat(table): add purchase orders table component | Creación del componente tabla para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 6dd333d | feat(forms): create purchase order form panel | Creación del panel de formulario para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 340672c | feat(orders): implement purchase orders page | Implementación de la página de órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 408c86e | feat(i18n): add localization resources | Agregados recursos de localización e internacionalización | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | fb3d9d6 | feat(layout): configure shared navigation and application routes | Configuración de navegación compartida y rutas de la aplicación | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 6be1695 | feat(store): add purchase order state management | Implementación de manejo de estado para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 221c88a | feat(api): integrate purchase order endpoints | Integración de endpoints para órdenes de compra | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 8633a54 | feat(core): add shared infrastructure and environment configuration | Configuración compartida de infraestructura y entorno | 12/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 753c7e6 | feat(restaurant-management): implement restaurant management bounded context with tables occupancy and kitchen tickets | Implementación de bounded context para restaurant management con ocupación de mesas y kitchen tickets | 11/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | e687f11 | initial commit | Commit inicial del proyecto | 11/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 71a55e2 | feat: implement IoT monitoring dashboard components and API integration | Implementación de dashboard IoT e integración con API | 10/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | ed68b1e | Merge pull request #1 from Aurora-startup/develop | Merge inicial de develop | 10/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 95e0807 | chore: remove untracked IDE and cache folders | Eliminación de carpetas IDE y caché no rastreadas | 10/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 81b2891 | feat: add initial application structure with routing, layout, and language switcher | Creación de estructura inicial de aplicación con routing, layout y selector de idioma | 10/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | a0c8b6f | chore: initialize project workspace and cache build artifacts | Inicialización del workspace y artefactos de build | 10/05/2026 |
+| Aurora-startup/SupplyWok-frontend | develop | 7272f71 | chore: initial commit | Commit inicial del repositorio | 08/05/2026 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+En este Sprint se logró desarrollar gran parte del frontend de la plataforma SupplyWok. Se integraron funcionalidades como el inicio de sesión, el dashboard general, los módulos de inventario, pedidos, comandas, sensores y alertas, junto con sus funcionalidades básicas principales.
+
+Link de la plataforma de SupplyWok: https://supplywok-frontend.web.app/
+
+![first](../assets/images/frontend/login_screen.png)
+
+![first](../assets/images/frontend/dashboard_screen.png)
+
+![first](../assets/images/frontend/inventory_screen.png)
+
+![first](../assets/images/frontend/create_inventory_item_screen.png)
+
+![first](../assets/images/frontend/comandas_screen.png)
+
+![first](../assets/images/frontend/create_comanda_screen.png)
+
+![first](../assets/images/frontend/alerts_screen.png)
+
+![first](../assets/images/frontend/orders_screen.png)
+
+![first](../assets/images/frontend/tables_and_occupancy_screen.png)
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review.
+
+Para esta sección se diran los servicios que se utilizaron para simular los json que devolveria nuestro backend, los cuales se implementaron en dos servicios, en mockapi y en my json server.
+
+![](../assets/images/mockapi-evidence.png)
+
+![](../assets/images/myjsonserver-evidence.png)
+
+Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros componentes que permiten utilizar nuestro sistema sin necesidad de tener un backend por el momento.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+
+En esta sección mostramos como se realiso el deploy del plataforma junto con el json server.
+
+**Deploy del Json Server**
+
+1. Accedemos a https://my-json-server.typicode.com/ y seguimos los pasos para publicar el Json Server
+
+![](../assets/images/deploy-steps/deploy_db.png)
+
+2. Creamos un nuevo repositorio y subimos el archivo Json.
+
+![](../assets/images/deploy-steps/deploy_db_1.jpg)
+
+3. Accedemos al enlace de nuestro Json server de forma  https://my-json-server.typicode.com/< your-username >/< your-repo >. 
+
+![](../assets/images/myjsonserver-evidence.png)
+
+**Deploy de la Plataforma en Firebase**
+
+1. Accedemos a https://firebase.google.com/ y accedemos con nuestra cuenta. Despues creamos nuestro proyecto.
+
+![](../assets/images/deploy-steps/deploy_firebase.png)
+
+2. Usamos el cmd de Jetbrains para deployar nuestro proyecto y acceder al enlace publico.
+
+![](../assets/images/deploy-steps/deploy_firebase_1-converted.png)
+
+![](../assets/images/deploy-steps/deploy_firebase_2-converted.png)
+Estos implementarion endpoints para majenar los datos y mostrarlos en nuestros componentes que permiten utilizar nuestro sistema sin necesidad de tener un backend por el momento.
+[Frontend Deployment](https://restaurant-management-bc.web.app)
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del fronted.
+
+![Team Collaboration](../assets/images/deploy-steps/participation_2.png)
+
+![Team Contribution 1](../assets/images/deploy-steps/contributions_1_2.png)
+
+![Team Contribution 2](../assets/images/deploy-steps/contributions_2_2.png)
+
+### 5.2.3. Sprint 3
+
+En esta sección se registra y explica el avance realizado durante el Sprint 3 en términos de producto y trabajo colaborativo. El enfoque principal de este Sprint es el desarrollo e implementación de los servicios backend mediante Java y Spring Boot para los bounded contexts priorizados, así como la validación y correcto funcionamiento de sus endpoints REST.
+
+#### 5.2.3.1. Sprint Planning 3
+
+Durante la reunión de Sprint Planning del Sprint 3, se estableció como objetivo principal avanzar significativamente en el desarrollo backend de la plataforma **SupplyWok**, planteando alcanzar aproximadamente el 60% de implementación de los servicios backend del sistema. Para ello, se priorizó el desarrollo de los bounded contexts correspondientes al núcleo del negocio, incluyendo **Inventory Management**, **Supply and Purchasing**, **Operational Monitoring and IoT Alerts**, **Restaurant Management** y **Supplier Management & Operations**. Asimismo, el equipo revisó los resultados obtenidos durante el sprint anterior e identificó oportunidades de mejora con el fin de corregir errores, optimizar el proceso de desarrollo y garantizar una base sólida para las siguientes etapas del proyecto.
+
+**Sprint Planning 3**
+
+| **Sprint #** | 3 |
+|---|---|
+| **Date** | 05-06-2026 |
+| **Time** | 15:00 |
+| **Location** | Virtual, Discord |
+| **Prepared by** | Zayd Ayasta, Juan Wang |
+| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano, Zayd Ayasta, Juan Wang |
+| **Sprint 2 Review Summary** | Durante el Sprint 2 se completó el desarrollo de la aplicación frontend utilizando una Fake API para simular la comunicación con los servicios backend. Se implementaron las principales interfaces y flujos de usuario previstos para la plataforma, obteniendo resultados satisfactorios en términos de funcionalidad, organización del código y experiencia de usuario. Como parte del feedback recibido, se destacó la calidad de la implementación realizada; sin embargo, se recomendó fortalecer la documentación técnica del proyecto para facilitar su comprensión, mantenimiento y futura integración con los servicios backend reales.|
+| **Sprint 2 Retrospective Summary** | El equipo consideró que la distribución de tareas y la colaboración durante el Sprint 2 fueron adecuadas, permitiendo cumplir los objetivos establecidos dentro del plazo previsto. Asimismo, se identificó como principal oportunidad de mejora la elaboración de una documentación más completa y detallada, tanto del proceso de desarrollo como de los componentes implementados, con el fin de mejorar la comunicación interna y facilitar el trabajo en las siguientes iteraciones.|
+| **Sprint 3 Goal** | Nuestro enfoque en este sprint es habilitar la gestión de inventarios, proveedores, compras y monitoreo operativo mediante los servicios principales de negocio de SupplyWok. Creemos que esto proporcionará un mayor control de las operaciones y una gestión más eficiente de la cadena de suministro para restaurantes y administradores. Esto se confirmará cuando los módulos de Inventory Management, Supply and Purchasing, Operational Monitoring and IoT Alerts, Restaurant Management y Supplier Management & Operations puedan ejecutar sus procesos mediante APIs funcionales y validadas. |
+| **Sprint 3 Velocity** | Límite de **35 SP** |
+| **Sum of Story Points** | **35 SP** | 
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+
+En esta sección se presenta la matriz de liderazgo y colaboración correspondiente al Sprint 3. Dado que el objetivo principal de esta iteración es avanzar en el desarrollo backend de SupplyWok, los aspectos considerados corresponden a los bounded contexts de negocio. Para cada aspecto se asigna un líder responsable de coordinar el desarrollo y uno o más colaboradores encargados de apoyar en la implementación, validación y pruebas de los servicios y endpoints asociados.
+
+**Link el Sprint 3 Board:** https://trello.com/invite/b/6a32b75e1ae8d9ce0c6a80c5/ATTI1c7df3100c5d6f7a9b96e772b7dfaf15012EAD3F/mi-tablero-de-trello
+
+![alt text](image-1.png)
+
+**Consider Aspects** 
+
+- **Inventory Management Bounded Context**: Es el encargado de gestionar la informacion de los recursos de inventario de cada restaurante.
+
+- **Supply and Purchasing Bounded Context**: Es el encargado de gestionar las órdenes de suplementos realizadas por cada restaurante.
+
+- **Restaurant Management Bounded Context**: Es el encargado de gestionar todo lo relacionado con la operación del establecimiento.
+
+- **Operational Monitoring and IoT Alerts Bounded Context**: Es el encargado de gestionar la información recopilada por los sensores del restaurante.
+
+- **Supplier Management & Operations Bounded Context**: Es el encargado de gestionar la información de los proveedores y sus pedidos.
+
+- **Identity & Access Bounded Context**: Es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas.
+
+- **Shared Bounded Context**: Contiene Value Objects y componenetes visuales comunes que son reutilizados por múltiples bounded contexts del sistema.
+
+| Team Member | GitHub username | Inventory Management Bounded BC | Supply and Purchasing BC / Shared BC | Restaurant Management BC | Supplier Management & Operations BC | Operational Monitoring and IoT Alerts BC / Identity & Access BC  |
+|---|---|---|---|---|---|---|
+| Cuadros, Marcelo | Marcelo-alt-lab | C | C | C | - | L |
+| Payano, Joan | Nounz27             | - | C | L | C | C |
+| Meza, Alexandra | AlexandraYMS     | L | C | - | C | C |
+| Ayasta, Zayd | Zayd Ayasta         | C | L | C | C | - |
+| Wang, Juan | jwd3t                 | C | - | C | L | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3. Los elementos incluidos fueron seleccionados en función del Sprint Goal establecido para esta iteración, el cual busca habilitar los procesos principales de gestión de inventarios, proveedores, compras y monitoreo operativo de SupplyWok mediante servicios backend funcionales. Para ello, se definieron las historias de usuario y tareas necesarias para implementar, validar y documentar los endpoints REST de los bounded contexts priorizados, asegurando su correcto funcionamiento antes de la integración con los componentes frontend de la plataforma.
+
+**Link el Sprint 3 Board:** https://trello.com/invite/b/6a32b75e1ae8d9ce0c6a80c5/ATTI1c7df3100c5d6f7a9b96e772b7dfaf15012EAD3F/mi-tablero-de-trello
+
+![alt text](image-1.png)
+
+**Sprint 3 Backlog**
+
+| US Id | US Title                                                   | Task Id | Task Title                                | Description                                                                                                      | Estimation (Hours) | Assigned To     | Status |
+| ----- | ---------------------------------------------------------- | ------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------ | --------------- | ------ |
+| US34  | Obtener los datos del inventario vía API                   | T-01    | Implement Inventory GET Endpoint          | Desarrollar endpoint GET para consultar inventario de un restaurante y exponer la información mediante API REST. | 8                  | Alexandra Meza  | Done   |
+| US01  | Registro de inventario inicial                             | T-02    | Implement Inventory Registration Services | Implementar entidades, repositorios y servicios para registrar insumos en inventario.                            | 6                  | Alexandra Meza  | Done   |
+| US09  | Creación de orden de compra                                | T-03    | Implement Purchase Order Endpoint         | Desarrollar endpoint POST para registrar órdenes de compra.                                                      | 6                  | Zayd Ayasta     | Done   |
+| US37  | Crear una orden de insumos vía API                         | T-04    | Implement Purchasing API Services         | Implementar servicios de aplicación, validaciones y persistencia para órdenes de compra.                         | 6                  | Zayd Ayasta     | Done   |
+| US38  | Obtener datos relevantes de proveedores vía API            | T-05    | Implement Supplier Query Endpoints        | Desarrollar endpoints para consulta de proveedores y catálogos asociados.                                        | 6                  | Juan Wang       | Done   |
+| US12  | Gestión de proveedores vinculados                          | T-06    | Implement Supplier Management Services    | Implementar entidades y lógica de negocio para gestión de proveedores.                                           | 5                  | Juan Wang       | Done   |
+| US42  | Endpoint para recibir información de componentes IoT       | T-07    | Implement IoT Data Reception Endpoint     | Implementar endpoint para recepción de información proveniente de sensores IoT.                                  | 8                  | Marcelo Cuadros | Done   |
+| US18  | Historial de alertas e incidencias operativas              | T-08    | Implement Alerts Management Services      | Implementar servicios y endpoints para consulta de alertas operativas registradas.                               | 6                  | Marcelo Cuadros | Done   |
+| US26  | Registro e inicio de sesión para usuarios de la plataforma | T-09    | Implement Identity and Access Services    | Implementar servicios base de autenticación y gestión de usuarios.                                               | 5                  | Marcelo Cuadros | Done   |
+| US17  | Control de ocupación de mesas                              | T-10    | Implement Restaurant Management Endpoints | Implementar endpoints relacionados con la gestión operativa del restaurante.                                     | 5                  | Joan Payano     | Done   |
+| US36  | Manejo estándar de errores                                 | T-11    | Configure Global Exception Handling       | Implementar manejo centralizado de excepciones y respuestas HTTP estandarizadas.                                 | 4                  | Zayd Ayasta     | Done   |
+| US39  | Evitar almacenamientos en errores                          | T-12    | Configure Transaction Management          | Configurar validaciones y transacciones para evitar persistencia de datos inválidos.                             | 3                  | Zayd Ayasta     | Done   |
+
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+En esta sección se presentan los avances realizados durante el Sprint 3 en la implementación de los componentes backend de SupplyWok. El trabajo desarrollado se centró en la construcción de los bounded contexts priorizados del núcleo del negocio, incluyendo la implementación de entidades de dominio, repositorios, servicios de aplicación y endpoints REST mediante Java y Spring Boot.
+
+| Repository                       | Branch                        | Commit Id | Commit Message                                                                          | Commit Message Body                                                                             | Commited on (Date) |
+| -------------------------------- | ----------------------------- | --------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------ |
+| Aurora-startup/SupplyWok-backend | feature/shared                | 9e50ab7   | feat(shared): implement shared layer                                                    | Implementación de la capa compartida utilizada por los diferentes bounded contexts del sistema. | 2026-06-10         |
+| Aurora-startup/SupplyWok-backend | develop                       | 32c9e97   | chore: configure application properties and add dependencies for PostgreSQL and OpenAPI | Configuración inicial del proyecto, dependencias de PostgreSQL y documentación OpenAPI.         | 2026-06-10         |
+| Aurora-startup/SupplyWok-backend | feature/iot                   | d9c9842   | feat(iot): implement iot layer with sensor aggregate                                    | Implementación del bounded context de monitoreo IoT y agregado Sensor.                          | 2026-06-10         |
+| Aurora-startup/SupplyWok-backend | feature/restaurant-management | 8b85738   | feat(restaurant-management): implement restaurant management bounded context            | Desarrollo del bounded context Restaurant Management.                                           | 2026-06-11         |
+| Aurora-startup/SupplyWok-backend | feature/inventory-management  | 27c933e   | Add value objects for inventory management bounded context                              | Implementación de value objects para Inventory Management.                                      | 2026-06-12         |
+| Aurora-startup/SupplyWok-backend | feature/inventory-management  | dcfa1ef   | Add aggregates and entities                                                             | Incorporación de agregados y entidades del dominio para Inventory Management.                   | 2026-06-12         |
+| Aurora-startup/SupplyWok-backend | feature/inventory-management  | 4f8aef7   | Finish domain package of inventory management bounded context                           | Finalización de la estructura del dominio para Inventory Management.                            | 2026-06-13         |
+| Aurora-startup/SupplyWok-backend | feature/suppliers             | 48967ca   | feat(suppliers): add clients endpoint                                                   | Implementación del endpoint para consulta de clientes asociados a proveedores.                  | 2026-06-17         |
+| Aurora-startup/SupplyWok-backend | feature/suppliers             | 30598b0   | feat(suppliers): add catalog endpoint by supplier id                                    | Implementación del endpoint para consulta de catálogo por proveedor.                            | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/purchasing            | e25f995   | feat: add purchase order management endpoints and domain                                | Desarrollo del dominio y endpoints para la gestión de órdenes de compra.                        | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/purchasing            | 00bef77   | feat: align inventory persistence and activity endpoints                                | Ajuste de persistencia y endpoints relacionados con actividades de inventario.                  | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/purchasing            | 4a31215   | feat: add supplier identity acl contract                                                | Implementación del contrato ACL para integración con el contexto de proveedores.                | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/alerts                | 427701d   | feat(alerts): add alerts aggregate and controllers                                      | Implementación de agregados y controladores para el módulo de alertas operativas.               | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/alerts                | 7e87e5    | refactor(alerts): replace external services with IoT and inventory context facades      | Refactorización para integrar el módulo de alertas con los contextos IoT e Inventory.           | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | feature/restaurant-management | c4ba83c   | fix: add CrossOrigin and clean imports in restaurant management controllers             | Corrección de configuración CORS y limpieza de imports en los controladores.                    | 2026-06-18         |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3 se completó la implementación y validación de los principales servicios backend de SupplyWok correspondientes a los bounded contexts priorizados del núcleo del negocio. Como parte de la revisión del sprint, se verificó el correcto funcionamiento de los endpoints REST desarrollados mediante pruebas realizadas en Swagger/OpenAPI, comprobando la ejecución satisfactoria de las operaciones expuestas por la API. Ademas, se validó la persistencia de la información en la base de datos PostgreSQL mediante pgAdmin.
+
+En las siguientes evidencias se muestran los endpoints implementados donde se puede observar la exposición de las operaciones CRUD y servicios específicos desarrollados durante el sprint.
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/swagger-principal-page.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-1.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-2.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-3.png)
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-4.png)
+
+Adicionalmente, se realizó la validación de persistencia utilizando pgAdmin, comprobando que las operaciones ejecutadas desde la API generaban correctamente los registros correspondientes dentro de la base de datos PostgreSQL de SupplyWok. Esta verificación permitió asegurar la correcta comunicación entre la capa de aplicación y la capa de almacenamiento.
+
+![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/tables-pgAdmin.png)
+
+**Link del video de explicación del Sprint:** https://www.youtube.com/watch?v=GsYC-nSofsI
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se documentaron los servicios web desarrollados para los bounded contexts priorizados de SupplyWok utilizando OpenAPI/Swagger. La documentación generada permite visualizar y comprender la estructura de los endpoints implementados, incluyendo los métodos HTTP soportados, parámetros de entrada, cuerpos de solicitud, respuestas esperadas y códigos de estado asociados. A continuación, se presenta el detalle de los endpoints documentados, los enlaces correspondientes a la documentación generada y evidencias de interacción utilizando datos de prueba.
+
+**Repository URL:** https://github.com/Aurora-startup/SupplyWok-backend
+
+**OpenAPI Documentation URL:** https://supplywok-backend.onrender.com/swagger-ui/index.html
+
+### Supplies
+
+![alt text](image.png)
+
+| Endpoint                       | Método HTTP | Acción implementada                | Sintaxis de llamada            | Parámetros                               | Ejemplo Request | Ejemplo Response | Explicación Response                                 |
+| ------------------------------ | ----------- | ---------------------------------- | ------------------------------ | ---------------------------------------- | --------------- | ---------------- | ---------------------------------------------------- |
+| `/api/v1/supplies/{supplyId}`  | GET         | Obtener suministro por ID          | `/api/v1/supplies/{supplyId}`  | `supplyId`: Identificador del suministro |                 |                  | Retorna la información del suministro solicitado.    |
+| `/api/v1/supplies/{supplyId}`  | PUT         | Actualizar suministro              | `/api/v1/supplies/{supplyId}`  | `supplyId`: Identificador del suministro |                 |                  | Retorna el suministro actualizado.                   |
+| `/api/v1/supplies/{supplyId}`  | DELETE      | Eliminar suministro                | `/api/v1/supplies/{supplyId}`  | `supplyId`: Identificador del suministro |                 |                  | Confirma la eliminación del suministro.              |
+| `/api/v1/supplies`             | GET         | Obtener todos los suministros      | `/api/v1/supplies`             |                                          |                 |                  | Retorna la lista de suministros registrados.         |
+| `/api/v1/supplies`             | POST        | Crear suministro                   | `/api/v1/supplies`             |                                          |                 |                  | Retorna el suministro creado.                        |
+| `/api/v1/supplies/total-stock` | GET         | Obtener stock total de suministros | `/api/v1/supplies/total-stock` |                                          |                 |                  | Retorna la cantidad total disponible de suministros. |
+
+### Tables
+
+![alt text](image-2.png)
+
+| Endpoint                          | Método HTTP | Acción implementada       | Sintaxis de llamada               | Parámetros                          | Ejemplo Request | Ejemplo Response | Explicación Response                       |
+| --------------------------------- | ----------- | ------------------------- | --------------------------------- | ----------------------------------- | --------------- | ---------------- | ------------------------------------------ |
+| `/api/v1/tables/{tableId}/status` | PUT         | Actualizar estado de mesa | `/api/v1/tables/{tableId}/status` | `tableId`: Identificador de la mesa |                 |                  | Retorna la mesa con el estado actualizado. |
+| `/api/v1/tables`                  | GET         | Obtener todas las mesas   | `/api/v1/tables`                  |                                     |                 |                  | Retorna la lista de mesas registradas.     |
+| `/api/v1/tables`                  | POST        | Crear nueva mesa          | `/api/v1/tables`                  |                                     |                 |                  | Retorna la información de la mesa creada.  |
+| `/api/v1/tables/{tableId}`        | GET         | Obtener mesa por ID       | `/api/v1/tables/{tableId}`        | `tableId`: Identificador de la mesa |                 |                  | Retorna los datos de una mesa específica.  |
+| `/api/v1/tables/{tableId}`        | DELETE      | Eliminar mesa             | `/api/v1/tables/{tableId}`        | `tableId`: Identificador de la mesa |                 |                  | Confirma la eliminación de la mesa.        |
+
+### Comandas
+
+![alt text](image-3.png)
+
+| Endpoint                              | Método HTTP | Acción implementada          | Sintaxis de llamada                   | Parámetros                               | Ejemplo Request | Ejemplo Response | Explicación Response                                  |
+| ------------------------------------- | ----------- | ---------------------------- | ------------------------------------- | ---------------------------------------- | --------------- | ---------------- | ----------------------------------------------------- |
+| `/api/v1/comandas/{comandaId}/status` | PUT         | Actualizar estado de comanda | `/api/v1/comandas/{comandaId}/status` | `comandaId`: Identificador de la comanda |                 |                  | Retorna la comanda con el nuevo estado actualizado.   |
+| `/api/v1/comandas`                    | GET         | Obtener todas las comandas   | `/api/v1/comandas`                    |                                          |                 |                  | Retorna la lista de comandas registradas.             |
+| `/api/v1/comandas`                    | POST        | Crear nueva comanda          | `/api/v1/comandas`                    |                                          |                 |                  | Retorna la información de la comanda creada.          |
+| `/api/v1/comandas/{comandaId}/items`  | POST        | Agregar item a comanda       | `/api/v1/comandas/{comandaId}/items`  | `comandaId`: Identificador de la comanda |                 |                  | Retorna la comanda con el nuevo item agregado.        |
+| `/api/v1/comandas/{comandaId}`        | GET         | Obtener comanda por ID       | `/api/v1/comandas/{comandaId}`        | `comandaId`: Identificador de la comanda |                 |                  | Retorna la información detallada de una comanda.      |
+| `/api/v1/comandas/{comandaId}`        | DELETE      | Eliminar comanda             | `/api/v1/comandas/{comandaId}`        | `comandaId`: Identificador de la comanda |                 |                  | Confirma la eliminación de la comanda.                |
+| `/api/v1/comandas/table/{tableId}`    | GET         | Obtener comandas por mesa    | `/api/v1/comandas/table/{tableId}`    | `tableId`: Identificador de la mesa      |                 |                  | Retorna las comandas asociadas a una mesa específica. |
+
+### Sensors
+
+![alt text](image-4.png)
+
+| Endpoint                     | Método HTTP | Acción implementada        | Sintaxis de llamada          | Parámetros                           | Ejemplo Request | Ejemplo Response | Explicación Response                          |
+| ---------------------------- | ----------- | -------------------------- | ---------------------------- | ------------------------------------ | --------------- | ---------------- | --------------------------------------------- |
+| `/api/v1/sensors/{sensorId}` | GET         | Obtener sensor por ID      | `/api/v1/sensors/{sensorId}` | `sensorId`: Identificador del sensor |                 |                  | Retorna la información del sensor solicitado. |
+| `/api/v1/sensors/{sensorId}` | PUT         | Actualizar sensor          | `/api/v1/sensors/{sensorId}` | `sensorId`: Identificador del sensor |                 |                  | Retorna el sensor actualizado.                |
+| `/api/v1/sensors/{sensorId}` | DELETE      | Eliminar sensor            | `/api/v1/sensors/{sensorId}` | `sensorId`: Identificador del sensor |                 |                  | Confirma la eliminación del sensor.           |
+| `/api/v1/sensors`            | GET         | Obtener todos los sensores | `/api/v1/sensors`            |                                      |                 |                  | Retorna la lista de sensores registrados.     |
+| `/api/v1/sensors`            | POST        | Crear nuevo sensor         | `/api/v1/sensors`            |                                      |                 |                  | Retorna el sensor creado.                     |
+
+### Purchase Orders
+
+![alt text](image-5.png)
+
+| Endpoint                                           | Método HTTP | Acción implementada                              | Sintaxis de llamada                                    | Parámetros        | Ejemplo Request | Ejemplo Response | Explicación Response |
+| -------------------------------------------------- | ----------- | ------------------------------------------------ | ------------------------------------------------------ | ----------------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/purchase-orders/{purchaseOrderId}`        | GET         | Obtener una orden de compra por su identificador | `GET /api/v1/purchase-orders/{purchaseOrderId}`        | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders/{purchaseOrderId}`        | PUT         | Actualizar una orden de compra existente         | `PUT /api/v1/purchase-orders/{purchaseOrderId}`        | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders/{purchaseOrderId}`        | DELETE      | Eliminar una orden de compra                     | `DELETE /api/v1/purchase-orders/{purchaseOrderId}`     | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders/{purchaseOrderId}/status` | PUT         | Actualizar el estado de una orden de compra      | `PUT /api/v1/purchase-orders/{purchaseOrderId}/status` | `purchaseOrderId` |                 |                  |                      |
+| `/api/v1/purchase-orders`                          | GET         | Obtener todas las órdenes de compra registradas  | `GET /api/v1/purchase-orders`                          |                   |                 |                  |                      |
+| `/api/v1/purchase-orders`                          | POST        | Crear una nueva orden de compra                  | `POST /api/v1/purchase-orders`                         |                   |                 |                  |                      |
+
+### Restaurant Alerts
+
+![alt text](image-6.png)
+
+| Endpoint                                          | Método HTTP | Acción implementada                                        | Sintaxis de llamada                                    | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ------------------------------------------------- | ----------- | ---------------------------------------------------------- | ------------------------------------------------------ | ---------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/restaurant/alerts`                       | GET         | Obtener todas las alertas del restaurante                  | `GET /api/v1/restaurant/alerts`                        |            |                 |                  |                      |
+| `/api/v1/restaurant/alerts`                       | POST        | Crear una nueva alerta del restaurante                     | `POST /api/v1/restaurant/alerts`                       |            |                 |                  |                      |
+| `/api/v1/restaurant/alerts/{alertId}/acknowledge` | POST        | Confirmar o reconocer una alerta del restaurante           | `POST /api/v1/restaurant/alerts/{alertId}/acknowledge` | `alertId`  |                 |                  |                      |
+| `/api/v1/restaurant/alerts/inventory`             | POST        | Crear una alerta del restaurante generada desde inventario | `POST /api/v1/restaurant/alerts/inventory`             |            |                 |                  |                      |
+| `/api/v1/restaurant/alerts/{alertId}`             | GET         | Obtener una alerta del restaurante por ID                  | `GET /api/v1/restaurant/alerts/{alertId}`              | `alertId`  |                 |                  |                      |
+
+### Suppliers Alerts
+
+![alt text](image-7.png)
+
+| Endpoint                                        | Método HTTP | Acción implementada                           | Sintaxis de llamada                                  | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ----------------------------------------------- | ----------- | --------------------------------------------- | ---------------------------------------------------- | ---------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/supplier/alerts`                       | GET         | Obtener todas las alertas de proveedores      | `GET /api/v1/supplier/alerts`                        |            |                 |                  |                      |
+| `/api/v1/supplier/alerts`                       | POST        | Crear una nueva alerta de proveedor           | `POST /api/v1/supplier/alerts`                       |            |                 |                  |                      |
+| `/api/v1/supplier/alerts/{alertId}/acknowledge` | POST        | Confirmar o reconocer una alerta de proveedor | `POST /api/v1/supplier/alerts/{alertId}/acknowledge` | `alertId`  |                 |                  |                      |
+| `/api/v1/supplier/alerts/{alertId}`             | GET         | Obtener una alerta de proveedor por ID        | `GET /api/v1/supplier/alerts/{alertId}`              | `alertId`  |                 |                  |                      |
+
+
+### Suppliers
+
+![alt text](image-8.png)
+
+| Endpoint            | Método HTTP | Acción implementada                       | Sintaxis de llamada     | Parámetros | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ------------------- | ----------- | ----------------------------------------- | ----------------------- | ---------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/suppliers` | GET         | Obtener todos los proveedores registrados | `GET /api/v1/suppliers` |            |                 |                  |                      |
+
+### Suppliers Catalog Items
+
+![alt text](image-9.png)
+
+| Endpoint                                                       | Método HTTP | Acción implementada                            | Sintaxis de llamada                                                   | Parámetros                    | Ejemplo Request | Ejemplo Response | Explicación Response |
+| -------------------------------------------------------------- | ----------- | ---------------------------------------------- | --------------------------------------------------------------------- | ----------------------------- | --------------- | ---------------- | -------------------- |
+| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | GET         | Obtener un elemento del catálogo por ID        | `GET /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}`    | `supplierId`, `catalogItemId` |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | PUT         | Actualizar un elemento del catálogo            | `PUT /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}`    | `supplierId`, `catalogItemId` |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | DELETE      | Eliminar un elemento del catálogo              | `DELETE /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | `supplierId`, `catalogItemId` |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items`                 | GET         | Obtener elementos del catálogo de un proveedor | `GET /api/v1/suppliers/{supplierId}/catalog-items`                    | `supplierId`                  |                 |                  |                      |
+| `/api/v1/suppliers/{supplierId}/catalog-items`                 | POST        | Crear un elemento del catálogo del proveedor   | `POST /api/v1/suppliers/{supplierId}/catalog-items`                   | `supplierId`                  |                 |                  |                      |
+
+### Suppliers Clients
+
+![alt text](image-10.png)
+
+| Endpoint                                 | Método HTTP | Acción implementada                       | Sintaxis de llamada                          | Parámetros   | Ejemplo Request | Ejemplo Response | Explicación Response |
+| ---------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------- | ------------ | --------------- | ---------------- | -------------------- |
+| `/api/v1/suppliers/{supplierId}/clients` | GET         | Obtener clientes asociados a un proveedor | `GET /api/v1/suppliers/{supplierId}/clients` | `supplierId` |                 |                  |                      |
+
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+En esta sección se presentan las evidencias correspondientes al despliegue del backend de SupplyWok en un entorno cloud utilizando la plataforma Render. El objetivo de este proceso fue poner a disposición los servicios web desarrollados para que puedan ser consumidos por el frontend de la aplicación en el siguiente Sprint, permitiendo la comunicación entre ambos componentes a través de Internet. Asimismo, el despliegue permitió validar el correcto funcionamiento de los endpoints implementados mediante el uso de Swagger, verificando que las operaciones de la API respondieran correctamente.
+
+Primero, se realizó el despliegue del backend mediante la creación de un nuevo Web Service en Render, enlazado al repositorio de GitHub correspondiente al proyecto backend de SupplyWok (Aurora-Startup/SupplyWok-backend). Para la construcción y ejecución del servicio se utilizó Docker, permitiendo que Render implemente el Dockerfile previamente configurado dentro del proyecto.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-3.png)
+
+Posteriormente, se configuraron las variables de entorno necesarias para establecer la conexión con la base de datos PostgreSQL. Esta configuración permitió mantener separada la información sensible del código fuente y garantizar la correcta comunicación entre el backend y la base de datos desplegada.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-1.png)
+
+Luego, se realizó el despliegue de la base de datos PostgreSQL dentro del entorno cloud, permitiendo que los servicios backend puedan acceder y gestionar la información almacenada durante la ejecución de los endpoints.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-2.png)
+
+Finalmente, después de completar el despliegue del backend y la base de datos PostgreSQL, se realizó la validación del funcionamiento del servicio mediante el acceso a la documentación interactiva generada por Swagger. Esta validación permitió comprobar la disponibilidad de los endpoints de SupplyWok y verificar que las operaciones implementadas respondieran correctamente en el entorno desplegado.
+
+![alt text](../assets/images/Sprint-3-deploy/deploy-image-swagger.png)
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, el equipo trabajó de manera colaborativa en el desarrollo de los servicios backend de SupplyWok utilizando una estrategia basada en ramas de Git y GitHub. Las tareas fueron distribuidas entre los integrantes de acuerdo con los bounded contexts priorizados, permitiendo que cada miembro asumiera la responsabilidad principal de un área específica del negocio. En este sprint, todos los integrantes contribuyeron activamente mediante commits, revisiones e integración de cambios en el repositorio del proyecto. A continuación, se presentan evidencias de colaboración obtenidas a partir de los analíticos de GitHub, incluyendo contribuciones, historial de commits y actividad realizada durante el sprint.
+
+![Sprint 3 Insight Graphic 1](../assets/images/Sprint-3-Insights/Insight-1.png)
+
+Como se observa en la sección Contributors del repositorio backend, durante el Sprint 3 se realizaron un total de 31 commits, reflejando una participación activa por parte de los miembros del equipo en el desarrollo de los servicios y endpoints de la plataforma.
+
+![Sprint 3 Insight Graphic 2](../assets/images/Sprint-3-Insights/Insight-2.png)
+
+Como se observa en el detalle de la sección Contributors, todos los integrantes realizaron contribuciones al repositorio. En promedio, cada miembro efectuó aproximadamente 5 commits y contribuyó con alrededor de 2300 líneas de código agregadas, evidenciando una distribución equilibrada del trabajo durante el sprint.
+
+![Sprint 3 Insight Graphic 3](../assets/images/Sprint-3-Insights/Insight-3.png)
+
+Como se observa en la sección Pulse del repositorio backend, durante la última semana se integraron 4 Pull Requests y se registraron 25 commits excluyendo merges. Asimismo, la rama principal del proyecto acumuló 6922 líneas agregadas y 163 líneas eliminadas, reflejando el avance significativo realizado en la implementación de los bounded contexts y servicios backend planificados para este sprint.
+
+## 5.3. Validation Interviews.
+
+En esta sección se presentan las actividades de validación realizadas con usuarios pertenecientes a los segmentos objetivos de SupplyWok. El objetivo de estas entrevistas fue recopilar retroalimentación sobre la propuesta de valor, la experiencia de navegación en la Landing Page y el uso de las funcionalidades implementadas en la plataforma. Los resultados obtenidos permitieron identificar fortalezas, oportunidades de mejora y validar los principales supuestos planteados durante el desarrollo del proyecto.
+
+### 5.3.1. Diseño de Entrevistas.
+En esta sección se presenta el diseño de las sesiones de validación realizadas sobre la Landing Page y la Web Application de SupplyWok. A diferencia de las entrevistas de descubrimiento desarrolladas durante el needfinding, estas sesiones tuvieron como objetivo evaluar el comportamiento de usuarios representativos al interactuar con la propuesta de valor del producto y con los principales flujos de la solución digital implementada.
+
+Las sesiones de validación se diseñaron para observar si los participantes comprendían el propósito del producto, si podían navegar por las vistas principales sin asistencia excesiva y si lograban completar tareas representativas del core business. Asimismo, se buscó recopilar comentarios espontáneos de los participantes sobre claridad, utilidad, confianza, facilidad de uso y valor percibido de la solución.
+
+Para ello, se trabajó con usuarios correspondientes a los dos segmentos objetivos del proyecto: dueños o administradores de restaurantes chifa y proveedores de insumos para restaurantes. Cada sesión fue moderada por un integrante del equipo y registrada en video como evidencia de validación.
+
+**Objetivo general de validación**
+
+- Verificar si los usuarios comprenden la propuesta de valor de SupplyWok al interactuar con la Landing Page.
+- Evaluar si los usuarios pueden navegar por la Web Application y completar tareas clave sin fricción significativa.
+- Identificar problemas de usabilidad, arquitectura de información y diseño inclusivo en los flujos implementados.
+- Recoger observaciones cualitativas que permitan priorizar mejoras para las siguientes iteraciones del producto.
+
+**Segmentos validados**
+
+- **Segmento 1:** Dueños o administradores de restaurantes chifa.
+- **Segmento 2:** Proveedores de insumos para restaurantes.
+
+**Escenarios y tareas de validación**
+
+Las sesiones se estructuraron alrededor de tareas concretas, alineadas con los flujos principales del producto.
+
+**Para el segmento de restaurantes**
+
+- Identificar, a partir de la Landing Page, cuál es la propuesta de valor principal de SupplyWok.
+- Navegar desde la Landing Page hacia la aplicación.
+- Iniciar sesión y reconocer el propósito general del dashboard.
+- Ubicar módulos clave como inventario, pedidos, alertas o mesas.
+- Interpretar la información presentada en una vista principal del sistema.
+
+**Para el segmento de proveedores**
+
+- Identificar, a partir de la Landing Page, cómo SupplyWok puede aportar valor al proveedor.
+- Navegar desde la Landing Page hacia la aplicación.
+- Iniciar sesión en la vista de proveedor.
+- Ubicar funcionalidades principales como clientes, catálogo, órdenes o demanda proyectada.
+- Interpretar la información mostrada en una vista principal del panel del proveedor.
+
+**Preguntas de validación posteriores a la demostración**
+
+Después de mostrar la Landing Page y los principales flujos de la Web Application, el moderador realizó preguntas orientadas a recoger la percepción del participante sobre la utilidad, claridad y aplicabilidad real de la solución.
+
+- Después de ver la aplicación, ¿te parece útil para tu trabajo o negocio?
+- ¿Qué parte de la aplicación te gustó más?
+- ¿Hubo algo que no entendiste o que te confundió?
+- ¿Usarías una aplicación como esta en la vida real? ¿Por qué?
+- ¿Qué cambiarías o mejorarías?
+
+### 5.3.2. Registro de Entrevistas.
+En esta sección se presenta el registro de las sesiones de validación realizadas con representantes de los segmentos objetivo. Cada sesión permitió observar cómo los usuarios interactuaron con el Landing Page y con la Web Application, así como registrar comentarios, dudas y observaciones generadas durante la navegación.
+
+Las entrevistas de validación fueron registradas en video y consolidadas en un único material de evidencia, siguiendo las indicaciones del project statement. En cada caso se documenta la información del participante, el segmento representado, la fecha de la sesión y un resumen de los principales hallazgos obtenidos.
+
+**Video consolidado de validación**
+- **Enlace en Microsoft Stream:** [Vídeo de Validación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQCOSQpG7nmNRZpSWlNHbKVcATPs70bPkNvFhoz2TeEb9eA?e=BhExXc)
+- **Captura de evidencia:**  
+  ![captura](../assets/images/validation/entrevista1.png)
+
+### Segmento Objetivo Restaurantes
+
+#### Entrevista de validación #1
+![alt text](../assets/images/validation/entrevista1.png)
+
+**Resumen de la sesión:**
+
+El primer entrevistado Weiquan Wang, un dueño de restaurante de 55 años ubicado en el Callao, logró comprender la idea general de la landing page y también el flujo principal de la aplicación, especialmente las pantallas de inventario, pedidos, comandas, mesas y alertas. Su percepción general fue positiva, ya que consideró que el sistema era fácil de usar y que podría manejarlo sin demasiada dificultad; sin embargo, aportó una observación importante sobre el módulo de pedidos, indicando que sería más práctico no agregar productos uno por uno, sino contar con una forma más rápida de seleccionar varios insumos en una sola acción.
+
+| Detalle | Información |
+|---|---|
+| **Entrevistador** | Juan Sung Jau Wang Chen |
+| **Entrevistado** | Weiquan Wang |
+| **Segmento objetivo** | Restaurante  |
+| **Edad** | 55 |
+| **Ubicación** | La Perla, Callao |
+| **Duración / Empieza en** | [14:18 minutos] / [0:00] |
+| **Enlace** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQCOSQpG7nmNRZpSWlNHbKVcATPs70bPkNvFhoz2TeEb9eA?e=BhExXc) |
+
+*Tabla. Registro de validación 1*
+
+
+
+
+#### Entrevista de validación #2
+![alt text](../assets/images/validation/entrevista2.png)
+
+**Resumen de la sesión:**
+
+La segunda entrevistada Ana Chen, una dueña de restaurante de 50 años de Callao, entendió de forma clara las funciones principales de la aplicación, sobre todo el inventario, la creación de órdenes a proveedores, los tickets de cocina, la gestión de mesas y las alertas. Comentó que el sistema le parecía sencillo y fácil de seguir, sin encontrar grandes dificultades en su uso; no obstante, brindó una sugerencia bastante valiosa al señalar que, en la sección de pedidos, sería más útil manejar horarios de entrega además de la prioridad, ya que en la práctica casi todos los pedidos se consideran importantes y lo realmente decisivo suele ser el momento en que deben recibirse.
+
+| Detalle | Información |
+|---|---|
+| **Entrevistador** | Juan Sung Jau Wang Chen |
+| **Entrevistado** | Ana Chen |
+| **Segmento objetivo** | Restaurante |
+| **Edad** | 50 |
+| **Ubicación** | La Perla, Callao |
+| **Duración / Empieza en** | [12 minutos] / [14:20] |
+| **Enlace** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQCOSQpG7nmNRZpSWlNHbKVcATPs70bPkNvFhoz2TeEb9eA?e=BhExXc) |
+
+*Tabla. Registro de validación 2*
+
+#### Entrevista de validación #3
+
+![alt text](../assets/images/validation/entrevista3.png)
+
+**Resumen de la sesión:**
+
+La tercera entrevistada, Lili, de 54 años y dueña de un restaurante chifa en La Perla, mostró una validación claramente favorable tanto de la landing page como de la aplicación. Después de revisar las pantallas principales, afirmó que la plataforma le parecía útil para su trabajo diario, que el flujo era entendible y que no percibía confusión importante en el uso de las funciones. Entre todos los módulos presentados, destacó especialmente el de alertas como la parte que más le interesó, señalando además que sí utilizaría la aplicación en un contexto real y que, al menos en esta etapa, no veía cambios urgentes que realizar.
+
+| Detalle | Información |
+|---|---|
+| **Entrevistador** | Juan Sung Jau Wang Chen |
+| **Entrevistado** | Lily 蔡 |
+| **Segmento objetivo** | Restaurante  |
+| **Edad** | 54 |
+| **Ubicación** | La Perla, Callao |
+| **Duración / Empieza en** | [8 minutos] / [26:18] |
+| **Enlace** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQCOSQpG7nmNRZpSWlNHbKVcATPs70bPkNvFhoz2TeEb9eA?e=BhExXc) |
+
+*Tabla. Registro de validación 3*
+
+
+### Segmento Objetivo Proveedores
+
+#### Entrevista de validación #4
+![alt text](../assets/images/validation/entrevista4.png)
+
+**Resumen de la sesión:**
+
+El cuarto entrevistado, Alberto Copa Villa, de 37 años, trabajador de una carnicería en La Perla y representante del perfil proveedor, valoró de manera positiva la propuesta para este segundo segmento de usuarios, especialmente en las pantallas de órdenes, clientes, delivery planning, alertas, demanda y catálogo. Indicó que las funcionalidades que más le llamaron la atención fueron las alertas, el control del stock y la planificación de rutas, ya que las percibió como herramientas útiles para el trabajo real de un proveedor. Además, propuso dos mejoras importantes: reemplazar o complementar la prioridad de las órdenes con horarios de entrega más concretos, y añadir dentro de la misma aplicación una función de mensajería o chat tipo WhatsApp para comunicarse con los restaurantes sin depender de otros medios externos.
+
+| Detalle | Información |
+|---|---|
+| **Entrevistador** | Juan Sung Jau Wang Chen |
+| **Entrevistado** | Alberto Copa Villa |
+| **Segmento objetivo** | Proveedor |
+| **Edad** | 37 |
+| **Ubicación** | La Perla, Callao |
+| **Duración / Empieza en** | [8 minutos] / [34:00] |
+| **Enlace** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQCOSQpG7nmNRZpSWlNHbKVcATPs70bPkNvFhoz2TeEb9eA?e=BhExXc) |
+
+*Tabla. Registro de validación 3*
+
+
+### 5.3.3. Evaluaciones según heurísticas.
+Como complemento a la observación de las sesiones de validación, el equipo realizó una evaluación de experiencia de usuario basada en heurísticas. Esta revisión tomó como referencia los criterios de usabilidad, diseño inclusivo y arquitectura de información indicados en el project statement del curso.
+
+El objetivo de esta evaluación fue sistematizar los principales problemas detectados durante la interacción de los usuarios con el Landing Page y la Web Application, asignándoles un nivel de severidad y relacionándolos con la heurística o principio incumplido. De este modo, los hallazgos cualitativos obtenidos en las entrevistas de validación pudieron complementarse con una revisión experta centrada en identificar oportunidades concretas de mejora para la siguiente iteración del producto.
+
+**Aplicación evaluada**
+
+- **Site o app a evaluar:** SupplyWok
+- **Auditor:** Aurora
+- **Clientes participantes:** Usuarios de los segmentos restaurante y proveedor entrevistados durante la validación
+
+**Tareas evaluadas**
+
+- Comprender la propuesta de valor del Landing Page.
+- Navegar hacia la Web Application desde los call to action.
+- Reconocer el propósito del dashboard según el rol del usuario.
+- Ubicar funcionalidades principales del sistema.
+- Interpretar información clave en vistas como inventario, pedidos, clientes o catálogo.
+
+**Escala de severidad utilizada**
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial que no afecta significativamente la experiencia. |
+| 2 | Problema menor que genera fricción, pero puede ser superado por el usuario. |
+| 3 | Problema mayor que ocurre con frecuencia o dificulta seriamente completar la tarea. |
+| 4 | Problema muy grave que impide continuar con el uso de la herramienta. |
+
+**Tabla resumen de hallazgos**
+
+| # | Problema | Escala de severidad | Heurística o principio violado |
+|---|---|---|---|
+| 1 | La aplicación no ofrece una guía inicial ni ayuda contextual para usuarios nuevos. | 3 | Ayuda y documentación |
+| 2 | No existen diálogos de confirmación antes de ejecutar acciones destructivas como eliminar registros. | 4 | Prevención de errores |
+| 3 | Se identificaron inconsistencias visuales entre pantallas, componentes y estilos del sistema. | 2 | Consistencia y estándares |
+
+**Descripción de problemas**
+
+**Problema #1: Ausencia de guía de uso o acompañamiento inicial**
+
+- **Severidad:** 3
+- **Heurística violada:** Ayuda y documentación
+- **Problema:** Durante la evaluación se observó que la aplicación no brinda una orientación inicial para usuarios nuevos. No se encontraron mensajes introductorios, explicaciones contextuales ni elementos que indiquen con claridad cómo iniciar el uso de los módulos principales. Esto puede dificultar la adopción de la plataforma, especialmente para usuarios que ingresan por primera vez y aún no conocen la lógica del sistema ni el propósito de cada sección.
+- **Recomendación:** Incorporar una breve guía de bienvenida, textos de apoyo o mensajes contextuales que orienten al usuario sobre el propósito de cada módulo y las acciones principales que puede realizar.
+
+![heuristic-problem-1](../assets/images/[agregar-captura-problema-1].png)
+
+**Problema #2: Falta de confirmación antes de eliminar información**
+
+- **Severidad:** 4
+- **Heurística violada:** Prevención de errores
+- **Problema:** Se identificó que la aplicación no presenta un cuadro de confirmación antes de ejecutar acciones irreversibles como la eliminación de registros. Esta situación representa un riesgo importante, ya que el usuario puede borrar información por equivocación sin una oportunidad previa para cancelar la acción. La ausencia de esta validación reduce la sensación de control y puede ocasionar pérdida accidental de datos.
+- **Recomendación:** Implementar diálogos de confirmación antes de eliminar elementos, con mensajes claros sobre la acción que se va a realizar y opciones visibles para confirmar o cancelar.
+
+![heuristic-problem-2](../assets/images/[agregar-captura-problema-2].png)
+
+**Problema #3: Inconsistencias visuales en el diseño de la interfaz**
+
+- **Severidad:** 2
+- **Heurística violada:** Consistencia y estándares
+- **Problema:** Durante la revisión se detectaron diferencias visuales entre pantallas y componentes, como variaciones en estilos, jerarquías visuales, tamaños o distribución de elementos. Aunque estas diferencias no impiden por completo el uso del sistema, sí afectan la percepción de uniformidad y profesionalismo de la plataforma, y obligan al usuario a reinterpretar cada pantalla en lugar de reconocer patrones consistentes.
+- **Recomendación:** Definir y aplicar criterios visuales uniformes para componentes, botones, tablas, encabezados, colores, espaciados y estilos tipográficos en todas las vistas del sistema.
+
+![heuristic-problem-3](../assets/images/[agregar-captura-problema-3].png)
+
+**Conclusión de la evaluación heurística**
+
+La evaluación heurística permitió identificar problemas relevantes que complementan los hallazgos obtenidos en las entrevistas de validación. En particular, se evidenció la necesidad de mejorar el acompañamiento al usuario, reforzar la prevención de errores en acciones sensibles y unificar la experiencia visual del sistema. Estos aspectos no siempre son mencionados de forma explícita por los entrevistados, pero sí impactan de manera significativa en la usabilidad general de la plataforma.
+
+La incorporación de estas mejoras contribuirá a que SupplyWok ofrezca una experiencia más clara, confiable y consistente, alineada con los principios de diseño centrado en el usuario y con los criterios de calidad esperados para una aplicación web funcional.
+
+## 5.4. Video About-the-Product.
+
+![](../assets/images/abtproduct.png)
+
+* Microsoft Stream: [URL del video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQAQFG5C3_5eQ78sex-VMP4KAcv3Iyv9JT4jLLZW0l7N0Ew?e=S18gWf)
+* YouTube: [Url del video en YouTube](https://youtu.be/AzOyy7Oak_w)
+
+
+
+![About the Product](../assets/images/Sprint-3-video-caps/about-the-product.png)
+
+## Conclusiones y Recomendaciones
+
+### Conclusiones
+
+En conclusión, el desarrollo de SupplyWok permitió comprender de manera profunda las problemáticas relacionadas con la gestión de inventarios, compras, mesas, comandas y proveedores en restaurantes tipo Chifa. Mediante entrevistas y actividades de validación se identificaron necesidades reales tanto de los dueños de estos negocios como de sus proveedores, las cuales sirvieron como base para definir los requerimientos funcionales de la plataforma. Asimismo, la aplicación de técnicas de diseño centrado en el usuario, incluyendo la elaboración de historias de usuario, wireframes, mockups y prototipos interactivos, permitió visualizar tempranamente la propuesta de solución y alinear a todo el equipo hacia una misma visión y objetivo del proyecto.
+
+El desarrollo de la Landing Page de SupplyWok permitió fortalecer y ampliar nuestros conocimientos en tecnologías de desarrollo web como HTML, CSS y JavaScript. Además, se implementó un sistema de internacionalización que permitió ofrecer el contenido en tres idiomas diferentes, incluyendo el chino, debido a que gran parte del segmento objetivo está conformado por propietarios de restaurantes Chifa. Esto contribuyó a mejorar la accesibilidad y el alcance de la propuesta de valor de la plataforma.
+
+Por otro lado, el desarrollo del frontend utilizando Angular y TypeScript permitió enfocarnos en la implementación de las funcionalidades principales de la plataforma mediante el uso de una Fake API que simulaba el comportamiento del backend durante las primeras etapas del proyecto. Esta estrategia facilitó el desarrollo paralelo de la interfaz de usuario y la lógica de negocio, además de permitir la validación temprana de los flujos funcionales de la aplicación. Asimismo, el despliegue de la solución en GitHub permitió poner la plataforma a disposición de los usuarios para realizar pruebas y obtener retroalimentación.
+
+El desarrollo del backend representó la etapa de consolidación de la arquitectura de SupplyWok, permitiendo implementar la lógica de negocio, la persistencia de datos y la comunicación mediante APIs REST. Durante esta fase se aplicaron conceptos de Domain-Driven Design (DDD) y la definición de Bounded Contexts para organizar el sistema de manera modular y escalable, facilitando la separación de responsabilidades entre los diferentes dominios de la plataforma. Asimismo, el despliegue del backend en Render permitió integrar los distintos componentes del sistema y sentó las bases para el funcionamiento completo de la solución en un entorno real.
+
+Finalmente, el desarrollo de SupplyWok fue una experiencia exitosa que permitió profundizar los conocimientos del equipo en todas las fases del ciclo de vida de una aplicación web, desde el análisis de requisitos y diseño de la experiencia de usuario hasta el desarrollo frontend, backend y despliegue en la nube. Si bien aún existen oportunidades de mejora relacionadas con la consistencia visual de algunas interfaces y la aplicación de ciertos estándares de programación, se logró construir una plataforma funcional, completa y de complejidad considerable, capaz de responder a las necesidades identificadas durante la etapa de investigación y validación con los usuarios.
+
+
+### Recomendaciones
+
+Como resultado de la experiencia obtenida durante el desarrollo de SupplyWok, se recomienda que en proyectos futuros cada integrante del equipo asuma la responsabilidad principal de un Bounded Context específico. Esta estrategia permite una mejor comprensión del dominio asignado, facilita la implementación correcta de las reglas de negocio y reduce la posibilidad de inconsistencias entre los diferentes módulos del sistema.
+
+También se recomienda mantener una documentación clara y actualizada durante todo el ciclo de vida del proyecto. Documentar adecuadamente los requisitos, decisiones de diseño, modelos de dominio, APIs y arquitectura del sistema permite que todos los integrantes compartan una misma visión de la solución, reduciendo malentendidos y facilitando tanto el desarrollo como el mantenimiento de la plataforma. Una documentación sólida resulta especialmente importante en proyectos que involucran múltiples componentes interconectados.
+
+Por otro lado, es recomendable establecer fechas límite internas previas a las fechas oficiales de entrega. Esto permite disponer de tiempo suficiente para realizar pruebas, correcciones, integración de componentes, resolución de conflictos y validación de funcionalidades antes de la entrega final. La existencia de estos plazos internos contribuye a disminuir riesgos, mejorar la calidad del producto entregado y reducir la presión sobre el equipo durante las últimas etapas del proyecto.
+
+Finalmente, se recomienda continuar fortaleciendo la aplicación mediante la incorporación de pruebas automatizadas, mejoras en la experiencia de usuario y nuevas funcionalidades basadas en la retroalimentación obtenida de los usuarios finales. De esta manera, la plataforma podrá evolucionar de forma continua y adaptarse mejor a las necesidades cambiantes de los restaurantes que constituyen su segmento objetivo.
+
+## Video About-The-Team
+
+
+### Enlaces del Video
+
+* Microsoft Stream: [https://1drv.ms/v/c/0ca1e208970c48ab/IQB4PPLyCwhVSb1oNJZi9T-eATNYEMI0ZzkXVuDqS6ommVw?e=nEUjMA](https://1drv.ms/v/c/0ca1e208970c48ab/IQB4PPLyCwhVSb1oNJZi9T-eATNYEMI0ZzkXVuDqS6ommVw?e=nEUjMA)
+* YouTube: [https://www.youtube.com/watch?v=Ccdvj5WbxWQ](https://www.youtube.com/watch?v=Ccdvj5WbxWQ)
+
+![About the Team](../assets/images/Sprint-3-video-caps/about-the-team.png)
+
+

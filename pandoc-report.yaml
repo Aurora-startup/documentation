@@ -1,0 +1,49 @@
+from: markdown-yaml_metadata_block+raw_html+pipe_tables+grid_tables+table_captions+implicit_figures
+to: pdf
+output-file: upc-pre-202610-1asi0729-11913-aurora-report-av2.pdf
+
+input-files:
+  - report/front-matter/01-caratula.md
+  - report/front-matter/02-registros.md
+  - report/front-matter/03-collaboration.md
+  - report/front-matter/04-content-table.md
+  - report/front-matter/05-studentoutcome.md
+  - report/front-matter/10-chapter1.md
+  - report/front-matter/20-chapter2.md
+  - report/front-matter/30-chapter3.md
+  - report/front-matter/40-chapter4.md
+  - report/front-matter/50-chapter5.md
+  - report/front-matter/99-bibliography.md
+  - report/annexes/anexos.md
+
+resource-path:
+  - .
+  - report
+  - report/front-matter
+  - report/assets
+  - report/assets/images
+
+standalone: true
+pdf-engine: xelatex
+toc: false
+number-sections: false
+wrap: preserve
+
+metadata:
+  lang: es-PE
+
+variables:
+  documentclass: article
+  papersize: a4
+  fontsize: 11pt
+  geometry:
+    - margin=2.5cm
+  mainfont: Arial
+  sansfont: Arial
+  monofont: Consolas
+  CJKmainfont: Microsoft YaHei
+  colorlinks: true
+  linkcolor: blue
+  urlcolor: blue
+  toccolor: black
+  linestretch: 1.15

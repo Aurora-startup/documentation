@@ -8,19 +8,19 @@ Las siguientes plataformas son de las más relevantes en el mercado de gestión 
 
 **1. Apicbase**
 
-- Es un sistema operativo para la gestión de alimentos y bebidas diseñado específicamente para operaciones multi-unidad, como cadenas de restaurantes y hoteles. Unifica recetas, menús y compras en todos los locales, asegurando consistencia en la calidad y los costos e incluye módulos avanzados para trazabilidad de ingredientes, gestión de alérgenos y cumplimiento de normas HACCP (Apicbase, s.f.)[^1].
+- Es un sistema operativo para la gestión de alimentos y bebidas diseñado específicamente para operaciones multi-unidad, como cadenas de restaurantes y hoteles. Unifica recetas, menús y compras en todos los locales, asegurando consistencia en la calidad y los costos e incluye módulos avanzados para trazabilidad de ingredientes, gestión de alérgenos y cumplimiento de normas HACCP (Apicbase, s.f.)[^c2-1].
 
 **2. MarketMan**
 
-- Plataforma "todo en uno" para el control de inventarios y suministros, ideal para optimizar los flujos de trabajo administrativos (back-of-house). Utiliza análisis predictivos para automatizar pedidos a proveedores y detectar fluctuaciones de precios en tiempo real y calcula el costo exacto de cada plato integrando las facturas de compra con las ventas del punto de venta (TPV) (MarketMan, s.f.)[^2].
+- Plataforma "todo en uno" para el control de inventarios y suministros, ideal para optimizar los flujos de trabajo administrativos (back-of-house). Utiliza análisis predictivos para automatizar pedidos a proveedores y detectar fluctuaciones de precios en tiempo real y calcula el costo exacto de cada plato integrando las facturas de compra con las ventas del punto de venta (TPV) (MarketMan, s.f.)[^c2-2].
 
 **3. WISK.ai**
 
-- App móvil que se destaca por su precisión técnica, ofreciendo una de las soluciones de inventario más rápidas y precisas del mercado gracias al uso intensivo de inteligencia artificial. Su app móvil puede identificar botellas y productos mediante la cámara, agilizando el conteo de existencias, ofrece herramientas muy detalladas para bares y hoteles, permitiendo un seguimiento exacto de mermas en licores y bebidas mezcladas y su IA puede predecir la demanda basándose no solo en ventas pasadas, sino también en factores externos como el clima o eventos locales (WISK.ai, s.f.)[^3].
+- App móvil que se destaca por su precisión técnica, ofreciendo una de las soluciones de inventario más rápidas y precisas del mercado gracias al uso intensivo de inteligencia artificial. Su app móvil puede identificar botellas y productos mediante la cámara, agilizando el conteo de existencias, ofrece herramientas muy detalladas para bares y hoteles, permitiendo un seguimiento exacto de mermas en licores y bebidas mezcladas y su IA puede predecir la demanda basándose no solo en ventas pasadas, sino también en factores externos como el clima o eventos locales (WISK.ai, s.f.)[^c2-3].
 
 **4. Restaurant365**
 
-- Plataforma de gestión empresarial integral basada en la nube, diseñada específicamente para el sector de la hospitalidad. Incluye una red contable específica para restaurantes que automatiza facturas, cuentas por pagar y conciliaciones bancarias, permite rastrear ingredientes en tiempo real, gestionar pedidos automáticos a proveedores y analizar el costo teórico frente al real para reducir mermas, utiliza IA para predecir la demanda futura, optimizar los horarios de trabajo y generar informes de pérdidas y ganancias (P&L) en tiempo real y se integra con cientos de sistemas de punto de venta (TPV/POS), bancos y proveedores de alimentos para que los datos fluyan automáticamente sin necesidad de hojas de cálculo manuales (Restaurant365, s.f.)[^4].
+- Plataforma de gestión empresarial integral basada en la nube, diseñada específicamente para el sector de la hospitalidad. Incluye una red contable específica para restaurantes que automatiza facturas, cuentas por pagar y conciliaciones bancarias, permite rastrear ingredientes en tiempo real, gestionar pedidos automáticos a proveedores y analizar el costo teórico frente al real para reducir mermas, utiliza IA para predecir la demanda futura, optimizar los horarios de trabajo y generar informes de pérdidas y ganancias (P&L) en tiempo real y se integra con cientos de sistemas de punto de venta (TPV/POS), bancos y proveedores de alimentos para que los datos fluyan automáticamente sin necesidad de hojas de cálculo manuales (Restaurant365, s.f.)[^c2-4].
 
 ### 2.1.1. Análisis Competitivo
 
@@ -29,7 +29,7 @@ Las siguientes plataformas son de las más relevantes en el mercado de gestión 
 *¿Porqué llevar a cabo este análisis?*
 El objetivo de este análisis es identificar las fortalezas, debilidades, oportunidades y amenazas del entorno competitivo en el sector de gestión de resturantes y proveedores, con el fin de definir la ventaja competitiva de SupplyWok frente a las alternativas existentes y orientar las estrategias de diferenciación e innovación.
 
-| Categoría | Subcategoría | SupplyWok <br><img src="" width="70" /> | Apicbase <br><img src="../assets/images/apicbase.png" width="70" /> | MarketMan <br><img src="../assets/images/market-man.png" width="70" /> | WISK.ai <br><img src="../assets/images/wisk.png" width="70" /> | Restaurant365 <br><img src="../assets/images/restaurant365.png" width="70" /> |
+| Categoría | Subcategoría | SupplyWok <br><img src="../assets/images/supplywok-logo.png" width="70" /> | Apicbase <br><img src="../assets/images/apicbase.png" width="70" /> | MarketMan <br><img src="../assets/images/market-man.png" width="70" /> | WISK.ai <br><img src="../assets/images/wisk.png" width="70" /> | Restaurant365 <br><img src="../assets/images/restaurant365.png" width="70" /> |
 |---|---|---|---|---|---|---|
 | **Perfil** | Overview | Plataforma web que optimiza y agiliza la gestión operativa y de abastecimiento en restaurantes tipo chifa mediante soluciones tecnológicas inteligentes. | Plataformaa basada en la nube diseñada para centralizar la gestión de alimentos y bebidas en cadenas de restaurantes y hoteles. | Plataforma basada en la nube especializada en automatizar el inventario y las compras para restaurantes, conectando el almacén directamente con los proveedores. | Plataforma basada en IA que se especializa en la gestión ultraprecisa de inventarios, usando reconocimiento de imágen para agilizar el conteo de existencias mediante el móvil. | Plataforma de gestión empresarial que unifica en un solo sistema la contabilidad, el control de inventarios, las compras y la gestión del personal. |
 | **Perfil** | Ventaja competitiva ¿Qué valor ofrece a los clientes? | Plataforma centralizada y escalable que optimiza la cadena de suministro mediante analítica predictiva, garantizando eficiencia operativa, prevención de accidentes y una colaboración inteligente entre restaurantes y proveedores para una gestión sostenible. | Gestión centralizada de recetas y menús para múltiples locales, con enfoque en trazabilidad alimentaria, control de alérgenos y estandarización de la producción a gran escala. | Automatización integral del inventario y compras que utiliza análisis predictivos para sugerir pedidos, detectar variaciones de precios y maximizar la rentabilidad operativa. | Control de inventario ultrapeciso mediante inteligencia artificial y reconocimiento visual, especializado en la reducción de mermas y optimización de costos en bebidas y licores. | Sistema ERP unificado que integra contabilidad financiera, inventarios y gestión de personal, conectando el flujo de caja con la operación diaria en una sola plataforma. |
@@ -57,7 +57,6 @@ El objetivo de este análisis es identificar las fortalezas, debilidades, oportu
 
 <sub>*Tabla 4. Estrategias y tácticas frente a competidores*</sub>
 
----
 
 ## 2.2. Entrevistas
 
@@ -125,16 +124,13 @@ Para comprender mejor a nuestros usuarios y construir arquetipos representativos
 - ¿Qué tipo de reportes o indicadores le ayudarían más en su trabajo diario?
 - ¿Qué tan útil le parecería una solución que combine gestión de inventario, pedidos, alertas y monitoreo operativo?
 - ¿Qué preocupaciones tendría al usar una nueva plataforma digital para su negocio?
----
 ### 2.2.2. Registro de entrevistas.
 
 
 #### Segmento #1: Dueños de restaurantes chifa y administradores
 - **Entrevista #1**
 
-<p align="center">
-  <img src="../assets/images/interviews/owner-interview1.png" width="500">
-</p>
+![](../assets/images/interviews/owner-interview1.png)
 
 **Resumen de entrevista:**
 
@@ -157,9 +153,7 @@ Ana Chen, dueña de un chifa en La Perla (Callao) con 22 años de experiencia, g
 <sub>*Tabla 5. Entrevista 1*</sub>
 
 - **Entrevista #2**
-<p align="center">
-  <img src="../assets/images/interviews/owner-interview2.png" width="500" alt="entrevista-owners-2">
-</p>
+![](../assets/images/interviews/owner-interview2.png)
 
 **Resumen de entrevista:**
 
@@ -180,10 +174,9 @@ El entrevistado Weiquan Wang, un cocinero y dueño de un chifa en La Perla (Call
 </div>
 
 <sub>*Tabla 6. Entrevista 2*</sub>
-- **Entrevista #2**
-<p align="center">
-  <img src="../assets/images/interviews/owner-interview3.png" width="500" alt="entrevista-owners-3">
-</p>
+
+- **Entrevista #3**
+![](../assets/images/interviews/owner-interview3.png)
 
 **Resumen de entrevista:**
 
@@ -205,13 +198,10 @@ La entrevistada, Lili (54 años), dueña y encargada de cocina de un chifa con 1
 
 <sub>*Tabla 7. Entrevista 3*</sub>
 <!-- Segmento objetivo: Proveedores-->
----
 #### Segmento #2: Proveedores de insumos para restaurantes
 - **Entrevista #1**
 
-<p align="center">
-  <img src="../assets/images/interviews/supplier-interview1.png" width="500">
-</p>
+![](../assets/images/interviews/supplier-interview1.png)
 
 **Resumen de entrevista:**
 
@@ -236,58 +226,50 @@ El entrevistado, Alberto Copa Villa (37 años, La Perla – Callao), es un prove
 
 El análisis de las entrevistas realizadas permite identificar patrones claros en los dos segmentos objetivo de SupplyWok: dueños de restaurantes chifa y proveedores. A partir de las entrevistas, se evidencian tanto comportamientos comunes como diferencias en la adopción tecnológica, sustentados en la frecuencia de respuestas observadas.
 
----
+#### Segmento 1: Dueños de restaurantes chifa y administradores
 
-## Segmento 1: Dueños de restaurantes chifa y administradores
-
-<p align="center">
-    <img src="../assets/images/analytics-owners.png" width="800">
-</p>
+![](../assets/images/analytics-owners.png)
 
 Este segmento agrupa a propietarios con amplia experiencia (entre 10 y 22 años en los casos entrevistados), quienes gestionan sus negocios de manera empírica.
 
-### Gestión del Inventario
+##### Gestión del Inventario
 El 100% de los entrevistados indicó que no utiliza sistemas formales de inventario, dependiendo de la memoria o revisión visual. Esto genera situaciones donde los insumos se acaban sin planificación previa, obligando a compras reactivas.
 
-### Abastecimiento y compras
+##### Abastecimiento y compras
 El 100% realiza compras diarias o frecuentes, basándose en la demanda inmediata o en variaciones de precios (especialmente en productos como el pollo). No existe planificación a mediano plazo.
 
-### Canales de comunicación
+##### Canales de comunicación
 El 100% coordina pedidos mediante llamadas telefónicas, manteniendo procesos tradicionales.
 
-### Percepción de problemas
+##### Percepción de problemas
 Aproximadamente el 66% reconoce problemas operativos, como falta de insumos o retrasos en abastecimiento, aunque algunos los consideran parte normal del negocio. El 34% restante percibe su operación como estable, pese a no tener control estructurado.
 
-### Adopción tecnológica
+##### Adopción tecnológica
 Se identifican dos subgrupos:
 
 - **Resistentes (≈33%)**: consideran innecesarias las herramientas digitales y prefieren métodos tradicionales.
 - **Abiertos (≈67%)**: muestran interés en soluciones si estas simplifican su trabajo.
 
-### Funcionalidades de interés
+##### Funcionalidades de interés
 - El 67% valora alertas de stock bajo y herramientas que automaticen el cálculo de compras.  
 - Un 66% considera útil la predicción de demanda, especialmente para evitar faltantes.
 
----
+#### Segmento 2: Proveedores de insumos
 
-## Segmento 2: Proveedores de insumos
-
-<p align="center">
-    <img src="../assets/images/analytics-suppliers.png" width="800">
-</p>
+![](../assets/images/analytics-suppliers.png)
 
 Este segmento incluye proveedores con experiencia (ej. 7 años), que operan en entornos de alta inmediatez.
 
-### Gestión de pedidos
+##### Gestión de pedidos
 El 100% recibe pedidos mediante WhatsApp, lo que genera desorden y dependencia de mensajes informales.
 
-### Problemas principales
+##### Problemas principales
 El 100% identifica como principal dificultad los pedidos tardíos, lo que afecta la planificación y disponibilidad de productos.
 
-### Planificación de demanda
+##### Planificación de demanda
 El 100% indica que no puede anticipar la demanda, debido a que los restaurantes compran para el momento.
 
-### Necesidades tecnológicas
+##### Necesidades tecnológicas
 El 100% muestra interés en herramientas simples, especialmente:
 
 - Visualización de pedidos pendientes  
@@ -295,21 +277,19 @@ El 100% muestra interés en herramientas simples, especialmente:
 
 Sin embargo, el 0% muestra interés en analítica avanzada o predicciones complejas.
 
----
+#### Conclusiones para el diseño de arquetipos
 
-## Conclusiones para el diseño de arquetipos
-
-### Automatización simple y práctica
+##### Automatización simple y práctica
 Dado que el 100% de restaurantes no usa sistemas formales, la plataforma debe automatizar procesos sin requerir esfuerzo adicional del usuario.
 
-### Diferenciación de valor por segmento
+##### Diferenciación de valor por segmento
 - **Restaurantes**: valoran evitar faltantes y facilitar decisiones de compra.  
 - **Proveedores**: necesitan orden en los pedidos y anticipación.
 
-### Reducción de fricción
+##### Reducción de fricción
 El sistema debe reemplazar llamadas y WhatsApp (usados por el 100%) con una solución igual de rápida, pero estructurada.
 
-### Oportunidad clave
+##### Oportunidad clave
 Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solución sea simple, directa y no complique su operación.
 
 ## 2.3. Needfinding.
@@ -318,21 +298,17 @@ Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solu
 
 - **Segmento objetivo 1: Dueños de restaurantes chifa y administradores**
 
-<p align="center">
-  <img src="../assets/images/huanzhang-userpersona.png" width="500">
-</p>
+![](../assets/images/huanzhang-userpersona.png)
 
 <sub>*Ilustración. User Persona dueños de restaurantes chifa y administradores*</sub>
 
 - **Segmento objetivo 2: Proveedores de insumos para restaurantes**
 
-<p align="center">
-  <img src="../assets/images/marcovaldivia-userpersona.png" width="500">
-</p><br>
+![](../assets/images/marcovaldivia-userpersona.png)
 
 <sub>*Ilustración. User Persona proveedores de insumos para restaurantes*</sub>
 
-### 2.2.2. User Task Matrix.
+### 2.3.2. User Task Matrix.
 
 - **Segmento objetivo 1: Dueños de restaurantes chifa y administradores**
 
@@ -376,17 +352,13 @@ Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solu
 
 - **Segmento objetivo 1: Dueños de restaurantes chifa y administradores**
 
-<p align="center">
-  <img src="../assets/images/map-supplywok1.png" width="500">
-</p>
+![](../assets/images/map-supplywok1.png)
 
 <sub>*Ilustración. User Journey Mapping - Segmento 1*</sub><br></br>
 
 - **Segmento objetivo 2: Proveedores de insumos para restaurantes**
 
-<p align="center">
-  <img src="../assets/images/map-supplywok2.png" width="500">
-</p>
+![](../assets/images/map-supplywok2.png)
 
 <sub>*Ilustración. User Journey Mapping - Segmento 2*</sub><br></br>
 
@@ -394,17 +366,13 @@ Existe una adopción potencial en el ≈67% de restaurantes, siempre que la solu
 
 - **Segmento objetivo 1: Dueños de restaurantes chifa y administradores**
 
-<p align="center">
-  <img src="../assets/images/persona-empathy-map.png" width="500">
-</p>
+![](../assets/images/persona-empathy-map.png)
 
 <sub>*Ilustración. Empathy Map - Segmento 1*</sub><br></br>
 
 - **Segmento objetivo 2: Proveedores de insumos para restaurantes**
 
-<p align="center">
-  <img src="../assets/images/persona-empathy-map2.png" width="500">
-</p>
+![](../assets/images/persona-empathy-map2.png)
 
 <sub>*Ilustración. Empathy Map - Segmento 2*</sub><br></br>
 
@@ -417,25 +385,36 @@ A través de esta aproximación de alto nivel, el equipo exploró el panorama de
 
 #### Step 1: Unstructured Exploration
 
-En esta fase inicial, todos los miembros del equipo escriben tantos eventos de dominio como puedan en post-its naranjas. El objetivo es generar una lluvia de ideas masiva sobre lo que ocurre en el negocio de Aurora, sin preocuparse por el orden. 
+En esta fase inicial, todos los miembros del equipo generan eventos de dominio de forma libre, sin preocuparse por el orden ni la coherencia. Cada evento representa una acción relevante en el negocio, escrita en tiempo pasado (ej. "Pedido registrado", "Stock actualizado"). El objetivo es capturar el mayor volumen posible de eventos para construir una visión completa del dominio antes de estructurarlo.
 
-<p align="center">
-  <img src="../assets/images/Step1BigEvent.png" width="500">
-</p>
+![](../assets/images/step1-bpev.png)
+
+<sub>*Ilustración. Big Picture Event Storming — Step 1: Exploración no estructurada*</sub>
 
 #### Step 2: Structured Organization
 
-Después de listar los eventos desestructurados, el equipo los organiza en una línea de tiempo narrativa, identificando las relaciones de causalidad entre ellos. Se agrupan eventos relacionados y se identifican patrones o flujos comunes. En esta fase se busca entender cómo los eventos interactúan entre sí y cómo se relacionan con los procesos del negocio.
+Con el conjunto de eventos identificados, el equipo los organiza cronológicamente en una línea de tiempo narrativa. Se eliminan duplicados, se agrupan eventos relacionados y se identifican las relaciones causales entre ellos. Esta vista lineal permite detectar flujos principales del negocio y los primeros límites lógicos entre procesos.
 
-<img src="../assets/images/step2e01.png" width="500">
+![](../assets/images/step2-bpev.png)
 
-<img src="../assets/images/step2e02.png" width="500">
+<sub>*Ilustración. Big Picture Event Storming — Step 2: Organización estructurada*</sub>
 
-<img src="../assets/images/step2e03.png" width="500">
+#### Step 3: Pivotal points
 
-<img src="../assets/images/step2e04.png" width="500">
+Se identifican los eventos pivote: aquellos que marcan transiciones críticas en el negocio (ej. "Pedido confirmado por proveedor", "Alerta de stock crítico emitida"). Alrededor de estos eventos se trazan las fronteras de los Bounded Contexts, delimitando las responsabilidades de cada subdominio y sirviendo como base para la arquitectura del sistema.
 
-<img src="../assets/images/step2e05.png" width="500">
+![](../assets/images/step3-bpev.png)
+
+<sub>*Ilustración. Big Picture Event Storming — Step 3: Pivotal points*</sub>
+
+#### Step 4: Pain Points and Opportunities
+
+El equipo marca sobre la línea de tiempo los puntos de fricción, cuellos de botella y oportunidades de mejora detectados. Estos "pain points" suelen concentrarse en transiciones entre actores o en procesos manuales que podrían automatizarse. Esta fase orienta las decisiones de diseño hacia las áreas de mayor impacto operativo.
+
+![](../assets/images/step4-bpev.png)
+
+<sub>*Ilustración. Big Picture Event Storming — Step 4: Pain Points and Opportunities*</sub>
+
 
 ## 2.5. Ubiquitous Language.
 
@@ -452,7 +431,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Notificación** | Alerta enviada al usuario sobre un evento importante del sistema (cambio de estado de pedido, alerta de stock bajo, cambio de temperatura, etc.). | Comunicación en tiempo real |
 | **Dashboard** | Interfaz personalizada que muestra el resumen e información clave según el tipo de usuario y sus permisos. | Visualización general |
 
----
 
 ### Términos del Epic 01: Gestión de Inventario
 
@@ -470,7 +448,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Clasificación de Inventario** | Categorización del estado de un insumo según su stock actual: Normal (stock superior al mínimo), Crítico (stock en o bajo mínimo), Exceso (stock muy por encima del promedio de consumo). | Visualización y alertas |
 | **Reporte de Inventario** | Documento exportable (PDF/CSV) que muestra el estado actual del inventario, útil para auditorías, análisis o uso externo. | Exportación y documentación |
 
----
 
 ### Términos del Epic 02: Abastecimiento y Órdenes de Compra
 
@@ -484,7 +461,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Confirmación de Entrega** | Acto formal donde el proveedor marca una orden como "Entregada", registrando fecha, hora, observaciones y evidencia de que los insumos llegaron al restaurante. | Cierre de transacción |
 | **Reabastecimiento** | Proceso de solicitar nuevamente un insumo cuya disponibilidad en el restaurante se ha agotado o está por agotarse. | Acción operativa |
 
----
 
 ### Términos del Epic 03: Monitoreo Operativo y Alertas IoT
 
@@ -500,7 +476,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Estado de Revisión** | Indicador si una alerta fue revisada por un administrador (y con qué nota de seguimiento) o aún está pendiente de atención. | Control de acciones |
 | **Área / Zona Monitorizada** | Espacio físico del restaurante equipado con sensores (ej: almacén, cocina, cámara frigorífica). Cada área puede tener múltiples sensores y configuraciones independientes. | Ubicación y contexto |
 
----
 
 ### Términos del Epic 04: Panel del Proveedor
 
@@ -514,7 +489,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Confirmación de Orden** | Acto donde el proveedor acepta formalmente una orden de compra, comprometiéndose a entregarla en las condiciones pactadas. | Validación de compromiso |
 | **Resumen de Actividad por Cliente** | Análisis agregado del comportamiento de un cliente (número de órdenes, productos más solicitados, monto estimado, frecuencia de pedidos) que ayuda al proveedor a priorizar su atención comercial. | Business Intelligence |
 
----
 
 ### Términos del Epic 05: Plataforma y Acceso
 
@@ -530,7 +504,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Estado del Servicio** | Información sobre la disponibilidad actual de la plataforma, notificaciones de mantenimiento programado o incidencias no planificadas. | Transparencia operativa |
 | **Disponibilidad Continua** | Compromiso de que la plataforma esté operativa 24/7, minimizando interrupciones salvo mantenimiento programado con notificación previa. | SLA de servicio |
 
----
 
 ### Términos del Epic 06: Comandas y Órdenes para Cocina
 
@@ -544,7 +517,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Estado de Comanda** | Situación actual de una comanda: Activa (pendiente de preparar), En Preparación (cocinero trabajando), Lista (platos listos para servir), Entregada (cliente ya recibió). | Ciclo de vida |
 | **Preparación de Platos** | Proceso en cocina de elaborar los platos especificados en una comanda. El cocinero marca el estado cuando termina. | Ejecución operativa |
 
----
 
 ### Términos Técnicos (Para desarrolladores)
 
@@ -557,7 +529,6 @@ El Ubiquitous Language es el lenguaje común compartido entre el equipo técnico
 | **Transacción Atómica** | Operación que se ejecuta completamente o no se ejecuta en absoluto. Si hay error, se deshacen todos los cambios (no se persisten datos inconsistentes). | Consistencia de BD |
 | **Base de Datos / Persistence Layer** | Sistema de almacenamiento permanente de datos de la plataforma, donde se guardan todas las entidades (usuarios, órdenes, inventario, sensores, etc.). | Infraestructura |
 
----
 
 ### Glosario Rápido de Referencia
 
@@ -571,7 +542,6 @@ ALERTA → Notificación generada cuando una Lectura está Fuera de Rango
 COMANDA → Pedido de un Cliente vinculado a una Mesa, enviado a Cocina
 ```
 
----
 
 ### Notas de Alineación del Lenguaje
 
@@ -581,10 +551,10 @@ COMANDA → Pedido de un Cliente vinculado a una Mesa, enviado a Cocina
 - En la documentación de usuario (centro de ayuda), usar estos términos para evitar confusión con otros productos.
 
 
-[^1]: Apicbase. (s.f.). _Plataforma líder de gestión de F&B_. https://get.apicbase.com/es/
+[^c2-1]: Apicbase. (s.f.). _Plataforma líder de gestión de F&B_. https://get.apicbase.com/es/
 
-[^2]: MarketMan. (s.f.). _Software De Gestión De Inventario Para Restaurantes Para El Control De Costes Y La Eficiencia_. https://es.marketman.com/
+[^c2-2]: MarketMan. (s.f.). _Software De Gestión De Inventario Para Restaurantes Para El Control De Costes Y La Eficiencia_. https://es.marketman.com/
 
-[^3]: WISK.ai. (s.f.). _Bar and Restaurant Inventory Management Software_. https://www.wisk.ai/
+[^c2-3]: WISK.ai. (s.f.). _Bar and Restaurant Inventory Management Software_. https://www.wisk.ai/
 
-[^4]: Restaurant365. (s.f.). _Restaurant Management Software_. https://www.restaurant365.com/
+[^c2-4]: Restaurant365. (s.f.). _Restaurant Management Software_. https://www.restaurant365.com/
