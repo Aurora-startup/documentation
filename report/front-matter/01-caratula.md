@@ -1,5 +1,3 @@
-![upc-logo](../assets/images/upc-logo.png)
-
 <div align="center">
 
 <img src="../assets/images/upc-logo.png" width="120px">
@@ -30,6 +28,7 @@ Equipo
 
 
 Proyecto 
+
 **SupplyWok**
 
 
@@ -72,7 +71,10 @@ Proyecto
 
 
 
-Julio 2026
+
+**Período 202610**
+
+**Julio 2026**
 
 </div>
 <div style="page-break-before: always;"></div>
