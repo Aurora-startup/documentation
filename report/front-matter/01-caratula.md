@@ -1,41 +1,80 @@
-![upc-logo](../assets/images/upc-logo.png)
 <div align="center">
-Carrera: Ingeniería de Software
+
+<img src="../assets/images/upc-logo.png" width="120px">
 
 
-Ciclo: 2026-10
+Universidad Peruana de Ciencias Aplicadas
+
+Carrera de Ingeniería de Software
+
+**1ASI0729**
+
+**Desarrollo de Aplicaciones Open Source**
 
 
-SI0729 - Desarrollo de Aplicaciones Open Source
+NRC
+
+**11913**
 
 
-NRC: 11913
+Docente
+
+**Juan Antonio Flores Moroco**
+
+Equipo
+
+**AURORA**
 
 
-Profesor: Juan Antonio Flores Moroco
+
+Proyecto 
+
+**SupplyWok**
 
 
-Informe de Trabajo Final
+**Integrantes**
 
 
-Startup: Aurora
 
-
-Producto: SupplyWok
-
-
-<h2>
-Integrantes
-</h2>
-
-
-|<p align="center">Codigo</p>|<p align="center">Alumno<p>|
-| --- | --- |
-|U202318609 | Wang Chen, Juan Sung Jau |
-|U202422890 | Cuadros Villanueva, Marcelo Fabio |
-|U202318620 | Payano Puchuri, Joan Fabricio |
-|U20241b451 | Meza Soza, Alexandra Yamile |
-|U202410837 | Ayasta Martel, Zayd Jaffar |
-
-Mayo 2026
+<div align="center">
+  <table align="center">
+    <thead>
+      <tr>
+        <th align="left" >Código</th>
+        <th align="left" >Nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left" >U202318609</td>
+        <td align="left" >Wang Chen Juan Sung Jau</td>
+      </tr>
+      <tr>
+        <td align="left" >U202422890</td>
+        <td align="left" >Cuadros Villanueva Marcelo Fabio</td>
+      </tr>
+      <tr>
+        <td align="left" >U20241b451</td>
+        <td align="left" >Meza Soza, Alexandra Yamile</td>
+      </tr>
+      <tr>
+        <td align="left" >U20231C524</td>
+        <td align="left" >Sanchez Espinoza Mathias Enrique</td>
+      </tr>
+      <tr>
+        <td align="left" >U202410837</td>
+        <td align="left" >Ayasta Martel Zayd Jaffar</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+
+
+
+**Período 202610**
+
+**Julio 2026**
+
+</div>
+<div style="page-break-before: always;"></div>

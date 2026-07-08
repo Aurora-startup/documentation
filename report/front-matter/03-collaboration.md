@@ -1,71 +1,27 @@
 # Project Report Collaboration Insights
 
-Todas las actividades asignadas para cada entrega se encuentran documentadas en el repositorio de GitHub de la organización del equipo, accesible en: [https://github.com/Aurora-startup](https://github.com/Aurora-startup) En cuanto al informe, cada miembro del equipo participó redactando y elaborando gráficos en formato Markdown de acuerdo con los temas asignados, registrando su progreso mediante commits en el repositorio correspondiente, encontrándose en el siguiente enlace: [https://github.com/Aurora-startup/project-report](https://github.com/Aurora-startup/project-report) 
+Todas las actividades asignadas para cada entrega se encuentran documentadas en el repositorio de GitHub de la organización del equipo, accesible en: [https://github.com/Aurora-startup](https://github.com/Aurora-startup).
+
+En cuanto al informe, cada miembro del equipo participó redactando y elaborando gráficos en formato Markdown de acuerdo con los temas asignados, registrando su progreso mediante commits en el repositorio correspondiente, encontrándose en el siguiente enlace: [https://github.com/Aurora-startup/project-report](https://github.com/Aurora-startup/project-report) 
+
+## AV1
+En esta primera entrega se desarrolló todo el contenido de los capítulos I, II, III, IV y V del informe, así como el Sprint 1, orientado al desarrollo de la Landing Page de SupplyWok. Además, se elaboró un avance de las conclusiones, la bibliografía y los anexos. A continuación, se presentan las capturas que evidencian la colaboración de los integrantes del equipo en el repositorio del informe durante el desarrollo del Avance 1.
 
 ![Report Insights 1](../assets/images/report-insights-1.png)
 
 ![Report Insights 2](../assets/images/report-insights-2.png)
 
-## Description of contributions
+## TB1
+En esta segunda entrega se desarrolló todo el contenido correspondiente al Sprint 2, orientado al desarrollo del Frontend de SupplyWok y de una API simulada (Fake API) para el consumo de datos por parte del frontend. Además, se elaboró un avance de las conclusiones, la bibliografía y los anexos. A continuación, se presentan las capturas que evidencian la colaboración de los integrantes del equipo en el repositorio del informe durante el desarrollo del Avance 2.
 
-### Cuadros Villanueva, Marcelo Fabio
+![alt text](image-13.png)
 
-- Añadió el contenido del capítulo 4 sobre diseño de producto, pautas de estilo y arquitectura de información con diagramas de event storming.
-- Añadió el reporte de evaluación de resultados de los estudiantes para la fase AV1.
-- Añadió la documentación del capítulo 5 sobre gestión de la configuración de software e imágenes relacionadas.
-- Añadió la documentación del capítulo 5 detallando la gestión de la configuración de software y estándares de desarrollo con imágenes de soporte.
-- Corrigió y refactorizó algunas tablas.
-- Añadió el análisis competitivo del capítulo 2.1 a la documentación de elicitación de requisitos.
-- Añadió la portada del proyecto y el capítulo 5 respecto a la gestión de la configuración de software.
-- Añadió el capítulo de especificación de requisitos, incluyendo épicas e historias de usuario para la gestión de inventario y adquisiciones.
-- Realizó correcciones en algunas historias de usuario (US) y sus valores en Story Points en el capítulo 3.
+## AV2
+En esta tercera entrega se desarrolló todo el contenido correspondiente al Sprint 3, orientado al desarrollo del backend de la plataforma SupplyWok. Además, se elaboraron las entrevistas de validación, la evaluación según heurísticas, el video About the Product, el video About the Team, así como un avance de las conclusiones, la bibliografía y los anexos. A continuación, se presentan las capturas que evidencian la colaboración de los integrantes del equipo en el repositorio del informe durante el desarrollo del Avance 3.
 
-### Wang Chen, Juan Sung Jau
+![alt text](image-11.png)
 
-- Corrigió los perfiles del equipo.
-- Refactorizó la ruta de las imágenes.
-- Renombró imágenes.
-- Añadió la documentación de la página de aterrizaje (landing page) en el capítulo 4.
-- Expandió la tabla de contenidos.
-- Actualizó la arquitectura de información en el capítulo 4.
-- Eliminó imágenes.
-- Añadió varias imágenes y actualizó el contenido del capítulo 2.
-- Añadió imágenes de analíticas para dueños de restaurantes y proveedores en el capítulo 2.
-- Corrigió el nombre del producto en la carátula.
-- Añadió user personas, mapas de viaje (journey mapping) y mapas de empatía en la sección de imágenes.
-- Añadió la arquitectura de información en el capítulo 4.
-- Actualizó los perfiles de los miembros del equipo y mejoró la definición del problema para restaurantes de chifa en el capítulo 1.
-- Añadió nuevas imágenes para user personas y entrevistas en la sección de imágenes.
-- Añadió resúmenes de entrevistas para dueños de restaurantes y proveedores en el capítulo 2.
-- Expandió las secciones de análisis competitivo y diseño de entrevistas en el capítulo 2.
-- Añadió la guía de estilo del código fuente y la configuración de despliegue en el capítulo 5.
-- Corrigió los enlaces del repositorio en el capítulo 5.
+![alt text](image-12.png)   
 
-### Payano Puchuri, Joan Fabricio
-
-- Corrigió la sección del mapa de impacto (impact map) y añadió dos imágenes nuevas en el capítulo 3.
-- Añadió el análisis de entrevistas en el capítulo 2.
-- Añadió una imagen faltante.
-- Añadió los nombres de los autores en la sección de registros.
-- Corrigió el formato de la tabla de épicas en el capítulo 3.
-- Añadió el product backlog en el capítulo 3.
-- Añadió la imagen del mapa de impacto (impact map) en el capítulo 3.
-- Añadió el nombre de un miembro del equipo en la carátula.
-- Añadió las historias de usuario en el capítulo 3.
-- Actualizó los perfiles de los miembros y añadió una imagen en el capítulo 1.
-- Actualizó el archivo 01-caratula.md.
-
-### Meza Soza, Alexandra Yamile
-
-- Corrigió el formato de la tabla.
-- Actualizó el diagrama de clases.
-- Realizó modificaciones leves.
-
-### Ayasta Martel, Zayd Jaffar
-
-- Añadió los mockups web en el capítulo 4.
-- Revisó la sección de la startup Aurora y la solución en el capítulo 1.
-- Cambió los wireflows del capítulo 4 para alinearlos con el flujo actualizado del producto.
-- Añadió y ajustó imágenes de soporte para la documentación visual del producto.
-- Actualizó secciones relacionadas con la experiencia de usuario y navegación de la aplicación.
-- Realizó correcciones menores de redacción y formato en la documentación del proyecto.
+## TB2
+En esta cuarta y última entrega se desarrolló todo el contenido correspondiente al Sprint 4, orientado a pulir los detalles finales de la plataforma y concluir el ciclo de desarrollo. Además, se elaboró la versión final de las conclusiones, la bibliografía y los anexos. A continuación, se presentan las capturas que evidencian la colaboración de los integrantes del equipo en el repositorio del informe durante el desarrollo de este último entregable.
