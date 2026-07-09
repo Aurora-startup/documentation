@@ -58,10 +58,6 @@ Proyecto
         <td align="left" >Meza Soza, Alexandra Yamile</td>
       </tr>
       <tr>
-        <td align="left" >U20231C524</td>
-        <td align="left" >Sanchez Espinoza Mathias Enrique</td>
-      </tr>
-      <tr>
         <td align="left" >U202410837</td>
         <td align="left" >Ayasta Martel Zayd Jaffar</td>
       </tr>

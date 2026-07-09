@@ -592,7 +592,7 @@ Durante el Sprint 2 se desarrolló gran parte del frontend de la plataforma Supp
 | Componente | Descripción | Enlace |
 |------------|-------------|--------|
 | Landing Page | Pagina promocional de SupplyWok | https://aurora-startup.github.io/SupplyWok-landing-page/ |
-| Frontend | Plataforma web de SupplyWok (Usuario: restaurante@ejemplo.com Contraseña: Password123! / Usuario: proveedor@ejemplo.com Contraseña: Password123!) | https://supplywok-frontend.web.app/ |
+| Frontend | Plataforma web de SupplyWok (Usuario: restaurante@ejemplo.com Contraseña: Password123! / Usuario: proveedor@ejemplo.com Contraseña: Password123!) | https://supplywok-frontend-1e9a7.web.app/ |
 | Repositorio Frontend | Código fuente del frontend | https://github.com/Aurora-startup/SupplyWok-frontend |
 | Repositorio del JSON server | Repositorio donde se aloja el Json server | https://github.com/joanfpp2-ai/supplywok-db-server |
 | JSON Server | Endpoints de la Fake Api | https://my-json-server.typicode.com/joanfpp2-ai/supplywok-db-server |
@@ -1134,7 +1134,7 @@ Durante el Sprint 4 se realizó la integración final de los componentes fronten
 | Componente | Descripción | Enlace |
 |------------|-------------|--------|
 | Landing Page | Pagina promocional de SupplyWok | https://aurora-startup.github.io/SupplyWok-landing-page/ |
-| Frontend | Plataforma web de SupplyWok (Usuario: restaurante@ejemplo.com Contraseña: Password123! / Usuario: proveedor@ejemplo.com Contraseña: Password123!) | https://supplywok-frontend.web.app/ |
+| Frontend | Plataforma web de SupplyWok (Usuario: restaurante@ejemplo.com Contraseña: Password123! / Usuario: proveedor@ejemplo.com Contraseña: Password123!) | https://supplywok-frontend-1e9a7.web.app/ |
 | Backend | Backend desplegado con la documentacion Open Api | https://supplywok-backend.onrender.com/swagger-ui/index.html#/ |
 | Repositorio Landing Page | Código fuente del landing page | https://github.com/Aurora-startup/SupplyWok-landing-page |
 | Repositorio Frontend | Código fuente del frontend | https://github.com/Aurora-startup/SupplyWok-frontend |
@@ -1324,6 +1324,19 @@ Durante el Sprint 4 se mantuvo la documentación de los endpoints desarrollados 
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review
 
 En esta sección se presentan las evidencias correspondientes al despliegue y validación final de la solución SupplyWok durante el Sprint 4. El objetivo de esta actividad fue asegurar que la versión integrada del sistema quedara disponible en la nube y lista para ser consumida por el frontend, mientras que la landing page y la Web Application permanecían alineadas con la versión final del backend publicada.
+
+**Deploy del Frontend**
+
+Se realizó un nuevo despliegue del frontend de SupplyWok en Firebase Hosting utilizando la terminal integrada de JetBrains, publicando la versión final de la aplicación con las mejoras e integraciones desarrolladas durante el Sprint 4.
+
+![alt text](image-28.png)
+
+Se puede evidenciar el correcto despliegue de la plataforma mediante los mensajes de inicio registrados por Spring Boot, los cuales confirman que la aplicación se ejecutó satisfactoriamente y quedó disponible para recibir solicitudes.
+
+![alt text](image-29.png)
+
+
+**Deploy del Backend**
 
 Primero, se verificó la disponibilidad de la base de datos PostgreSQL utilizada por la plataforma, confirmando que la instancia se encontraba activa y accesible para el entorno desplegado.
 
