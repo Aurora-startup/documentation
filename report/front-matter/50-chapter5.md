@@ -1154,7 +1154,7 @@ En las siguientes evidencias se presentan los módulos finales de la plataforma 
 
 ![Sprint 4 Alerts Screen](../assets/images/frontend/alerts_screen.png)
 
-**Sprint 4 video:** https://youtu.be/uzxAj_kx6rs
+**Link del video de explicación del Sprint:**  https://youtu.be/uzxAj_kx6rs
 
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review
 
