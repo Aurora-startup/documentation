@@ -57,7 +57,7 @@ Los restaurantes tipo chifa enfrentan dificultades en la gestión eficiente de s
 
 ### 1.2.2 Lean UX Process   
 
-#### 1.2.2.1 Lean UX Problem Statements
+#### 1.2.2.1 Lean UX Problem Statement
 El estado actual de la gestión operativa y de abastecimiento en restaurantes tipo chifa se ha centrado principalmente en controles manuales, registros dispersos, decisiones reactivas sobre inventario y coordinación informal con proveedores. 
 
 Lo que los productos y servicios existentes no logran atender es la necesidad de una solución integrada que combine control de inventario, alertas operativas, proyección de demanda, coordinación digital de pedidos y monitoreo operativo en un solo entorno. 
