@@ -276,7 +276,7 @@ Durante el Sprint 1, el equipo se centró en la creación de la Landing Page de 
 
 #### 5.2.1.2. Aspect Leaders and Collaborators.
 
-Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo del Landing Page de SupplyWok, implemenando un interfaz agradable e información relevante para atraer la atencion de nuestros usuarios. Los principales aspectos considerados en este sprint son los siguientes:
+Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo de la Landing Page de SupplyWok, implementando una interfaz agradable e información relevante para atraer la atencion de nuestros usuarios. Los principales aspectos considerados en este sprint son los siguientes:
 
 **Link al Sprint 1 Board:** https://trello.com/invite/b/6a4ef7a05fa73a1b97d2c516/ATTIe1fbc18eb0fb43ebd1a2f3689350f455EFAAE5BD/supplywok-sprint-backlog-1
 
@@ -414,7 +414,7 @@ Durante el Sprint 1 se realizó el despliegue de la primera versión de la Landi
 
 ![first-step](../assets/images/deploy-steps/step-1.png)
 
-Revisamos que el repositorio este en publico:
+Revisamos que el repositorio esté en público:
 
 ![second-step](../assets/images/deploy-steps/step-2.png)
 
@@ -616,6 +616,8 @@ En las siguientes evidencias se presentan los módulos implementados en la plata
 ![first](../assets/images/frontend/orders_screen.png)
 
 ![first](../assets/images/frontend/tables_and_occupancy_screen.png)
+
+**Link del video de explicación del Sprint:** https://www.youtube.com/watch?v=GsYC-nSofsI
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
