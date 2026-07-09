@@ -1,3 +1,5 @@
+<div style="page-break-before: always;"></div>
+
 # Capítulo V: Product Implementation, Validation & Deployment.
 
 ## 5.1. Software Configuration Management. 
@@ -216,12 +218,13 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   [https://github.com/Aurora-startup/SupplyWok-backend](https://github.com/Aurora-startup/SupplyWok-backend)
 
 - **Plataforma de despliegue:**  
-  Servicios Cloud (ej. Render, Railway, AWS o Azure)
+  Render
 
 - **Proceso de despliegue:**  
   - La aplicación se empaqueta utilizando Maven/Gradle (`.jar` ejecutable).  
-  - Se configura el despliegue automático conectado al repositorio GitHub.  
+  - El servicio backend se encuentra conectado al repositorio GitHub para facilitar el despliegue de nuevas versiones en Render.  
   - Las variables sensibles (credenciales, conexión a base de datos, tokens) se gestionan mediante variables de entorno.  
+  - La base de datos PostgreSQL utilizada por la plataforma también se encuentra desplegada en Render.  
   - El servicio se expone a través de endpoints REST accesibles mediante HTTP/HTTPS.  
   - Se asegura la correcta comunicación con servicios externos requeridos por el sistema.
 
@@ -235,12 +238,12 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   [https://github.com/Aurora-startup/SupplyWok-frontend](https://github.com/Aurora-startup/SupplyWok-frontend)
 
 - **Plataforma de despliegue:**  
-  Vercel / Netlify / GitHub Pages
+  Firebase Hosting
 
 - **Proceso de despliegue:**  
   - La aplicación se compila en modo producción (`npm run build`).  
-  - La rama `main` se utiliza como fuente de despliegue.  
-  - La plataforma seleccionada detecta cambios automáticamente y publica nuevas versiones.  
+  - Los archivos generados en la compilación se publican en Firebase Hosting.  
+  - El despliegue del frontend utiliza la configuración de entorno correspondiente a producción para consumir el backend desplegado.  
   - Se configura la URL del backend mediante variables de entorno para garantizar la integración con la API REST.
 
 
@@ -379,6 +382,10 @@ A continuación se muestran las imagenes de las diversas secciones del Landing P
 ![fourth](../assets/images/deploy-steps/prove-4.png)
 
 ![fifth](../assets/images/deploy-steps/prove-5.png)
+
+
+Video de ejecucion del sprint 1: [https://youtu.be/mQYJEKT22LU](https://youtu.be/mQYJEKT22LU)
+
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 
@@ -1082,47 +1089,79 @@ En esta sección se presenta el Sprint Backlog correspondiente al Sprint 4. Los 
 
 #### 5.2.4.4. Development Evidence for Sprint Review.
 
-En esta sección se presentan los avances realizados durante el Sprint 4 en el desarrollo de SupplyWok. El trabajo desarrollado se centró en la integración del frontend con los servicios REST implementados durante el Sprint anterior, la implementación de los bounded contexts complementarios (Identity and Access Management, Analytics y Subscription) y la realización de ajustes funcionales y visuales en los distintos módulos de la plataforma. Asimismo, se llevaron a cabo pruebas de integración para validar el correcto funcionamiento de la aplicación en un entorno completamente integrado.
+En esta sección se presentan los avances realizados durante el Sprint 4 en el cierre integral de SupplyWok. El trabajo desarrollado abarcó la consolidación del backend, la integración completa del frontend con los servicios REST, la estabilización de bounded contexts complementarios como Identity and Access Management y la aplicación de ajustes funcionales y visuales finales tanto en la Web Application como en la Landing Page. Asimismo, se llevaron a cabo pruebas de integración y despliegue para validar el correcto funcionamiento del producto como una solución unificada.
 
 | Repository                       | Branch                        | Commit Id | Commit Message                                                                          | Commit Message Body                                                                             | Commited on (Date) |
 | -------------------------------- | ----------------------------- | --------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------ |
-| Aurora-startup/SupplyWok-backend | feature/shared                | 9e50ab7   | feat(shared): implement shared layer                                                    | Implementación de la capa compartida utilizada por los diferentes bounded contexts del sistema. | 2026-06-10         |
-| Aurora-startup/SupplyWok-backend | develop                       | 32c9e97   | chore: configure application properties and add dependencies for PostgreSQL and OpenAPI | Configuración inicial del proyecto, dependencias de PostgreSQL y documentación OpenAPI.         | 2026-06-10         |
-| Aurora-startup/SupplyWok-backend | feature/iot                   | d9c9842   | feat(iot): implement iot layer with sensor aggregate                                    | Implementación del bounded context de monitoreo IoT y agregado Sensor.                          | 2026-06-10         |
-| Aurora-startup/SupplyWok-backend | feature/restaurant-management | 8b85738   | feat(restaurant-management): implement restaurant management bounded context            | Desarrollo del bounded context Restaurant Management.                                           | 2026-06-11         |
-| Aurora-startup/SupplyWok-backend | feature/inventory-management  | 27c933e   | Add value objects for inventory management bounded context                              | Implementación de value objects para Inventory Management.                                      | 2026-06-12         |
-| Aurora-startup/SupplyWok-backend | feature/inventory-management  | dcfa1ef   | Add aggregates and entities                                                             | Incorporación de agregados y entidades del dominio para Inventory Management.                   | 2026-06-12         |
-| Aurora-startup/SupplyWok-backend | feature/inventory-management  | 4f8aef7   | Finish domain package of inventory management bounded context                           | Finalización de la estructura del dominio para Inventory Management.                            | 2026-06-13         |
-| Aurora-startup/SupplyWok-backend | feature/suppliers             | 48967ca   | feat(suppliers): add clients endpoint                                                   | Implementación del endpoint para consulta de clientes asociados a proveedores.                  | 2026-06-17         |
-| Aurora-startup/SupplyWok-backend | feature/suppliers             | 30598b0   | feat(suppliers): add catalog endpoint by supplier id                                    | Implementación del endpoint para consulta de catálogo por proveedor.                            | 2026-06-18         |
-| Aurora-startup/SupplyWok-backend | feature/purchasing            | e25f995   | feat: add purchase order management endpoints and domain                                | Desarrollo del dominio y endpoints para la gestión de órdenes de compra.                        | 2026-06-18         |
-| Aurora-startup/SupplyWok-backend | feature/purchasing            | 00bef77   | feat: align inventory persistence and activity endpoints                                | Ajuste de persistencia y endpoints relacionados con actividades de inventario.                  | 2026-06-18         |
-| Aurora-startup/SupplyWok-backend | feature/purchasing            | 4a31215   | feat: add supplier identity acl contract                                                | Implementación del contrato ACL para integración con el contexto de proveedores.                | 2026-06-18         |
-| Aurora-startup/SupplyWok-backend | feature/alerts                | 427701d   | feat(alerts): add alerts aggregate and controllers                                      | Implementación de agregados y controladores para el módulo de alertas operativas.               | 2026-06-18         |
-| Aurora-startup/SupplyWok-backend | feature/alerts                | 7e87e5    | refactor(alerts): replace external services with IoT and inventory context facades      | Refactorización para integrar el módulo de alertas con los contextos IoT e Inventory.           | 2026-06-18         |
-| Aurora-startup/SupplyWok-backend | feature/restaurant-management | c4ba83c   | fix: add CrossOrigin and clean imports in restaurant management controllers             | Corrección de configuración CORS y limpieza de imports en los controladores.                    | 2026-06-18         |
+| Aurora-startup/SupplyWok-backend | master                        | e90b159   | feat(devops): add environment-specific application properties                           | Configuración de propiedades por entorno para facilitar el despliegue y la integración final.   | 2026-06-20         |
+| Aurora-startup/SupplyWok-backend | develop                       | e64ab31   | feat(iam): implement authentication and authorization infrastructure with Spring Security| Implementación de la infraestructura de autenticación y autorización para el bounded context IAM.| 2026-07-03         |
+| Aurora-startup/SupplyWok-backend | develop                       | df88a5c   | feat(iam): update user command parameter names and fix package references               | Ajuste final del módulo IAM y corrección de referencias para estabilizar la integración.         | 2026-07-08         |
+| Aurora-startup/SupplyWok-frontend| develop                       | bb49d21   | chore(env): update supplyWok platform base URLs to production backend in environment files| Actualización de URLs de entorno para consumir la API desplegada en producción.                  | 2026-07-08         |
+| Aurora-startup/SupplyWok-frontend| develop                       | 1493a8e   | feat(supplier-management): enhance UI, profile integration, and i18n for suppliers      | Refinamiento visual y funcional del módulo de proveedores ya conectado al backend.               | 2026-07-08         |
+| Aurora-startup/SupplyWok-landing-page | main                    | 515e696   | feat: replace video embeds with images for orders, suppliers, inventory, and clients    | Ajustes finales de la landing page para mejorar presentación y compatibilidad del contenido.     | 2026-07-08         |
+| Aurora-startup/SupplyWok-landing-page | main                    | 6e25fb8   | feat: update image sources and styles for better visual presentation                     | Mejora visual final de la landing page para la entrega del producto.                             | 2026-07-08         |
 
-#### 5.2.3.5. Execution Evidence for Sprint Review
+#### 5.2.4.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 3 se completó la implementación y validación de los principales servicios backend de SupplyWok correspondientes a los bounded contexts priorizados del núcleo del negocio. Como parte de la revisión del sprint, se verificó el correcto funcionamiento de los endpoints REST desarrollados mediante pruebas realizadas en Swagger/OpenAPI, comprobando la ejecución satisfactoria de las operaciones expuestas por la API. Ademas, se validó la persistencia de la información en la base de datos PostgreSQL mediante pgAdmin.
+Durante el Sprint 4 se validó el funcionamiento integrado de la plataforma SupplyWok en un entorno desplegado. Esta validación incluyó la verificación de la disponibilidad del backend publicado, la exposición correcta de la documentación OpenAPI/Swagger y la revisión de endpoints pertenecientes a módulos ya conectados con la aplicación, como autenticación y comandas. En conjunto con los commits registrados en backend, frontend y landing page, esta evidencia refleja el cierre funcional de los tres componentes principales del producto.
 
-En las siguientes evidencias se muestran los endpoints implementados donde se puede observar la exposición de las operaciones CRUD y servicios específicos desarrollados durante el sprint.
+La siguiente evidencia muestra el acceso exitoso a la documentación interactiva del backend desplegado, donde se pueden observar recursos operativos del sistema y la disponibilidad de los endpoints utilizados por la aplicación durante la etapa final de integración.
 
-![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/swagger-principal-page.png)
+![Sprint 4 Integrated Swagger Validation](../assets/images/Sprint-4-execution-evidence/swagger-integrated-validation.png)
 
-![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-1.png)
+#### 5.2.4.6. Software Deployment Evidence for Sprint Review
 
-![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-2.png)
+En esta sección se presentan las evidencias correspondientes al despliegue y validación final de la solución SupplyWok durante el Sprint 4. El objetivo de esta actividad fue asegurar que la versión integrada del sistema quedara disponible en la nube y lista para ser consumida por el frontend, mientras que la landing page y la Web Application permanecían alineadas con la versión final del backend publicada.
 
-![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-3.png)
+Primero, se verificó la disponibilidad de la base de datos PostgreSQL utilizada por la plataforma, confirmando que la instancia se encontraba activa y accesible para el entorno desplegado.
 
-![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/endpoints-4.png)
+![Sprint 4 Database Service](../assets/images/Sprint-4-deploy/database-service.png)
 
-Adicionalmente, se realizó la validación de persistencia utilizando pgAdmin, comprobando que las operaciones ejecutadas desde la API generaban correctamente los registros correspondientes dentro de la base de datos PostgreSQL de SupplyWok. Esta verificación permitió asegurar la correcta comunicación entre la capa de aplicación y la capa de almacenamiento.
+Posteriormente, se revisó el servicio backend en Render y se ejecutó el proceso de despliegue manual para publicar la versión más reciente del sistema.
 
-![Trello Sprint 3 Board](../assets/images/Sprint-3-execution-evidence/tables-pgAdmin.png)
+![Sprint 4 Manual Deploy Menu](../assets/images/Sprint-4-deploy/manual-deploy-menu.png)
 
-**Link del video de explicación del Sprint:** https://www.youtube.com/watch?v=GsYC-nSofsI
+A continuación, se registró el inicio del nuevo despliegue asociado a la versión integrada del backend.
+
+![Sprint 4 Build Started](../assets/images/Sprint-4-deploy/build-started.png)
+
+Finalmente, se verificó el progreso de la construcción y arranque del servicio, observando en los logs la ejecución del backend con Spring Boot y el perfil de producción activo.
+
+![Sprint 4 Build In Progress](../assets/images/Sprint-4-deploy/build-in-progress.png)
+
+#### 5.2.4.7. Team Collaboration Insights during Sprint
+
+Durante el Sprint 4, el equipo trabajó en el cierre completo del producto, realizando ajustes finales en backend, frontend y landing page, además de la integración de componentes con el entorno desplegado. Los commits consignados en la sección de Development Evidence muestran trabajo distribuido entre los tres repositorios principales del proyecto. Para evidenciar esta colaboración, se recopilaron analíticos de los repositorios del backend, frontend y landing page, correspondientes al periodo de cierre del sprint.
+
+La primera evidencia corresponde al repositorio del backend. En la sección Contributors se observa una participación sostenida de 4 autores principales durante el último mes, con actividad concentrada en la consolidación de bounded contexts, ajustes de integración y preparación de la versión final del servicio desplegado.
+
+![Sprint 4 Backend Contributors](../assets/images/Sprint-4-Insights/backend-contributors.png)
+
+Como se aprecia en el detalle de contribuciones del backend, **ZaydAvasta** realizó 15 commits con 4361 líneas agregadas y 2740 eliminadas, **jwd3t** realizó 14 commits con 7350 líneas agregadas y 302 eliminadas, **Marcelo-alt-lab** realizó 13 commits con 2982 líneas agregadas y 940 eliminadas, y **AlexandraYMS** realizó 5 commits con 1913 líneas agregadas y 263 eliminadas. Esto evidencia una distribución activa del trabajo técnico en la implementación, corrección y estabilización final de la API.
+
+La siguiente imagen corresponde a la sección Pulse del backend, en la que se observa que, durante la última semana analizada, 2 autores enviaron 17 commits a `master` y 17 commits al total de ramas. Además, se registró 1 pull request merged, 189 archivos modificados, 5573 adiciones y 425 eliminaciones, junto con la publicación de 1 release. Estas métricas reflejan la intensidad del trabajo de cierre técnico y despliegue del backend en la etapa final del sprint.
+
+![Sprint 4 Backend Pulse Summary](../assets/images/Sprint-4-Insights/backend-pulse-summary.png)
+
+Como segunda evidencia, se recopilaron los analíticos del repositorio del frontend web, ya que este componente concentró buena parte de la integración visible del sistema durante el sprint.
+
+La siguiente evidencia muestra la sección Contributors del repositorio del frontend. En ella se observa que participaron 2 autores principales y que, excluyendo merges, se registraron 9 commits hacia `main` durante el periodo analizado. Esta actividad refleja el trabajo de ajuste funcional, integración con el backend desplegado y refinamiento de la experiencia de usuario previo a la entrega final.
+
+![Sprint 4 Frontend Contributors](../assets/images/Sprint-4-Insights/frontend-contributors.png)
+
+Como se aprecia en el detalle de contribuciones, el usuario **jwd3t** realizó 6 commits con 2270 líneas agregadas y 1325 eliminadas, mientras que **Marcelo-alt-lab** realizó 3 commits con 1216 líneas agregadas y 3105 eliminadas. Esto evidencia una participación conjunta en la integración final del frontend, incluyendo mejoras visuales, ajustes de rutas, consumo de servicios y consolidación de funcionalidades clave.
+
+La siguiente imagen corresponde a la sección Pulse del mismo repositorio. En ella se observa que, excluyendo merges, 2 autores enviaron 9 commits a la rama principal y 18 commits al total de ramas. Además, se registraron 2 pull requests merged, 118 archivos modificados, 2690 adiciones y 3634 eliminaciones, métricas coherentes con una etapa intensiva de integración, limpieza y estabilización del frontend antes de la entrega.
+
+![Sprint 4 Frontend Pulse Summary](../assets/images/Sprint-4-Insights/frontend-pulse-summary.png)
+
+Como evidencia complementaria del cierre del producto, también se recopilaron analíticos del repositorio de la landing page. Estos muestran actividad final de ajuste visual y de contenido para alinear la presentación pública de SupplyWok con la versión final del sistema.
+
+![Sprint 4 Landing Contributors](../assets/images/Sprint-4-Insights/contributors.png)
+
+En este repositorio participaron 2 autores principales y se registraron 4 commits a la rama principal, junto con 2 pull requests merged, 34 archivos modificados, 3166 adiciones y 1712 eliminaciones. Estos cambios estuvieron orientados a la mejora de recursos visuales, organización del contenido y presentación final del producto.
+
+![Sprint 4 Landing Pulse Summary](../assets/images/Sprint-4-Insights/pulse-summary.png)
 
 ## 5.3. Validation Interviews.
 
