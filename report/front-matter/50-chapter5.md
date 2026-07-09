@@ -1314,19 +1314,37 @@ Finalmente, después de completar el despliegue del backend y la base de datos P
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 3, el equipo trabajó de manera colaborativa en el desarrollo de los servicios backend de SupplyWok utilizando una estrategia basada en ramas de Git y GitHub. Las tareas fueron distribuidas entre los integrantes de acuerdo con los bounded contexts priorizados, permitiendo que cada miembro asumiera la responsabilidad principal de un área específica del negocio. En este sprint, todos los integrantes contribuyeron activamente mediante commits, revisiones e integración de cambios en el repositorio del proyecto. A continuación, se presentan evidencias de colaboración obtenidas a partir de los analíticos de GitHub, incluyendo contribuciones, historial de commits y actividad realizada durante el sprint.
+Durante el Sprint 4, el equipo trabajó de manera colaborativa ara completar el ciclo de desarrollo de SupplyWok, integrando el frontend con los servicios backend implementados previamente, refinando las funcionalidades del sistema y realizando las actividades necesarias para su despliegue final. Durante este sprint, todos los integrantes participaron activamente mediante commits, revisiones de código e integración de cambios en los diferentes repositorios del proyecto. A continuación, se presentan evidencias de colaboración obtenidas a partir de los analíticos de GitHub, incluyendo contribuciones, historial de commits y actividad realizada durante el Sprint 4.
 
-![Sprint 3 Insight Graphic 1](../assets/images/Sprint-3-Insights/Insight-1.png)
+**Frontend**
 
-Como se observa en la sección Contributors del repositorio backend, durante el Sprint 3 se realizaron un total de 31 commits, reflejando una participación activa por parte de los miembros del equipo en el desarrollo de los servicios y endpoints de la plataforma.
+![alt text](image-22.png)
 
-![Sprint 3 Insight Graphic 2](../assets/images/Sprint-3-Insights/Insight-2.png)
+**Backend**
+
+![alt text](image-24.png)
+
+Como se observa en la sección Contributors de los repositorios del backend y del frontend, en conjunto los integrantes realizaron más de 20 commits durante el Sprint 4. Esta actividad evidencia el trabajo colaborativo del equipo para corregir errores, integrar los distintos componentes del sistema y realizar los ajustes necesarios hasta culminar el desarrollo de la plataforma SupplyWok.
+
+**Frontend**
+
+![alt text](image-23.png)
+
+**Backend**
+
+![alt text](image-25.png)
 
 Como se observa en el detalle de la sección Contributors, todos los integrantes realizaron contribuciones al repositorio. En promedio, cada miembro efectuó aproximadamente 5 commits y contribuyó con alrededor de 2300 líneas de código agregadas, evidenciando una distribución equilibrada del trabajo durante el sprint.
 
-![Sprint 3 Insight Graphic 3](../assets/images/Sprint-3-Insights/Insight-3.png)
+**Frontend**
 
-Como se observa en la sección Pulse del repositorio backend, durante la última semana se integraron 4 Pull Requests y se registraron 25 commits excluyendo merges. Asimismo, la rama principal del proyecto acumuló 6922 líneas agregadas y 163 líneas eliminadas, reflejando el avance significativo realizado en la implementación de los bounded contexts y servicios backend planificados para este sprint.
+![alt text](image-21.png)
+
+**Backend**
+
+![alt text](image-26.png)
+
+Como se observa en la sección Pulse de los repositorios del backend y del frontend, durante el Sprint 4 se integraron los cambios desarrollados por el equipo, registrándose en conjunto más de 8000 líneas agregadas y alrededor de 4 000 líneas eliminadas. Estas métricas reflejan el intenso proceso de desarrollo, integración, refactorización y corrección de funcionalidades realizado para completar el ciclo de desarrollo de la plataforma SupplyWok, consolidando tanto la implementación del backend como la integración del frontend.
 
 ## 5.3. Validation Interviews.
 
