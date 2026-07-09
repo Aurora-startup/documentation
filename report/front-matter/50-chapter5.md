@@ -1154,6 +1154,8 @@ En las siguientes evidencias se presentan los módulos finales de la plataforma 
 
 ![Sprint 4 Alerts Screen](../assets/images/frontend/alerts_screen.png)
 
+**Sprint 4 video:** https://youtu.be/uzxAj_kx6rs
+
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 4 se mantuvo la documentación de los endpoints desarrollados en el Sprint 3 para los bounded contexts priorizados de SupplyWok, utilizando OpenAPI/Swagger como herramienta de referencia. Debido a que los servicios principales del backend no presentaron modificaciones, la documentación existente continuó siendo válida para la integración de la plataforma. Sin embargo, durante esta iteración se incorporaron 3 nuevos endpoints correspondientes a los bounded contexts complementarios implementados, ampliando la documentación de los servicios disponibles.
