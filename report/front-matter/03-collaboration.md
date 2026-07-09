@@ -25,3 +25,7 @@ En esta tercera entrega se desarrolló todo el contenido correspondiente al Spri
 
 ## TB2
 En esta cuarta y última entrega se desarrolló todo el contenido correspondiente al Sprint 4, orientado a pulir los detalles finales de la plataforma y concluir el ciclo de desarrollo. Además, se elaboró la versión final de las conclusiones, la bibliografía y los anexos. A continuación, se presentan las capturas que evidencian la colaboración de los integrantes del equipo en el repositorio del informe durante el desarrollo de este último entregable.
+
+![alt text](image-19.png)
+
+![alt text](image-20.png)
