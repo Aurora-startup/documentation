@@ -1170,6 +1170,134 @@ La siguiente evidencia muestra el acceso exitoso a la documentación interactiva
 | Users | `GET /api/v1/users`, `GET /api/v1/users/{userId}` | Consultar usuarios registrados y apoyar validaciones administrativas del sistema. |
 | Profiles | `GET/POST/PUT /api/v1/profiles/{profileType}` y variantes por correo | Gestionar la configuración de perfiles de restaurantes y proveedores dentro de la solución desplegada. |
 
+Adicionalmente, se documentaron y validaron los principales grupos de endpoints utilizados por los módulos integrados del sistema. A continuación, se presentan las evidencias y un resumen funcional de los recursos más representativos publicados en Swagger.
+
+### Authentication
+
+![Authentication Endpoints](image-17.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/authentication/sign-up` | `POST` | Registrar un nuevo usuario dentro de la plataforma. |
+| `/api/v1/authentication/sign-in` | `POST` | Autenticar un usuario y devolver el token requerido para consumir endpoints protegidos. |
+
+### Users
+
+![Users Endpoints](image-16.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/users` | `GET` | Obtener todos los usuarios registrados. |
+| `/api/v1/users/{userId}` | `GET` | Obtener el detalle de un usuario por identificador. |
+
+### Profiles
+
+![Profiles Endpoints](image-18.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/profiles/{profileType}` | `GET` | Obtener el perfil según el tipo de cuenta. |
+| `/api/v1/profiles/{profileType}` | `POST` | Crear un perfil para restaurante o proveedor. |
+| `/api/v1/profiles/{profileType}` | `PUT` | Actualizar la configuración del perfil. |
+| `/api/v1/profiles/{profileType}/accounts/by-email` | `GET`, `PUT` | Consultar y actualizar perfiles por correo electrónico. |
+
+### Supplies
+
+![Supplies Endpoints](image.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/supplies` | `GET`, `POST` | Listar y registrar suministros. |
+| `/api/v1/supplies/{supplyId}` | `GET`, `PUT`, `DELETE` | Consultar, actualizar o eliminar un suministro. |
+| `/api/v1/supplies/total-stock` | `GET` | Obtener el stock total consolidado. |
+
+### Tables
+
+![Tables Endpoints](image-2.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/tables` | `GET`, `POST` | Listar y crear mesas del restaurante. |
+| `/api/v1/tables/{tableId}` | `GET`, `DELETE` | Consultar o eliminar una mesa específica. |
+| `/api/v1/tables/{tableId}/status` | `PUT` | Actualizar el estado operativo de una mesa. |
+
+### Comandas
+
+![Comandas Endpoints](image-3.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/comandas` | `GET`, `POST` | Listar y crear comandas. |
+| `/api/v1/comandas/{comandaId}` | `GET`, `DELETE` | Consultar o eliminar una comanda. |
+| `/api/v1/comandas/{comandaId}/status` | `PUT` | Actualizar el estado de la comanda. |
+| `/api/v1/comandas/{comandaId}/items` | `POST` | Agregar ítems a una comanda. |
+| `/api/v1/comandas/table/{tableId}` | `GET` | Obtener comandas asociadas a una mesa. |
+
+### Sensors
+
+![Sensors Endpoints](image-4.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/sensors` | `GET`, `POST` | Listar y registrar sensores. |
+| `/api/v1/sensors/{sensorId}` | `GET`, `PUT`, `DELETE` | Consultar, actualizar o eliminar sensores IoT. |
+
+### Purchase Orders
+
+![Purchase Orders Endpoints](image-5.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/purchase-orders` | `GET`, `POST` | Listar y crear órdenes de compra. |
+| `/api/v1/purchase-orders/{purchaseOrderId}` | `GET`, `PUT`, `DELETE` | Consultar, actualizar o eliminar órdenes de compra. |
+| `/api/v1/purchase-orders/{purchaseOrderId}/status` | `PUT` | Actualizar el estado de una orden de compra. |
+
+### Restaurant Alerts
+
+![Restaurant Alerts Endpoints](image-6.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/restaurant/alerts` | `GET`, `POST` | Listar y crear alertas de restaurante. |
+| `/api/v1/restaurant/alerts/{alertId}` | `GET` | Obtener el detalle de una alerta. |
+| `/api/v1/restaurant/alerts/{alertId}/acknowledge` | `POST` | Confirmar una alerta atendida. |
+| `/api/v1/restaurant/alerts/inventory` | `POST` | Generar alertas basadas en diferencias de inventario. |
+
+### Supplier Alerts
+
+![Supplier Alerts Endpoints](image-7.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/supplier/alerts` | `GET`, `POST` | Listar y crear alertas de proveedores. |
+| `/api/v1/supplier/alerts/{alertId}` | `GET` | Obtener el detalle de una alerta de proveedor. |
+| `/api/v1/supplier/alerts/{alertId}/acknowledge` | `POST` | Confirmar una alerta de proveedor. |
+
+### Suppliers
+
+![Suppliers Endpoints](image-8.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/suppliers` | `GET` | Obtener todos los proveedores registrados. |
+
+### Suppliers Catalog Items
+
+![Suppliers Catalog Items Endpoints](image-9.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/suppliers/{supplierId}/catalog-items` | `GET`, `POST` | Listar y crear productos del catálogo de un proveedor. |
+| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | `GET`, `PUT`, `DELETE` | Consultar, actualizar o eliminar un producto del catálogo. |
+
+### Suppliers Clients
+
+![Suppliers Clients Endpoints](image-10.png)
+
+| Endpoint | Método HTTP | Acción implementada |
+|----------|-------------|---------------------|
+| `/api/v1/suppliers/{supplierId}/clients` | `GET` | Obtener los clientes asociados a un proveedor. |
+
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review
 
 En esta sección se presentan las evidencias correspondientes al despliegue y validación final de la solución SupplyWok durante el Sprint 4. El objetivo de esta actividad fue asegurar que la versión integrada del sistema quedara disponible en la nube y lista para ser consumida por el frontend, mientras que la landing page y la Web Application permanecían alineadas con la versión final del backend publicada.
