@@ -440,9 +440,13 @@ SupplyWok tiene dos contextos de navegación diferenciados: la **Landing Page**,
 | Panel de notificaciones | Al hacer clic en el ícono de campana del header, se despliega un panel lateral con las alertas recientes ordenadas cronológicamente. Cada alerta tiene un acceso directo a la sección donde ocurrió el evento. |
 | Modo restringido | El dueño puede activar un modo de acceso limitado desde Configuración. En este modo solo son visibles Kitchen Tickets y Tables and Occupancy, ocultando las secciones administrativas. Útil para personal de cocina y servicio. |
 | Cambio de rol | Si un usuario tiene ambos roles (restaurante y proveedor), puede cambiar de vista desde un selector en el header sin cerrar sesión. |
+
 ## 4.3. Landing Page UI Design.
-Durnate la elaboración de la landing page se utilizaropn los principios de diseño, utlizando diferentes secciones que muestran la información.
+
+Durante la elaboración de la landing page se utilizaron los principios de diseño, utilizando diferentes secciones que muestran la información.
+
 ### 4.3.1. Landing Page Wireframe.
+
 #### Desktop
 ![](../assets/images/figma/landingpage-desktop-wireframe.png)
 
@@ -513,10 +517,10 @@ Este wireflow muestra el recorrido del proveedor desde su dashboard hacia pedido
 
 ![mockupweblogin](../assets/images/figma/guides/login-guide.png)
 
-**1)** La seleccion de idioma del sistema, pudiendo escojer entre ingles, español y chino. <br>
-**2)** Es la seccion donde el usuario podra rellenar su información, en el caso del login pedira su correo y contraseña, mientras que para registarse pedira correo, contraseña, rol y plan de suscripción. <br>
+**1)** La seleccion de idioma del sistema, pudiendo escojer entre inglés, español y chino. <br>
+**2)** Es la seccion donde el usuario podra rellenar su información, en el caso del login pedirá su correo y contraseña, mientras que para registarse pedira correo, contraseña, rol y plan de suscripción. <br>
 **3)** Son los campos para rellenar la información solicitada, en el caso del login son solo dos campos, mientras que para registarse son cuatro. Ambos campos en login con un ejemplo de correo y contraseña. <br>
-**4)** Son los textos interacctivos, estos redirigen al usuario a otras secciones del sistema segun indique el texto. <br>
+**4)** Son los textos interacctivos, estos redirigen al usuario a otras secciones del sistema según indique el texto. <br>
 **5)** El botón principal, en el caso del login permite iniciar sesión, mientras que en el registro redirigire al pago para crear la cuenta.
 
 ##### Dashboard Main Page
@@ -727,61 +731,71 @@ Este contexto delimitado representa el núcleo operativo del restaurante chifa d
 
 ### 4.7.1. Class Diagrams.
 
-En esta seccion se presentara y se explicara el diagrama de clases por cada Boundes Context
+En esta sección se presentará y se explicará el diagrama de clases por cada Bounded Context
 
-![](../assets/images/IMBC.png)
+### 1. IoT Bounded Context
 
-El **Inventory Management Bounded Context** es el encargado de gestionar los recursos de inventario de cada restaurante, incluyendo el control de stock, niveles mínimos y movimientos de entrada y salida.
+El **IoT Bounded Context** es el encargado de gestionar la información recopilada por los sensores instalados en el restaurante, monitoreando las condiciones físicas y reportando desviaciones de temperatura u otros parámetros.
+Los **SensorCommandService** y **SensorQueryService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el repositorio **SensorRepository** para la persistencia de datos.
+Además, emplea el agregado **Sensor** para representar a los dispositivos físicos y sus umbrales configurados. Por otro lado, utiliza eventos de dominio para notificar a otras partes del sistema cuando una medición capturada supera los límites permitidos.
 
-El **InventoryService** actúa como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el **InventoryRepository** para la persistencia de datos y el **InventoryItem** como entidad principal del dominio, encargada de representar cada insumo almacenado en el Inventario del restaurante.El **StockMovement** representa las modificaciones realizadas al stock de cada ítem, permitiendo llevar un registro detallado de entradas, salidas y ajustes.
+![](../assets/images/iot-dc.png)
 
-![](../assets/images/S&PBC.png)
+### 2. Alerts Bounded Context
 
-El **Supply and Purchasing Bounded Context** es el encargado de gestionar las órdenes de compra realizadas por cada restaurante, incluyendo el registro, cancelación y seguimiento de los pedidos.
+El **Alerts Bounded Context** es el encargado de gestionar y procesar las notificaciones generadas en el sistema, abarcando tanto alertas operativas del restaurante como notificaciones para proveedores.
+Los **AlertCommandService** y **AlertQueryService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el repositorio **AlertPersistenceRepository** para la persistencia de datos.
+Además, emplea la entidad **Alert** (junto con sus especializaciones **RestaurantAlert** y **SupplierAlert**) para representar las alertas generadas por condiciones fuera de rango o problemas de inventario. Por otro lado, maneja los estados de resolución asegurando que cada alerta pase de estar pendiente a reconocida.
 
-El **PurchaseOrderService** actúa como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el **PurchaseOrderRepository** para la persistencia de datos y el **PurchaseOrder** como entidad principal del dominio, encargada de representar toda la información de una orden de compra de insumos del restaurante. Además, el **OrderItem** encapsula las especificaciones de cada producto dentro de la orden, como la cantidad solicitada y el precio unitario, permitiendo un control detallado de cada pedido.
+![](../assets/images/alerts-dc.png)
 
-![](../assets/images/O&IBC.png)
+### 3. Profiles Bounded Context
 
-El **Operational Monitoring and IoT Alerts Bounded Context** es el encargado de gestionar la información recopilada por los sensores del restaurante, así como la configuración y generación de alertas ante condiciones fuera de los rangos establecidos.
+El **Profiles Bounded Context** es el encargado de gestionar la información de contacto, direcciones y configuración de notificaciones de los distintos actores que interactúan con la plataforma.
+Los **ProfileCommandService** y **ProfileQueryService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el repositorio **ProfileRepository** para la persistencia de datos.
+Además, emplea el agregado **Profile** para almacenar y administrar la información de negocio y preferencias de los usuarios. Por otro lado, utiliza el enumerador **EProfileType** para modelar lógicamente si el perfil corresponde a las operaciones de un restaurante o a las de un proveedor.
 
-El **SensorService** actúa como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza los repositorios **IAlertRepository** y **ISensorRepository** para la persistencia de datos.
+![](../assets/images/profiles-dc.png)
 
-Además, emplea la entidad **Sensor**, junto con **SensorReading**, para representar la información capturada por los sensores. Por otro lado, la entidad **Alert** modela las alertas generadas cuando una medición supera los límites configurados.
+### 4. IAM (Identity and Access Management) Bounded Context
 
-![](../assets/images/RMBC.png)
+El **IAM Bounded Context** es el encargado de gestionar la autenticación, autorización, registro de usuarios y emisión de tokens de acceso dentro de la plataforma.
+Los **UserCommandService** y **UserQueryService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el repositorio **UserRepository** para la persistencia de datos.
+Además, emplea la entidad **User** para representar las credenciales de acceso y los roles asignados a cada usuario. Por otro lado, se integra con servicios externos de hashing para proteger y modelar de forma segura la autenticación criptográfica.
 
-El **Restaurant Management Bounded Context** es el encargado de gestionar todo lo relacionado con la operación del establecimiento, incluyendo la administración de mesas y la gestión de comandas en cada restaurante.
+![](../assets/images/iam-dc.png)
 
-Los servicios **ComandaService**, **RestaurantService** y **TableService** actúan como capa de aplicación, coordinando las distintas operaciones del sistema. Estos servicios utilizan los repositorios **ComandaRepository**, **IRestaurantRepository** y **TableRepository** respectivamente para la persistencia de datos.
+### 5. Inventory Bounded Context
 
-Además, se emplean las entidades **Table**, que representa una mesa dentro del restaurante; **Comanda** y **ComandaItem**, que modelan las órdenes de consumo; y **Restaurant**, que encapsula la información principal de cada restaurante.
+El **Inventory Bounded Context** es el encargado de gestionar los niveles de stock de los insumos del restaurante y de registrar meticulosamente todo movimiento de entrada y salida de mercancía.
+Los **SupplyCommandService** y **StockMovementCommandService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el repositorio **SupplyRepository** para la persistencia de datos.
+Además, emplea el agregado **Supply** para representar cada insumo almacenado y administrar sus niveles mínimos permitidos. Por otro lado, la entidad **StockMovement** modela el historial detallado de las variaciones (ingresos y egresos) que impactan en el inventario a lo largo del tiempo.
 
-![](../assets/images/S&OBC.png)
+![](../assets/images/inventory-dc.png)
 
-El **Supplier Management & Operations Bounded Context** es el encargado de gestionar la información de los proveedores, sus catálogos de productos y las operaciones relacionadas con el cumplimiento de pedidos.
+### 6. Purchasing Bounded Context
 
-Los servicios **SupplierService**, **SupplierCatalogService**, **DemandForecastService** y **OrderFulfillmentService** actúan como capa de aplicación, coordinando las distintas operaciones del sistema dentro de este contexto.
+El **Purchasing Bounded Context** es el encargado de gestionar el ciclo de vida completo de las órdenes de compra emitidas por el restaurante hacia su red de proveedores.
+Los **PurchaseOrderCommandService** y **PurchaseOrderQueryService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza el repositorio **PurchaseOrderRepository** para la persistencia de datos.
+Además, emplea el agregado **PurchaseOrder** para representar la cabecera de la orden y hacer seguimiento de su estado logístico (Pendiente, Confirmado, En Tránsito, etc.). Por otro lado, la entidad **PurchaseOrderItem** modela las líneas de detalle correspondientes a los productos específicos, cantidades y precios acordados.
 
-El **SupplierService** gestiona la información de los proveedores utilizando el repositorio **SupplierRepository**. Por su parte, el **SupplierCatalogService** administra los productos ofrecidos por cada proveedor mediante **SupplierCatalog** y **CatalogItem**, utilizando **SupplierCatalogRepository** para la persistencia.
+![](../assets/images/purchasing.svg)
 
-Además, el **DemandForecastService** se encarga de generar proyecciones de demanda a través de la entidad **DemandForecast**, la cual contiene múltiples **ProductDemand** que representan estimaciones de consumo.
+### 7. Restaurant Management Bounded Context
 
-Finalmente, el **OrderFulfillmentService** gestiona el proceso de entrega de pedidos mediante la entidad **OrderFulfillment**, permitiendo hacer seguimiento al estado de los envíos desde su despacho hasta su entrega final.
+El **Restaurant Management Bounded Context** es el encargado de gestionar la ocupación física del local comercial y el registro interno de los pedidos realizados por los comensales.
+Los **TableCommandService** y **ComandaCommandService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza los repositorios **RestaurantTableRepository** y **ComandaRepository** para la persistencia de datos.
+Además, emplea el agregado **RestaurantTable** para representar las mesas físicas y controlar su estado de disponibilidad u ocupación. Por otro lado, el agregado **Comanda**, junto a la entidad dependiente **ComandaItem**, modela las órdenes activas que se envían a la cocina para su preparación.
 
-![](../assets/images/I&ABC.png)
+![](../assets/images/restaurant-dc.png)
 
-El **Identity & Access Bounded Context** es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas de usuario en el sistema.
+### 8. Suppliers Bounded Context
 
-Los servicios **AuthService** y **TokenService** actúan como capa de aplicación, coordinando las operaciones de autenticación. El **AuthService** utiliza el repositorio UserRepository para la persistencia de datos, mientras que **TokenService** se encarga de la generación y validación de tokens de acceso.
+El **Suppliers Bounded Context** es el encargado de gestionar el catálogo de productos ofrecidos por los distintos proveedores y mantener un registro de los restaurantes (clientes) vinculados.
+Los **SupplierCommandService**, **CatalogItemCommandService** y **SupplierClientCommandService** actúan como capa de aplicación, coordinando las operaciones del sistema. Este servicio utiliza los repositorios **SupplierRepository**, **CatalogItemRepository**, **ClientRepository** y **SupplierClientRepository** para la persistencia de datos.
+Además, emplea el agregado **Supplier** para almacenar la información de métricas y acuerdos de nivel de servicio (SLA) de cada proveedor. Por otro lado, la entidad **CatalogItem** modela los productos específicos que éstos ofrecen a los restaurantes.
 
-La entidad **User** encapsula toda la información relevante de un usuario en la plataforma, como su correo electrónico, contraseña (almacenada de forma segura) y su **Role**, el cual define sus permisos dentro del sistema.
-
-![](../assets/images/SBC.png)
-
-El **Shared Bounded Context** contiene Value Objects comunes que son reutilizados por múltiples bounded contexts del sistema, evitando duplicación y promoviendo consistencia en el modelo.
-
-El **ContactInfo** encapsula la información de contacto relevante, como teléfono, correo electrónico y sitio web. Este value object es utilizado por entidades como **Supplier** y **Restaurant**. Por otro lado, **Address** encapsula la información de dirección necesaria, siendo utilizado también por entidades como **Supplier** y **Restaurant** para representar ubicaciones físicas de manera estructurada.
+![](../assets/images/supplier-dc.png)
 
 ## 4.8. Database Design.
 
@@ -814,6 +828,6 @@ Facilita la comunicación eficiente entre la cocina y las mesas para garantizar 
 
 ### 4.8.1. Database Diagrams.
 
-![](../assets/images/database-diagram.png)
+![](../assets/images/diagrama-bd.png)
 
 [^c4-1]: Clec. (s.f.). El color rojo en China: orígenes y tradiciones. Recuperado el 23 de abril de 2026, de https://fundacionclec.org/el-color-rojo-en-china-origenes-y-tradiciones/

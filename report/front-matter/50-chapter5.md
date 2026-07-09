@@ -218,13 +218,12 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
   [https://github.com/Aurora-startup/SupplyWok-backend](https://github.com/Aurora-startup/SupplyWok-backend)
 
 - **Plataforma de despliegue:**  
-  Render
+  Servicios Cloud (ej. Render, Railway, AWS o Azure)
 
 - **Proceso de despliegue:**  
   - La aplicación se empaqueta utilizando Maven/Gradle (`.jar` ejecutable).  
-  - El servicio backend se encuentra conectado al repositorio GitHub para facilitar el despliegue de nuevas versiones en Render.  
+  - Se configura el despliegue automático conectado al repositorio GitHub.  
   - Las variables sensibles (credenciales, conexión a base de datos, tokens) se gestionan mediante variables de entorno.  
-  - La base de datos PostgreSQL utilizada por la plataforma también se encuentra desplegada en Render.  
   - El servicio se expone a través de endpoints REST accesibles mediante HTTP/HTTPS.  
   - Se asegura la correcta comunicación con servicios externos requeridos por el sistema.
 
@@ -258,7 +257,7 @@ Este enfoque permite asegurar consistencia, trazabilidad y facilidad de mantenim
 ### 5.2.1. Sprint 1 
 #### 5.2.1.1. Sprint Planning 1
 
-En el sprint 1 como equipo nos centramos en la creación de la Landing Page de SupplyWok, que será la cara visible de nuestra plataforma ante los usuarios. Definiendo las secciones claves de la página para informar y convencer a los visitantes que se interesen.
+Durante el Sprint 1, el equipo se centró en la creación de la Landing Page de **SupplyWok**, la cual representa la primera interacción de los usuarios con la plataforma. Para ello, se definieron las secciones clave de la página con el objetivo de presentar la propuesta de valor del producto, informar a los visitantes sobre sus funcionalidades principales y generar interés en la solución ofrecida.
 
 **Sprint Planning 1**
 
@@ -279,6 +278,12 @@ En el sprint 1 como equipo nos centramos en la creación de la Landing Page de S
 
 Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo del Landing Page de SupplyWok, implemenando un interfaz agradable e información relevante para atraer la atencion de nuestros usuarios. Los principales aspectos considerados en este sprint son los siguientes:
 
+**Link al Sprint 1 Board:** https://trello.com/invite/b/6a4ef7a05fa73a1b97d2c516/ATTIe1fbc18eb0fb43ebd1a2f3689350f455EFAAE5BD/supplywok-sprint-backlog-1
+
+![alt text](image-15.png)
+
+**Consider Aspects**
+
 - **Estructure HTML**
 
 - **Design UI & responsive**
@@ -298,6 +303,12 @@ Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo del La
 | Wang, Juan | jwd3t | C | - | C | L | C |
 
 #### 5.2.1.3. Sprint Backlog 1.
+
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 1. Los elementos incluidos fueron definidos en función del Sprint Goal establecido para esta primera iteración, orientado al diseño y desarrollo de la Landing Page de SupplyWok. Para ello, se planificaron las historias de usuario y tareas necesarias para construir la estructura inicial de la plataforma, incluyendo la definición de la interfaz, creación de las secciones principales, implementación de componentes visuales y aplicación de estilos orientados a presentar la propuesta de valor del producto.
+
+**Link al Sprint 1 Board:** https://trello.com/invite/b/6a4ef7a05fa73a1b97d2c516/ATTIe1fbc18eb0fb43ebd1a2f3689350f455EFAAE5BD/supplywok-sprint-backlog-1
+
+![alt text](image-15.png)
 
 **Sprint 1 Backlog**
 
@@ -335,6 +346,8 @@ Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo del La
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
+En esta sección se presentan los avances realizados durante el Sprint 1 en la construcción de la primera versión de la interfaz de usuario de SupplyWok. El trabajo desarrollado se centró en el diseño e implementación de la Landing Page de la plataforma, incluyendo la definición de la estructura visual, creación de las secciones principales y aplicación de estilos orientados a presentar la propuesta de valor del producto.
+
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |---|---|---|---|---|---|
 | Aurora-startup/SupplyWok-landing-page | develop | 4bbf50e | Delete CNAME | Removed custom domain configuration file from the repository. | 25/04/2026 |
@@ -371,7 +384,11 @@ Durante el Sprint 1, el equipo se enfocó principalmente en el desarrollo del La
 
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 
-A continuación se muestran las imagenes de las diversas secciones del Landing Page realizado en el Sprint 1.
+Durante el Sprint 1 se desarrolló la Landing Page de SupplyWok, orientada a promocionar la plataforma y presentar su propuesta de valor a los usuarios. Entre los principales elementos implementados se encuentra la sección Home, donde se muestra información general sobre la plataforma y el equipo de desarrollo; el apartado Restaurant, enfocado en presentar las funcionalidades dirigidas a los administradores y dueños de restaurantes; el apartado Suppliers, donde se describen las funcionalidades relacionadas con la gestión de proveedores de suministros; y finalmente, el módulo de Login, que permite redirigir a los usuarios hacia el acceso principal de la plataforma. A continuación, se presentan las evidencias visuales de las secciones implementadas.
+
+| Componente | Descripción | Enlace |
+|------------|-------------|--------|
+| Landing Page | Pagina promocional de SupplyWok | https://aurora-startup.github.io/SupplyWok-landing-page/ |
 
 ![first](../assets/images/deploy-steps/prove-1.png)
 
@@ -393,7 +410,7 @@ Como la Landing Page es una página estática, no fue necesario durante el Sprin
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 
-La evidencia del despliegue de la Landing Page durante el Sprint se mostrara a continuación, el despliegue se realizara en GitHub Pages.
+Durante el Sprint 1 se realizó el despliegue de la primera versión de la Landing Page de SupplyWok utilizando GitHub Pages como servicio de alojamiento web. Este despliegue permitió publicar la interfaz desarrollada y disponer de una versión accesible de la plataforma para su revisión y validación. Para ello, se configuró el repositorio del proyecto, se habilitó la publicación mediante la rama principal main y se verificó la correcta generación del sitio web público. A continuación, se presentan las evidencias del proceso realizado.
 
 ![first-step](../assets/images/deploy-steps/step-1.png)
 
@@ -411,13 +428,20 @@ Luego de unos minutos, el deploy se realizara correctamente:
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
-En este apartado se visualiza todos los graficos que representan la participacion de cada integrante en el repositorio del Landing Page.
-
-![Team Collaboration](../assets/images/deploy-steps/participation.png)
+Durante el Sprint 1, el equipo trabajó de manera colaborativa en el desarrollo de la Landing Page de SupplyWok utilizando una estrategia basada en ramas de Git y GitHub. Las tareas fueron distribuidas entre los integrantes de acuerdo con las principales áreas de desarrollo, permitiendo que cada miembro asumiera la responsabilidad de un aspecto específico de la construcción de la Landing Page, incluyendo la estructura HTML, diseño de interfaz y responsividad, implementación de scripts y experiencia de usuario, optimización SEO y accesibilidad, así como la gestión de contenido y recursos visuales. A continuación, se presentan las evidencias de colaboración obtenidas a partir de los analíticos de GitHub, incluyendo contribuciones, historial de commits y actividad desarrollada durante el Sprint.
 
 ![Team Contribution 1](../assets/images/deploy-steps/contributions_1.png)
 
+Como se observa en la sección Contributors del repositorio de la Landing Page, durante el Sprint 1 se realizaron más de 20 commits entre todos los integrantes del grupo, reflejando la participación activa del equipo en el desarrollo de la página.
+
 ![Team Contribution 2](../assets/images/deploy-steps/contributions_2.png)
+
+Como se observa en el detalle de la sección Contributors, todos los integrantes realizaron contribuciones al repositorio. En promedio, cada miembro efectuó
+aproximadamente 4 commits y contribuyó con un minimo de 500 lineas de codigo.
+
+![Team Collaboration](../assets/images/deploy-steps/participation.png)
+
+Como se observa en la sección Pulse del repositorio de la Landing Page, durante la última semana del Sprint 1 se integraron 2 Pull Requests y se registraron 23 commits en total, considerando las distintas ramas de desarrollo (feature branches) utilizadas por cada integrante del equipo.
 
 ### 5.2.2. Sprint 2 
 
@@ -568,7 +592,7 @@ Durante el Sprint 2 se desarrolló gran parte del frontend de la plataforma Supp
 | Componente | Descripción | Enlace |
 |------------|-------------|--------|
 | Landing Page | Pagina promocional de SupplyWok | https://aurora-startup.github.io/SupplyWok-landing-page/ |
-| Frontend | Plataforma web de SupplyWok | https://supplywok-frontend.web.app/ |
+| Frontend | Plataforma web de SupplyWok (Usuario: restaurante@ejemplo.com Contraseña: Password123! / Usuario: proveedor@ejemplo.com Contraseña: Password123!) | https://supplywok-frontend.web.app/ |
 | Repositorio Frontend | Código fuente del frontend | https://github.com/Aurora-startup/SupplyWok-frontend |
 | Repositorio del JSON server | Repositorio donde se aloja el Json server | https://github.com/joanfpp2-ai/supplywok-db-server |
 | JSON Server | Endpoints de la Fake Api | https://my-json-server.typicode.com/joanfpp2-ai/supplywok-db-server |
@@ -900,12 +924,12 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 | Endpoint                                           | Método HTTP | Acción implementada                      | Sintaxis de llamada                                    | Parámetros        | Ejemplo Request                                                                                                                                                                                                                                                                                                              | Ejemplo Response                                                                                                                                                                                                                                       | Explicación Response                                                                        |
 | -------------------------------------------------- | ----------- | ---------------------------------------- | ------------------------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
-| `/api/v1/purchase-orders`                          | POST        | Crear una nueva orden de compra          | `POST /api/v1/purchase-orders`                         | Ninguno           | `json { "code": "PO-24021", "supplierId": 201, "supplierName": "Golden Wok Produce", "restaurantName": "Gran Dragon Chifa", "orderDate": "2026-05-10", "estimatedDate": "2026-05-11", "priority": "High", "status": "Pending", "items": [{"productName": "Rice", "quantity": 25.00, "unitPrice": 4.50, "unitType": "kg"}] }` | `json { "id": 1, "code": "PO-24021", "supplierId": 201, "supplierName": "Golden Wok Produce", "restaurantName": "Gran Dragon Chifa", "orderDate": "2026-05-10", "estimatedDate": "2026-05-11", "priority": "High", "status": "Pending", "items": [] }` | Crea una nueva orden de compra y devuelve la información registrada.                        |
-| `/api/v1/purchase-orders`                          | GET         | Obtener todas las órdenes de compra      | `GET /api/v1/purchase-orders`                          | Ninguno           | N/A (No requiere body)                                                                                                                                                                                                                                                                                                       | `json [ { "id": 1, "code": "PO-24021", "supplierName": "Golden Wok Produce", "status": "Pending" } ]`                                                                                                                                                  | Devuelve la lista completa de órdenes de compra registradas.                                |
-| `/api/v1/purchase-orders/{purchaseOrderId}`        | GET         | Obtener orden de compra por ID           | `GET /api/v1/purchase-orders/{purchaseOrderId}`        | `purchaseOrderId` | N/A (No requiere body)                                                                                                                                                                                                                                                                                                       | `json { "id": 1, "code": "PO-24021", "supplierId": 201, "restaurantName": "Gran Dragon Chifa", "status": "Pending" }`                                                                                                                                  | Devuelve la información detallada de una orden de compra específica.                        |
-| `/api/v1/purchase-orders/{purchaseOrderId}`        | PUT         | Actualizar una orden de compra           | `PUT /api/v1/purchase-orders/{purchaseOrderId}`        | `purchaseOrderId` | `json { "code": "PO-24021", "supplierId": 201, "supplierName": "Golden Wok Produce", "restaurantName": "Gran Dragon Chifa", "orderDate": "2026-05-10", "estimatedDate": "2026-05-12", "priority": "High", "status": "Confirmed", "items": [] }`                                                                              | `json { "id": 1, "code": "PO-24021", "status": "Confirmed" }`                                                                                                                                                                                          | Actualiza los datos de una orden de compra existente y devuelve la información actualizada. |
-| `/api/v1/purchase-orders/{purchaseOrderId}/status` | PUT         | Actualizar estado de una orden de compra | `PUT /api/v1/purchase-orders/{purchaseOrderId}/status` | `purchaseOrderId` | `json { "status": "In Transit" }`                                                                                                                                                                                                                                                                                            | `json { "id": 1, "code": "PO-24021", "status": "In Transit" }`                                                                                                                                                                                         | Actualiza únicamente el estado de la orden de compra.                                       |
-| `/api/v1/purchase-orders/{purchaseOrderId}`        | DELETE      | Eliminar una orden de compra             | `DELETE /api/v1/purchase-orders/{purchaseOrderId}`     | `purchaseOrderId` | N/A (No requiere body)                                                                                                                                                                                                                                                                                                       | Sin contenido (`204 No Content`)                                                                                                                                                                                                                       | Elimina la orden de compra especificada del sistema.                                        |
+| /api/v1/purchase-orders                        | POST        | Crear una nueva orden de compra          | POST /api/v1/purchase-orders`                         | Ninguno           | json { "code": "PO-24021", "supplierId": 201, "supplierName": "Golden Wok Produce", "restaurantName": "Gran Dragon Chifa", "orderDate": "2026-05-10", "estimatedDate": "2026-05-11", "priority": "High", "status": "Pending", "items": [{"productName": "Rice", "quantity": 25.00, "unitPrice": 4.50, "unitType": "kg"}] }` | json { "id": 1, "code": "PO-24021", "supplierId": 201, "supplierName": "Golden Wok Produce", "restaurantName": "Gran Dragon Chifa", "orderDate": "2026-05-10", "estimatedDate": "2026-05-11", "priority": "High", "status": "Pending", "items": [] } | Crea una nueva orden de compra y devuelve la información registrada.                        |
+| /api/v1/purchase-orders                        | GET         | Obtener todas las órdenes de compra      | GET /api/v1/purchase-orders                         | Ninguno           | N/A (No requiere body)                                                                                                                                                                                                                                                                                                       | json [ { "id": 1, "code": "PO-24021", "supplierName": "Golden Wok Produce", "status": "Pending" } ]                                                                                                                                                 | Devuelve la lista completa de órdenes de compra registradas.                                |
+| /api/v1/purchase-orders/{purchaseOrderId}        | GET         | Obtener orden de compra por ID           | GET /api/v1/purchase-orders/{purchaseOrderId}        | purchaseOrderId | N/A (No requiere body)                                                                                                                                                                                                                                                                                                       | json { "id": 1, "code": "PO-24021", "supplierId": 201, "restaurantName": "Gran Dragon Chifa", "status": "Pending" }`                                                                                                                                  | Devuelve la información detallada de una orden de compra específica.                        |
+| /api/v1/purchase-orders/{purchaseOrderId}        | PUT         | Actualizar una orden de compra           | PUT /api/v1/purchase-orders/{purchaseOrderId}        | `purchaseOrderId | json { "code": "PO-24021", "supplierId": 201, "supplierName": "Golden Wok Produce", "restaurantName": "Gran Dragon Chifa", "orderDate": "2026-05-10", "estimatedDate": "2026-05-12", "priority": "High", "status": "Confirmed", "items": [] }                                                                              | json { "id": 1, "code": "PO-24021", "status": "Confirmed" }                                                                                                                                                                                          | Actualiza los datos de una orden de compra existente y devuelve la información actualizada. |
+| /api/v1/purchase-orders/{purchaseOrderId}/status` | PUT         | Actualizar estado de una orden de compra | PUT /api/v1/purchase-orders/{purchaseOrderId}/status | purchaseOrderId | json { "status": "In Transit" }                                                                                                                                                                                                                                                                                            | json { "id": 1, "code": "PO-24021", "status": "In Transit" }                                                                                                                                                                                         | Actualiza únicamente el estado de la orden de compra.                                       |
+| /api/v1/purchase-orders/{purchaseOrderId}        | DELETE      | Eliminar una orden de compra             | DELETE /api/v1/purchase-orders/{purchaseOrderId}     | purchaseOrderId` | N/A (No requiere body)                                                                                                                                                                                                                                                                                                       | Sin contenido (204 No Content)                                                                                                                                                                                                                       | Elimina la orden de compra especificada del sistema.                                        |
 
 
 ### Restaurant Alerts
@@ -914,11 +938,11 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 | Endpoint                                          | Método HTTP | Acción implementada                                             | Sintaxis de llamada                                    | Parámetros | Ejemplo Request                                                                                   | Ejemplo Response                                                                                                                                                                                | Explicación Response                                                                                                                                               |
 | ------------------------------------------------- | ----------- | --------------------------------------------------------------- | ------------------------------------------------------ | ---------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/api/v1/restaurant/alerts`                       | POST        | Crear una nueva alerta de restaurante                           | `POST /api/v1/restaurant/alerts`                       | Ninguno    | `json { "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "sensorId": 1 }` | `json { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Pending", "alertType": "RESTAURANT", "sensorId": 1, "sensorName": "Kitchen Temp Sensor" }` | Crea una nueva alerta asociada a un restaurante y devuelve la información registrada.                                                                              |
-| `/api/v1/restaurant/alerts/inventory`             | POST        | Crear alerta de restaurante basada en diferencias de inventario | `POST /api/v1/restaurant/alerts/inventory`             | Ninguno    | `json { "sensorId": 1 }`                                                                          | `json { "id": 1, "severity": "High", "detail": "Inventory stock differs from sensor value.", "status": "Pending", "alertType": "RESTAURANT", "sensorId": 1 }`                                   | Genera una alerta cuando existe una diferencia entre el inventario y el último valor registrado por el sensor. Si los valores coinciden devuelve `204 No Content`. |
-| `/api/v1/restaurant/alerts/{alertId}`             | GET         | Obtener alerta de restaurante por ID                            | `GET /api/v1/restaurant/alerts/{alertId}`              | `alertId`  | N/A (No requiere body)                                                                            | `json { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Pending", "alertType": "RESTAURANT", "sensorId": 1 }`                                      | Devuelve la información detallada de una alerta específica de restaurante.                                                                                         |
-| `/api/v1/restaurant/alerts`                       | GET         | Obtener todas las alertas de restaurante                        | `GET /api/v1/restaurant/alerts`                        | Ninguno    | N/A (No requiere body)                                                                            | `json [ { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Pending", "alertType": "RESTAURANT" } ]`                                                 | Devuelve la lista completa de alertas registradas para restaurantes.                                                                                               |
-| `/api/v1/restaurant/alerts/{alertId}/acknowledge` | POST        | Confirmar una alerta de restaurante                             | `POST /api/v1/restaurant/alerts/{alertId}/acknowledge` | `alertId`  | N/A (No requiere body)                                                                            | `json { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Acknowledged", "alertType": "RESTAURANT" }`                                                | Actualiza el estado de la alerta a "Acknowledged", indicando que fue revisada correctamente.                                                                       |
+| /api/v1/restaurant/alerts                       | POST        | Crear una nueva alerta de restaurante                           | POST /api/v1/restaurant/alerts                       | Ninguno    | json { "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "sensorId": 1 }` | `json { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Pending", "alertType": "RESTAURANT", "sensorId": 1, "sensorName": "Kitchen Temp Sensor" } | Crea una nueva alerta asociada a un restaurante y devuelve la información registrada.                                                                              |
+| /api/v1/restaurant/alerts/inventory             | POST        | Crear alerta de restaurante basada en diferencias de inventario | POST /api/v1/restaurant/alerts/inventory             | Ninguno    | json { "sensorId": 1 }                                                                          | json { "id": 1, "severity": "High", "detail": "Inventory stock differs from sensor value.", "status": "Pending", "alertType": "RESTAURANT", "sensorId": 1 }                                   | Genera una alerta cuando existe una diferencia entre el inventario y el último valor registrado por el sensor. Si los valores coinciden devuelve 204 No Content. |
+| /api/v1/restaurant/alerts/{alertId}             | GET         | Obtener alerta de restaurante por ID                            | GET /api/v1/restaurant/alerts/{alertId}              | alertId  | N/A (No requiere body)                                                                            | json { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Pending", "alertType": "RESTAURANT", "sensorId": 1 }                                      | Devuelve la información detallada de una alerta específica de restaurante.                                                                                         |
+| /api/v1/restaurant/alerts                       | GET         | Obtener todas las alertas de restaurante                        | GET /api/v1/restaurant/alerts                        | Ninguno    | N/A (No requiere body)                                                                            | json [ { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Pending", "alertType": "RESTAURANT" } ]                                                 | Devuelve la lista completa de alertas registradas para restaurantes.                                                                                               |
+| /api/v1/restaurant/alerts/{alertId}/acknowledge | POST        | Confirmar una alerta de restaurante                             | POST /api/v1/restaurant/alerts/{alertId}/acknowledge | alertId  | N/A (No requiere body)                                                                            | json { "id": 1, "severity": "Critical", "detail": "Sensor value exceeded safety limit.", "status": "Acknowledged", "alertType": "RESTAURANT" }                                                | Actualiza el estado de la alerta a "Acknowledged", indicando que fue revisada correctamente.                                                                       |
                                          |
 
 ### Suppliers Alerts
@@ -927,10 +951,10 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 | Endpoint                                        | Método HTTP | Acción implementada                      | Sintaxis de llamada                                  | Parámetros | Ejemplo Request                                                                      | Ejemplo Response                                                                                                                                                                                                                | Explicación Response                                                                     |
 | ----------------------------------------------- | ----------- | ---------------------------------------- | ---------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `/api/v1/supplier/alerts`                       | POST        | Crear una nueva alerta de proveedor      | `POST /api/v1/supplier/alerts`                       | Ninguno    | `json { "severity": "High", "detail": "Supplier has delayed a critical shipment." }` | `json { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Pending", "createdAt": "2026-06-19T03:30:00.000+00:00", "alertType": "SUPPLIER", "sensorId": null, "sensorName": null }` | Crea una nueva alerta relacionada con un proveedor y devuelve la información registrada. |
-| `/api/v1/supplier/alerts/{alertId}`             | GET         | Obtener alerta de proveedor por ID       | `GET /api/v1/supplier/alerts/{alertId}`              | `alertId`  | N/A (No requiere body)                                                               | `json { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Pending" }`                                                                                                              | Devuelve la información detallada de una alerta específica.                              |
-| `/api/v1/supplier/alerts`                       | GET         | Obtener todas las alertas de proveedores | `GET /api/v1/supplier/alerts`                        | Ninguno    | N/A (No requiere body)                                                               | `json [ { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Pending" } ]`                                                                                                          | Devuelve la lista completa de alertas registradas para proveedores.                      |
-| `/api/v1/supplier/alerts/{alertId}/acknowledge` | POST        | Confirmar una alerta de proveedor        | `POST /api/v1/supplier/alerts/{alertId}/acknowledge` | `alertId`  | N/A (No requiere body)                                                               | `json { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Acknowledged" }`                                                                                                         | Actualiza el estado de la alerta indicando que fue revisada o confirmada correctamente.  |
+| /api/v1/supplier/alerts                       | POST        | Crear una nueva alerta de proveedor      | POST /api/v1/supplier/alerts`                       | Ninguno    | json { "severity": "High", "detail": "Supplier has delayed a critical shipment." } | json { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Pending", "createdAt": "2026-06-19T03:30:00.000+00:00", "alertType": "SUPPLIER", "sensorId": null, "sensorName": null } | Crea una nueva alerta relacionada con un proveedor y devuelve la información registrada. |
+| /api/v1/supplier/alerts/{alertId}             | GET         | Obtener alerta de proveedor por ID       | GET /api/v1/supplier/alerts/{alertId}              | alertId  | N/A (No requiere body)                                                               | json { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Pending" }                                                                                                             | Devuelve la información detallada de una alerta específica.                              |
+| /api/v1/supplier/alerts         | GET         | Obtener todas las alertas de proveedores | GET /api/v1/supplier/alerts                        | Ninguno    | N/A (No requiere body)                                                               | json [ { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Pending" } ]                                                                                                          | Devuelve la lista completa de alertas registradas para proveedores.                      |
+| /api/v1/supplier/alerts/{alertId}/acknowledge | POST        | Confirmar una alerta de proveedor        | POST /api/v1/supplier/alerts/{alertId}/acknowledge | alertId  | N/A (No requiere body)                                                               | json { "id": 1, "severity": "High", "detail": "Supplier has delayed a critical shipment.", "status": "Acknowledged" }                                                                                                        | Actualiza el estado de la alerta indicando que fue revisada o confirmada correctamente.  |
 
 
 
@@ -940,7 +964,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 | Endpoint            | Método HTTP | Acción implementada           | Sintaxis de llamada     | Parámetros | Ejemplo Request        | Ejemplo Response                                                                                                                                                                                                                                                                        | Explicación Response                                                 |
 | ------------------- | ----------- | ----------------------------- | ----------------------- | ---------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| `/api/v1/suppliers` | GET         | Obtener todos los proveedores | `GET /api/v1/suppliers` | Ninguno    | N/A (No requiere body) | `json [ { "id": 1, "uuid": "550e8400-e29b-41d4-a716-446655440000", "name": "Golden Wok Produce", "contactName": "Marta Ruiz", "email": "marta@goldenwok.com", "phone": "+51 999 888 777", "category": "Vegetables", "linkedDate": "2026-06-18", "sla": "24h", "responseTime": "2h" } ]` | Devuelve la lista completa de proveedores registrados en el sistema. |
+| /api/v1/suppliers | GET         | Obtener todos los proveedores | GET /api/v1/suppliers | Ninguno    | N/A (No requiere body) | json [ { "id": 1, "uuid": "550e8400-e29b-41d4-a716-446655440000", "name": "Golden Wok Produce", "contactName": "Marta Ruiz", "email": "marta@goldenwok.com", "phone": "+51 999 888 777", "category": "Vegetables", "linkedDate": "2026-06-18", "sla": "24h", "responseTime": "2h" } ] | Devuelve la lista completa de proveedores registrados en el sistema. |
 
 
 
@@ -950,11 +974,11 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 | Endpoint                                                       | Método HTTP | Acción implementada                                      | Sintaxis de llamada                                                   | Parámetros                    | Ejemplo Request                                                                                                                                  | Ejemplo Response                                                                                                                                          | Explicación Response                                                                                        |
 | -------------------------------------------------------------- | ----------- | -------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `/api/v1/suppliers/{supplierId}/catalog-items`                 | POST        | Crear un nuevo producto en el catálogo del proveedor     | `POST /api/v1/suppliers/{supplierId}/catalog-items`                   | `supplierId`                  | `json { "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }`         | `json { "id": 1, "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }`         | Crea un nuevo producto dentro del catálogo del proveedor especificado y devuelve la información registrada. |
-| `/api/v1/suppliers/{supplierId}/catalog-items`                 | GET         | Obtener todos los productos del catálogo de un proveedor | `GET /api/v1/suppliers/{supplierId}/catalog-items`                    | `supplierId`                  | N/A (No requiere body)                                                                                                                           | `json [ { "id": 1, "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG" } ]`                                                    | Devuelve la lista de productos asociados al proveedor indicado.                                             |
-| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | GET         | Obtener producto del catálogo por ID                     | `GET /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}`    | `supplierId`, `catalogItemId` | N/A (No requiere body)                                                                                                                           | `json { "id": 1, "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }`         | Devuelve la información detallada de un producto específico del catálogo del proveedor.                     |
-| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | PUT         | Actualizar un producto del catálogo                      | `PUT /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}`    | `supplierId`, `catalogItemId` | `json { "name": "Cebolla china premium", "category": "Vegetables", "price": 3.20, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }` | `json { "id": 1, "name": "Cebolla china premium", "category": "Vegetables", "price": 3.20, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }` | Actualiza la información del producto del catálogo y devuelve los datos modificados.                        |
-| `/api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | DELETE      | Eliminar un producto del catálogo                        | `DELETE /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}` | `supplierId`, `catalogItemId` | N/A (No requiere body)                                                                                                                           | Sin contenido (`204 No Content`)                                                                                                                          | Elimina el producto indicado del catálogo del proveedor.                                                    |
+| /api/v1/suppliers/{supplierId}/catalog-items                 | POST        | Crear un nuevo producto en el catálogo del proveedor     | POST /api/v1/suppliers/{supplierId}/catalog-items                   | supplierId                 | json { "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }         | json { "id": 1, "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }         | Crea un nuevo producto dentro del catálogo del proveedor especificado y devuelve la información registrada. |
+| /api/v1/suppliers/{supplierId}/catalog-items                 | GET         | Obtener todos los productos del catálogo de un proveedor | GET /api/v1/suppliers/{supplierId}/catalog-items                    | supplierId                  | N/A (No requiere body)                                                                                                                           | json [ { "id": 1, "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG" } ]                                                    | Devuelve la lista de productos asociados al proveedor indicado.                                             |
+| /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId} | GET         | Obtener producto del catálogo por ID                     | GET /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}    | supplierId, catalogItemId | N/A (No requiere body)                                                                                                                           | json { "id": 1, "name": "Cebolla china", "category": "Vegetables", "price": 2.90, "unit": "KG", "deliveryConditions": "Next-day before 11:00" }         | Devuelve la información detallada de un producto específico del catálogo del proveedor.                     |
+| /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId} | PUT         | Actualizar un producto del catálogo                      | PUT /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId}    | supplierId , catalogItemId | json { "name": "Cebolla china premium", "category": "Vegetables", "price": 3.20, "unit": "KG", "deliveryConditions": "Next-day before 11:00" } | json { "id": 1, "name": "Cebolla china premium", "category": "Vegetables", "price": 3.20, "unit": "KG", "deliveryConditions": "Next-day before 11:00" } | Actualiza la información del producto del catálogo y devuelve los datos modificados.                        |
+| /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId} | DELETE      | Eliminar un producto del catálogo                        | DELETE /api/v1/suppliers/{supplierId}/catalog-items/{catalogItemId} | supplierId, catalogItemId | N/A (No requiere body)                                                                                                                           | Sin contenido (204 No Content)                                                                                                                          | Elimina el producto indicado del catálogo del proveedor.                                                    |
 
 
 ### Suppliers Clients
@@ -963,7 +987,7 @@ Durante el Sprint 3 se documentaron los servicios web desarrollados para los bou
 
 | Endpoint                                 | Método HTTP | Acción implementada                       | Sintaxis de llamada                          | Parámetros   | Ejemplo Request        | Ejemplo Response                                                                                  | Explicación Response                                                           |
 | ---------------------------------------- | ----------- | ----------------------------------------- | -------------------------------------------- | ------------ | ---------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `/api/v1/suppliers/{supplierId}/clients` | GET         | Obtener clientes asociados a un proveedor | `GET /api/v1/suppliers/{supplierId}/clients` | `supplierId` | N/A (No requiere body) | `json [ { "id": 1, "name": "Gran Dragon Chifa", "district": "San Isidro", "status": "active" } ]` | Devuelve la lista de clientes o restaurantes vinculados al proveedor indicado. |
+| /api/v1/suppliers/{supplierId}/clients | GET   | Obtener clientes asociados a un proveedor | GET /api/v1/suppliers/{supplierId}/clients | `supplierId | N/A (No requiere body) | json [ { "id": 1, "name": "Gran Dragon Chifa", "district": "San Isidro", "status": "active" } ] | Devuelve la lista de clientes o restaurantes vinculados al proveedor indicado. |
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
@@ -1103,13 +1127,50 @@ En esta sección se presentan los avances realizados durante el Sprint 4 en el c
 
 #### 5.2.4.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 4 se validó el funcionamiento integrado de la plataforma SupplyWok en un entorno desplegado. Esta validación incluyó la verificación de la disponibilidad del backend publicado, la exposición correcta de la documentación OpenAPI/Swagger y la revisión de endpoints pertenecientes a módulos ya conectados con la aplicación, como autenticación y comandas. En conjunto con los commits registrados en backend, frontend y landing page, esta evidencia refleja el cierre funcional de los tres componentes principales del producto.
+Durante el Sprint 4 se realizó la integración final de los componentes frontend y backend de SupplyWok, permitiendo que los distintos módulos de la plataforma consuman los servicios REST implementados en los sprints anteriores. Como parte de la revisión del sprint, se verificó el correcto funcionamiento de los flujos principales de la aplicación, validando la comunicación entre la interfaz de usuario y la API mediante pruebas funcionales. Asimismo, se realizaron ajustes y correcciones en los módulos integrados, comprobando la correcta visualización, recuperación, registro y actualización de la información dentro de la plataforma.
+
+| Componente | Descripción | Enlace |
+|------------|-------------|--------|
+| Landing Page | Pagina promocional de SupplyWok | https://aurora-startup.github.io/SupplyWok-landing-page/ |
+| Frontend | Plataforma web de SupplyWok (Usuario: restaurante@ejemplo.com Contraseña: Password123! / Usuario: proveedor@ejemplo.com Contraseña: Password123!) | https://supplywok-frontend.web.app/ |
+| Backend | Backend desplegado con la documentacion Open Api | https://supplywok-backend.onrender.com/swagger-ui/index.html#/ |
+| Repositorio Landing Page | Código fuente del landing page | https://github.com/Aurora-startup/SupplyWok-landing-page |
+| Repositorio Frontend | Código fuente del frontend | https://github.com/Aurora-startup/SupplyWok-frontend |
+| Repositorio Backend | Código fuente del backend | https://github.com/Aurora-startup/SupplyWok-backend |
+
+En las siguientes evidencias se presentan los módulos finales de la plataforma SupplyWok, junto con sus principales funcionalidades implementadas y el resultado de la integración realizada durante el Sprint 4.
+
+![Sprint 4 Login Screen](../assets/images/frontend/login_screen.png)
+
+![Sprint 4 Dashboard Screen](../assets/images/frontend/dashboard_screen.png)
+
+![Sprint 4 Inventory Screen](../assets/images/frontend/inventory_screen.png)
+
+![Sprint 4 Orders Screen](../assets/images/frontend/orders_screen.png)
+
+![Sprint 4 Tables and Occupancy Screen](../assets/images/frontend/tables_and_occupancy_screen.png)
+
+![Sprint 4 Alerts Screen](../assets/images/frontend/alerts_screen.png)
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 4 se mantuvo y amplió la documentación de los endpoints de SupplyWok utilizando OpenAPI/Swagger como herramienta de referencia. Esta documentación permitió validar la integración final entre frontend y backend y, además, evidenciar la incorporación de endpoints asociados a bounded contexts complementarios implementados en la etapa de cierre, especialmente los relacionados con autenticación, usuarios y perfiles.
+
+**Repository URL:** https://github.com/Aurora-startup/SupplyWok-backend
+
+**OpenAPI Documentation URL:** https://supplywok-backend.onrender.com/swagger-ui/index.html
 
 La siguiente evidencia muestra el acceso exitoso a la documentación interactiva del backend desplegado, donde se pueden observar recursos operativos del sistema y la disponibilidad de los endpoints utilizados por la aplicación durante la etapa final de integración.
 
 ![Sprint 4 Integrated Swagger Validation](../assets/images/Sprint-4-execution-evidence/swagger-integrated-validation.png)
 
-#### 5.2.4.6. Software Deployment Evidence for Sprint Review
+| Grupo de endpoints | Operaciones destacadas | Propósito en Sprint 4 |
+|--------------------|------------------------|------------------------|
+| Authentication | `POST /api/v1/authentication/sign-up`, `POST /api/v1/authentication/sign-in` | Habilitar el registro y la autenticación de usuarios en la plataforma integrada. |
+| Users | `GET /api/v1/users`, `GET /api/v1/users/{userId}` | Consultar usuarios registrados y apoyar validaciones administrativas del sistema. |
+| Profiles | `GET/POST/PUT /api/v1/profiles/{profileType}` y variantes por correo | Gestionar la configuración de perfiles de restaurantes y proveedores dentro de la solución desplegada. |
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review
 
 En esta sección se presentan las evidencias correspondientes al despliegue y validación final de la solución SupplyWok durante el Sprint 4. El objetivo de esta actividad fue asegurar que la versión integrada del sistema quedara disponible en la nube y lista para ser consumida por el frontend, mientras que la landing page y la Web Application permanecían alineadas con la versión final del backend publicada.
 
@@ -1125,11 +1186,11 @@ A continuación, se registró el inicio del nuevo despliegue asociado a la versi
 
 ![Sprint 4 Build Started](../assets/images/Sprint-4-deploy/build-started.png)
 
-Finalmente, se verificó el progreso de la construcción y arranque del servicio, observando en los logs la ejecución del backend con Spring Boot y el perfil de producción activo.
+Finalmente, se verificó el progreso de la construcción y arranque del servicio, observando en los logs la ejecución del backend con Spring Boot y el perfil de producción activo. De manera complementaria, el frontend quedó publicado en Firebase Hosting y la landing page en GitHub Pages, completando así el despliegue de los tres componentes del producto.
 
 ![Sprint 4 Build In Progress](../assets/images/Sprint-4-deploy/build-in-progress.png)
 
-#### 5.2.4.7. Team Collaboration Insights during Sprint
+#### 5.2.4.8. Team Collaboration Insights during Sprint
 
 Durante el Sprint 4, el equipo trabajó en el cierre completo del producto, realizando ajustes finales en backend, frontend y landing page, además de la integración de componentes con el entorno desplegado. Los commits consignados en la sección de Development Evidence muestran trabajo distribuido entre los tres repositorios principales del proyecto. Para evidenciar esta colaboración, se recopilaron analíticos de los repositorios del backend, frontend y landing page, correspondientes al periodo de cierre del sprint.
 
@@ -1246,9 +1307,6 @@ El primer entrevistado Weiquan Wang, un dueño de restaurante de 55 años ubicad
 | **Enlace** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318609_upc_edu_pe/IQCOSQpG7nmNRZpSWlNHbKVcATPs70bPkNvFhoz2TeEb9eA?e=BhExXc) |
 
 *Tabla. Registro de validación 1*
-
-
-
 
 #### Entrevista de validación #2
 ![alt text](../assets/images/validation/entrevista2.png)
@@ -1427,5 +1485,6 @@ Finalmente, se recomienda continuar fortaleciendo la aplicación mediante la inc
 * YouTube: [https://www.youtube.com/watch?v=Ccdvj5WbxWQ](https://www.youtube.com/watch?v=Ccdvj5WbxWQ)
 
 ![About the Team](../assets/images/Sprint-3-video-caps/about-the-team.png)
+
 
 
