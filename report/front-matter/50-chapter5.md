@@ -414,7 +414,7 @@ En este apartado se visualiza todos los graficos que representan la participacio
 
 ### 5.2.2. Sprint 2 
 
-En esta sección se registra y explica el avance realizado durante el Sprint 2 en términos de producto y trabajo colaborativo. El enfoque principal de este Sprint fue el desarrollo del frontend de la plataforma utilizando React y Vite para los bounded contexts priorizados. Además, se implementó una Fake API mediante JSON Server y un repositorio de datos para simular los servicios del backend y facilitar el consumo temporal de información por parte del frontend.
+En esta sección se registra y explica el avance realizado durante el Sprint 2 en términos de producto y trabajo colaborativo. El enfoque principal de este Sprint fue el desarrollo del frontend de la plataforma utilizando Angular para los bounded contexts priorizados. Además, se implementó una Fake API mediante JSON Server y un repositorio de datos para simular los servicios del backend y facilitar el consumo temporal de información por parte del frontend.
 
 #### 5.2.2.1. Sprint Planning 2
 
@@ -1011,20 +1011,20 @@ Durante la reunión de Sprint Planning del Sprint 4, se estableció como objetiv
 | **Time** | 17:00 |
 | **Location** | Virtual, Discord |
 | **Prepared by** | Zayd Ayasta, Juan Wang |
-| **Attendees** | Marcelo Cuadros, Alexandra Meza, Joan Payano, Zayd Ayasta, Juan Wang |
-| **Sprint 3 Review Summary** | Durante el Sprint 3 se desarrollo el backend |
-| **Sprint 3 Retrospective Summary** | El equipo consideró que la distribución de tareas y la colaboración durante el Sprint 2 fueron adecuadas, permitiendo cumplir los objetivos establecidos dentro del plazo previsto. Asimismo, se identificó como principal oportunidad de mejora la elaboración de una documentación más completa y detallada, tanto del proceso de desarrollo como de los componentes implementados, con el fin de mejorar la comunicación interna y facilitar el trabajo en las siguientes iteraciones.|
-| **Sprint 4 Goal** | Nuestro enfoque en este sprint es habilitar la gestión de inventarios, proveedores, compras y monitoreo operativo mediante los servicios principales de negocio de SupplyWok. Creemos que esto proporcionará un mayor control de las operaciones y una gestión más eficiente de la cadena de suministro para restaurantes y administradores. Esto se confirmará cuando los módulos de Inventory Management, Supply and Purchasing, Operational Monitoring and IoT Alerts, Restaurant Management y Supplier Management & Operations puedan ejecutar sus procesos mediante APIs funcionales y validadas. |
+| **Attendees** | Marcelo Cuadros, Alexandra Meza, Zayd Ayasta, Juan Wang |
+| **Sprint 3 Review Summary** | Durante el Sprint 3 se desarrolló el backend de la plataforma SupplyWok, implementando una API REST mediante Spring Boot junto con los endpoints correspondientes a los bounded contexts priorizados del núcleo del negocio. Entre los principales recursos implementados se encuentran Supplies, Comandas, Sensors, Purchase Orders, Restaurant Alerts, Supplier Alerts, Suppliers, Supplier Catalog Items y Supplier Clients. Asimismo, se validó el correcto funcionamiento de los servicios mediante Swagger.|
+| **Sprint 3 Retrospective Summary** | El equipo consideró que el desarrollo del backend y la distribución de tareas durante el Sprint 3 permitieron cumplir satisfactoriamente los objetivos establecidos para la iteración. Como oportunidad de mejora, se acordó reforzar la documentación de los sprints anteriores, integrar completamente el frontend con el backend y corregir las incidencias funcionales y visuales identificadas antes de la entrega final. |
+| **Sprint 4 Goal** | El objetivo principal de este Sprint es integrar el frontend con el backend de SupplyWok, implementar los bounded contexts complementarios (Identity and Access Management, Analytics y Subscription) y realizar las correcciones funcionales y visuales necesarias para completar la plataforma. El Sprint se considerará exitoso cuando los módulos del sistema consuman correctamente los servicios REST implementados y la aplicación funcione de manera integrada en un entorno desplegado. |
 | **Sprint 4 Velocity** | Límite de **35 SP** |
 | **Sum of Story Points** | **35 SP** | 
 
-#### 5.2.3.2. Aspect Leaders and Collaborators.
+#### 5.2.4.2. Aspect Leaders and Collaborators.
 
-En esta sección se presenta la matriz de liderazgo y colaboración correspondiente al Sprint 3. Dado que el objetivo principal de esta iteración es avanzar en el desarrollo backend de SupplyWok, los aspectos considerados corresponden a los bounded contexts de negocio. Para cada aspecto se asigna un líder responsable de coordinar el desarrollo y uno o más colaboradores encargados de apoyar en la implementación, validación y pruebas de los servicios y endpoints asociados.
+En esta sección se presenta la matriz de liderazgo y colaboración correspondiente al Sprint 4. Dado que el objetivo principal de esta iteración es integrar el frontend con el backend, implementar los bounded contexts complementarios y realizar los ajustes finales de la plataforma, los aspectos considerados corresponden tanto a los bounded contexts del núcleo del negocio como a los complementarios. Para cada aspecto se asigna un líder responsable de coordinar el desarrollo y uno o más colaboradores encargados de apoyar en la integración, validación y conclusión de cada módulo de la plataforma.
 
-**Link el Sprint 3 Board:** https://trello.com/invite/b/6a32b75e1ae8d9ce0c6a80c5/ATTI1c7df3100c5d6f7a9b96e772b7dfaf15012EAD3F/mi-tablero-de-trello
+**Link el Sprint 4 Board:** https://trello.com/invite/b/6a4ee984c4b0aa1e9470163b/ATTIdf910080a7b46fd8535e0d4de97848a7D3B19B31/supplywok-sprint-backlog-4
 
-![alt text](image-1.png)
+![alt text](image-14.png)
 
 **Consider Aspects** 
 
@@ -1038,11 +1038,15 @@ En esta sección se presenta la matriz de liderazgo y colaboración correspondie
 
 - **Supplier Management & Operations Bounded Context**: Es el encargado de gestionar la información de los proveedores y sus pedidos.
 
-- **Identity & Access Bounded Context**: Es el encargado de gestionar todo lo relacionado con la autenticación y administración de cuentas.
+- **Identity and Access Management**: Es el encargado de gestionar la autenticación de los usuarios, la administración de cuentas y el control de acceso a la plataforma.
+
+- **Analytics**: Es el encargado de gestionar las métricas e indicadores de la plataforma, permitiendo visualizar información relevante sobre la actividad de los usuarios.
+
+- **Subscription**: Es el encargado de administrar los planes de suscripción de los usuarios. 
 
 - **Shared Bounded Context**: Contiene Value Objects y componenetes visuales comunes que son reutilizados por múltiples bounded contexts del sistema.
 
-| Team Member | GitHub username | Inventory Management Bounded BC | Supply and Purchasing BC / Shared BC | Restaurant Management BC | Supplier Management & Operations BC | Operational Monitoring and IoT Alerts BC / Identity & Access BC  |
+| Team Member | GitHub username | Inventory Management Bounded BC | Supply and Purchasing BC / Shared BC | Restaurant Management BC / Subscription BC | Supplier Management & Operations BC / Analytics BC | Operational Monitoring and IoT Alerts BC / Identity and Access Management BC  |
 |---|---|---|---|---|---|---|
 | Cuadros, Marcelo | Marcelo-alt-lab | C | C | C | - | L |
 | Payano, Joan | Nounz27             | - | C | L | C | C |
@@ -1050,35 +1054,35 @@ En esta sección se presenta la matriz de liderazgo y colaboración correspondie
 | Ayasta, Zayd | Zayd Ayasta         | C | L | C | C | - |
 | Wang, Juan | jwd3t                 | C | - | C | L | C |
 
-#### 5.2.3.3. Sprint Backlog 3
+#### 5.2.4.3. Sprint Backlog 4  
 
-En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3. Los elementos incluidos fueron seleccionados en función del Sprint Goal establecido para esta iteración, el cual busca habilitar los procesos principales de gestión de inventarios, proveedores, compras y monitoreo operativo de SupplyWok mediante servicios backend funcionales. Para ello, se definieron las historias de usuario y tareas necesarias para implementar, validar y documentar los endpoints REST de los bounded contexts priorizados, asegurando su correcto funcionamiento antes de la integración con los componentes frontend de la plataforma.
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 4. Los elementos incluidos fueron definidos en función del Sprint Goal establecido para esta iteración, orientado a integrar el frontend con el backend de SupplyWok, implementar los bounded contexts complementarios y realizar los ajustes finales de la plataforma. Para ello, se planificaron las historias de usuario y las tareas necesarias para completar la integración de los servicios REST, validar el funcionamiento de los distintos módulos, corregir incidencias funcionales y visuales, y preparar la versión final del sistema para su despliegue.
 
-**Link el Sprint 3 Board:** https://trello.com/invite/b/6a32b75e1ae8d9ce0c6a80c5/ATTI1c7df3100c5d6f7a9b96e772b7dfaf15012EAD3F/mi-tablero-de-trello
+**Link el Sprint 4 Board:** https://trello.com/invite/b/6a4ee984c4b0aa1e9470163b/ATTIdf910080a7b46fd8535e0d4de97848a7D3B19B31/supplywok-sprint-backlog-4
 
-![alt text](image-1.png)
+![alt text](image-14.png)
 
-**Sprint 3 Backlog**
+**Sprint 4 Backlog**
 
-| US Id | US Title                                                   | Task Id | Task Title                                | Description                                                                                                      | Estimation (Hours) | Assigned To     | Status |
-| ----- | ---------------------------------------------------------- | ------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------ | --------------- | ------ |
-| US34  | Obtener los datos del inventario vía API                   | T-01    | Implement Inventory GET Endpoint          | Desarrollar endpoint GET para consultar inventario de un restaurante y exponer la información mediante API REST. | 8                  | Alexandra Meza  | Done   |
-| US01  | Registro de inventario inicial                             | T-02    | Implement Inventory Registration Services | Implementar entidades, repositorios y servicios para registrar insumos en inventario.                            | 6                  | Alexandra Meza  | Done   |
-| US09  | Creación de orden de compra                                | T-03    | Implement Purchase Order Endpoint         | Desarrollar endpoint POST para registrar órdenes de compra.                                                      | 6                  | Zayd Ayasta     | Done   |
-| US37  | Crear una orden de insumos vía API                         | T-04    | Implement Purchasing API Services         | Implementar servicios de aplicación, validaciones y persistencia para órdenes de compra.                         | 6                  | Zayd Ayasta     | Done   |
-| US38  | Obtener datos relevantes de proveedores vía API            | T-05    | Implement Supplier Query Endpoints        | Desarrollar endpoints para consulta de proveedores y catálogos asociados.                                        | 6                  | Juan Wang       | Done   |
-| US12  | Gestión de proveedores vinculados                          | T-06    | Implement Supplier Management Services    | Implementar entidades y lógica de negocio para gestión de proveedores.                                           | 5                  | Juan Wang       | Done   |
-| US42  | Endpoint para recibir información de componentes IoT       | T-07    | Implement IoT Data Reception Endpoint     | Implementar endpoint para recepción de información proveniente de sensores IoT.                                  | 8                  | Marcelo Cuadros | Done   |
-| US18  | Historial de alertas e incidencias operativas              | T-08    | Implement Alerts Management Services      | Implementar servicios y endpoints para consulta de alertas operativas registradas.                               | 6                  | Marcelo Cuadros | Done   |
-| US26  | Registro e inicio de sesión para usuarios de la plataforma | T-09    | Implement Identity and Access Services    | Implementar servicios base de autenticación y gestión de usuarios.                                               | 5                  | Marcelo Cuadros | Done   |
-| US17  | Control de ocupación de mesas                              | T-10    | Implement Restaurant Management Endpoints | Implementar endpoints relacionados con la gestión operativa del restaurante.                                     | 5                  | Joan Payano     | Done   |
-| US36  | Manejo estándar de errores                                 | T-11    | Configure Global Exception Handling       | Implementar manejo centralizado de excepciones y respuestas HTTP estandarizadas.                                 | 4                  | Zayd Ayasta     | Done   |
-| US39  | Evitar almacenamientos en errores                          | T-12    | Configure Transaction Management          | Configurar validaciones y transacciones para evitar persistencia de datos inválidos.                             | 3                  | Zayd Ayasta     | Done   |
+| US Id | US Title                                                   | Task Id | Task Title                                 | Description                                                                                                                 | Estimation (Hours) | Assigned To     | Status |
+| ----- | ---------------------------------------------------------- | ------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------- | ------ |
+| US34  | Obtener los datos del inventario vía API                   | T-01    | Integrate Inventory Module                 | Integrar el módulo de inventario del frontend con los endpoints REST y validar el consumo correcto de la información.       | 6                  | Alexandra Meza  | Done   |
+| US01  | Registro de inventario inicial                             | T-02    | Fix Inventory Integration Issues           | Corregir errores funcionales y realizar ajustes visuales en el registro y gestión del inventario.                          | 5                  | Alexandra Meza  | Done   |
+| US09  | Creación de orden de compra                                | T-03    | Integrate Purchase Orders Module           | Integrar el módulo de órdenes de compra con el backend y validar las operaciones de registro y consulta.                   | 6                  | Zayd Ayasta     | Done   |
+| US37  | Crear una orden de insumos vía API                         | T-04    | Validate Purchase Workflow                 | Corregir incidencias detectadas durante la integración y validar el flujo completo de creación de órdenes.                 | 5                  | Zayd Ayasta     | Done   |
+| US38  | Obtener datos relevantes de proveedores vía API            | T-05    | Integrate Supplier Management Module       | Integrar el módulo de proveedores con los servicios REST y verificar el consumo de datos.                                  | 6                  | Juan Wang       | Done   |
+| US12  | Gestión de proveedores vinculados                          | T-06    | Improve Supplier User Interface            | Corregir inconsistencias visuales y optimizar la experiencia de usuario del módulo de proveedores.                         | 4                  | Juan Wang       | Done   |
+| US42  | Endpoint para recibir información de componentes IoT       | T-07    | Integrate IoT Monitoring Dashboard         | Integrar el panel de monitoreo con los servicios del backend y validar la visualización de sensores y alertas.             | 6                  | Marcelo Cuadros | Done   |
+| US18  | Historial de alertas e incidencias operativas              | T-08    | Validate Operational Alerts                | Verificar el funcionamiento del módulo de alertas y corregir errores detectados durante las pruebas de integración.         | 5                  | Marcelo Cuadros | Done   |
+| US26  | Registro e inicio de sesión para usuarios de la plataforma | T-09    | Integrate Identity and Access Management   | Integrar las funcionalidades de autenticación y gestión de usuarios entre el frontend y el backend.                        | 6                  | Marcelo Cuadros | Done   |
+| US17  | Control de ocupación de mesas                              | T-10    | Integrate Restaurant Management Module     | Validar el funcionamiento del módulo de mesas y realizar ajustes funcionales y visuales tras la integración.               | 5                  | Joan Payano     | Done   |
+| US36  | Manejo estándar de errores                                 | T-11    | Resolve Integration Issues                 | Corregir errores generales detectados durante la integración entre el frontend y el backend.                               | 4                  | Zayd Ayasta     | Done   |
+| US39  | Evitar almacenamientos en errores                          | T-12    | Perform Final Integration Validation       | Realizar pruebas finales de integración para garantizar la correcta persistencia y recuperación de los datos de la plataforma. | 3                  | Zayd Ayasta     | Done   |
 
 
-#### 5.2.3.4. Development Evidence for Sprint Review.
+#### 5.2.4.4. Development Evidence for Sprint Review.
 
-En esta sección se presentan los avances realizados durante el Sprint 3 en la implementación de los componentes backend de SupplyWok. El trabajo desarrollado se centró en la construcción de los bounded contexts priorizados del núcleo del negocio, incluyendo la implementación de entidades de dominio, repositorios, servicios de aplicación y endpoints REST mediante Java y Spring Boot.
+En esta sección se presentan los avances realizados durante el Sprint 4 en el desarrollo de SupplyWok. El trabajo desarrollado se centró en la integración del frontend con los servicios REST implementados durante el Sprint anterior, la implementación de los bounded contexts complementarios (Identity and Access Management, Analytics y Subscription) y la realización de ajustes funcionales y visuales en los distintos módulos de la plataforma. Asimismo, se llevaron a cabo pruebas de integración para validar el correcto funcionamiento de la aplicación en un entorno completamente integrado.
 
 | Repository                       | Branch                        | Commit Id | Commit Message                                                                          | Commit Message Body                                                                             | Commited on (Date) |
 | -------------------------------- | ----------------------------- | --------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------ |
@@ -1377,7 +1381,6 @@ Por otro lado, es recomendable establecer fechas límite internas previas a las 
 Finalmente, se recomienda continuar fortaleciendo la aplicación mediante la incorporación de pruebas automatizadas, mejoras en la experiencia de usuario y nuevas funcionalidades basadas en la retroalimentación obtenida de los usuarios finales. De esta manera, la plataforma podrá evolucionar de forma continua y adaptarse mejor a las necesidades cambiantes de los restaurantes que constituyen su segmento objetivo.
 
 ## Video About-The-Team
-
 
 ### Enlaces del Video
 
