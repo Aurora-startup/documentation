@@ -401,7 +401,7 @@ Durante el Sprint 1 se desarrolló la Landing Page de SupplyWok, orientada a pro
 ![fifth](../assets/images/deploy-steps/prove-5.png)
 
 
-Video de ejecucion del sprint 1: [https://youtu.be/mQYJEKT22LU](https://youtu.be/mQYJEKT22LU)
+Link del video de explicación del Sprint: https://youtu.be/mQYJEKT22LU
 
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
